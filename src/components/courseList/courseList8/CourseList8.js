@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../../home/home1/Footer";
-import Navigation from "../../home/home1/Navigation";
-import SubNav from "../courseList1/SubNav";
+import Footer from "../../shared/Footer";
+import Navigation from "../../shared/Navigation";
+import SubNav from "../../shared/SubNav";
 import UserInterface from "../courseList1/UserInterface";
 import CourseListMain8 from "./CourseListMain8";
 

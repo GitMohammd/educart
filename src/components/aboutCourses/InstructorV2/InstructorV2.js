@@ -1,7 +1,7 @@
 import React from "react";
-import SubNav from "../../courseList/courseList1/SubNav";
-import Footer from "../../home/home1/Footer";
-import Navigation from "../../home/home1/Navigation";
+import SubNav from "../../shared/SubNav";
+import Footer from "../../shared/Footer";
+import Navigation from "../../shared/Navigation";
 import InstructorHeader from "../instructiorV1/InstructorHeader";
 import InstructorV2Content from "./InstructorV2Content";
 

@@ -2,13 +2,10 @@ import React from "react";
 import Footer from "../../shared/Footer";
 import Navigation from "../../shared/Navigation";
 import SubNav from "../../shared/SubNav";
-import UserInterface from "../courseList1/UserInterface";
-import CourseListMain6 from "./CourseListMain6";
-import GetYouStarted from "./GetYouStarted";
-import PopulerInstructorList6 from "./PopulerInstructorList6";
-import PupulerInstructotLi6 from "./PupulerInstructotLi6";
+import BlogListHeader from "../blogList1/BlogListHeader";
+import BlogListContent2 from "./BlogListContent2";
 
-function CourseList6() {
+function BlogList2() {
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
@@ -16,11 +13,8 @@ function CourseList6() {
           <Navigation />
           <div className="content-wrapper  js-content-wrapper">
             <SubNav />
-            <UserInterface />
-            <GetYouStarted />
-            <PopulerInstructorList6 />
-            <PupulerInstructotLi6 />
-            <CourseListMain6 />
+            <BlogListHeader />
+            <BlogListContent2 />
             <Footer />
           </div>
         </main>
@@ -29,4 +23,4 @@ function CourseList6() {
   );
 }
 
-export default CourseList6;
+export default BlogList2;

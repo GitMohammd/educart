@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../home1/Footer";
+import Footer from "../../shared/Footer";
 import TrustedCompany from "../../shared/TrustedCompany";
 import Bannar from "./Bannar";
 import BecomeInstructor from "./BecomeInstructor";

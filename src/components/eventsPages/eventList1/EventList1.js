@@ -2,12 +2,10 @@ import React from "react";
 import SubNav from "../../shared/SubNav";
 import Footer from "../../shared/Footer";
 import Navigation from "../../shared/Navigation";
-import BestInstructors from "../../home/home3/BestInstructors";
-import BecomeInstructorContent from "./BecomeInstructorContent";
-import BeInstroctorHeading from "./BeInstroctorHeading";
-import InstructorToday from "./InstructorToday";
+import EventList1Content from "./EventList1Content";
+import EventList1Header from "./EventList1Header";
 
-function BecomeAnInstructor() {
+function EventList1() {
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
@@ -15,10 +13,8 @@ function BecomeAnInstructor() {
           <Navigation />
           <div className="content-wrapper  js-content-wrapper">
             <SubNav />
-            <BeInstroctorHeading />
-            <BecomeInstructorContent />
-            <InstructorToday />
-            <BestInstructors />
+            <EventList1Header />
+            <EventList1Content />
             <Footer />
           </div>
         </main>
@@ -27,4 +23,4 @@ function BecomeAnInstructor() {
   );
 }
 
-export default BecomeAnInstructor;
+export default EventList1;

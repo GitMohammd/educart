@@ -1027,15 +1027,21 @@ function Navigation() {
                       </li>
 
                       <li>
-                        <a href="event-list-1.html">Event List 1</a>
+                        <Link data-barba to={"/eventList1"}>
+                          Event List 1
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="event-list-2.html">Event List 2</a>
+                        <Link data-barba to={"/eventList2"}>
+                          Event List 2
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="event-single.html">Event Single</a>
+                        <Link data-barba to={"/eventSingle"}>
+                          Event Single
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -1053,19 +1059,27 @@ function Navigation() {
                       </li>
 
                       <li>
-                        <a href="blog-list-1.html">Blog List 1</a>
+                        <Link data-barba to={"/blogList1"}>
+                          Blog List 1
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="blog-list-2.html">Blog List 2</a>
+                        <Link data-barba to={"/blogList2"}>
+                          Blog List 2
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="blog-list-3.html">Blog List 3</a>
+                        <Link data-barba to={"/blogList3"}>
+                          Blog List 3
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="blog-single.html">Blog Single</a>
+                        <Link data-barba to={"/blogSingle"}>
+                          Blog Single
+                        </Link>
                       </li>
                     </ul>
                   </li>

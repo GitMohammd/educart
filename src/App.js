@@ -48,6 +48,14 @@ import Grade from "./components/dashboardPages/grade/Grade";
 import Massage from "./components/dashboardPages/massage/Massage";
 import Participants from "./components/dashboardPages/participants/Participants";
 import Quiz from "./components/dashboardPages/quiz/Quiz";
+import Survey from "./components/dashboardPages/survey/Survey";
+import EventList1 from "./components/eventsPages/eventList1/EventList1";
+import EventList2 from "./components/eventsPages/eventList2/EventList2";
+import SingleEvent from "./components/eventsPages/singleEvent/SingleEvent";
+import BlogList1 from "./components/blogPages/blogList1/BlogList1";
+import BlogList2 from "./components/blogPages/blogList2/BlogList2";
+import BlogList3 from "./components/blogPages/blogList3/BlogList3";
+import SingleBlog from "./components/blogPages/singleBlog/SingleBlog";
 
 function App() {
   return (
@@ -99,7 +107,14 @@ function App() {
       <Route path="/messages" element={<Massage />} />
       <Route path="/Participants" element={<Participants />} />
       <Route path="/quiz" element={<Quiz />} />
-      <Route path="/survey" element={<Quiz />} />
+      <Route path="/survey" element={<Survey />} />
+      <Route path="/eventList1" element={<EventList1 />} />
+      <Route path="/eventList2" element={<EventList2 />} />
+      <Route path="/eventSingle" element={<SingleEvent />} />
+      <Route path="/blogList1" element={<BlogList1 />} />
+      <Route path="/blogList2" element={<BlogList2 />} />
+      <Route path="/blogList3" element={<BlogList3 />} />
+      <Route path="/blogSingle" element={<SingleBlog />} />
     </Routes>
   );
 }
