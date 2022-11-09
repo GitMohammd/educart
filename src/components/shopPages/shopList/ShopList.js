@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "../../shared/Footer";
 import Navigation from "../../shared/Navigation";
 import SubNav from "../../shared/SubNav";
-import BlogListHeader from "../blogList1/BlogListHeader";
-import BlogList3Content from "../blogList3/BlogList3Content";
+import ShopListContent from "./ShopListContent";
+import ShopListTitle from "./ShopListTitle";
 
-function BlogList3() {
+function ShopList() {
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
@@ -13,8 +13,8 @@ function BlogList3() {
           <Navigation />
           <div className="content-wrapper  js-content-wrapper">
             <SubNav />
-            <BlogListHeader />
-            <BlogList3Content />
+            <ShopListTitle />
+            {/* <ShopListContent /> */}
             <Footer />
           </div>
         </main>
@@ -23,4 +23,4 @@ function BlogList3() {
   );
 }
 
-export default BlogList3;
+export default ShopList;

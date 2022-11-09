@@ -56,6 +56,22 @@ import BlogList1 from "./components/blogPages/blogList1/BlogList1";
 import BlogList2 from "./components/blogPages/blogList2/BlogList2";
 import BlogList3 from "./components/blogPages/blogList3/BlogList3";
 import SingleBlog from "./components/blogPages/singleBlog/SingleBlog";
+import AboutPages1 from "./components/aboutPages/aboutPages1/AboutPages1";
+import AboutPage2 from "./components/aboutPages/aboutPages2/AboutPage2";
+import ContactPage1 from "./components/contactPages/contactPage1/ContactPage1";
+import ContactPage2 from "./components/contactPages/contactPage2/ContactPage2";
+import ShopCart from "./components/shopPages/shopCart/ShopCart";
+import ShopCheckout from "./components/shopPages/shopCheckout/ShopCheckout";
+import ShopList from "./components/shopPages/shopList/ShopList";
+import ShopOrder from "./components/shopPages/shopOrder/ShopOrder";
+import ShopSingle from "./components/shopPages/shopSingle/ShopSingle";
+import MemberShip from "./components/memberShipPage/MemberShip";
+import NotFound from "./components/404Page/NotFound";
+import Faq from "./components/fAQPage/Faq";
+import HelpCenter from "./components/helpCenter/HelpCenter";
+import Login from "./components/LoginPage/Login";
+import SignUp from "./components/SignUp/SignUp";
+import UiElements from "./components/uiElementsPage/UiElements";
 
 function App() {
   return (
@@ -115,6 +131,22 @@ function App() {
       <Route path="/blogList2" element={<BlogList2 />} />
       <Route path="/blogList3" element={<BlogList3 />} />
       <Route path="/blogSingle" element={<SingleBlog />} />
+      <Route path="/about1" element={<AboutPages1 />} />
+      <Route path="/about2" element={<AboutPage2 />} />
+      <Route path="/contact1" element={<ContactPage1 />} />
+      <Route path="/contact2" element={<ContactPage2 />} />
+      <Route path="/shopCart" element={<ShopCart />} />
+      <Route path="/shopCheckout" element={<ShopCheckout />} />
+      <Route path="/shopList" element={<ShopList />} />
+      <Route path="/shopOrder" element={<ShopOrder />} />
+      <Route path="/shopSingle" element={<ShopSingle />} />
+      <Route path="/membershipPlans" element={<MemberShip />} />
+      <Route path="/notFound" element={<NotFound />} />
+      <Route path="/FAQs" element={<Faq />} />
+      <Route path="/helpCenter" element={<HelpCenter />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<SignUp />} />
+      <Route path="/UIElements" element={<UiElements />} />
     </Routes>
   );
 }

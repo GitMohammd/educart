@@ -1111,11 +1111,15 @@ function Navigation() {
                           </li>
 
                           <li>
-                            <a href="about-1.html">About 1</a>
+                            <Link data-barba to={"/about1"}>
+                              About 1
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="about-2.html">About 2</a>
+                            <Link data-barba to={"/about2"}>
+                              About 2
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -1134,11 +1138,15 @@ function Navigation() {
                           </li>
 
                           <li>
-                            <a href="contact-1.html">Contact 1</a>
+                            <Link data-barba to={"/contact1"}>
+                              Contact 1
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="contact-2.html">Contact 2</a>
+                            <Link data-barba to={"/contact2"}>
+                              Contact 2
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -1156,53 +1164,78 @@ function Navigation() {
                           </li>
 
                           <li>
-                            <a href="shop-cart.html">Shop Cart</a>
+                            <Link data-barba to={"/shopCart"}>
+                              Shop Cart
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="shop-checkout.html">Shop Checkout</a>
+                            <Link data-barba to={"/shopCheckout"}>
+                              Shop Checkout
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="shop-list.html">Shop List</a>
+                            <Link data-barba to={"/shopList"}>
+                              Shop List
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="shop-order.html">Shop Order</a>
+                            <Link data-barba to={"/shopOrder"}>
+                              Shop Order
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="shop-single.html">Shop Single</a>
+                            <Link data-barba to={"/shopSingle"}>
+                              Shop Single
+                            </Link>
                           </li>
                         </ul>
                       </li>
 
                       <li>
-                        <a href="pricing.html">Membership plans</a>
+                        <Link data-barba to={"/membershipPlans"}>
+                          Membership plans
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="404.html">404 Page</a>
+                        <Link data-barba to={"/notFound"}>
+                          404 Page
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="terms.html">FAQs</a>
+                        <Link data-barba to={"/FAQs"}>
+                          FAQs
+                        </Link>
                       </li>
 
                       <li>
                         <a href="help-center.html">Help Center</a>
+                        <Link data-barba to={"/helpCenter"}>
+                          Help Center
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="login.html">Login</a>
+                        <Link data-barba to={"/login"}>
+                          Login
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="signup.html">Register</a>
+                        <Link data-barba to={"/register"}>
+                          Register
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="ui-elements.html">UI Elements</a>
+                        <Link data-barba to={"/UIElements"}>
+                          UI Elements
+                        </Link>
                       </li>
                     </ul>
                   </li>
