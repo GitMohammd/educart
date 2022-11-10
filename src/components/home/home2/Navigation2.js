@@ -153,57 +153,57 @@ function Navigation2() {
 
                                 <ul className="mega__list">
                                   <li>
-                                    <a data-barba href="courses-list-1.html">
+                                    <Link data-barba to={"/courselist1"}>
                                       Course List v1
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-2.html">
+                                    <Link data-barba to={"/courselist2"}>
                                       Course List v2
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-3.html">
+                                    <Link data-barba to={"/courselist3"}>
                                       Course List v3
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-4.html">
+                                    <Link data-barba to={"/courselist4"}>
                                       Course List v4
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-5.html">
+                                    <Link data-barba to={"/courselist5"}>
                                       Course List v5
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-6.html">
+                                    <Link data-barba to={"/courselist6"}>
                                       Course List v6
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-7.html">
+                                    <Link data-barba to={"/courselist7"}>
                                       Course List v7
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-8.html">
+                                    <Link data-barba to={"/courselist8"}>
                                       Course List v8
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-list-9.html">
+                                    <Link data-barba to={"/courselist9"}>
                                       Course List v9
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
@@ -215,39 +215,39 @@ function Navigation2() {
 
                                 <ul className="mega__list">
                                   <li>
-                                    <a data-barba href="courses-single-1.html">
+                                    <Link data-barba to={"/courseSingle1"}>
                                       Course Single v1
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-single-2.html">
+                                    <Link data-barba to={"/courseSingle2"}>
                                       Course Single v2
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-single-3.html">
+                                    <Link data-barba to={"/courseSingle3"}>
                                       Course Single v3
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-single-4.html">
+                                    <Link data-barba to={"/courseSingle4"}>
                                       Course Single v4
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-single-5.html">
+                                    <Link data-barba to={"/courseSingle5"}>
                                       Course Single v5
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="courses-single-6.html">
+                                    <Link data-barba to={"/courseSingle6"}>
                                       Course Single v6
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
@@ -259,51 +259,39 @@ function Navigation2() {
 
                                 <ul className="mega__list">
                                   <li>
-                                    <a data-barba href="lesson-single-1.html">
+                                    <Link data-barba to={"/LessonPagev1"}>
                                       Lesson Page v1
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="lesson-single-2.html">
+                                    <Link data-barba to={"/LessonPagev2"}>
                                       Lesson Page v2
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a
-                                      data-barba
-                                      href="instructors-list-1.html"
-                                    >
+                                    <Link data-barba to={"/InstructorsListv1"}>
                                       Instructors List v1
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a
-                                      data-barba
-                                      href="instructors-list-2.html"
-                                    >
+                                    <Link data-barba to={"/InstructorsListv2"}>
                                       Instructors List v2
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a
-                                      data-barba
-                                      href="instructors-single.html"
-                                    >
+                                    <Link data-barba to={"/InstructorsSingle"}>
                                       Instructors Single
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a
-                                      data-barba
-                                      href="instructors-become.html"
-                                    >
+                                    <Link data-barba to={"/BecomeanInstructor"}>
                                       Become an Instructor
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
@@ -315,102 +303,99 @@ function Navigation2() {
 
                                 <ul className="mega__list">
                                   <li>
-                                    <a data-barba href="dashboard.html">
-                                      Dashboard
-                                    </a>
+                                    <Link data-barba to={"/dashboard"}>
+                                      Dashboard{" "}
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-courses.html">
+                                    <Link data-barba to={"/myCourses"}>
                                       My Courses
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-boormarks.html">
+                                    <Link data-barba to={"/bookmarks"}>
                                       Bookmarks
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-listing.html">
+                                    <Link data-barba to={"/addListing"}>
                                       Add Listing
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-reviews.html">
+                                    <Link data-barba to={"/reviews"}>
                                       Reviews
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-settings.html">
+                                    <Link data-barba to={"/settings"}>
                                       Settings
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a
-                                      data-barba
-                                      href="dshb-administration.html"
-                                    >
+                                    <Link data-barba to={"/administration"}>
                                       Administration
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-assignment.html">
+                                    <Link data-barba to={"/assignment"}>
                                       Assignment
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-calendar.html">
-                                      Calendar
-                                    </a>
+                                    <Link data-barba to={"/calender"}>
+                                      Calender
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-dashboard.html">
+                                    <Link data-barba to={"/singleDashboard"}>
                                       Single Dashboard
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-dictionary.html">
+                                    <Link data-barba to={"/Dictionary"}>
                                       Dictionary
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-forums.html">
+                                    <Link data-barba to={"/forums"}>
                                       Forums
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-grades.html">
+                                    <Link data-barba to={"/grades"}>
                                       Grades
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-messages.html">
+                                    <Link data-barba to={"/messages"}>
                                       Messages
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-participants.html">
+                                    <Link data-barba to={"/Participants"}>
                                       Participants
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-quiz.html">
+                                    <Link data-barba to={"/quiz"}>
                                       Quiz
-                                    </a>
+                                    </Link>
                                   </li>
 
                                   <li>
@@ -807,15 +792,21 @@ function Navigation2() {
                           </li>
 
                           <li>
-                            <a href="event-list-1.html">Event List 1</a>
+                            <Link data-barba to={"/eventList1"}>
+                              Event List 1
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="event-list-2.html">Event List 2</a>
+                            <Link data-barba to={"/eventList2"}>
+                              Event List 2
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="event-single.html">Event Single</a>
+                            <Link data-barba to={"/eventSingle"}>
+                              Event Single
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -834,19 +825,27 @@ function Navigation2() {
                           </li>
 
                           <li>
-                            <a href="blog-list-1.html">Blog List 1</a>
+                            <Link data-barba to={"/blogList1"}>
+                              Blog List 1
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="blog-list-2.html">Blog List 2</a>
+                            <Link data-barba to={"/blogList2"}>
+                              Blog List 2
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="blog-list-3.html">Blog List 3</a>
+                            <Link data-barba to={"/blogList3"}>
+                              Blog List 3
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="blog-single.html">Blog Single</a>
+                            <Link data-barba to={"/blogSingle"}>
+                              Blog Single
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -879,11 +878,15 @@ function Navigation2() {
                               </li>
 
                               <li>
-                                <a href="about-1.html">About 1</a>
+                                <Link data-barba to={"/about1"}>
+                                  About 1
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="about-2.html">About 2</a>
+                                <Link data-barba to={"/about2"}>
+                                  About 2
+                                </Link>
                               </li>
                             </ul>
                           </li>
@@ -902,11 +905,15 @@ function Navigation2() {
                               </li>
 
                               <li>
-                                <a href="contact-1.html">Contact 1</a>
+                                <Link data-barba to={"/contact1"}>
+                                  Contact 1
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="contact-2.html">Contact 2</a>
+                                <Link data-barba to={"/contact2"}>
+                                  Contact 2
+                                </Link>
                               </li>
                             </ul>
                           </li>
@@ -925,49 +932,71 @@ function Navigation2() {
                               </li>
 
                               <li>
-                                <a href="shop-cart.html">Shop Cart</a>
+                                <Link data-barba to={"/shopCart"}>
+                                  Shop Cart
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="shop-checkout.html">Shop Checkout</a>
+                                <Link data-barba to={"/shopCheckout"}>
+                                  Shop Checkout
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="shop-list.html">Shop List</a>
+                                <Link data-barba to={"/shopList"}>
+                                  Shop List
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="shop-order.html">Shop Order</a>
+                                <Link data-barba to={"/shopOrder"}>
+                                  Shop Order
+                                </Link>
                               </li>
 
                               <li>
-                                <a href="shop-single.html">Shop Single</a>
+                                <Link data-barba to={"/shopSingle"}>
+                                  Shop Single
+                                </Link>
                               </li>
                             </ul>
                           </li>
 
                           <li>
-                            <a href="pricing.html">Membership plans</a>
+                            <Link data-barba to={"/membershipPlans"}>
+                              Membership plans
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="404.html">404 Page</a>
+                            <Link data-barba to={"/notFound"}>
+                              404 Page
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="terms.html">FAQs</a>
+                            <Link data-barba to={"/FAQs"}>
+                              FAQs
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="help-center.html">Help Center</a>
+                            <Link data-barba to={"/helpCenter"}>
+                              Help Center
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="login.html">Login</a>
+                            <Link data-barba to={"/login"}>
+                              Login
+                            </Link>
                           </li>
 
                           <li>
-                            <a href="signup.html">Register</a>
+                            <Link data-barba to={"/register"}>
+                              Register
+                            </Link>
                           </li>
 
                           <li>

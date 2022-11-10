@@ -503,7 +503,7 @@ function Navigation() {
 
                               <li>
                                 <Link data-barba to={"/courseSingle6"}>
-                                  Course Single v5
+                                  Course Single v6
                                 </Link>
                               </li>
                             </ul>
@@ -1214,7 +1214,6 @@ function Navigation() {
                       </li>
 
                       <li>
-                        <a href="help-center.html">Help Center</a>
                         <Link data-barba to={"/helpCenter"}>
                           Help Center
                         </Link>
