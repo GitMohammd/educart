@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginNavigation() {
   return (
@@ -22,12 +23,13 @@ function LoginNavigation() {
                   <div className="mobile-bg js-mobile-bg"></div>
 
                   <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                    <a href="login.html" className="text-dark-1">
+                    <Link class="text-dark-1" to={"/login"}>
                       Log in
-                    </a>
-                    <a href="signup.html" className="text-dark-1 ml-30">
+                    </Link>
+
+                    <Link class="text-dark-1 ml-30" to={"/register"}>
                       Sign Up
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="menu js-navList">
@@ -47,43 +49,43 @@ function LoginNavigation() {
                           </li>
 
                           <li>
-                            <a href="index.html">Home 1</a>
+                            <Link to={"/"}>Home 1</Link>
                           </li>
 
                           <li>
-                            <a href="home-2.html">Home 2</a>
+                            <Link to={"/home2"}>Home 2</Link>
                           </li>
 
                           <li>
-                            <a href="home-3.html">Home 3</a>
+                            <Link to={"/home3"}>Home 3</Link>
                           </li>
 
                           <li>
-                            <a href="home-4.html">Home 4</a>
+                            <Link to={"/home4"}>Home 4</Link>
                           </li>
 
                           <li>
-                            <a href="home-5.html">Home 5</a>
+                            <Link to={"/home5"}>Home 5</Link>
                           </li>
 
                           <li>
-                            <a href="home-6.html">Home 6</a>
+                            <Link to={"/home6"}>Home 6</Link>
                           </li>
 
                           <li>
-                            <a href="home-7.html">Home 7</a>
+                            <Link to={"/home7"}>Home 7</Link>
                           </li>
 
                           <li>
-                            <a href="home-8.html">Home 8</a>
+                            <Link to={"/home8"}>Home 8</Link>
                           </li>
 
                           <li>
-                            <a href="home-9.html">Home 9</a>
+                            <Link to={"/home9"}>Home 9</Link>
                           </li>
 
                           <li>
-                            <a href="home-10.html">Home 10</a>
+                            <Link to={"/home10"}>Home 10</Link>
                           </li>
                         </ul>
                       </li>

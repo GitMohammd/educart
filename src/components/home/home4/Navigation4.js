@@ -327,12 +327,13 @@ function Navigation4() {
                   <div className="mobile-bg js-mobile-bg"></div>
 
                   <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                    <a href="login.html" className="text-dark-1">
+                    <Link class="text-dark-1" to={"/login"}>
                       Log in
-                    </a>
-                    <a href="signup.html" className="text-dark-1 ml-30">
+                    </Link>
+
+                    <Link class="text-dark-1 ml-30" to={"/register"}>
                       Sign Up
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="menu js-navList">
@@ -1531,18 +1532,19 @@ function Navigation4() {
               </div>
 
               <div className="header-right__buttons d-flex items-center lg:d-none">
-                <a
-                  href="#"
+                <Link
                   className="button -underline text-dark-1 -before-border py-3 pl-30 xl:pl-20"
+                  to={"/login"}
                 >
                   Log in
-                </a>
-                <a
-                  href="#"
+                </Link>
+
+                <Link
                   className="button h-50 px-25 -purple-3 -rounded text-purple-1 ml-20"
+                  to={"/register"}
                 >
-                  Sign up
-                </a>
+                  Sign Up
+                </Link>
               </div>
             </div>
           </div>

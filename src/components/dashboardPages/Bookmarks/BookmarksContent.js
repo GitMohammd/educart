@@ -333,7 +333,7 @@ function BookmarksContent() {
                                 <i className="icon-star text-9 text-yellow-1"></i>
                               </div>
                               <div className="text-13 lh-1 fw-500 ml-10">
-                                (1991))
+                                (1991)
                               </div>
                             </div>
 
@@ -431,7 +431,7 @@ function BookmarksContent() {
                                 <i className="icon-star text-9 text-yellow-1"></i>
                               </div>
                               <div className="text-13 lh-1 fw-500 ml-10">
-                                (1991))
+                                (1991)
                               </div>
                             </div>
 
@@ -529,7 +529,7 @@ function BookmarksContent() {
                                 <i className="icon-star text-9 text-yellow-1"></i>
                               </div>
                               <div className="text-13 lh-1 fw-500 ml-10">
-                                (1991))
+                                (1991)
                               </div>
                             </div>
 
@@ -627,7 +627,7 @@ function BookmarksContent() {
                                 <i className="icon-star text-9 text-yellow-1"></i>
                               </div>
                               <div className="text-13 lh-1 fw-500 ml-10">
-                                (1991))
+                                (1991)
                               </div>
                             </div>
 

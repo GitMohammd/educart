@@ -327,12 +327,13 @@ function Navigation7() {
                 <div class="mobile-bg js-mobile-bg"></div>
 
                 <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                  <a href="login.html" class="text-dark-1">
+                  <Link class="text-dark-1" to={"/login"}>
                     Log in
-                  </a>
-                  <a href="signup.html" class="text-dark-1 ml-30">
+                  </Link>
+
+                  <Link class="text-dark-1 ml-30" to={"/register"}>
                     Sign Up
-                  </a>
+                  </Link>
                 </div>
 
                 <div class="menu js-navList">
@@ -1514,15 +1515,16 @@ function Navigation7() {
               </div>
 
               <div class="header-right__buttons d-flex items-center ml-30 xl:ml-20 lg:d-none">
-                <a href="login.html" class="button -underline text-purple-1">
+                <Link class="button -underline text-purple-1" to={"/login"}>
                   Log in
-                </a>
-                <a
-                  href="signup.html"
+                </Link>
+
+                <Link
                   class="button h-50 px-30 -purple-3 -rounded text-purple-1 ml-15"
+                  to={"/register"}
                 >
-                  Sign up
-                </a>
+                  Sign Up
+                </Link>
               </div>
             </div>
           </div>

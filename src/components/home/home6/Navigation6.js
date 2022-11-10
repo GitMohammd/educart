@@ -23,12 +23,13 @@ function Navigation6() {
                   <div className="mobile-bg js-mobile-bg"></div>
 
                   <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                    <a href="login.html" className="text-dark-1">
+                    <Link class="text-dark-1" to={"/login"}>
                       Log in
-                    </a>
-                    <a href="signup.html" className="text-dark-1 ml-30">
+                    </Link>
+
+                    <Link class="text-dark-1 ml-30" to={"/register"}>
                       Sign Up
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="menu js-navList">
@@ -1227,15 +1228,16 @@ function Navigation6() {
               </div>
 
               <div className="header-right__buttons d-flex items-center ml-30 xl:ml-20 lg:d-none">
-                <a href="login.html" className="button -underline text-dark-1">
+                <Link className="button -underline text-dark-1" to={"/login"}>
                   Log in
-                </a>
-                <a
-                  href="signup.html"
+                </Link>
+
+                <Link
                   className="button h-50 px-40 -purple-1 -rounded text-white ml-30 xl:ml-20"
+                  to={"/register"}
                 >
-                  Sign up
-                </a>
+                  Sign Up
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DahsboardNavigaton() {
   return (
@@ -40,36 +41,30 @@ function DahsboardNavigaton() {
                   <div className="dropdown__item -dark-bg-dark-2 -dark-border-white-10">
                     <div className="text-14 y-gap-15">
                       <div>
-                        <a
-                          href="dashboard.html"
-                          className="d-block text-dark-1"
-                        >
+                        <Link to={"/dashboard"} className="d-block text-dark-1">
+                          <i className="text-20 icon-discovery mr-15"></i>
                           Dashboard
-                        </a>
+                        </Link>
                       </div>
                       <div>
-                        <a
-                          href="dshb-courses.html"
-                          className="d-block text-dark-1"
-                        >
+                        <Link className="d-block text-dark-1" to={"/myCourses"}>
+                          <i className="text-20 icon-play-button mr-15"></i>
                           My Courses
-                        </a>
+                        </Link>
                       </div>
                       <div>
-                        <a
-                          href="dshb-boormarks.html"
-                          className="d-block text-dark-1"
-                        >
+                        <Link to={"/bookmarks"} className="d-block text-dark-1">
+                          <i className="text-20 icon-bookmark mr-15"></i>
                           Bookmarks
-                        </a>
+                        </Link>
                       </div>
                       <div>
-                        <a
-                          href="dshb-listing.html"
+                        <Link
+                          to={"/addListing"}
                           className="d-block text-dark-1"
                         >
                           Add Listing
-                        </a>
+                        </Link>
                       </div>
                       <div>
                         <a
@@ -414,73 +409,73 @@ function DahsboardNavigaton() {
                     <div className="px-30 py-30">
                       <div className="sidebar -dashboard">
                         <div className="sidebar__item -is-active -dark-bg-dark-2">
-                          <a
-                            href="dashboard.html"
+                          <Link
+                            to={"/dashboard"}
                             className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
                           >
                             <i className="text-20 icon-discovery mr-15"></i>
                             Dashboard
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-courses.html"
+                          <Link
                             className="d-flex items-center text-17 lh-1 fw-500"
+                            to={"/myCourses"}
                           >
                             <i className="text-20 icon-play-button mr-15"></i>
                             My Courses
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-bookmarks.html"
+                          <Link
+                            to={"/bookmarks"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-bookmark mr-15"></i>
                             Bookmarks
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-messages.html"
+                          <Link
+                            to={"/messages"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-message mr-15"></i>
                             Messages
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-listing.html"
+                          <Link
+                            to={"/addListing"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
-                            <i className="text-20 icon-list mr-15"></i>
+                            <i className="text-20 icon-message mr-15"></i>
                             Create Course
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-reviews.html"
+                          <Link
+                            to={"/reviews"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
-                            <i className="text-20 icon-comment mr-15"></i>
+                            <i className="text-20 icon-message mr-15"></i>
                             Reviews
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">
-                          <a
-                            href="dshb-settings.html"
+                          <Link
+                            to={"/settings"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
-                            <i className="text-20 icon-setting mr-15"></i>
+                            <i className="text-20 icon-message mr-15"></i>
                             Settings
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="sidebar__item">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function MyCoursesContent() {
   return (
@@ -6,73 +7,73 @@ function MyCoursesContent() {
       <div className="dashboard__sidebar scroll-bar-1">
         <div className="sidebar -dashboard">
           <div className="sidebar__item">
-            <a
-              href="dashboard.html"
-              className="d-flex items-center text-17 lh-1 fw-500"
+            <Link
+              to={"/dashboard"}
+              className="d-flex items-center text-17 lh-1 fw-500 "
             >
               <i className="text-20 icon-discovery mr-15"></i>
               Dashboard
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item -is-active -dark-bg-dark-2">
-            <a
-              href="dshb-courses.html"
+            <Link
               className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
+              to={"/myCourses"}
             >
               <i className="text-20 icon-play-button mr-15"></i>
               My Courses
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
-            <a
-              href="dshb-bookmarks.html"
+            <Link
+              to={"/bookmarks"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-bookmark mr-15"></i>
               Bookmarks
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
-            <a
-              href="dshb-messages.html"
+            <Link
+              to={"/messages"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-message mr-15"></i>
               Messages
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
-            <a
-              href="dshb-listing.html"
+            <Link
+              to={"/addListing"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
-              <i className="text-20 icon-list mr-15"></i>
+              <i className="text-20 icon-message mr-15"></i>
               Create Course
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
-            <a
-              href="dshb-reviews.html"
+            <Link
+              to={"/reviews"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
-              <i className="text-20 icon-comment mr-15"></i>
+              <i className="text-20 icon-message mr-15"></i>
               Reviews
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
-            <a
-              href="dshb-settings.html"
+            <Link
+              to={"/settings"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
-              <i className="text-20 icon-setting mr-15"></i>
+              <i className="text-20 icon-message mr-15"></i>
               Settings
-            </a>
+            </Link>
           </div>
 
           <div className="sidebar__item">
