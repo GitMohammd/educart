@@ -1,40 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <button className="d-flex items-center text-24 arrow-right-hover js-next">
-        <i className="icon icon-arrow-right"></i>
-      </button>
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      {" "}
-      <button className="d-flex items-center text-24 arrow-left-hover js-prev">
-        <i className="icon icon-arrow-left"></i>
-      </button>
-    </div>
-  );
-}
-
 function TopCotegories() {
+  const sliderRef = useRef(0);
   const settings = {
+    // centerMode: true,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
 
     responsive: [
       {
@@ -77,9 +55,9 @@ function TopCotegories() {
             </div>
           </div>
         </div>
-        <div className="pt-50">
-          <Slider {...settings}>
-            <div>
+        <div className="pt-50 ">
+          <Slider {...settings} ref={sliderRef}>
+            <div style={{ margin: "100px" }}>
               <div className="swiper-slide" style={{ width: "190px" }}>
                 <div
                   data-anim-child="slide-left delay-2"
@@ -206,7 +184,31 @@ function TopCotegories() {
               </div>
             </div>
           </Slider>
-
+          <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
+            <div className="col-auto">
+              <button
+                className="d-flex items-center text-24 arrow-left-hover js-prev"
+                onClick={() => sliderRef.current?.slickPrev()}
+              >
+                <i className="icon icon-arrow-left"></i>
+              </button>
+            </div>
+            <div className="col-auto">
+              <div className="pagination -arrows js-pagination"></div>
+            </div>
+            <div className="col-auto">
+              <button
+                className="d-flex items-center text-24 arrow-right-hover js-next"
+                onClick={() => sliderRef.current?.slickNext()}
+              >
+                <i className="icon icon-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          {/* <div className="">
+            <SampleNextArrow />
+            <SamplePrevArrow />
+          </div> */}
           {/* <button className="d-flex items-center text-24 arrow-left-hover js-prev">
             <i className="icon icon-arrow-left"></i>
           </button> */}

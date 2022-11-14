@@ -353,7 +353,7 @@ function Navigation() {
                       </li>
 
                       <li>
-                        <Link to={"/"}>Home 1</Link>
+                        <Link to={"/home1"}>Home 1</Link>
                       </li>
 
                       <li>

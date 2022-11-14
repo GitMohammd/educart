@@ -15615,3 +15615,9 @@ table.table td {
   border-radius: 100%;
   background: white;
 }
+
+/* -----------react slack style ---------- */
+.testimonials__content {
+  margin-left: -5px;
+}
+

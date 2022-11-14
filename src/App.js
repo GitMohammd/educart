@@ -72,12 +72,25 @@ import HelpCenter from "./components/helpCenter/HelpCenter";
 import Login from "./components/LoginPage/Login";
 import SignUp from "./components/SignUp/SignUp";
 import UiElements from "./components/uiElementsPage/UiElements";
+import PopulerCourseContent from "./components/home/home1/PopulerCourseContent";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home1 />} />
-      <Route path="/home2" element={<Home2 />} />
+      <Route path="home1" element={<Home1 />}>
+        <Route index element={<PopulerCourseContent />} />
+        <Route path="writting" element={<PopulerCourseContent />} />
+        <Route path="business" element={<PopulerCourseContent />} />
+        <Route path="photo" element={<PopulerCourseContent />} />
+        <Route path="lifeStyle" element={<PopulerCourseContent />} />
+        <Route path="illustration" element={<PopulerCourseContent />} />
+        <Route path="design" element={<PopulerCourseContent />} />
+        <Route path="Animation" element={<PopulerCourseContent />} />
+        <Route path="allCategories" element={<PopulerCourseContent />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+      <Route path="home2" element={<Home2 />} />
       <Route path="/home3" element={<Home3 />} />
       <Route path="/home4" element={<Home4 />} />
       <Route path="/home5" element={<Home5 />} />
@@ -141,12 +154,13 @@ function App() {
       <Route path="/shopOrder" element={<ShopOrder />} />
       <Route path="/shopSingle" element={<ShopSingle />} />
       <Route path="/membershipPlans" element={<MemberShip />} />
-      <Route path="/notFound" element={<NotFound />} />
+
       <Route path="/FAQs" element={<Faq />} />
       <Route path="/helpCenter" element={<HelpCenter />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<SignUp />} />
       <Route path="/UIElements" element={<UiElements />} />
+      <Route path="/*" element={<NotFound />} />
     </Routes>
   );
 }
