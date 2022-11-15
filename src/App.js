@@ -78,7 +78,7 @@ import NotFoundContent from "./components/404Page/NotFoundContent";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home1" />} />
+      <Route path="/" element={<Navigate to="/home1/allCategories" />} />
       <Route path="/home1" element={<Home1 />}>
         <Route index element={<PopulerCourseContent />} />
         <Route path="allCategories" element={<PopulerCourseContent />} />
