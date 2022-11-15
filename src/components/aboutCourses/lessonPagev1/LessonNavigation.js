@@ -13,7 +13,7 @@ function LessonNavigation() {
             <div className="header-left">
               <div className="header__logo">
                 <a data-barba href="index.html">
-                  <img src="assets/img/general/logo.svg" alt="logo" />
+                  <img src="/assets/img/general/logo.svg" alt="logo" />
                 </a>
               </div>
 

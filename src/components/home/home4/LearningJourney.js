@@ -22,7 +22,7 @@ function LearningJourney() {
           <div class="col-lg-3 col-md-6">
             <div class="coursesCard -type-3 text-center">
               <div class="coursesCard__icon bg-green-3">
-                <img src="assets/img/home-4/learning/1.svg" alt="icon" />
+                <img src="/assets/img/home-4/learning/1.svg" alt="icon" />
               </div>
 
               <div class="coursesCard__content mt-30">
@@ -39,7 +39,7 @@ function LearningJourney() {
           <div class="col-lg-3 col-md-6">
             <div class="coursesCard -type-3 text-center">
               <div class="coursesCard__icon bg-yellow-2">
-                <img src="assets/img/home-4/learning/2.svg" alt="icon" />
+                <img src="/assets/img/home-4/learning/2.svg" alt="icon" />
               </div>
 
               <div class="coursesCard__content mt-30">
@@ -56,7 +56,7 @@ function LearningJourney() {
           <div class="col-lg-3 col-md-6">
             <div class="coursesCard -type-3 text-center">
               <div class="coursesCard__icon bg-blue-2">
-                <img src="assets/img/home-4/learning/3.svg" alt="icon" />
+                <img src="/assets/img/home-4/learning/3.svg" alt="icon" />
               </div>
 
               <div class="coursesCard__content mt-30">
@@ -73,7 +73,7 @@ function LearningJourney() {
           <div class="col-lg-3 col-md-6">
             <div class="coursesCard -type-3 text-center">
               <div class="coursesCard__icon bg-orange-3">
-                <img src="assets/img/home-4/learning/4.svg" alt="icon" />
+                <img src="/assets/img/home-4/learning/4.svg" alt="icon" />
               </div>
 
               <div class="coursesCard__content mt-30">

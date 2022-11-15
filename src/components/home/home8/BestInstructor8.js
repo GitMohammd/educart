@@ -36,7 +36,7 @@ function BestInstructor8() {
                 <div class="swiper-slide">
                   <div class="d-flex flex-column items-center">
                     <div>
-                      <img src="assets/img/speakers/1.png" alt="image" />
+                      <img src="/assets/img/speakers/1.png" alt="image" />
                     </div>
                     <div class="d-flex items-center mt-20">
                       <div class="icon-star text-9 text-yellow-1 mr-5"></div>
@@ -48,14 +48,14 @@ function BestInstructor8() {
                     <div class="d-flex x-gap-15 items-center pt-5">
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">692 Students</div>
                       </div>
 
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">15 Course</div>
                       </div>
@@ -66,7 +66,7 @@ function BestInstructor8() {
                 <div class="swiper-slide">
                   <div class="d-flex flex-column items-center">
                     <div>
-                      <img src="assets/img/speakers/2.png" alt="image" />
+                      <img src="/assets/img/speakers/2.png" alt="image" />
                     </div>
                     <div class="d-flex items-center mt-20">
                       <div class="icon-star text-9 text-yellow-1 mr-5"></div>
@@ -78,14 +78,14 @@ function BestInstructor8() {
                     <div class="d-flex x-gap-15 items-center pt-5">
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">692 Students</div>
                       </div>
 
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">15 Course</div>
                       </div>
@@ -96,7 +96,7 @@ function BestInstructor8() {
                 <div class="swiper-slide">
                   <div class="d-flex flex-column items-center">
                     <div>
-                      <img src="assets/img/speakers/3.png" alt="image" />
+                      <img src="/assets/img/speakers/3.png" alt="image" />
                     </div>
                     <div class="d-flex items-center mt-20">
                       <div class="icon-star text-9 text-yellow-1 mr-5"></div>
@@ -108,14 +108,14 @@ function BestInstructor8() {
                     <div class="d-flex x-gap-15 items-center pt-5">
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">692 Students</div>
                       </div>
 
                       <div class="d-flex items-center">
                         <div class="mr-10">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div class="text-13 lh-1">15 Course</div>
                       </div>

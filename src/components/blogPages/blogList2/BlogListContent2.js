@@ -15,7 +15,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/1.png"
+                      src="/assets/img/blog-list/1.png"
                       alt="image"
                     />
                   </div>
@@ -37,7 +37,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/2.png"
+                      src="/assets/img/blog-list/2.png"
                       alt="image"
                     />
                   </div>
@@ -59,7 +59,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/3.png"
+                      src="/assets/img/blog-list/3.png"
                       alt="image"
                     />
                   </div>
@@ -81,7 +81,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/4.png"
+                      src="/assets/img/blog-list/4.png"
                       alt="image"
                     />
                   </div>
@@ -104,7 +104,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/5.png"
+                      src="/assets/img/blog-list/5.png"
                       alt="image"
                     />
                   </div>
@@ -126,7 +126,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/6.png"
+                      src="/assets/img/blog-list/6.png"
                       alt="image"
                     />
                   </div>
@@ -148,7 +148,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/7.png"
+                      src="/assets/img/blog-list/7.png"
                       alt="image"
                     />
                   </div>
@@ -171,7 +171,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/8.png"
+                      src="/assets/img/blog-list/8.png"
                       alt="image"
                     />
                   </div>
@@ -194,7 +194,7 @@ function BlogListContent2() {
                   <div className="blogCard__image">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/blog-list/9.png"
+                      src="/assets/img/blog-list/9.png"
                       alt="image"
                     />
                   </div>
@@ -272,7 +272,7 @@ function BlogListContent2() {
                 <div className="sidebar-content -recent y-gap-20">
                   <div className="sidebar-recent d-flex items-center">
                     <div className="sidebar-recent__image mr-15">
-                      <img src="assets/img/blog-list/1.png" alt="image" />
+                      <img src="/assets/img/blog-list/1.png" alt="image" />
                     </div>
 
                     <div className="sidebar-recent__content">
@@ -285,7 +285,7 @@ function BlogListContent2() {
 
                   <div className="sidebar-recent d-flex items-center">
                     <div className="sidebar-recent__image mr-15">
-                      <img src="assets/img/blog-list/2.png" alt="image" />
+                      <img src="/assets/img/blog-list/2.png" alt="image" />
                     </div>
 
                     <div className="sidebar-recent__content">
@@ -298,7 +298,7 @@ function BlogListContent2() {
 
                   <div className="sidebar-recent d-flex items-center">
                     <div className="sidebar-recent__image mr-15">
-                      <img src="assets/img/blog-list/3.png" alt="image" />
+                      <img src="/assets/img/blog-list/3.png" alt="image" />
                     </div>
 
                     <div className="sidebar-recent__content">

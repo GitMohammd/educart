@@ -23,7 +23,7 @@ function Footer2() {
 
           <div className="col-xl-4 col-lg-5 col-md-6">
             <div className="footer-header__logo">
-              <img src="assets/img/footer/footer-logo.svg" alt="logo" />
+              <img src="/assets/img/footer/footer-logo.svg" alt="logo" />
             </div>
 
             <div className="d-flex justify-between mt-30">

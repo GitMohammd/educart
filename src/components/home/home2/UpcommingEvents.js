@@ -46,7 +46,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-2" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/1.png" alt="image" />
+                  <img src="/assets/img/home-2/events/1.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">
@@ -83,7 +83,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-3" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/2.png" alt="image" />
+                  <img src="/assets/img/home-2/events/2.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">
@@ -120,7 +120,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-4" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/3.png" alt="image" />
+                  <img src="/assets/img/home-2/events/3.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">
@@ -157,7 +157,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-5" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/4.png" alt="image" />
+                  <img src="/assets/img/home-2/events/4.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">
@@ -194,7 +194,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-6" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/5.png" alt="image" />
+                  <img src="/assets/img/home-2/events/5.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">
@@ -231,7 +231,7 @@ function UpcommingEvents() {
             <div className="swiper-slide">
               <div data-anim="slide-left delay-7" className="eventCard -type-1">
                 <div className="eventCard__img">
-                  <img src="assets/img/home-2/events/6.png" alt="image" />
+                  <img src="/assets/img/home-2/events/6.png" alt="image" />
                 </div>
 
                 <div className="eventCard__bg bg-white">

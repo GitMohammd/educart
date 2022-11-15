@@ -22,7 +22,7 @@ function LearningSolutions() {
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-green-2">
                     <img
-                      src="assets/img/home-2/learning/icons/1.svg"
+                      src="/assets/img/home-2/learning/icons/1.svg"
                       alt="icon"
                     />
                   </div>
@@ -42,7 +42,7 @@ function LearningSolutions() {
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-purple-2">
                     <img
-                      src="assets/img/home-2/learning/icons/2.svg"
+                      src="/assets/img/home-2/learning/icons/2.svg"
                       alt="icon"
                     />
                   </div>
@@ -62,7 +62,7 @@ function LearningSolutions() {
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-orange-2">
                     <img
-                      src="assets/img/home-2/learning/icons/3.svg"
+                      src="/assets/img/home-2/learning/icons/3.svg"
                       alt="icon"
                     />
                   </div>
@@ -88,7 +88,7 @@ function LearningSolutions() {
                 <img
                   className="js-mouse-move"
                   data-move="40"
-                  src="assets/img/home-2/learning/1.png"
+                  src="/assets/img/home-2/learning/1.png"
                   alt="image"
                 />
               </div>
@@ -97,7 +97,7 @@ function LearningSolutions() {
                 <img
                   className="js-mouse-move"
                   data-move="70"
-                  src="assets/img/home-2/learning/2.png"
+                  src="/assets/img/home-2/learning/2.png"
                   alt="image"
                 />
               </div>
@@ -106,7 +106,7 @@ function LearningSolutions() {
                 data-move="60"
                 className="elements-image__el1 lg:d-none img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
               >
-                <img src="assets/img/masthead/4.png" alt="icon" />
+                <img src="/assets/img/masthead/4.png" alt="icon" />
                 <div className="ml-20">
                   <div className="text-dark-1 text-16 fw-500 lh-1">
                     Ali Tufan
@@ -137,7 +137,7 @@ function LearningSolutions() {
                 className="elements-image__el2 lg:d-none img-el -w-250 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
               >
                 <div className="size-50 d-flex justify-center items-center bg-red-2 rounded-full">
-                  <img src="assets/img/masthead/1.svg" alt="icon" />
+                  <img src="/assets/img/masthead/1.svg" alt="icon" />
                 </div>
                 <div className="ml-20">
                   <div className="text-orange-1 text-16 fw-500 lh-1">
@@ -153,7 +153,7 @@ function LearningSolutions() {
               >
                 <div className="img-el__side">
                   <div className="size-50 d-flex justify-center items-center bg-purple-1 rounded-full">
-                    <img src="assets/img/masthead/2.svg" alt="icon" />
+                    <img src="/assets/img/masthead/2.svg" alt="icon" />
                   </div>
                 </div>
                 <div className="">

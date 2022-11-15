@@ -548,7 +548,7 @@ function AddListingContent() {
                         <div className="relative shrink-0">
                           <img
                             className="w-1/1"
-                            src="assets/img/dashboard/media/1.png"
+                            src="/assets/img/dashboard/media/1.png"
                             alt="image"
                           />
 
@@ -597,7 +597,7 @@ function AddListingContent() {
                         <div className="relative shrink-0">
                           <img
                             className="w-1/1"
-                            src="assets/img/dashboard/media/2.png"
+                            src="/assets/img/dashboard/media/2.png"
                             alt="image"
                           />
 

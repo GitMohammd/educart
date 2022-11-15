@@ -47,7 +47,7 @@ function LearnWithEducrat() {
                       <div className="testimonials-footer">
                         <div className="testimonials-footer__image">
                           <img
-                            src="assets/img/testimonials/1.png"
+                            src="/assets/img/testimonials/1.png"
                             alt="image"
                           />
                         </div>
@@ -80,7 +80,7 @@ function LearnWithEducrat() {
                       <div className="testimonials-footer">
                         <div className="testimonials-footer__image">
                           <img
-                            src="assets/img/testimonials/2.png"
+                            src="/assets/img/testimonials/2.png"
                             alt="image"
                           />
                         </div>
@@ -113,7 +113,7 @@ function LearnWithEducrat() {
                       <div className="testimonials-footer">
                         <div className="testimonials-footer__image">
                           <img
-                            src="assets/img/testimonials/3.png"
+                            src="/assets/img/testimonials/3.png"
                             alt="image"
                           />
                         </div>

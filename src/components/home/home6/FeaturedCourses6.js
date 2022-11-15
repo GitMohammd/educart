@@ -71,7 +71,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/1.png"
+                      src="/assets/img/coursesCards/1.png"
                       alt="image"
                     />
                   </div>
@@ -79,7 +79,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -91,7 +91,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -103,7 +103,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -113,7 +113,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -126,7 +126,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -151,7 +151,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/2.png"
+                      src="/assets/img/coursesCards/2.png"
                       alt="image"
                     />
                   </div>
@@ -159,7 +159,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -171,7 +171,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -183,7 +183,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -193,7 +193,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -206,7 +206,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -231,7 +231,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/3.png"
+                      src="/assets/img/coursesCards/3.png"
                       alt="image"
                     />
                   </div>
@@ -239,7 +239,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -251,7 +251,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -263,7 +263,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -273,7 +273,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -286,7 +286,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -311,7 +311,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/4.png"
+                      src="/assets/img/coursesCards/4.png"
                       alt="image"
                     />
                   </div>
@@ -319,7 +319,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -331,7 +331,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -343,7 +343,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -353,7 +353,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -366,7 +366,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -391,7 +391,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/5.png"
+                      src="/assets/img/coursesCards/5.png"
                       alt="image"
                     />
                   </div>
@@ -399,7 +399,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -411,7 +411,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -423,7 +423,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -433,7 +433,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -446,7 +446,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -471,7 +471,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/6.png"
+                      src="/assets/img/coursesCards/6.png"
                       alt="image"
                     />
                   </div>
@@ -479,7 +479,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -491,7 +491,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -503,7 +503,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -513,7 +513,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -526,7 +526,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -555,7 +555,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/1.png"
+                      src="/assets/img/coursesCards/1.png"
                       alt="image"
                     />
                   </div>
@@ -563,7 +563,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -575,7 +575,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -587,7 +587,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -597,7 +597,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -610,7 +610,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -635,7 +635,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/2.png"
+                      src="/assets/img/coursesCards/2.png"
                       alt="image"
                     />
                   </div>
@@ -643,7 +643,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -655,7 +655,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -667,7 +667,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -677,7 +677,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -690,7 +690,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -715,7 +715,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/3.png"
+                      src="/assets/img/coursesCards/3.png"
                       alt="image"
                     />
                   </div>
@@ -723,7 +723,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -735,7 +735,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -747,7 +747,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -757,7 +757,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -770,7 +770,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -795,7 +795,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/4.png"
+                      src="/assets/img/coursesCards/4.png"
                       alt="image"
                     />
                   </div>
@@ -803,7 +803,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -815,7 +815,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -827,7 +827,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -837,7 +837,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -850,7 +850,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -875,7 +875,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/5.png"
+                      src="/assets/img/coursesCards/5.png"
                       alt="image"
                     />
                   </div>
@@ -883,7 +883,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -895,7 +895,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -907,7 +907,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -917,7 +917,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -930,7 +930,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -955,7 +955,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/6.png"
+                      src="/assets/img/coursesCards/6.png"
                       alt="image"
                     />
                   </div>
@@ -963,7 +963,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -975,7 +975,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -987,7 +987,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -997,7 +997,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1010,7 +1010,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1039,7 +1039,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/1.png"
+                      src="/assets/img/coursesCards/1.png"
                       alt="image"
                     />
                   </div>
@@ -1047,7 +1047,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1059,7 +1059,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1071,7 +1071,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1081,7 +1081,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1094,7 +1094,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1119,7 +1119,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/2.png"
+                      src="/assets/img/coursesCards/2.png"
                       alt="image"
                     />
                   </div>
@@ -1127,7 +1127,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1139,7 +1139,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1151,7 +1151,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1161,7 +1161,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1174,7 +1174,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1199,7 +1199,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/3.png"
+                      src="/assets/img/coursesCards/3.png"
                       alt="image"
                     />
                   </div>
@@ -1207,7 +1207,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1219,7 +1219,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1231,7 +1231,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1241,7 +1241,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1254,7 +1254,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1279,7 +1279,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/4.png"
+                      src="/assets/img/coursesCards/4.png"
                       alt="image"
                     />
                   </div>
@@ -1287,7 +1287,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1299,7 +1299,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1311,7 +1311,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1321,7 +1321,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1334,7 +1334,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1359,7 +1359,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/5.png"
+                      src="/assets/img/coursesCards/5.png"
                       alt="image"
                     />
                   </div>
@@ -1367,7 +1367,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1379,7 +1379,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1391,7 +1391,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1401,7 +1401,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1414,7 +1414,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1439,7 +1439,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/6.png"
+                      src="/assets/img/coursesCards/6.png"
                       alt="image"
                     />
                   </div>
@@ -1447,7 +1447,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1459,7 +1459,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1471,7 +1471,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1481,7 +1481,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1494,7 +1494,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1523,7 +1523,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/1.png"
+                      src="/assets/img/coursesCards/1.png"
                       alt="image"
                     />
                   </div>
@@ -1531,7 +1531,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1543,7 +1543,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1555,7 +1555,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1565,7 +1565,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1578,7 +1578,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1603,7 +1603,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/2.png"
+                      src="/assets/img/coursesCards/2.png"
                       alt="image"
                     />
                   </div>
@@ -1611,7 +1611,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1623,7 +1623,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1635,7 +1635,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1645,7 +1645,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1658,7 +1658,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1683,7 +1683,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/3.png"
+                      src="/assets/img/coursesCards/3.png"
                       alt="image"
                     />
                   </div>
@@ -1691,7 +1691,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1703,7 +1703,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1715,7 +1715,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1725,7 +1725,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1738,7 +1738,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1763,7 +1763,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/4.png"
+                      src="/assets/img/coursesCards/4.png"
                       alt="image"
                     />
                   </div>
@@ -1771,7 +1771,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1783,7 +1783,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1795,7 +1795,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1805,7 +1805,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1818,7 +1818,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1843,7 +1843,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/5.png"
+                      src="/assets/img/coursesCards/5.png"
                       alt="image"
                     />
                   </div>
@@ -1851,7 +1851,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1863,7 +1863,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1875,7 +1875,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1885,7 +1885,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1898,7 +1898,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>
@@ -1923,7 +1923,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__image max-w-250 rounded-8">
                     <img
                       className="w-1/1 rounded-8"
-                      src="assets/img/coursesCards/6.png"
+                      src="/assets/img/coursesCards/6.png"
                       alt="image"
                     />
                   </div>
@@ -1931,7 +1931,7 @@ function FeaturedCourses6() {
                   <div className="coursesCard__content pl-20 sm:pl-10 pr-10">
                     <div className="coursesCard__stars">
                       <img
-                        src="assets/img/coursesCards/icons/review.svg"
+                        src="/assets/img/coursesCards/icons/review.svg"
                         alt="review"
                       />
                     </div>
@@ -1943,7 +1943,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                         </div>
@@ -1955,7 +1955,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                         </div>
@@ -1965,7 +1965,7 @@ function FeaturedCourses6() {
                       <div className="d-flex items-center">
                         <div className="mr-10">
                           <img
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                         </div>
@@ -1978,7 +1978,7 @@ function FeaturedCourses6() {
                     <div className="d-flex justify-between items-center pt-10 border-top-light">
                       <div className="d-flex items-center">
                         <img
-                          src="assets/img/general/avatar-1.png"
+                          src="/assets/img/general/avatar-1.png"
                           alt="image"
                         />
                         <div className="text-light-1 ml-10">Ali Tufan</div>

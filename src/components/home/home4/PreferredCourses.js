@@ -59,12 +59,15 @@ function PreferredCourses() {
             <div className="masthead-image">
               <div className="masthead-image__img1">
                 <div className="masthead-image__shape xl:d-none">
-                  <img src="assets/img/home-4/masthead/shape.svg" alt="image" />
+                  <img
+                    src="/assets/img/home-4/masthead/shape.svg"
+                    alt="image"
+                  />
                 </div>
                 <img
                   data-move="20"
                   className="js-mouse-move"
-                  src="assets/img/home-4/masthead/1.png"
+                  src="/assets/img/home-4/masthead/1.png"
                   alt="image"
                 />
               </div>
@@ -75,7 +78,7 @@ function PreferredCourses() {
                   className="lg:d-none img-el -w-250 px-20 py-20 d-flex items-center bg-white rounded-8 js-mouse-move"
                 >
                   <div className="size-50 d-flex justify-center items-center bg-red-2 rounded-full">
-                    <img src="assets/img/masthead/1.svg" alt="icon" />
+                    <img src="/assets/img/masthead/1.svg" alt="icon" />
                   </div>
                   <div className="ml-20">
                     <div className="text-orange-1 text-16 fw-500 lh-1">
@@ -93,7 +96,7 @@ function PreferredCourses() {
                 >
                   <div className="img-el__side">
                     <div className="size-50 d-flex justify-center items-center bg-dark-1 rounded-full">
-                      <img src="assets/img/masthead/2.svg" alt="icon" />
+                      <img src="/assets/img/masthead/2.svg" alt="icon" />
                     </div>
                   </div>
                   <div className="">

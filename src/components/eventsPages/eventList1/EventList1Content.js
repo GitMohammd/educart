@@ -96,7 +96,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -133,7 +133,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -170,7 +170,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -207,7 +207,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -244,7 +244,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -281,7 +281,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -318,7 +318,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -355,7 +355,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -392,7 +392,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -457,7 +457,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -494,7 +494,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -531,7 +531,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -568,7 +568,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -605,7 +605,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -642,7 +642,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -679,7 +679,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -716,7 +716,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -753,7 +753,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -818,7 +818,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -855,7 +855,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -892,7 +892,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -929,7 +929,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -966,7 +966,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1003,7 +1003,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1040,7 +1040,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1077,7 +1077,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1114,7 +1114,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1179,7 +1179,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1216,7 +1216,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1253,7 +1253,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1290,7 +1290,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1327,7 +1327,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1364,7 +1364,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1401,7 +1401,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1438,7 +1438,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1475,7 +1475,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1540,7 +1540,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1577,7 +1577,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1614,7 +1614,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1651,7 +1651,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1688,7 +1688,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1725,7 +1725,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1762,7 +1762,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1799,7 +1799,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1836,7 +1836,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1901,7 +1901,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1938,7 +1938,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -1975,7 +1975,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2012,7 +2012,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2049,7 +2049,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2086,7 +2086,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2123,7 +2123,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2160,7 +2160,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2197,7 +2197,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2262,7 +2262,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2299,7 +2299,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2336,7 +2336,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2373,7 +2373,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2410,7 +2410,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2447,7 +2447,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2484,7 +2484,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2521,7 +2521,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2558,7 +2558,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2623,7 +2623,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/1.png" alt="image" />
+                      <img src="/assets/img/courses-list/1.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2660,7 +2660,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/2.png" alt="image" />
+                      <img src="/assets/img/courses-list/2.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2697,7 +2697,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/3.png" alt="image" />
+                      <img src="/assets/img/courses-list/3.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2734,7 +2734,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/4.png" alt="image" />
+                      <img src="/assets/img/courses-list/4.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2771,7 +2771,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/5.png" alt="image" />
+                      <img src="/assets/img/courses-list/5.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2808,7 +2808,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/6.png" alt="image" />
+                      <img src="/assets/img/courses-list/6.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2845,7 +2845,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/7.png" alt="image" />
+                      <img src="/assets/img/courses-list/7.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2882,7 +2882,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/8.png" alt="image" />
+                      <img src="/assets/img/courses-list/8.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">
@@ -2919,7 +2919,7 @@ function EventList1Content() {
                 <div className="col-lg-4 col-md-6">
                   <div className="eventCard -type-1">
                     <div className="eventCard__img">
-                      <img src="assets/img/courses-list/9.png" alt="image" />
+                      <img src="/assets/img/courses-list/9.png" alt="image" />
                     </div>
 
                     <div className="eventCard__bg bg-white">

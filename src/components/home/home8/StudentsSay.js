@@ -44,7 +44,7 @@ function StudentsSay() {
                       <div className="row x-gap-20 y-gap-20 items-center border-top-light pt-15">
                         <div className="col-auto">
                           <img
-                            src="assets/img/testimonials/1.png"
+                            src="/assets/img/testimonials/1.png"
                             alt="image"
                           />
                         </div>
@@ -80,7 +80,7 @@ function StudentsSay() {
                       <div className="row x-gap-20 y-gap-20 items-center border-top-light pt-15">
                         <div className="col-auto">
                           <img
-                            src="assets/img/testimonials/2.png"
+                            src="/assets/img/testimonials/2.png"
                             alt="image"
                           />
                         </div>
@@ -118,7 +118,7 @@ function StudentsSay() {
                       <div className="row x-gap-20 y-gap-20 items-center border-top-light pt-15">
                         <div className="col-auto">
                           <img
-                            src="assets/img/testimonials/3.png"
+                            src="/assets/img/testimonials/3.png"
                             alt="image"
                           />
                         </div>
@@ -160,7 +160,7 @@ function StudentsSay() {
               <div className="-el-1">
                 <img
                   className="w-1/1"
-                  src="assets/img/home-8/testimonials/1.png"
+                  src="/assets/img/home-8/testimonials/1.png"
                   alt="image"
                 />
               </div>

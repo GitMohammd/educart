@@ -23,7 +23,7 @@ function TrustedTeacher() {
 
                   <div className="y-gap-20 pt-25">
                     <div className="d-flex items-center">
-                      <img src="assets/img/home-6/trust/1.png" alt="image" />
+                      <img src="/assets/img/home-6/trust/1.png" alt="image" />
                       <div className="ml-20">
                         <div className="text-15 text-dark-1 lh-11 fw-500">
                           Marvin McKinney
@@ -33,7 +33,7 @@ function TrustedTeacher() {
                     </div>
 
                     <div className="d-flex items-center">
-                      <img src="assets/img/home-6/trust/2.png" alt="image" />
+                      <img src="/assets/img/home-6/trust/2.png" alt="image" />
                       <div className="ml-20">
                         <div className="text-15 text-dark-1 lh-11 fw-500">
                           Ralph Edwards
@@ -43,7 +43,7 @@ function TrustedTeacher() {
                     </div>
 
                     <div className="d-flex items-center">
-                      <img src="assets/img/home-6/trust/3.png" alt="image" />
+                      <img src="/assets/img/home-6/trust/3.png" alt="image" />
                       <div className="ml-20">
                         <div className="text-15 text-dark-1 lh-11 fw-500">
                           Annette Black
@@ -53,7 +53,7 @@ function TrustedTeacher() {
                     </div>
 
                     <div className="d-flex items-center">
-                      <img src="assets/img/home-6/trust/4.png" alt="image" />
+                      <img src="/assets/img/home-6/trust/4.png" alt="image" />
                       <div className="ml-20">
                         <div className="text-15 text-dark-1 lh-11 fw-500">
                           Jane Cooper
@@ -69,7 +69,7 @@ function TrustedTeacher() {
                 <div className="bg-white rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/home-6/trust/big.png"
+                    src="/assets/img/home-6/trust/big.png"
                     alt="image"
                   />
                   <div className="px-20 py-20">
@@ -88,7 +88,7 @@ function TrustedTeacher() {
                       <div className="d-flex items-center">
                         <img
                           className="shrink-0 mr-10"
-                          src="assets/img/team/icons/1.svg"
+                          src="/assets/img/team/icons/1.svg"
                           alt="icon"
                         />
                         <div className="text-13 lh-12">692 Students</div>
@@ -97,7 +97,7 @@ function TrustedTeacher() {
                       <div className="d-flex items-center">
                         <img
                           className="shrink-0 mr-10"
-                          src="assets/img/team/icons/2.svg"
+                          src="/assets/img/team/icons/2.svg"
                           alt="icon"
                         />
                         <div className="text-13 lh-12">15 Course</div>

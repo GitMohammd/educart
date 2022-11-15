@@ -14,7 +14,7 @@ function Navigation3() {
             <div className="header-left d-flex items-center">
               <div className="header__logo ">
                 <a data-barba href="index.html">
-                  <img src="assets/img/general/logo-dark.svg" alt="logo" />
+                  <img src="/assets/img/general/logo-dark.svg" alt="logo" />
                 </a>
               </div>
 
@@ -1419,7 +1419,7 @@ function Navigation3() {
                             <div className="row x-gap-10 y-gap-10">
                               <div className="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/1.png"
+                                  src="/assets/img/menus/cart/1.png"
                                   alt="image"
                                 />
                               </div>
@@ -1445,7 +1445,7 @@ function Navigation3() {
                           <div className="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>
@@ -1457,7 +1457,7 @@ function Navigation3() {
                             <div className="row x-gap-10 y-gap-10">
                               <div className="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/2.png"
+                                  src="/assets/img/menus/cart/2.png"
                                   alt="image"
                                 />
                               </div>
@@ -1483,7 +1483,7 @@ function Navigation3() {
                           <div className="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>

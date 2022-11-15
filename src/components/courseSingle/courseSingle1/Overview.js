@@ -1283,7 +1283,7 @@ function Overview() {
                   <div className="size-120">
                     <img
                       className="object-cover"
-                      src="assets/img/misc/verified/1.png"
+                      src="/assets/img/misc/verified/1.png"
                       alt="image"
                     />
                   </div>

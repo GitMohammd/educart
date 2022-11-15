@@ -143,7 +143,7 @@ function SettingsContent() {
                         <div className="col-auto">
                           <img
                             className="size-100"
-                            src="assets/img/dashboard/edit/1.png"
+                            src="/assets/img/dashboard/edit/1.png"
                             alt="image"
                           />
                         </div>

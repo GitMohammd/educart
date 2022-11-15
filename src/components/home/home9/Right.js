@@ -114,7 +114,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -137,7 +137,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -178,7 +178,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -201,7 +201,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -244,7 +244,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -267,7 +267,7 @@ function Right() {
                     >
                       <div className="col-auto">
                         <img
-                          src="assets/img/dashboard/right-sidebar/messages/1.png"
+                          src="/assets/img/dashboard/right-sidebar/messages/1.png"
                           alt="image"
                         />
                       </div>
@@ -296,7 +296,7 @@ function Right() {
             <div className="row x-gap-10 y-gap-10">
               <div className="col-auto">
                 <img
-                  src="assets/img/dashboard/right-sidebar/messages-2/1.png"
+                  src="/assets/img/dashboard/right-sidebar/messages-2/1.png"
                   alt="image"
                 />
               </div>
@@ -314,7 +314,7 @@ function Right() {
                   <div className="row x-gap-10 y-gap-10 items-center">
                     <div className="col-auto">
                       <img
-                        src="assets/img/dashboard/right-sidebar/messages-2/2.png"
+                        src="/assets/img/dashboard/right-sidebar/messages-2/2.png"
                         alt="image"
                       />
                     </div>
@@ -345,7 +345,7 @@ function Right() {
                     </div>
                     <div className="col-auto">
                       <img
-                        src="assets/img/dashboard/right-sidebar/messages-2/3.png"
+                        src="/assets/img/dashboard/right-sidebar/messages-2/3.png"
                         alt="image"
                       />
                     </div>
@@ -360,7 +360,7 @@ function Right() {
                   <div className="row x-gap-10 y-gap-10 items-center">
                     <div className="col-auto">
                       <img
-                        src="assets/img/dashboard/right-sidebar/messages-2/3.png"
+                        src="/assets/img/dashboard/right-sidebar/messages-2/3.png"
                         alt="image"
                       />
                     </div>
@@ -429,7 +429,7 @@ function Right() {
                   <div className="row x-gap-10 y-gap-10 items-center">
                     <div className="col-auto">
                       <img
-                        src="assets/img/dashboard/right-sidebar/contacts/1.png"
+                        src="/assets/img/dashboard/right-sidebar/contacts/1.png"
                         alt="image"
                       />
                     </div>
@@ -445,7 +445,7 @@ function Right() {
                   <div className="row x-gap-10 y-gap-10 items-center">
                     <div className="col-auto">
                       <img
-                        src="assets/img/dashboard/right-sidebar/contacts/1.png"
+                        src="/assets/img/dashboard/right-sidebar/contacts/1.png"
                         alt="image"
                       />
                     </div>

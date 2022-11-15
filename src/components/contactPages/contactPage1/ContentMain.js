@@ -15,7 +15,7 @@ function ContentMain() {
             <div className="y-gap-30 pt-60 lg:pt-40">
               <div className="d-flex items-center">
                 <div className="d-flex justify-center items-center size-60 rounded-full bg-light-7">
-                  <img src="assets/img/contact-1/1.svg" alt="icon" />
+                  <img src="/assets/img/contact-1/1.svg" alt="icon" />
                 </div>
                 <div className="ml-20">
                   328 Queensberry Street, North
@@ -25,14 +25,14 @@ function ContentMain() {
 
               <div className="d-flex items-center">
                 <div className="d-flex justify-center items-center size-60 rounded-full bg-light-7">
-                  <img src="assets/img/contact-1/2.svg" alt="icon" />
+                  <img src="/assets/img/contact-1/2.svg" alt="icon" />
                 </div>
                 <div className="ml-20">+(1) 123 456 7890</div>
               </div>
 
               <div className="d-flex items-center">
                 <div className="d-flex justify-center items-center size-60 rounded-full bg-light-7">
-                  <img src="assets/img/contact-1/3.svg" alt="icon" />
+                  <img src="/assets/img/contact-1/3.svg" alt="icon" />
                 </div>
                 <div className="ml-20">hi@educrat.com</div>
               </div>

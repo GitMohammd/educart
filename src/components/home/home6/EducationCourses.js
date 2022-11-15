@@ -4,7 +4,7 @@ function EducationCourses() {
   return (
     <section data-anim-wrap className="masthead -type-5">
       <div className="masthead__bg pr-60 md:pr-0">
-        <img src="assets/img/home-6/hero/bg.png" alt="image" />
+        <img src="/assets/img/home-6/hero/bg.png" alt="image" />
       </div>
 
       <div className="container">
@@ -53,7 +53,7 @@ function EducationCourses() {
                   <div className="d-flex items-center text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-6/hero/icons/1.svg"
+                        src="/assets/img/home-6/hero/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -67,7 +67,7 @@ function EducationCourses() {
                   <div className="d-flex items-center text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-6/hero/icons/2.svg"
+                        src="/assets/img/home-6/hero/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -81,7 +81,7 @@ function EducationCourses() {
                   <div className="d-flex items-center text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-6/hero/icons/3.svg"
+                        src="/assets/img/home-6/hero/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -100,7 +100,7 @@ function EducationCourses() {
                 <img
                   className="js-mouse-move"
                   data-move="40"
-                  src="assets/img/home-6/hero/2.png"
+                  src="/assets/img/home-6/hero/2.png"
                   alt="image"
                 />
               </div>
@@ -108,7 +108,7 @@ function EducationCourses() {
                 <img
                   className="js-mouse-move"
                   data-move="40"
-                  src="assets/img/home-6/hero/1.png"
+                  src="/assets/img/home-6/hero/1.png"
                   alt="image"
                 />
               </div>
@@ -116,7 +116,7 @@ function EducationCourses() {
                 <img
                   className="js-mouse-move"
                   data-move="40"
-                  src="assets/img/home-6/hero/3.png"
+                  src="/assets/img/home-6/hero/3.png"
                   alt="image"
                 />
               </div>
@@ -124,7 +124,7 @@ function EducationCourses() {
               <div data-move="30" className="-el-1 md:d-none js-mouse-move">
                 <div className="img-el -w-250 px-20 py-20 d-flex items-center bg-white rounded-8">
                   <div className="size-50 d-flex justify-center items-center bg-red-2 rounded-full">
-                    <img src="assets/img/masthead/1.svg" alt="icon" />
+                    <img src="/assets/img/masthead/1.svg" alt="icon" />
                   </div>
                   <div className="ml-20">
                     <div className="text-orange-1 text-16 fw-500 lh-1">
@@ -137,7 +137,7 @@ function EducationCourses() {
 
               <div data-move="60" className="-el-2 md:d-none js-mouse-move">
                 <div className="img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8">
-                  <img src="assets/img/masthead/4.png" alt="icon" />
+                  <img src="/assets/img/masthead/4.png" alt="icon" />
                   <div className="ml-20">
                     <div className="text-dark-1 text-16 fw-500 lh-1">
                       Ali Tufan
@@ -168,7 +168,7 @@ function EducationCourses() {
                 <div className="img-el px-40 py-20 shadow-4 d-flex items-center bg-white rounded-8">
                   <div className="img-el__side">
                     <div className="size-50 d-flex justify-center items-center bg-purple-1 rounded-full">
-                      <img src="assets/img/masthead/2.svg" alt="icon" />
+                      <img src="/assets/img/masthead/2.svg" alt="icon" />
                     </div>
                   </div>
                   <div className="">

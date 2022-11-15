@@ -12,7 +12,7 @@ function BlogList3Content() {
                   <div className="blogCard__image">
                     <img
                       className="rounded-8"
-                      src="assets/img/blog-list/big/1.png"
+                      src="/assets/img/blog-list/big/1.png"
                       alt="image"
                     />
                   </div>
@@ -54,7 +54,7 @@ function BlogList3Content() {
                   <div className="blogCard__image">
                     <img
                       className="rounded-8"
-                      src="assets/img/blog-list/big/2.png"
+                      src="/assets/img/blog-list/big/2.png"
                       alt="image"
                     />
                   </div>
@@ -96,7 +96,7 @@ function BlogList3Content() {
                   <div className="blogCard__image">
                     <img
                       className="rounded-8"
-                      src="assets/img/blog-list/big/3.png"
+                      src="/assets/img/blog-list/big/3.png"
                       alt="image"
                     />
                   </div>
@@ -138,7 +138,7 @@ function BlogList3Content() {
                   <div className="blogCard__image">
                     <img
                       className="rounded-8"
-                      src="assets/img/blog-list/big/4.png"
+                      src="/assets/img/blog-list/big/4.png"
                       alt="image"
                     />
                   </div>

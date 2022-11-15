@@ -31,7 +31,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/1.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/1.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">
                     Node Js
@@ -45,7 +45,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/2.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/2.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">HTML5</h5>
                 </div>
@@ -57,7 +57,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/3.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/3.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">
                     JQuery
@@ -71,7 +71,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/4.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/4.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">CSS</h5>
                 </div>
@@ -83,7 +83,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/5.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/5.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">
                     React Native
@@ -97,7 +97,7 @@ function Youlearn() {
                   className="infoCard -type-1"
                 >
                   <div className="infoCard__image">
-                    <img src="assets/img/home-3/learn/6.png" alt="image" />
+                    <img src="/assets/img/home-3/learn/6.png" alt="image" />
                   </div>
                   <h5 className="infoCard__title text-17 lh-15 mt-10">
                     Vue Js

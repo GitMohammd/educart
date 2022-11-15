@@ -26,7 +26,7 @@ function DreamJob() {
           <div className="col-lg-6 lg:order-1">
             <img
               className="w-1/1"
-              src="assets/img/home-4/dreamJob/1.png"
+              src="/assets/img/home-4/dreamJob/1.png"
               alt="image"
             />
           </div>

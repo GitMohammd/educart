@@ -95,7 +95,10 @@ function TopStudents() {
                 >
                   <div className="teamCard__content">
                     <div className="teamCard__img">
-                      <img src="assets/img/home-2/students/1.png" alt="image" />
+                      <img
+                        src="/assets/img/home-2/students/1.png"
+                        alt="image"
+                      />
                     </div>
 
                     <h4 className="teamCard__title text-17 lh-15 fw-500 mt-12">
@@ -151,7 +154,10 @@ function TopStudents() {
                 >
                   <div className="teamCard__content">
                     <div className="teamCard__img">
-                      <img src="assets/img/home-2/students/2.png" alt="image" />
+                      <img
+                        src="/assets/img/home-2/students/2.png"
+                        alt="image"
+                      />
                     </div>
 
                     <h4 className="teamCard__title text-17 lh-15 fw-500 mt-12">
@@ -207,7 +213,10 @@ function TopStudents() {
                 >
                   <div className="teamCard__content">
                     <div className="teamCard__img">
-                      <img src="assets/img/home-2/students/3.png" alt="image" />
+                      <img
+                        src="/assets/img/home-2/students/3.png"
+                        alt="image"
+                      />
                     </div>
 
                     <h4 className="teamCard__title text-17 lh-15 fw-500 mt-12">
@@ -263,7 +272,10 @@ function TopStudents() {
                 >
                   <div className="teamCard__content">
                     <div className="teamCard__img">
-                      <img src="assets/img/home-2/students/4.png" alt="image" />
+                      <img
+                        src="/assets/img/home-2/students/4.png"
+                        alt="image"
+                      />
                     </div>
 
                     <h4 className="teamCard__title text-17 lh-15 fw-500 mt-12">
@@ -319,7 +331,10 @@ function TopStudents() {
                 >
                   <div className="teamCard__content">
                     <div className="teamCard__img">
-                      <img src="assets/img/home-2/students/5.png" alt="image" />
+                      <img
+                        src="/assets/img/home-2/students/5.png"
+                        alt="image"
+                      />
                     </div>
 
                     <h4 className="teamCard__title text-17 lh-15 fw-500 mt-12">

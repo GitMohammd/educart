@@ -17,12 +17,12 @@ function Navigation10() {
                 <a data-barba href="index.html">
                   <img
                     class="-light-d-none"
-                    src="assets/img/general/logo.svg"
+                    src="/assets/img/general/logo.svg"
                     alt="logo"
                   />
                   <img
                     class="-dark-d-none"
-                    src="assets/img/general/logo-dark.svg"
+                    src="/assets/img/general/logo-dark.svg"
                     alt="logo"
                   />
                 </a>
@@ -78,7 +78,7 @@ function Navigation10() {
                             <div class="row x-gap-10 y-gap-10">
                               <div class="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/1.png"
+                                  src="/assets/img/menus/cart/1.png"
                                   alt="image"
                                 />
                               </div>
@@ -104,7 +104,7 @@ function Navigation10() {
                           <div class="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>
@@ -116,7 +116,7 @@ function Navigation10() {
                             <div class="row x-gap-10 y-gap-10">
                               <div class="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/2.png"
+                                  src="/assets/img/menus/cart/2.png"
                                   alt="image"
                                 />
                               </div>
@@ -142,7 +142,7 @@ function Navigation10() {
                           <div class="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>
@@ -203,7 +203,7 @@ function Navigation10() {
                           <div class="d-flex items-center ">
                             <div class="shrink-0">
                               <img
-                                src="assets/img/dashboard/actions/1.png"
+                                src="/assets/img/dashboard/actions/1.png"
                                 alt="image"
                               />
                             </div>
@@ -218,7 +218,7 @@ function Navigation10() {
                           <div class="d-flex items-center border-top-light -dark-border-top-light-5">
                             <div class="shrink-0">
                               <img
-                                src="assets/img/dashboard/actions/2.png"
+                                src="/assets/img/dashboard/actions/2.png"
                                 alt="image"
                               />
                             </div>
@@ -233,7 +233,7 @@ function Navigation10() {
                           <div class="d-flex items-center border-top-light -dark-border-top-light-5">
                             <div class="shrink-0">
                               <img
-                                src="assets/img/dashboard/actions/3.png"
+                                src="/assets/img/dashboard/actions/3.png"
                                 alt="image"
                               />
                             </div>
@@ -248,7 +248,7 @@ function Navigation10() {
                           <div class="d-flex items-center border-top-light -dark-border-top-light-5">
                             <div class="shrink-0">
                               <img
-                                src="assets/img/dashboard/actions/4.png"
+                                src="/assets/img/dashboard/actions/4.png"
                                 alt="image"
                               />
                             </div>
@@ -263,7 +263,7 @@ function Navigation10() {
                           <div class="d-flex items-center border-top-light -dark-border-top-light-5">
                             <div class="shrink-0">
                               <img
-                                src="assets/img/dashboard/actions/5.png"
+                                src="/assets/img/dashboard/actions/5.png"
                                 alt="image"
                               />
                             </div>
@@ -285,7 +285,7 @@ function Navigation10() {
                 <a href="#" data-el-toggle=".js-profile-toggle">
                   <img
                     class="size-50"
-                    src="assets/img/misc/user-profile.png"
+                    src="/assets/img/misc/user-profile.png"
                     alt="image"
                   />
                 </a>

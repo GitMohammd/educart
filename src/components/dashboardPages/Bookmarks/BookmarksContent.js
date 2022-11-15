@@ -114,7 +114,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/1.png"
+                                src="/assets/img/dashboard/bookmarks/1.png"
                                 alt="image"
                               />
                             </div>
@@ -149,7 +149,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -159,7 +159,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -169,7 +169,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -180,7 +180,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">
@@ -212,7 +212,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/2.png"
+                                src="/assets/img/dashboard/bookmarks/2.png"
                                 alt="image"
                               />
                             </div>
@@ -247,7 +247,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -257,7 +257,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -267,7 +267,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -278,7 +278,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">
@@ -310,7 +310,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/3.png"
+                                src="/assets/img/dashboard/bookmarks/3.png"
                                 alt="image"
                               />
                             </div>
@@ -345,7 +345,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -355,7 +355,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -365,7 +365,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -376,7 +376,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">
@@ -408,7 +408,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/4.png"
+                                src="/assets/img/dashboard/bookmarks/4.png"
                                 alt="image"
                               />
                             </div>
@@ -443,7 +443,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -453,7 +453,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -463,7 +463,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -474,7 +474,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">
@@ -506,7 +506,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/5.png"
+                                src="/assets/img/dashboard/bookmarks/5.png"
                                 alt="image"
                               />
                             </div>
@@ -541,7 +541,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -551,7 +551,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -561,7 +561,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -572,7 +572,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">
@@ -604,7 +604,7 @@ function BookmarksContent() {
                             <div className="shrink-0">
                               <img
                                 className="w-1/1"
-                                src="assets/img/dashboard/bookmarks/6.png"
+                                src="/assets/img/dashboard/bookmarks/6.png"
                                 alt="image"
                               />
                             </div>
@@ -639,7 +639,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/1.svg"
+                                    src="/assets/img/coursesCards/icons/1.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -649,7 +649,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/2.svg"
+                                    src="/assets/img/coursesCards/icons/2.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -659,7 +659,7 @@ function BookmarksContent() {
                               <div className="d-flex items-center">
                                 <div className="mr-10">
                                   <img
-                                    src="assets/img/coursesCards/icons/3.svg"
+                                    src="/assets/img/coursesCards/icons/3.svg"
                                     alt="icon"
                                   />
                                 </div>
@@ -670,7 +670,7 @@ function BookmarksContent() {
                             <div className="d-flex y-gap-10 justify-between items-center flex-wrap border-top-light pt-10 mt-10">
                               <div className="d-flex items-center">
                                 <img
-                                  src="assets/img/general/avatar-1.png"
+                                  src="/assets/img/general/avatar-1.png"
                                   alt="image"
                                 />
                                 <div className="text-14 lh-1 ml-10">

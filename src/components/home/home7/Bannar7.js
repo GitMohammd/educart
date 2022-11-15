@@ -4,9 +4,9 @@ function Bannar7() {
   return (
     <section data-anim-wrap className="masthead -type-6">
       <div className="masthead__bg">
-        <img src="assets/img/home-7/hero/1.svg" alt="blob" />
-        <img src="assets/img/home-7/hero/2.svg" alt="blob" />
-        <img src="assets/img/home-7/hero/bg.png" alt="background" />
+        <img src="/assets/img/home-7/hero/1.svg" alt="blob" />
+        <img src="/assets/img/home-7/hero/2.svg" alt="blob" />
+        <img src="/assets/img/home-7/hero/bg.png" alt="background" />
 
         <div
           className="absolute-full-center"
@@ -66,7 +66,7 @@ function Bannar7() {
               data-anim-child="slide-up delay-6"
               className="masthead__image relative"
             >
-              <img src="assets/img/home-7/hero/image.png" alt="image" />
+              <img src="/assets/img/home-7/hero/image.png" alt="image" />
               <div className="absolute-full-center d-flex justify-center items-center">
                 <a
                   href="#"

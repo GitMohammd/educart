@@ -35,7 +35,7 @@ function PeopleSay() {
                   <div className="col-md-auto">
                     <div className="testimonials__image">
                       <img
-                        src="assets/img/home-4/testimonials/1.png"
+                        src="/assets/img/home-4/testimonials/1.png"
                         alt="image"
                       />
                     </div>
@@ -79,7 +79,7 @@ function PeopleSay() {
                   <div className="col-md-auto">
                     <div className="testimonials__image">
                       <img
-                        src="assets/img/home-4/testimonials/2.png"
+                        src="/assets/img/home-4/testimonials/2.png"
                         alt="image"
                       />
                     </div>
@@ -123,7 +123,7 @@ function PeopleSay() {
                   <div className="col-md-auto">
                     <div className="testimonials__image">
                       <img
-                        src="assets/img/home-4/testimonials/3.png"
+                        src="/assets/img/home-4/testimonials/3.png"
                         alt="image"
                       />
                     </div>

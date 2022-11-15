@@ -6,7 +6,7 @@ function LessonPageV2Img() {
       <div className="relative pt-40">
         <img
           className="w-1/1"
-          src="assets/img/lesson-single/1.png"
+          src="/assets/img/lesson-single/1.png"
           alt="image"
         />
         <div className="absolute-full-center d-flex justify-center items-center">

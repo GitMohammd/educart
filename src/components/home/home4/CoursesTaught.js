@@ -8,7 +8,7 @@ function CoursesTaught() {
           <div className="col-lg-6">
             <img
               className="w-1/1"
-              src="assets/img/home-4/dreamJob/2.png"
+              src="/assets/img/home-4/dreamJob/2.png"
               alt="image"
             />
           </div>

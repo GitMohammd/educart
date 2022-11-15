@@ -1458,7 +1458,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/1.png"
+                        src="/assets/img/coursesCards/1.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1493,7 +1493,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -1504,7 +1504,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -1515,7 +1515,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -1526,7 +1526,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -1557,7 +1557,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/2.png"
+                        src="/assets/img/coursesCards/2.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1592,7 +1592,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -1603,7 +1603,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -1614,7 +1614,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -1625,7 +1625,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -1656,7 +1656,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/3.png"
+                        src="/assets/img/coursesCards/3.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1691,7 +1691,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -1702,7 +1702,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -1713,7 +1713,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -1724,7 +1724,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -1755,7 +1755,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/4.png"
+                        src="/assets/img/coursesCards/4.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1790,7 +1790,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -1801,7 +1801,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -1812,7 +1812,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -1823,7 +1823,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -1854,7 +1854,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/5.png"
+                        src="/assets/img/coursesCards/5.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1889,7 +1889,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -1900,7 +1900,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -1911,7 +1911,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -1922,7 +1922,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -1953,7 +1953,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/6.png"
+                        src="/assets/img/coursesCards/6.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1989,7 +1989,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -2000,7 +2000,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -2011,7 +2011,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -2022,7 +2022,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>
@@ -2053,7 +2053,7 @@ function CourseListMain6() {
                     <div className="coursesCard__image rounded-8 relative">
                       <img
                         className="w-1/1 rounded-8"
-                        src="assets/img/coursesCards/7.png"
+                        src="/assets/img/coursesCards/7.png"
                         alt="image"
                       />
                       <div className="coursesCard__image_overlay rounded-8"></div>
@@ -2088,7 +2088,7 @@ function CourseListMain6() {
                       <div className="col-auto">
                         <div className="d-flex items-center">
                           <img
-                            src="assets/img/general/avatar-1.png"
+                            src="/assets/img/general/avatar-1.png"
                             alt="image"
                           />
                           <div className="ml-10">Ali Tufan</div>
@@ -2099,7 +2099,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/1.svg"
+                            src="/assets/img/coursesCards/icons/1.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">6 lesson</div>
@@ -2110,7 +2110,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/2.svg"
+                            src="/assets/img/coursesCards/icons/2.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">3h 56m</div>
@@ -2121,7 +2121,7 @@ function CourseListMain6() {
                         <div className="d-flex items-center">
                           <img
                             className="mr-8"
-                            src="assets/img/coursesCards/icons/3.svg"
+                            src="/assets/img/coursesCards/icons/3.svg"
                             alt="icon"
                           />
                           <div className="text-14 lh-1">Beginner</div>

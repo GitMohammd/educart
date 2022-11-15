@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function PopulerCourses() {
   return (
@@ -20,13 +20,18 @@ function PopulerCourses() {
         <div className="tabs -pills pt-50 js-tabs">
           <div className="tabs__controls d-flex justify-center x-gap-10 js-tabs-controls">
             <div>
-              <button
-                className="tabs__button px-15 py-8 rounded-8 js-tabs-button is-active"
-                data-tab-target=".-tab-item-1"
-                type="button"
+              <NavLink
+                className={(navinfo) => (navinfo.isActive ? "is-active" : "")}
+                to="/home1/allCategories"
               >
-                <Link to={"/home1/allCategories"}>All Categories</Link>
-              </button>
+                <button
+                  className="tabs__button px-15 py-8 rounded-8 js-tabs-button"
+                  data-tab-target=".-tab-item-1"
+                  type="button"
+                >
+                  All Categories
+                </button>
+              </NavLink>
             </div>
 
             <div>
@@ -35,7 +40,12 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-2"
                 type="button"
               >
-                <Link to={"/home1/Animation"}>Animation</Link>
+                <NavLink
+                  className={(navinfo) => (navinfo.isActive ? "is-active" : "")}
+                  to="/home1/animation"
+                >
+                  Animation
+                </NavLink>
               </button>
             </div>
 
@@ -45,7 +55,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-3"
                 type="button"
               >
-                <Link to={"/home1/design"}>Design</Link>
+                <NavLink to="/home1/design">Design</NavLink>
               </button>
             </div>
 
@@ -55,7 +65,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-4"
                 type="button"
               >
-                <Link to={"/home1/illustration"}>Illustration</Link>
+                <NavLink to="/home1/illustration">Illustration</NavLink>
               </button>
             </div>
 
@@ -65,7 +75,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-5"
                 type="button"
               >
-                <Link to={"/home1/lifeStyle"}>Lifestyle</Link>
+                <NavLink to="/home1/lifeStyle">Lifestyle</NavLink>
               </button>
             </div>
 
@@ -75,7 +85,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-6"
                 type="button"
               >
-                <Link to={"/home1/photo"}>Photo &amp; Film</Link>
+                <NavLink to="/home1/photo">Photo &amp; Film</NavLink>
               </button>
             </div>
 
@@ -85,7 +95,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-7"
                 type="button"
               >
-                <Link to={"/home1/business"}>Business</Link>
+                <NavLink to="/home1/business">Business</NavLink>
               </button>
             </div>
 
@@ -95,7 +105,7 @@ function PopulerCourses() {
                 data-tab-target=".-tab-item-8"
                 type="button"
               >
-                <Link to={"/home1/writting"}>Writing</Link>
+                <NavLink to="/home1/writting">Writing</NavLink>
               </button>
             </div>
           </div>

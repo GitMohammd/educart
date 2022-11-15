@@ -23,7 +23,7 @@ function Footer7() {
 
           <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="footer-header__logo">
-              <img src="assets/img/general/logo-dark.svg" alt="logo" />
+              <img src="/assets/img/general/logo-dark.svg" alt="logo" />
             </div>
 
             <div class="d-flex justify-between mt-30">
@@ -99,10 +99,10 @@ function Footer7() {
               </div>
               <div class="d-flex mt-15">
                 <a href="#">
-                  <img src="assets/img/footer/apps-2/1.png" alt="image" />
+                  <img src="/assets/img/footer/apps-2/1.png" alt="image" />
                 </a>
                 <a href="#" class="ml-10">
-                  <img src="assets/img/footer/apps-2/2.png" alt="image" />
+                  <img src="/assets/img/footer/apps-2/2.png" alt="image" />
                 </a>
               </div>
             </div>

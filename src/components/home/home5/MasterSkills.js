@@ -50,7 +50,7 @@ function MasterSkills() {
 
           <div className="col-xl-6 col-lg-6">
             <div data-anim-child="slide-up delay-6" className="masthead__image">
-              <img src="assets/img/home-5/masthead/bg.svg" alt="image" />
+              <img src="/assets/img/home-5/masthead/bg.svg" alt="image" />
             </div>
           </div>
         </div>

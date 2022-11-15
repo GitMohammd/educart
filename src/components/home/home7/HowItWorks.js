@@ -27,7 +27,10 @@ function HowItWorks() {
               <div className="col-12">
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-light-7">
-                    <img src="assets/img/home-7/about/icons/1.svg" alt="icon" />
+                    <img
+                      src="/assets/img/home-7/about/icons/1.svg"
+                      alt="icon"
+                    />
                   </div>
                   <div className="featureIcon__content ml-30 md:ml-20">
                     <h4 className="text-17 fw-500">Create Account</h4>
@@ -43,7 +46,10 @@ function HowItWorks() {
               <div className="col-12">
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-light-7">
-                    <img src="assets/img/home-7/about/icons/2.svg" alt="icon" />
+                    <img
+                      src="/assets/img/home-7/about/icons/2.svg"
+                      alt="icon"
+                    />
                   </div>
                   <div className="featureIcon__content ml-30 md:ml-20">
                     <h4 className="text-17 fw-500">Select Courses</h4>
@@ -59,7 +65,10 @@ function HowItWorks() {
               <div className="col-12">
                 <div className="featureIcon -type-1">
                   <div className="featureIcon__icon bg-light-7">
-                    <img src="assets/img/home-7/about/icons/3.svg" alt="icon" />
+                    <img
+                      src="/assets/img/home-7/about/icons/3.svg"
+                      alt="icon"
+                    />
                   </div>
                   <div className="featureIcon__content ml-30 md:ml-20">
                     <h4 className="text-17 fw-500">Enjoy Your Courses</h4>
@@ -77,17 +86,17 @@ function HowItWorks() {
           <div className="col-lg-6 order-1 order-lg-2">
             <div className="composition -type-5">
               <div className="-el-1">
-                <img src="assets/img/home-7/about/1.png" alt="image" />
+                <img src="/assets/img/home-7/about/1.png" alt="image" />
               </div>
 
               <div className="-el-2">
-                <img src="assets/img/home-7/about/2.png" alt="image" />
+                <img src="/assets/img/home-7/about/2.png" alt="image" />
               </div>
 
               <div className="-el-3">
                 <div className="sm:d-none img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8 shadow-6">
                   <div className="size-50 d-flex justify-center items-center bg-red-2 rounded-full">
-                    <img src="assets/img/masthead/1.svg" alt="icon" />
+                    <img src="/assets/img/masthead/1.svg" alt="icon" />
                   </div>
                   <div className="ml-20">
                     <div className="text-orange-1 text-16 fw-500 lh-1">
@@ -102,7 +111,7 @@ function HowItWorks() {
                 <div className="img-el -w-260 px-30 py-20 d-flex items-center bg-white rounded-8 shadow-6">
                   <div className="img-el__side">
                     <div className="size-50 d-flex justify-center items-center bg-purple-1 rounded-full">
-                      <img src="assets/img/masthead/2.svg" alt="icon" />
+                      <img src="/assets/img/masthead/2.svg" alt="icon" />
                     </div>
                   </div>
                   <div className="">
@@ -116,7 +125,7 @@ function HowItWorks() {
 
               <div className="-el-5">
                 <div className="sm:d-none img-el -w-260 px-20 py-20 d-flex items-center bg-white rounded-8 shadow-6">
-                  <img src="assets/img/masthead/4.png" alt="icon" />
+                  <img src="/assets/img/masthead/4.png" alt="icon" />
                   <div className="ml-20">
                     <div className="text-dark-1 text-16 fw-500 lh-1">
                       Ali Tufan

@@ -15,17 +15,17 @@ function DownloadApp() {
               </p>
               <div className="app-content__buttons mt-30">
                 <a href="#">
-                  <img src="assets/img/app/buttons/1.svg" alt="button" />
+                  <img src="/assets/img/app/buttons/1.svg" alt="button" />
                 </a>
                 <a href="#">
-                  <img src="assets/img/app/buttons/2.svg" alt="button" />
+                  <img src="/assets/img/app/buttons/2.svg" alt="button" />
                 </a>
               </div>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <img src="assets/img/home-6/app/1.png" alt="image" />
+            <img src="/assets/img/home-6/app/1.png" alt="image" />
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ function WhatEducrat() {
           <div data-anim-child="slide-up" className="col-lg-6">
             <img
               className="w-1/1"
-              src="assets/img/home-8/what/1.png"
+              src="/assets/img/home-8/what/1.png"
               alt="image"
             />
           </div>
@@ -33,7 +33,7 @@ function WhatEducrat() {
             <div className="d-flex flex-column y-gap-30">
               <div data-anim-child="slide-up delay-2" className="d-flex">
                 <div className="d-flex justify-center items-center size-70 bg-orange-5 rounded-full">
-                  <img src="assets/img/home-8/what/icons/1.svg" alt="icon" />
+                  <img src="/assets/img/home-8/what/icons/1.svg" alt="icon" />
                 </div>
                 <div className="ml-20">
                   <h5 className="text-18 lh-11 text-dark-1 fw-500">
@@ -48,7 +48,7 @@ function WhatEducrat() {
 
               <div data-anim-child="slide-up delay-3" className="d-flex">
                 <div className="d-flex justify-center items-center size-70 bg-orange-5 rounded-full">
-                  <img src="assets/img/home-8/what/icons/2.svg" alt="icon" />
+                  <img src="/assets/img/home-8/what/icons/2.svg" alt="icon" />
                 </div>
                 <div className="ml-20">
                   <h5 className="text-18 lh-11 text-dark-1 fw-500">
@@ -63,7 +63,7 @@ function WhatEducrat() {
 
               <div data-anim-child="slide-up delay-4" className="d-flex">
                 <div className="d-flex justify-center items-center size-70 bg-orange-5 rounded-full">
-                  <img src="assets/img/home-8/what/icons/3.svg" alt="icon" />
+                  <img src="/assets/img/home-8/what/icons/3.svg" alt="icon" />
                 </div>
                 <div className="ml-20">
                   <h5 className="text-18 lh-11 text-dark-1 fw-500">

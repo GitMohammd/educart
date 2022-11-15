@@ -6,7 +6,7 @@ function InstructorToday() {
       <div data-anim-wrap className="container">
         <div className="row y-gap-50 justify-between items-center">
           <div className="col-lg-7 pr-60">
-            <img src="assets/img/become-ins/1.png" alt="image" />
+            <img src="/assets/img/become-ins/1.png" alt="image" />
           </div>
 
           <div className="col-lg-5">

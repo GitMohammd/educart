@@ -4,7 +4,7 @@ function PerosonalLearning() {
   return (
     <section className="layout-pt-lg layout-pb-lg bg-dark-2 relative">
       <div className="side-image pr-25 lg:d-none">
-        <img src="assets/imgimg/home-5/cta/img.png" alt="image" />
+        <img src="/assets/imgimg/home-5/cta/img.png" alt="image" />
       </div>
 
       <div data-anim-wrap className="container">

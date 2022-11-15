@@ -7,7 +7,7 @@ function Footer3() {
         <div className="row y-gap-30 pb-60">
           <div className="col-xl-3 col-lg-5 col-md-6">
             <div className="footer-header__logo">
-              <img src="assets/img/general/logo-dark.svg" alt="logo" />
+              <img src="/assets/img/general/logo-dark.svg" alt="logo" />
             </div>
 
             <div className="mt-30">

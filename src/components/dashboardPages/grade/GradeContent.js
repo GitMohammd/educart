@@ -370,7 +370,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -420,7 +420,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -470,7 +470,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -520,7 +520,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -570,7 +570,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -620,7 +620,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />
@@ -670,7 +670,7 @@ function GradeContent() {
                           </div>
 
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-40"
                           />

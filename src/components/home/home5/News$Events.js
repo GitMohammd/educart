@@ -33,7 +33,7 @@ function News$Events() {
               className="blogCard -type-1"
             >
               <div className="blogCard__image">
-                <img src="assets/img/blog/1.png" alt="image" />
+                <img src="/assets/img/blog/1.png" alt="image" />
               </div>
               <div className="blogCard__content">
                 <a href="#" className="blogCard__category">
@@ -53,7 +53,7 @@ function News$Events() {
               className="blogCard -type-1"
             >
               <div className="blogCard__image">
-                <img src="assets/img/blog/2.png" alt="image" />
+                <img src="/assets/img/blog/2.png" alt="image" />
               </div>
               <div className="blogCard__content">
                 <a href="#" className="blogCard__category">

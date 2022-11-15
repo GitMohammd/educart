@@ -86,7 +86,7 @@ function BestSeller2() {
                 <div className="relative">
                   <img
                     className="w-1/1"
-                    src="assets/img/misc/1.png"
+                    src="/assets/img/misc/1.png"
                     alt="image"
                   />
                   <div className="absolute-full-center d-flex justify-center items-center">

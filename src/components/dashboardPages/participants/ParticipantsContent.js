@@ -632,7 +632,7 @@ function ParticipantsContent() {
                         <div className="col-lg-5">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -658,7 +658,7 @@ function ParticipantsContent() {
                         <div className="col-lg-5">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -684,7 +684,7 @@ function ParticipantsContent() {
                         <div className="col-lg-5">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -710,7 +710,7 @@ function ParticipantsContent() {
                         <div className="col-lg-5">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -736,7 +736,7 @@ function ParticipantsContent() {
                         <div className="col-lg-5">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />

@@ -7,7 +7,7 @@ function LearnForm() {
         <div className="row y-gap-20 justify-between items-center">
           <div className="col-xl-6 col-lg-7">
             <div data-anim-child="slide-up delay-1" className="app-image">
-              <img src="assets/img/home-5/apps/img.png" alt="image" />
+              <img src="/assets/img/home-5/apps/img.png" alt="image" />
             </div>
           </div>
 
@@ -32,10 +32,10 @@ function LearnForm() {
                 className="app-content__buttons"
               >
                 <a href="#">
-                  <img src="assets/img/app/buttons/1.svg" alt="button" />
+                  <img src="/assets/img/app/buttons/1.svg" alt="button" />
                 </a>
                 <a href="#">
-                  <img src="assets/img/app/buttons/2.svg" alt="button" />
+                  <img src="/assets/img/app/buttons/2.svg" alt="button" />
                 </a>
               </div>
             </div>

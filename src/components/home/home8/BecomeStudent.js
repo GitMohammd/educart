@@ -21,7 +21,7 @@ function BecomeStudent() {
           <div className="col-xl-5 offset-xl-1 col-lg-6 order-lg-2 order-1">
             <img
               className="w-1/1"
-              src="assets/img/home-8/features/2.png"
+              src="/assets/img/home-8/features/2.png"
               alt="image"
             />
           </div>

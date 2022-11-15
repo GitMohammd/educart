@@ -10,7 +10,7 @@ function CoursesTought7() {
               <div className="-el-1">
                 <img
                   className="w-1/1"
-                  src="assets/img/home-7/courses/1.png"
+                  src="/assets/img/home-7/courses/1.png"
                   alt="image"
                 />
               </div>

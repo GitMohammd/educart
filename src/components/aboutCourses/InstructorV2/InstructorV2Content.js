@@ -410,7 +410,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/1.png" alt="image" />
+                    <img src="/assets/img/team/1.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Floyd Miles</h4>
@@ -418,21 +418,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>
@@ -447,7 +447,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/2.png" alt="image" />
+                    <img src="/assets/img/team/2.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Cameron Williamson</h4>
@@ -455,21 +455,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>
@@ -484,7 +484,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/3.png" alt="image" />
+                    <img src="/assets/img/team/3.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Brooklyn Simmons</h4>
@@ -492,21 +492,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>
@@ -521,7 +521,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/4.png" alt="image" />
+                    <img src="/assets/img/team/4.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Wade Warren</h4>
@@ -529,21 +529,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>
@@ -558,7 +558,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/5.png" alt="image" />
+                    <img src="/assets/img/team/5.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Bessie Cooper</h4>
@@ -566,21 +566,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>
@@ -595,7 +595,7 @@ function InstructorV2Content() {
                   className="teamCard -type-1 px-10 py-10 rounded-8 border-light"
                 >
                   <div className="teamCard__image">
-                    <img src="assets/img/team/6.png" alt="image" />
+                    <img src="/assets/img/team/6.png" alt="image" />
                   </div>
                   <div className="teamCard__content mt-10 px-10">
                     <h4 className="teamCard__title">Albert Flores</h4>
@@ -603,21 +603,21 @@ function InstructorV2Content() {
                     <div className="teamCard-info">
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/1.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/1.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">4.5</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/2.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/2.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">692 Students</div>
                       </div>
 
                       <div className="teamCard-info__item">
                         <div className="teamCard-info__icon">
-                          <img src="assets/img/team/icons/3.svg" alt="icon" />
+                          <img src="/assets/img/team/icons/3.svg" alt="icon" />
                         </div>
                         <div className="teamCard-info__title">15 Course</div>
                       </div>

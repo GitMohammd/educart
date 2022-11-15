@@ -46,7 +46,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/1.png"
+                    src="/assets/img/team/1.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -80,7 +80,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -89,7 +89,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -107,7 +107,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/2.png"
+                    src="/assets/img/team/2.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -141,7 +141,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -150,7 +150,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -168,7 +168,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/3.png"
+                    src="/assets/img/team/3.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -202,7 +202,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -211,7 +211,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -229,7 +229,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/4.png"
+                    src="/assets/img/team/4.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -263,7 +263,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -272,7 +272,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -290,7 +290,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/5.png"
+                    src="/assets/img/team/5.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -324,7 +324,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -333,7 +333,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -351,7 +351,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/6.png"
+                    src="/assets/img/team/6.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -385,7 +385,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -394,7 +394,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>
@@ -412,7 +412,7 @@ function PopulerInstructorList6() {
                 <div class="teamCard__image size-180 mx-auto">
                   <img
                     class="fit-cover size-180 rounded-full"
-                    src="assets/img/team/7.png"
+                    src="/assets/img/team/7.png"
                     alt="image"
                   />
                   <div class="teamCard__socials rounded-full">
@@ -446,7 +446,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/1.svg"
+                        src="/assets/img/team/icons/1.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">692 Students</div>
@@ -455,7 +455,7 @@ function PopulerInstructorList6() {
                     <div class="d-flex items-center">
                       <img
                         class="mr-8"
-                        src="assets/img/team/icons/2.svg"
+                        src="/assets/img/team/icons/2.svg"
                         alt="icon"
                       />
                       <div class="text-13 lh-12">15 Course</div>

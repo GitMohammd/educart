@@ -161,7 +161,7 @@ function ForumsContent() {
                         <div className="col-lg-3">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -179,7 +179,7 @@ function ForumsContent() {
                         <div className="col-lg-3">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -224,7 +224,7 @@ function ForumsContent() {
                         <div className="col-lg-3">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -242,7 +242,7 @@ function ForumsContent() {
                         <div className="col-lg-3">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/misc/2.png"
+                              src="/assets/img/misc/2.png"
                               alt="image"
                               className="size-40 fit-cover"
                             />
@@ -433,7 +433,7 @@ function ForumsContent() {
                     <div className="md:direction-column">
                       <div className="d-flex ">
                         <div className="mr-20">
-                          <img src="assets/img/avatars/1.png" alt="image" />
+                          <img src="/assets/img/avatars/1.png" alt="image" />
                         </div>
 
                         <div className="comments__body md:mt-15">
@@ -483,7 +483,7 @@ function ForumsContent() {
                     <div className="md:direction-column">
                       <div className="d-flex border-top-light pt-30">
                         <div className="mr-20">
-                          <img src="assets/img/avatars/1.png" alt="image" />
+                          <img src="/assets/img/avatars/1.png" alt="image" />
                         </div>
 
                         <div className="comments__body md:mt-15">
@@ -533,7 +533,7 @@ function ForumsContent() {
                     <div className="md:direction-column">
                       <div className="d-flex border-top-light pt-30">
                         <div className="mr-20">
-                          <img src="assets/img/avatars/1.png" alt="image" />
+                          <img src="/assets/img/avatars/1.png" alt="image" />
                         </div>
 
                         <div className="comments__body md:mt-15">

@@ -27,7 +27,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/1.png" alt="image" />
+                <img src="/assets/img/home-3/category/1.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -44,7 +44,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/2.png" alt="image" />
+                <img src="/assets/img/home-3/category/2.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -61,7 +61,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/3.png" alt="image" />
+                <img src="/assets/img/home-3/category/3.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -78,7 +78,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/4.png" alt="image" />
+                <img src="/assets/img/home-3/category/4.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -95,7 +95,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/5.png" alt="image" />
+                <img src="/assets/img/home-3/category/5.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -112,7 +112,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/6.png" alt="image" />
+                <img src="/assets/img/home-3/category/6.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -129,7 +129,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/7.png" alt="image" />
+                <img src="/assets/img/home-3/category/7.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">
@@ -146,7 +146,7 @@ function TopCatagories3() {
           <div className="col-xl-3 col-lg-4 col-sm-6">
             <div className="categoryCard -type-2">
               <div className="categoryCard__image mr-20">
-                <img src="assets/img/home-3/category/8.png" alt="image" />
+                <img src="/assets/img/home-3/category/8.png" alt="image" />
               </div>
 
               <div className="categoryCard__content">

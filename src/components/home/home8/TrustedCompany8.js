@@ -18,7 +18,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/1.svg"
+                src="/assets/img/clients/1.svg"
                 alt="clients image"
               />
             </div>
@@ -31,7 +31,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/2.svg"
+                src="/assets/img/clients/2.svg"
                 alt="clients image"
               />
             </div>
@@ -44,7 +44,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/3.svg"
+                src="/assets/img/clients/3.svg"
                 alt="clients image"
               />
             </div>
@@ -57,7 +57,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/4.svg"
+                src="/assets/img/clients/4.svg"
                 alt="clients image"
               />
             </div>
@@ -70,7 +70,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/5.svg"
+                src="/assets/img/clients/5.svg"
                 alt="clients image"
               />
             </div>
@@ -83,7 +83,7 @@ function TrustedCompany8() {
             <div className="d-flex justify-center items-center px-4">
               <img
                 className="w-1/1"
-                src="assets/img/clients/6.svg"
+                src="/assets/img/clients/6.svg"
                 alt="clients image"
               />
             </div>

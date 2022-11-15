@@ -6,7 +6,7 @@ function Subscribe() {
       <div className="section-bg__item">
         <img
           className="assets/img-full rounded-16"
-          src="assets/img/home-3/cta/bg.png"
+          src="/assets/img/home-3/cta/bg.png"
           alt="image"
         />
       </div>

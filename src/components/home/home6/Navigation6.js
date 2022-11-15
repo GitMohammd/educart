@@ -14,7 +14,7 @@ function Navigation6() {
             <div className="header-left d-flex items-center">
               <div className="header__logo pr-30 xl:pr-20 md:pr-0">
                 <a data-barba href="index.html">
-                  <img src="assets/img/general/logo-black.svg" alt="logo" />
+                  <img src="/assets/img/general/logo-black.svg" alt="logo" />
                 </a>
               </div>
 
@@ -1054,7 +1054,7 @@ function Navigation6() {
                             className="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
                             data-el-toggle=".js-search-toggle"
                           >
-                            <img src="assets/img/menus/close.svg" alt="icon" />
+                            <img src="/assets/img/menus/close.svg" alt="icon" />
                           </button>
                         </div>
 
@@ -1118,7 +1118,7 @@ function Navigation6() {
                             <div className="row x-gap-10 y-gap-10">
                               <div className="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/1.png"
+                                  src="/assets/img/menus/cart/1.png"
                                   alt="image"
                                 />
                               </div>
@@ -1144,7 +1144,7 @@ function Navigation6() {
                           <div className="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>
@@ -1156,7 +1156,7 @@ function Navigation6() {
                             <div className="row x-gap-10 y-gap-10">
                               <div className="col-auto">
                                 <img
-                                  src="assets/img/menus/cart/2.png"
+                                  src="/assets/img/menus/cart/2.png"
                                   alt="image"
                                 />
                               </div>
@@ -1182,7 +1182,7 @@ function Navigation6() {
                           <div className="col-auto">
                             <button>
                               <img
-                                src="assets/img/menus/close.svg"
+                                src="/assets/img/menus/close.svg"
                                 alt="icon"
                               />
                             </button>

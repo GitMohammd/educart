@@ -38,7 +38,7 @@ function UpcommigEvent7() {
               <div className="blogCard__image ratio ratio-3:2">
                 <img
                   className="img-ratio"
-                  src="assets/img/home-3/blog/1.png"
+                  src="/assets/img/home-3/blog/1.png"
                   alt="image"
                 />
               </div>
@@ -72,7 +72,7 @@ function UpcommigEvent7() {
               <div className="blogCard__image ratio ratio-3:2">
                 <img
                   className="img-ratio"
-                  src="assets/img/home-3/blog/2.png"
+                  src="/assets/img/home-3/blog/2.png"
                   alt="image"
                 />
               </div>
@@ -106,7 +106,7 @@ function UpcommigEvent7() {
               <div className="blogCard__image ratio ratio-3:2">
                 <img
                   className="img-ratio"
-                  src="assets/img/home-3/blog/3.png"
+                  src="/assets/img/home-3/blog/3.png"
                   alt="image"
                 />
               </div>
@@ -140,7 +140,7 @@ function UpcommigEvent7() {
               <div className="blogCard__image ratio ratio-3:2">
                 <img
                   className="img-ratio"
-                  src="assets/img/home-3/blog/4.png"
+                  src="/assets/img/home-3/blog/4.png"
                   alt="image"
                 />
               </div>

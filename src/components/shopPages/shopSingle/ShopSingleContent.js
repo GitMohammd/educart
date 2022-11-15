@@ -19,7 +19,7 @@ function ShopSingleContent() {
                       <div className="ratio ratio-63:57">
                         <img
                           className="absolute-full-center rounded-8"
-                          src="assets/img/shop/single/1.png"
+                          src="/assets/img/shop/single/1.png"
                           alt="project image"
                         />
                       </div>
@@ -40,7 +40,7 @@ function ShopSingleContent() {
                       <div className="ratio ratio-63:57">
                         <img
                           className="absolute-full-center rounded-8"
-                          src="assets/img/shop/single/2.png"
+                          src="/assets/img/shop/single/2.png"
                           alt="project image"
                         />
                       </div>
@@ -61,7 +61,7 @@ function ShopSingleContent() {
                       <div className="ratio ratio-63:57">
                         <img
                           className="absolute-full-center rounded-8"
-                          src="assets/img/shop/single/3.png"
+                          src="/assets/img/shop/single/3.png"
                           alt="project image"
                         />
                       </div>
@@ -82,7 +82,7 @@ function ShopSingleContent() {
                       <div className="ratio ratio-63:57">
                         <img
                           className="absolute-full-center rounded-8"
-                          src="assets/img/shop/single/4.png"
+                          src="/assets/img/shop/single/4.png"
                           alt="project image"
                         />
                       </div>
@@ -99,7 +99,7 @@ function ShopSingleContent() {
                 <div data-cursor className="col-auto gallery__item">
                   <img
                     className="size-90 object-cover rounded-8"
-                    src="assets/img/shop/single/1.png"
+                    src="/assets/img/shop/single/1.png"
                     alt="project image"
                   />
                 </div>
@@ -107,7 +107,7 @@ function ShopSingleContent() {
                 <div data-cursor className="col-auto gallery__item">
                   <img
                     className="size-90 object-cover rounded-8"
-                    src="assets/img/shop/single/2.png"
+                    src="/assets/img/shop/single/2.png"
                     alt="project image"
                   />
                 </div>
@@ -115,7 +115,7 @@ function ShopSingleContent() {
                 <div data-cursor className="col-auto gallery__item">
                   <img
                     className="size-90 object-cover rounded-8"
-                    src="assets/img/shop/single/3.png"
+                    src="/assets/img/shop/single/3.png"
                     alt="project image"
                   />
                 </div>
@@ -123,7 +123,7 @@ function ShopSingleContent() {
                 <div data-cursor className="col-auto gallery__item">
                   <img
                     className="size-90 object-cover rounded-8"
-                    src="assets/img/shop/single/4.png"
+                    src="/assets/img/shop/single/4.png"
                     alt="project image"
                   />
                 </div>

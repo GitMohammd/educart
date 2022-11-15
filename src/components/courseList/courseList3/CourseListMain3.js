@@ -631,7 +631,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/1.png"
+                    src="/assets/img/coursesCards/1.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -660,7 +660,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -670,7 +670,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -680,7 +680,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -690,7 +690,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -709,7 +709,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/2.png"
+                    src="/assets/img/coursesCards/2.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -754,7 +754,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -764,7 +764,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -774,7 +774,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -784,7 +784,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -803,7 +803,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/3.png"
+                    src="/assets/img/coursesCards/3.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -832,7 +832,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -842,7 +842,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -852,7 +852,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -862,7 +862,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -881,7 +881,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/4.png"
+                    src="/assets/img/coursesCards/4.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -910,7 +910,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -920,7 +920,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -930,7 +930,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -940,7 +940,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -959,7 +959,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/5.png"
+                    src="/assets/img/coursesCards/5.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -988,7 +988,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -998,7 +998,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1008,7 +1008,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1018,7 +1018,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1037,7 +1037,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/6.png"
+                    src="/assets/img/coursesCards/6.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1066,7 +1066,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1076,7 +1076,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1086,7 +1086,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1096,7 +1096,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1115,7 +1115,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/7.png"
+                    src="/assets/img/coursesCards/7.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1144,7 +1144,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1154,7 +1154,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1164,7 +1164,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1174,7 +1174,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1193,7 +1193,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/8.png"
+                    src="/assets/img/coursesCards/8.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1222,7 +1222,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1232,7 +1232,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1242,7 +1242,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1252,7 +1252,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1271,7 +1271,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/9.png"
+                    src="/assets/img/coursesCards/9.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1300,7 +1300,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1310,7 +1310,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1320,7 +1320,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1330,7 +1330,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1349,7 +1349,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/10.png"
+                    src="/assets/img/coursesCards/10.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1378,7 +1378,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1388,7 +1388,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1398,7 +1398,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1408,7 +1408,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1427,7 +1427,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/11.png"
+                    src="/assets/img/coursesCards/11.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1456,7 +1456,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1466,7 +1466,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1476,7 +1476,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1486,7 +1486,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 
@@ -1505,7 +1505,7 @@ function CourseListMain3() {
                 <div className="coursesCard__image overflow-hidden rounded-8">
                   <img
                     className="w-1/1"
-                    src="assets/img/coursesCards/12.png"
+                    src="/assets/img/coursesCards/12.png"
                     alt="image"
                   />
                   <div className="coursesCard__image_overlay rounded-8"></div>
@@ -1534,7 +1534,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/1.svg"
+                        src="/assets/img/coursesCards/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -1544,7 +1544,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/2.svg"
+                        src="/assets/img/coursesCards/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -1554,7 +1554,7 @@ function CourseListMain3() {
                   <div className="d-flex items-center">
                     <div className="mr-8">
                       <img
-                        src="assets/img/coursesCards/icons/3.svg"
+                        src="/assets/img/coursesCards/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -1564,7 +1564,7 @@ function CourseListMain3() {
 
                 <div className="coursesCard-footer">
                   <div className="coursesCard-footer__author">
-                    <img src="assets/img/general/avatar-1.png" alt="image" />
+                    <img src="/assets/img/general/avatar-1.png" alt="image" />
                     <div>Ali Tufan</div>
                   </div>
 

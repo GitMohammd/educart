@@ -53,7 +53,7 @@ function Bannar8() {
                   <div className="text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-8/hero/icons/1.svg"
+                        src="/assets/img/home-8/hero/icons/1.svg"
                         alt="icon"
                       />
                     </div>
@@ -68,7 +68,7 @@ function Bannar8() {
                   <div className="text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-8/hero/icons/2.svg"
+                        src="/assets/img/home-8/hero/icons/2.svg"
                         alt="icon"
                       />
                     </div>
@@ -83,7 +83,7 @@ function Bannar8() {
                   <div className="text-dark-1">
                     <div className="mr-10">
                       <img
-                        src="assets/img/home-8/hero/icons/3.svg"
+                        src="/assets/img/home-8/hero/icons/3.svg"
                         alt="icon"
                       />
                     </div>
@@ -99,7 +99,7 @@ function Bannar8() {
 
           <div className="col-lg-6">
             <div data-anim-child="slide-up delay-6" className="masthead__image">
-              <img src="assets/img/home-8/hero/image.png" alt="imege" />
+              <img src="/assets/img/home-8/hero/image.png" alt="imege" />
             </div>
           </div>
         </div>

@@ -65,7 +65,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/1.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/1.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Design <br /> Creative
@@ -83,7 +83,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/2.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/2.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Sales <br /> Marketing
@@ -101,7 +101,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/3.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/3.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Development <br /> IT
@@ -119,7 +119,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/4.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/4.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Engineering <br /> Architecture
@@ -137,7 +137,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/5.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/5.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Personal <br /> Development
@@ -155,7 +155,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/6.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/6.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Finance <br /> Accounting
@@ -173,7 +173,7 @@ function TopCotegories() {
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
-                      <img src="assets/img/featureCards/6.svg" alt="icon" />
+                      <img src="/assets/img/featureCards/6.svg" alt="icon" />
                     </div>
                     <div className="featureCard__title">
                       Finance <br /> Accounting

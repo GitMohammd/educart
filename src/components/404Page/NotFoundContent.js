@@ -7,7 +7,7 @@ function NotFoundContent() {
         <div className="row y-gap-50 justify-between items-center">
           <div className="col-lg-6">
             <div className="no-page__img">
-              <img src="assets/img/404/1.svg" alt="image" />
+              <img src="/assets/img/404/1.svg" alt="image" />
             </div>
           </div>
 

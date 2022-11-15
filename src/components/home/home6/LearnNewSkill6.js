@@ -77,7 +77,7 @@ function LearnNewSkill6() {
               <div className="-el-2">
                 <img
                   className="w-1/1"
-                  src="assets/img/home-6/learn/1.png"
+                  src="/assets/img/home-6/learn/1.png"
                   alt="image"
                 />
               </div>

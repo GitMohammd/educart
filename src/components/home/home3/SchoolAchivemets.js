@@ -22,7 +22,7 @@ function SchoolAchivemets() {
           <div className="col-lg-3 col-md-6">
             <div className="infoCard -type-2 text-center py-40 -infoCard-hover">
               <div className="infoCard__image">
-                <img src="assets/img/home-3/achieve/1.svg" alt="image" />
+                <img src="/assets/img/home-3/achieve/1.svg" alt="image" />
               </div>
               <h5 className="infoCard__title text-24 lh-1 mt-25">350,000+</h5>
               <p className="infoCard__text mt-5">Students worldwide</p>
@@ -32,7 +32,7 @@ function SchoolAchivemets() {
           <div className="col-lg-3 col-md-6">
             <div className="infoCard -type-2 text-center py-40 -infoCard-hover">
               <div className="infoCard__image">
-                <img src="assets/img/home-3/achieve/2.svg" alt="image" />
+                <img src="/assets/img/home-3/achieve/2.svg" alt="image" />
               </div>
               <h5 className="infoCard__title text-24 lh-1 mt-25">496,00+</h5>
               <p className="infoCard__text mt-5">Total course views</p>
@@ -42,7 +42,7 @@ function SchoolAchivemets() {
           <div className="col-lg-3 col-md-6">
             <div className="infoCard -type-2 text-center py-40 -infoCard-hover">
               <div className="infoCard__image">
-                <img src="assets/img/home-3/achieve/3.svg" alt="image" />
+                <img src="/assets/img/home-3/achieve/3.svg" alt="image" />
               </div>
               <h5 className="infoCard__title text-24 lh-1 mt-25">19,000+</h5>
               <p className="infoCard__text mt-5">Five-star course reviews</p>
@@ -52,7 +52,7 @@ function SchoolAchivemets() {
           <div className="col-lg-3 col-md-6">
             <div className="infoCard -type-2 text-center py-40 -infoCard-hover">
               <div className="infoCard__image">
-                <img src="assets/img/home-3/achieve/4.svg" alt="image" />
+                <img src="/assets/img/home-3/achieve/4.svg" alt="image" />
               </div>
               <h5 className="infoCard__title text-24 lh-1 mt-25">987,000+</h5>
               <p className="infoCard__text mt-5">Students community</p>

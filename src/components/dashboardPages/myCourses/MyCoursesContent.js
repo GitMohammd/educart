@@ -263,7 +263,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/1.png"
+                                src="/assets/img/coursesCards/1.png"
                                 alt="image"
                               />
 
@@ -340,7 +340,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/2.png"
+                                src="/assets/img/coursesCards/2.png"
                                 alt="image"
                               />
 
@@ -417,7 +417,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/3.png"
+                                src="/assets/img/coursesCards/3.png"
                                 alt="image"
                               />
 
@@ -494,7 +494,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/4.png"
+                                src="/assets/img/coursesCards/4.png"
                                 alt="image"
                               />
 
@@ -571,7 +571,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/5.png"
+                                src="/assets/img/coursesCards/5.png"
                                 alt="image"
                               />
 
@@ -648,7 +648,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/6.png"
+                                src="/assets/img/coursesCards/6.png"
                                 alt="image"
                               />
 
@@ -725,7 +725,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/7.png"
+                                src="/assets/img/coursesCards/7.png"
                                 alt="image"
                               />
 
@@ -802,7 +802,7 @@ function MyCoursesContent() {
                             <div className="relative">
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/8.png"
+                                src="/assets/img/coursesCards/8.png"
                                 alt="image"
                               />
 

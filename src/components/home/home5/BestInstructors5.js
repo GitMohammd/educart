@@ -38,7 +38,7 @@ function BestInstructors5() {
               className="teamCard -type-1 -teamCard-hover"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/1.png" alt="image" />
+                <img src="/assets/img/team/1.png" alt="image" />
                 <div className="teamCard__socials">
                   <div className="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                     <a href="#">
@@ -94,7 +94,7 @@ function BestInstructors5() {
               className="teamCard -type-1 -teamCard-hover"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/2.png" alt="image" />
+                <img src="/assets/img/team/2.png" alt="image" />
                 <div className="teamCard__socials">
                   <div className="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                     <a href="#">
@@ -150,7 +150,7 @@ function BestInstructors5() {
               className="teamCard -type-1 -teamCard-hover"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/3.png" alt="image" />
+                <img src="/assets/img/team/3.png" alt="image" />
                 <div className="teamCard__socials">
                   <div className="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                     <a href="#">
@@ -206,7 +206,7 @@ function BestInstructors5() {
               className="teamCard -type-1 -teamCard-hover"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/4.png" alt="image" />
+                <img src="/assets/img/team/4.png" alt="image" />
                 <div className="teamCard__socials">
                   <div className="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                     <a href="#">

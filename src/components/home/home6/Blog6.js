@@ -33,7 +33,7 @@ function Blog6() {
           >
             <a href="#" className="blogCard -type-1">
               <div className="blogCard__image">
-                <img src="assets/img/home-3/blog/1.png" alt="image" />
+                <img src="/assets/img/home-3/blog/1.png" alt="image" />
               </div>
               <div className="blogCard__content mt-20">
                 <div className="blogCard__category">EDUCATION</div>
@@ -53,7 +53,7 @@ function Blog6() {
           >
             <a href="#" className="blogCard -type-1">
               <div className="blogCard__image">
-                <img src="assets/img/home-3/blog/2.png" alt="image" />
+                <img src="/assets/img/home-3/blog/2.png" alt="image" />
               </div>
               <div className="blogCard__content mt-20">
                 <div className="blogCard__category">EDUCATION</div>
@@ -73,7 +73,7 @@ function Blog6() {
           >
             <a href="#" className="blogCard -type-1">
               <div className="blogCard__image">
-                <img src="assets/img/home-3/blog/3.png" alt="image" />
+                <img src="/assets/img/home-3/blog/3.png" alt="image" />
               </div>
               <div className="blogCard__content mt-20">
                 <div className="blogCard__category">EDUCATION</div>
@@ -93,7 +93,7 @@ function Blog6() {
           >
             <a href="#" className="blogCard -type-1">
               <div className="blogCard__image">
-                <img src="assets/img/home-3/blog/4.png" alt="image" />
+                <img src="/assets/img/home-3/blog/4.png" alt="image" />
               </div>
               <div className="blogCard__content mt-20">
                 <div className="blogCard__category">EDUCATION</div>

@@ -175,7 +175,7 @@ function Left10() {
               class="masthead -type-7 js-mouse-move-container"
             >
               <div class="masthead__bg bg-purple-1 rounded-16">
-                <img src="assets/img/home-9/hero/bg.png" alt="image" />
+                <img src="/assets/img/home-9/hero/bg.png" alt="image" />
               </div>
 
               <div class="container">
@@ -316,7 +316,7 @@ function Left10() {
                         <img
                           data-move="20"
                           class="js-mouse-move"
-                          src="assets/img/home-9/hero/1.png"
+                          src="/assets/img/home-9/hero/1.png"
                           alt="image"
                         />
                       </div>
@@ -325,7 +325,7 @@ function Left10() {
                         <img
                           class="js-mouse-move"
                           data-move="40"
-                          src="assets/img/home-9/hero/2.png"
+                          src="/assets/img/home-9/hero/2.png"
                           alt="icon"
                         />
                       </div>
@@ -333,7 +333,7 @@ function Left10() {
                         <img
                           class="js-mouse-move"
                           data-move="40"
-                          src="assets/img/home-9/hero/3.png"
+                          src="/assets/img/home-9/hero/3.png"
                           alt="icon"
                         />
                       </div>
@@ -341,7 +341,7 @@ function Left10() {
                         <img
                           class="js-mouse-move"
                           data-move="40"
-                          src="assets/img/home-9/hero/4.png"
+                          src="/assets/img/home-9/hero/4.png"
                           alt="icon"
                         />
                       </div>
@@ -399,7 +399,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/1.svg"
+                                src="/assets/img/featureCards/1.svg"
                                 alt="icon"
                               />
                             </div>
@@ -418,7 +418,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/2.svg"
+                                src="/assets/img/featureCards/2.svg"
                                 alt="icon"
                               />
                             </div>
@@ -437,7 +437,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/3.svg"
+                                src="/assets/img/featureCards/3.svg"
                                 alt="icon"
                               />
                             </div>
@@ -454,7 +454,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/4.svg"
+                                src="/assets/img/featureCards/4.svg"
                                 alt="icon"
                               />
                             </div>
@@ -473,7 +473,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/5.svg"
+                                src="/assets/img/featureCards/5.svg"
                                 alt="icon"
                               />
                             </div>
@@ -492,7 +492,7 @@ function Left10() {
                           <div class="featureCard__content">
                             <div class="featureCard__icon">
                               <img
-                                src="assets/img/featureCards/6.svg"
+                                src="/assets/img/featureCards/6.svg"
                                 alt="icon"
                               />
                             </div>
@@ -588,7 +588,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/1.png"
+                                      src="/assets/img/coursesCards/1.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -620,7 +620,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -630,7 +630,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -640,7 +640,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -651,7 +651,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -677,7 +677,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/2.png"
+                                      src="/assets/img/coursesCards/2.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -725,7 +725,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -735,7 +735,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -745,7 +745,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -756,7 +756,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -782,7 +782,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/3.png"
+                                      src="/assets/img/coursesCards/3.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -813,7 +813,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -823,7 +823,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -833,7 +833,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -844,7 +844,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -870,7 +870,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/4.png"
+                                      src="/assets/img/coursesCards/4.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -902,7 +902,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -912,7 +912,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -922,7 +922,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -933,7 +933,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -959,7 +959,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/5.png"
+                                      src="/assets/img/coursesCards/5.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -991,7 +991,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1001,7 +1001,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1011,7 +1011,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1022,7 +1022,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1048,7 +1048,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/6.png"
+                                      src="/assets/img/coursesCards/6.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1080,7 +1080,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1090,7 +1090,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1100,7 +1100,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1111,7 +1111,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1137,7 +1137,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/7.png"
+                                      src="/assets/img/coursesCards/7.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1169,7 +1169,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1179,7 +1179,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1189,7 +1189,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1200,7 +1200,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1226,7 +1226,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/8.png"
+                                      src="/assets/img/coursesCards/8.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1258,7 +1258,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1268,7 +1268,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1278,7 +1278,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1289,7 +1289,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1333,7 +1333,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/1.png"
+                                      src="/assets/img/coursesCards/1.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1365,7 +1365,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1375,7 +1375,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1385,7 +1385,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1396,7 +1396,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1422,7 +1422,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/2.png"
+                                      src="/assets/img/coursesCards/2.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1470,7 +1470,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1480,7 +1480,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1490,7 +1490,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1501,7 +1501,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1527,7 +1527,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/3.png"
+                                      src="/assets/img/coursesCards/3.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1558,7 +1558,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1568,7 +1568,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1578,7 +1578,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1589,7 +1589,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1615,7 +1615,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/4.png"
+                                      src="/assets/img/coursesCards/4.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1647,7 +1647,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1657,7 +1657,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1667,7 +1667,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1678,7 +1678,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1704,7 +1704,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/5.png"
+                                      src="/assets/img/coursesCards/5.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1736,7 +1736,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1746,7 +1746,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1756,7 +1756,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1767,7 +1767,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1793,7 +1793,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/6.png"
+                                      src="/assets/img/coursesCards/6.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1825,7 +1825,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1835,7 +1835,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1845,7 +1845,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1856,7 +1856,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1882,7 +1882,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/7.png"
+                                      src="/assets/img/coursesCards/7.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -1914,7 +1914,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1924,7 +1924,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1934,7 +1934,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -1945,7 +1945,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -1971,7 +1971,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/8.png"
+                                      src="/assets/img/coursesCards/8.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2003,7 +2003,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2013,7 +2013,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2023,7 +2023,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2034,7 +2034,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2078,7 +2078,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/1.png"
+                                      src="/assets/img/coursesCards/1.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2110,7 +2110,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2120,7 +2120,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2130,7 +2130,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2141,7 +2141,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2167,7 +2167,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/2.png"
+                                      src="/assets/img/coursesCards/2.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2215,7 +2215,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2225,7 +2225,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2235,7 +2235,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2246,7 +2246,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2272,7 +2272,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/3.png"
+                                      src="/assets/img/coursesCards/3.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2303,7 +2303,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2313,7 +2313,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2323,7 +2323,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2334,7 +2334,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2360,7 +2360,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/4.png"
+                                      src="/assets/img/coursesCards/4.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2392,7 +2392,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2402,7 +2402,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2412,7 +2412,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2423,7 +2423,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2449,7 +2449,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/5.png"
+                                      src="/assets/img/coursesCards/5.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2481,7 +2481,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2491,7 +2491,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2501,7 +2501,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2512,7 +2512,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2538,7 +2538,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/6.png"
+                                      src="/assets/img/coursesCards/6.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2570,7 +2570,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2580,7 +2580,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2590,7 +2590,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2601,7 +2601,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2627,7 +2627,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/7.png"
+                                      src="/assets/img/coursesCards/7.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2659,7 +2659,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2669,7 +2669,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2679,7 +2679,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2690,7 +2690,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2716,7 +2716,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/8.png"
+                                      src="/assets/img/coursesCards/8.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2748,7 +2748,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2758,7 +2758,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2768,7 +2768,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2779,7 +2779,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2823,7 +2823,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/1.png"
+                                      src="/assets/img/coursesCards/1.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2855,7 +2855,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2865,7 +2865,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2875,7 +2875,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2886,7 +2886,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -2912,7 +2912,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/2.png"
+                                      src="/assets/img/coursesCards/2.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -2960,7 +2960,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2970,7 +2970,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2980,7 +2980,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -2991,7 +2991,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3017,7 +3017,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/3.png"
+                                      src="/assets/img/coursesCards/3.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3048,7 +3048,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3058,7 +3058,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3068,7 +3068,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3079,7 +3079,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3105,7 +3105,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/4.png"
+                                      src="/assets/img/coursesCards/4.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3137,7 +3137,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3147,7 +3147,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3157,7 +3157,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3168,7 +3168,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3194,7 +3194,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/5.png"
+                                      src="/assets/img/coursesCards/5.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3226,7 +3226,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3236,7 +3236,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3246,7 +3246,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3257,7 +3257,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3283,7 +3283,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/6.png"
+                                      src="/assets/img/coursesCards/6.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3315,7 +3315,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3325,7 +3325,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3335,7 +3335,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3346,7 +3346,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3372,7 +3372,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/7.png"
+                                      src="/assets/img/coursesCards/7.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3404,7 +3404,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3414,7 +3414,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3424,7 +3424,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3435,7 +3435,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3461,7 +3461,7 @@ function Left10() {
                                   <div class="coursesCard__image overflow-hidden rounded-8">
                                     <img
                                       class="w-1/1"
-                                      src="assets/img/coursesCards/8.png"
+                                      src="/assets/img/coursesCards/8.png"
                                       alt="image"
                                     />
                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -3493,7 +3493,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/1.svg"
+                                          src="/assets/img/coursesCards/icons/1.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3503,7 +3503,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/2.svg"
+                                          src="/assets/img/coursesCards/icons/2.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3513,7 +3513,7 @@ function Left10() {
                                     <div class="d-flex items-center">
                                       <div class="mr-8">
                                         <img
-                                          src="assets/img/coursesCards/icons/3.svg"
+                                          src="/assets/img/coursesCards/icons/3.svg"
                                           alt="icon"
                                         />
                                       </div>
@@ -3524,7 +3524,7 @@ function Left10() {
                                   <div class="coursesCard-footer">
                                     <div class="coursesCard-footer__author">
                                       <img
-                                        src="assets/img/general/avatar-1.png"
+                                        src="/assets/img/general/avatar-1.png"
                                         alt="image"
                                       />
                                       <div>Ali Tufan</div>
@@ -3573,7 +3573,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="d-flex flex-column items-center text-center">
                       <div class="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                        <img src="assets/img/home-3/works/1.svg" alt="image" />
+                        <img src="/assets/img/home-3/works/1.svg" alt="image" />
                         <div class="side-badge">
                           <div class="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                             <span class="text-14 fw-500 text-white">01</span>
@@ -3588,14 +3588,14 @@ function Left10() {
 
                   <div class="col-auto xl:d-none">
                     <div class="pt-30">
-                      <img src="assets/img/misc/lines/1.svg" alt="icon" />
+                      <img src="/assets/img/misc/lines/1.svg" alt="icon" />
                     </div>
                   </div>
 
                   <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="d-flex flex-column items-center text-center">
                       <div class="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                        <img src="assets/img/home-3/works/2.svg" alt="image" />
+                        <img src="/assets/img/home-3/works/2.svg" alt="image" />
                         <div class="side-badge">
                           <div class="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                             <span class="text-14 fw-500 text-white">02</span>
@@ -3610,14 +3610,14 @@ function Left10() {
 
                   <div class="col-auto xl:d-none">
                     <div class="pt-30">
-                      <img src="assets/img/misc/lines/2.svg" alt="icon" />
+                      <img src="/assets/img/misc/lines/2.svg" alt="icon" />
                     </div>
                   </div>
 
                   <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="d-flex flex-column items-center text-center">
                       <div class="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                        <img src="assets/img/home-3/works/3.svg" alt="image" />
+                        <img src="/assets/img/home-3/works/3.svg" alt="image" />
                         <div class="side-badge">
                           <div class="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                             <span class="text-14 fw-500 text-white">03</span>
@@ -3666,7 +3666,7 @@ function Left10() {
                       class="teamCard -type-1 -teamCard-hover"
                     >
                       <div class="teamCard__image">
-                        <img src="assets/img/team/1.png" alt="image" />
+                        <img src="/assets/img/team/1.png" alt="image" />
                         <div class="teamCard__socials">
                           <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                             <a href="#">
@@ -3722,7 +3722,7 @@ function Left10() {
                       class="teamCard -type-1 -teamCard-hover"
                     >
                       <div class="teamCard__image">
-                        <img src="assets/img/team/2.png" alt="image" />
+                        <img src="/assets/img/team/2.png" alt="image" />
                         <div class="teamCard__socials">
                           <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                             <a href="#">
@@ -3778,7 +3778,7 @@ function Left10() {
                       class="teamCard -type-1 -teamCard-hover"
                     >
                       <div class="teamCard__image">
-                        <img src="assets/img/team/3.png" alt="image" />
+                        <img src="/assets/img/team/3.png" alt="image" />
                         <div class="teamCard__socials">
                           <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                             <a href="#">
@@ -3834,7 +3834,7 @@ function Left10() {
                       class="teamCard -type-1 -teamCard-hover"
                     >
                       <div class="teamCard__image">
-                        <img src="assets/img/team/4.png" alt="image" />
+                        <img src="/assets/img/team/4.png" alt="image" />
                         <div class="teamCard__socials">
                           <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
                             <a href="#">
@@ -3935,7 +3935,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/1.png"
+                            src="/assets/img/books/1.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">HTML 5 Maker</h5>
@@ -3964,7 +3964,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/2.png"
+                            src="/assets/img/books/2.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">CSS Master</h5>
@@ -3993,7 +3993,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/3.png"
+                            src="/assets/img/books/3.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">Vue JS</h5>
@@ -4022,7 +4022,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/4.png"
+                            src="/assets/img/books/4.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">
@@ -4053,7 +4053,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/5.png"
+                            src="/assets/img/books/5.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">CSS Developer</h5>
@@ -4082,7 +4082,7 @@ function Left10() {
                         <div class="">
                           <img
                             class="w-1/1"
-                            src="assets/img/books/6.png"
+                            src="/assets/img/books/6.png"
                             alt="book"
                           />
                           <h5 class="text-17 fw-500 mt-15">HTML 5 Maker</h5>
@@ -4156,7 +4156,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/1.png" alt="image" />
+                        <img src="/assets/img/streams/1.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Floyd Miles</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4168,7 +4168,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/2.png" alt="image" />
+                        <img src="/assets/img/streams/2.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Jacob Jones</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4180,7 +4180,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/3.png" alt="image" />
+                        <img src="/assets/img/streams/3.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Cody Fisher</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4192,7 +4192,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/4.png" alt="image" />
+                        <img src="/assets/img/streams/4.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Jane Cooper</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4204,7 +4204,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/5.png" alt="image" />
+                        <img src="/assets/img/streams/5.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Annette Black</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4216,7 +4216,7 @@ function Left10() {
                   <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="d-flex flex-column items-center">
                       <div>
-                        <img src="assets/img/streams/6.png" alt="image" />
+                        <img src="/assets/img/streams/6.png" alt="image" />
                       </div>
                       <h5 class="text-17 fw-500 mt-20">Robert Fox</h5>
                       <a href="#" class="text-light-1 mt-5">
@@ -4253,7 +4253,7 @@ function Left10() {
                           >
                             <div class="testimonials__icon">
                               <img
-                                src="assets/img/misc/quote.svg"
+                                src="/assets/img/misc/quote.svg"
                                 alt="quote"
                               />
                             </div>
@@ -4277,7 +4277,7 @@ function Left10() {
                           >
                             <div class="testimonials__icon">
                               <img
-                                src="assets/img/misc/quote.svg"
+                                src="/assets/img/misc/quote.svg"
                                 alt="quote"
                               />
                             </div>
@@ -4301,7 +4301,7 @@ function Left10() {
                           >
                             <div class="testimonials__icon">
                               <img
-                                src="assets/img/misc/quote.svg"
+                                src="/assets/img/misc/quote.svg"
                                 alt="quote"
                               />
                             </div>
@@ -4325,7 +4325,7 @@ function Left10() {
                           >
                             <div class="testimonials__icon">
                               <img
-                                src="assets/img/misc/quote.svg"
+                                src="/assets/img/misc/quote.svg"
                                 alt="quote"
                               />
                             </div>
@@ -4349,7 +4349,7 @@ function Left10() {
                           >
                             <div class="testimonials__icon">
                               <img
-                                src="assets/img/misc/quote.svg"
+                                src="/assets/img/misc/quote.svg"
                                 alt="quote"
                               />
                             </div>
@@ -4372,7 +4372,7 @@ function Left10() {
                           <div class="col-auto">
                             <div class="pagination__item is-active">
                               <img
-                                src="assets/img/home-3/testimonials/1.png"
+                                src="/assets/img/home-3/testimonials/1.png"
                                 alt="image"
                               />
                             </div>
@@ -4381,7 +4381,7 @@ function Left10() {
                           <div class="col-auto">
                             <div class="pagination__item ">
                               <img
-                                src="assets/img/home-3/testimonials/2.png"
+                                src="/assets/img/home-3/testimonials/2.png"
                                 alt="image"
                               />
                             </div>
@@ -4390,7 +4390,7 @@ function Left10() {
                           <div class="col-auto">
                             <div class="pagination__item ">
                               <img
-                                src="assets/img/home-3/testimonials/3.png"
+                                src="/assets/img/home-3/testimonials/3.png"
                                 alt="image"
                               />
                             </div>
@@ -4399,7 +4399,7 @@ function Left10() {
                           <div class="col-auto">
                             <div class="pagination__item ">
                               <img
-                                src="assets/img/home-3/testimonials/4.png"
+                                src="/assets/img/home-3/testimonials/4.png"
                                 alt="image"
                               />
                             </div>
@@ -4408,7 +4408,7 @@ function Left10() {
                           <div class="col-auto">
                             <div class="pagination__item ">
                               <img
-                                src="assets/img/home-3/testimonials/5.png"
+                                src="/assets/img/home-3/testimonials/5.png"
                                 alt="image"
                               />
                             </div>
@@ -4425,7 +4425,7 @@ function Left10() {
               <div class="section-bg__item">
                 <img
                   class="img-full rounded-16"
-                  src="assets/img/home-9/cta/bg.png"
+                  src="/assets/img/home-9/cta/bg.png"
                   alt="image"
                 />
               </div>
@@ -4475,7 +4475,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/1.svg"
+                        src="/assets/img/clients/1.svg"
                         alt="clients image"
                       />
                     </div>
@@ -4485,7 +4485,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/2.svg"
+                        src="/assets/img/clients/2.svg"
                         alt="clients image"
                       />
                     </div>
@@ -4495,7 +4495,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/3.svg"
+                        src="/assets/img/clients/3.svg"
                         alt="clients image"
                       />
                     </div>
@@ -4505,7 +4505,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/4.svg"
+                        src="/assets/img/clients/4.svg"
                         alt="clients image"
                       />
                     </div>
@@ -4515,7 +4515,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/5.svg"
+                        src="/assets/img/clients/5.svg"
                         alt="clients image"
                       />
                     </div>
@@ -4525,7 +4525,7 @@ function Left10() {
                     <div class="d-flex justify-center items-center px-4">
                       <img
                         class="w-1/1"
-                        src="assets/img/clients/6.svg"
+                        src="/assets/img/clients/6.svg"
                         alt="clients image"
                       />
                     </div>

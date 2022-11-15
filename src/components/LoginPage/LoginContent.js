@@ -9,7 +9,7 @@ function LoginContent() {
             <img
               data-move="30"
               className="js-mouse-move"
-              src="assets/img/login/bg.png"
+              src="/assets/img/login/bg.png"
               alt="bg"
             />
           </div>
@@ -17,7 +17,7 @@ function LoginContent() {
             <img
               data-move="20"
               className="js-mouse-move"
-              src="assets/img/home-9/hero/bg.png"
+              src="/assets/img/home-9/hero/bg.png"
               alt="image"
             />
           </div>
@@ -25,7 +25,7 @@ function LoginContent() {
             <img
               data-move="40"
               className="js-mouse-move"
-              src="assets/img/home-9/hero/1.png"
+              src="/assets/img/home-9/hero/1.png"
               alt="icon"
             />
           </div>
@@ -33,7 +33,7 @@ function LoginContent() {
             <img
               data-move="40"
               className="js-mouse-move"
-              src="assets/img/home-9/hero/2.png"
+              src="/assets/img/home-9/hero/2.png"
               alt="icon"
             />
           </div>
@@ -41,7 +41,7 @@ function LoginContent() {
             <img
               data-move="40"
               className="js-mouse-move"
-              src="assets/img/home-9/hero/3.png"
+              src="/assets/img/home-9/hero/3.png"
               alt="icon"
             />
           </div>

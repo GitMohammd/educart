@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Home1 from "./components/home/home1/Home1";
 import Home2 from "./components/home/home2/Home2";
 import Home3 from "./components/home/home3/Home3";
@@ -73,24 +73,26 @@ import Login from "./components/LoginPage/Login";
 import SignUp from "./components/SignUp/SignUp";
 import UiElements from "./components/uiElementsPage/UiElements";
 import PopulerCourseContent from "./components/home/home1/PopulerCourseContent";
+import NotFoundContent from "./components/404Page/NotFoundContent";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home1 />} />
-      <Route path="home1" element={<Home1 />}>
+      <Route path="/" element={<Navigate to="/home1" />} />
+      <Route path="/home1" element={<Home1 />}>
         <Route index element={<PopulerCourseContent />} />
+        <Route path="allCategories" element={<PopulerCourseContent />} />
         <Route path="writting" element={<PopulerCourseContent />} />
         <Route path="business" element={<PopulerCourseContent />} />
         <Route path="photo" element={<PopulerCourseContent />} />
         <Route path="lifeStyle" element={<PopulerCourseContent />} />
         <Route path="illustration" element={<PopulerCourseContent />} />
         <Route path="design" element={<PopulerCourseContent />} />
-        <Route path="Animation" element={<PopulerCourseContent />} />
-        <Route path="allCategories" element={<PopulerCourseContent />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="animation" element={<PopulerCourseContent />} />
+
+        <Route path="*" element={<NotFoundContent />} />
       </Route>
-      <Route path="home2" element={<Home2 />} />
+      <Route path="/home2" element={<Home2 />} />
       <Route path="/home3" element={<Home3 />} />
       <Route path="/home4" element={<Home4 />} />
       <Route path="/home5" element={<Home5 />} />

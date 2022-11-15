@@ -148,7 +148,7 @@ function SingleEventContent() {
               <div class="row y-gap-30">
                 <div class="col-lg-3 col-md-6">
                   <div class="text-center">
-                    <img src="assets/img/speakers/1.png" alt="image" />
+                    <img src="/assets/img/speakers/1.png" alt="image" />
                     <h5 class="text-17 fw-500 mt-20">Jerome Bell</h5>
                     <p class="">Marketing Coordinator</p>
                   </div>
@@ -156,7 +156,7 @@ function SingleEventContent() {
 
                 <div class="col-lg-3 col-md-6">
                   <div class="text-center">
-                    <img src="assets/img/speakers/2.png" alt="image" />
+                    <img src="/assets/img/speakers/2.png" alt="image" />
                     <h5 class="text-17 fw-500 mt-20">Bessie Cooper</h5>
                     <p class="">President of Sales</p>
                   </div>
@@ -164,7 +164,7 @@ function SingleEventContent() {
 
                 <div class="col-lg-3 col-md-6">
                   <div class="text-center">
-                    <img src="assets/img/speakers/3.png" alt="image" />
+                    <img src="/assets/img/speakers/3.png" alt="image" />
                     <h5 class="text-17 fw-500 mt-20">Kristin Watson</h5>
                     <p class="">Nursing Assistant</p>
                   </div>
@@ -172,7 +172,7 @@ function SingleEventContent() {
 
                 <div class="col-lg-3 col-md-6">
                   <div class="text-center">
-                    <img src="assets/img/speakers/4.png" alt="image" />
+                    <img src="/assets/img/speakers/4.png" alt="image" />
                     <h5 class="text-17 fw-500 mt-20">Ronald Richards</h5>
                     <p class="">Dog Trainer</p>
                   </div>

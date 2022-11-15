@@ -429,7 +429,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/1.png"
+                                src="/assets/img/coursesCards/1.png"
                                 alt="image"
                               />
                             </div>
@@ -476,7 +476,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/2.png"
+                                src="/assets/img/coursesCards/2.png"
                                 alt="image"
                               />
                             </div>
@@ -523,7 +523,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/3.png"
+                                src="/assets/img/coursesCards/3.png"
                                 alt="image"
                               />
                             </div>
@@ -570,7 +570,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/4.png"
+                                src="/assets/img/coursesCards/4.png"
                                 alt="image"
                               />
                             </div>
@@ -617,7 +617,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/5.png"
+                                src="/assets/img/coursesCards/5.png"
                                 alt="image"
                               />
                             </div>
@@ -664,7 +664,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/6.png"
+                                src="/assets/img/coursesCards/6.png"
                                 alt="image"
                               />
                             </div>
@@ -711,7 +711,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/7.png"
+                                src="/assets/img/coursesCards/7.png"
                                 alt="image"
                               />
                             </div>
@@ -758,7 +758,7 @@ function SingleDashboardContent() {
                             <div>
                               <img
                                 className="rounded-8 w-1/1"
-                                src="assets/img/coursesCards/8.png"
+                                src="/assets/img/coursesCards/8.png"
                                 alt="image"
                               />
                             </div>
@@ -819,7 +819,7 @@ function SingleDashboardContent() {
                         <div className="d-flex ">
                           <div className="shrink-0">
                             <img
-                              src="assets/img/dashboard/recent-courses/1.png"
+                              src="/assets/img/dashboard/recent-courses/1.png"
                               alt="image"
                             />
                           </div>
@@ -848,7 +848,7 @@ function SingleDashboardContent() {
                         <div className="d-flex border-top-light">
                           <div className="shrink-0">
                             <img
-                              src="assets/img/dashboard/recent-courses/2.png"
+                              src="/assets/img/dashboard/recent-courses/2.png"
                               alt="image"
                             />
                           </div>
@@ -876,7 +876,7 @@ function SingleDashboardContent() {
                         <div className="d-flex border-top-light">
                           <div className="shrink-0">
                             <img
-                              src="assets/img/dashboard/recent-courses/3.png"
+                              src="/assets/img/dashboard/recent-courses/3.png"
                               alt="image"
                             />
                           </div>
@@ -905,7 +905,7 @@ function SingleDashboardContent() {
                         <div className="d-flex border-top-light">
                           <div className="shrink-0">
                             <img
-                              src="assets/img/dashboard/recent-courses/4.png"
+                              src="/assets/img/dashboard/recent-courses/4.png"
                               alt="image"
                             />
                           </div>
@@ -1069,7 +1069,7 @@ function SingleDashboardContent() {
                         <div className="border-bottom-light">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/dashboard/actions/1.png"
+                              src="/assets/img/dashboard/actions/1.png"
                               alt="image"
                             />
                             <h5 className="text-15 lh-11 fw-500 ml-10">
@@ -1104,7 +1104,7 @@ function SingleDashboardContent() {
                         <div className="border-bottom-light">
                           <div className="d-flex items-center">
                             <img
-                              src="assets/img/dashboard/actions/2.png"
+                              src="/assets/img/dashboard/actions/2.png"
                               alt="image"
                             />
                             <h5 className="text-15 lh-11 fw-500 ml-10">
@@ -1199,7 +1199,7 @@ function SingleDashboardContent() {
               <div className="row y-gap-30">
                 <div className="col-12">
                   <div className="d-flex items-center flex-column text-center py-40 px-40 rounded-16 bg-white -dark-bg-dark-1 shadow-4">
-                    <img src="assets/img/dashboard/demo/1.png" alt="image" />
+                    <img src="/assets/img/dashboard/demo/1.png" alt="image" />
                     <div className="text-17 fw-500 text-dark-1 mt-20">
                       Student Demo
                     </div>
@@ -1217,7 +1217,7 @@ function SingleDashboardContent() {
                       <div className="d-flex">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/dashboard/badges/1.png"
+                            src="/assets/img/dashboard/badges/1.png"
                             alt="badge"
                           />
                         </div>
@@ -1232,15 +1232,15 @@ function SingleDashboardContent() {
 
                       <div className="d-flex x-gap-30 item-center pt-20">
                         <img
-                          src="assets/img/dashboard/badges/2.png"
+                          src="/assets/img/dashboard/badges/2.png"
                           alt="badge"
                         />
                         <img
-                          src="assets/img/dashboard/badges/3.png"
+                          src="/assets/img/dashboard/badges/3.png"
                           alt="badge"
                         />
                         <img
-                          src="assets/img/dashboard/badges/4.png"
+                          src="/assets/img/dashboard/badges/4.png"
                           alt="badge"
                         />
                       </div>
@@ -1261,7 +1261,7 @@ function SingleDashboardContent() {
                           <div className="d-flex items-center">
                             <div className="shrink-0">
                               <img
-                                src="assets/img/dashboard/online-users/1.png"
+                                src="/assets/img/dashboard/online-users/1.png"
                                 alt="badge"
                               />
                             </div>
@@ -1277,7 +1277,7 @@ function SingleDashboardContent() {
                           <div className="d-flex items-center border-top-light pt-10">
                             <div className="shrink-0">
                               <img
-                                src="assets/img/dashboard/online-users/2.png"
+                                src="/assets/img/dashboard/online-users/2.png"
                                 alt="badge"
                               />
                             </div>

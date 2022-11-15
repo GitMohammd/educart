@@ -8,7 +8,7 @@ function ExpertInstruction() {
           <div className="col-xl-3 col-md-6">
             <div className="d-flex items-center">
               <div className="mr-20">
-                <img src="assets/img/home-3/masthead/icons/1.svg" alt="icon" />
+                <img src="/assets/img/home-3/masthead/icons/1.svg" alt="icon" />
               </div>
 
               <div>
@@ -23,7 +23,7 @@ function ExpertInstruction() {
           <div className="col-xl-3 col-md-6">
             <div className="d-flex items-center">
               <div className="mr-20">
-                <img src="assets/img/home-3/masthead/icons/2.svg" alt="icon" />
+                <img src="/assets/img/home-3/masthead/icons/2.svg" alt="icon" />
               </div>
 
               <div>
@@ -38,7 +38,7 @@ function ExpertInstruction() {
           <div className="col-xl-3 col-md-6">
             <div className="d-flex items-center">
               <div className="mr-20">
-                <img src="assets/img/home-3/masthead/icons/3.svg" alt="icon" />
+                <img src="/assets/img/home-3/masthead/icons/3.svg" alt="icon" />
               </div>
 
               <div>

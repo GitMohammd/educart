@@ -81,7 +81,7 @@ function Bannar() {
         >
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="assets/img/home-2/mainSlider/icons/1.svg" alt="icon" />
+              <img src="/assets/img/home-2/mainSlider/icons/1.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 100,000 online courses
               </h4>
@@ -93,7 +93,7 @@ function Bannar() {
 
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="assets/img/home-2/mainSlider/icons/2.svg" alt="icon" />
+              <img src="/assets/img/home-2/mainSlider/icons/2.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 Expert instruction
               </h4>
@@ -105,7 +105,7 @@ function Bannar() {
 
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="assets/img/home-2/mainSlider/icons/3.svg" alt="icon" />
+              <img src="/assets/img/home-2/mainSlider/icons/3.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 Lifetime access
               </h4>

@@ -108,7 +108,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/1.png"
+                            src="/assets/img/avatars/small/1.png"
                             alt="image"
                             className="size-50"
                           />
@@ -132,7 +132,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/2.png"
+                            src="/assets/img/avatars/small/2.png"
                             alt="image"
                             className="size-50"
                           />
@@ -162,7 +162,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/3.png"
+                            src="/assets/img/avatars/small/3.png"
                             alt="image"
                             className="size-50"
                           />
@@ -192,7 +192,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/4.png"
+                            src="/assets/img/avatars/small/4.png"
                             alt="image"
                             className="size-50"
                           />
@@ -216,7 +216,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/5.png"
+                            src="/assets/img/avatars/small/5.png"
                             alt="image"
                             className="size-50"
                           />
@@ -246,7 +246,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/6.png"
+                            src="/assets/img/avatars/small/6.png"
                             alt="image"
                             className="size-50"
                           />
@@ -270,7 +270,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/7.png"
+                            src="/assets/img/avatars/small/7.png"
                             alt="image"
                             className="size-50"
                           />
@@ -294,7 +294,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/8.png"
+                            src="/assets/img/avatars/small/8.png"
                             alt="image"
                             className="size-50"
                           />
@@ -324,7 +324,7 @@ function MassageContent() {
                   <div className="d-flex items-center">
                     <div className="shrink-0">
                       <img
-                        src="assets/img/avatars/small/2.png"
+                        src="/assets/img/avatars/small/2.png"
                         alt="image"
                         className="size-50"
                       />
@@ -351,7 +351,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/4.png"
+                            src="/assets/img/avatars/small/4.png"
                             alt="image"
                             className="size-50"
                           />
@@ -377,7 +377,7 @@ function MassageContent() {
                         </div>
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/3.png"
+                            src="/assets/img/avatars/small/3.png"
                             alt="image"
                             className="size-50"
                           />
@@ -395,7 +395,7 @@ function MassageContent() {
                       <div className="d-flex items-center">
                         <div className="shrink-0">
                           <img
-                            src="assets/img/avatars/small/6.png"
+                            src="/assets/img/avatars/small/6.png"
                             alt="image"
                             className="size-50"
                           />

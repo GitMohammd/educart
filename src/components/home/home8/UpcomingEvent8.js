@@ -24,7 +24,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/1.png"
+                      src="/assets/img/courses-list/1.png"
                       alt="icon"
                     />
                   </div>
@@ -72,7 +72,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/2.png"
+                      src="/assets/img/courses-list/2.png"
                       alt="icon"
                     />
                   </div>
@@ -120,7 +120,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/3.png"
+                      src="/assets/img/courses-list/3.png"
                       alt="icon"
                     />
                   </div>
@@ -168,7 +168,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/4.png"
+                      src="/assets/img/courses-list/4.png"
                       alt="icon"
                     />
                   </div>
@@ -216,7 +216,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/5.png"
+                      src="/assets/img/courses-list/5.png"
                       alt="icon"
                     />
                   </div>
@@ -264,7 +264,7 @@ function UpcomingEvent8() {
                   <div className="size-120">
                     <img
                       className="img-full rounded-8"
-                      src="assets/img/courses-list/6.png"
+                      src="/assets/img/courses-list/6.png"
                       alt="icon"
                     />
                   </div>

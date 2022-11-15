@@ -9,7 +9,7 @@ function DescriptionInstructor() {
           <div className="col-xl-8 col-lg-9 col-md-11">
             <div className="page-header__content">
               <div className="page-header__img">
-                <img src="assets/img/Instructors-single/1.png" alt="image" />
+                <img src="/assets/img/Instructors-single/1.png" alt="image" />
               </div>
 
               <div className="page-header__info">

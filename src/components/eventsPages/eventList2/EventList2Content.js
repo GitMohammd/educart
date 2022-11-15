@@ -59,7 +59,7 @@ function EventList2Content() {
                   <div className="sidebar-content -recent y-gap-20">
                     <div className="sidebar-recent d-flex items-center">
                       <div className="sidebar-recent__image mr-15">
-                        <img src="assets/img/blog-list/1.png" alt="image" />
+                        <img src="/assets/img/blog-list/1.png" alt="image" />
                       </div>
 
                       <div className="sidebar-recent__content">
@@ -72,7 +72,7 @@ function EventList2Content() {
 
                     <div className="sidebar-recent d-flex items-center">
                       <div className="sidebar-recent__image mr-15">
-                        <img src="assets/img/blog-list/2.png" alt="image" />
+                        <img src="/assets/img/blog-list/2.png" alt="image" />
                       </div>
 
                       <div className="sidebar-recent__content">
@@ -85,7 +85,7 @@ function EventList2Content() {
 
                     <div className="sidebar-recent d-flex items-center">
                       <div className="sidebar-recent__image mr-15">
-                        <img src="assets/img/blog-list/3.png" alt="image" />
+                        <img src="/assets/img/blog-list/3.png" alt="image" />
                       </div>
 
                       <div className="sidebar-recent__content">
@@ -206,7 +206,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/1.png"
+                      src="/assets/img/event-list/1.png"
                       alt="image"
                     />
                   </div>
@@ -234,7 +234,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/2.png"
+                      src="/assets/img/event-list/2.png"
                       alt="image"
                     />
                   </div>
@@ -262,7 +262,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/3.png"
+                      src="/assets/img/event-list/3.png"
                       alt="image"
                     />
                   </div>
@@ -290,7 +290,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/4.png"
+                      src="/assets/img/event-list/4.png"
                       alt="image"
                     />
                   </div>
@@ -318,7 +318,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/5.png"
+                      src="/assets/img/event-list/5.png"
                       alt="image"
                     />
                   </div>
@@ -346,7 +346,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/6.png"
+                      src="/assets/img/event-list/6.png"
                       alt="image"
                     />
                   </div>
@@ -374,7 +374,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/7.png"
+                      src="/assets/img/event-list/7.png"
                       alt="image"
                     />
                   </div>
@@ -402,7 +402,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/8.png"
+                      src="/assets/img/event-list/8.png"
                       alt="image"
                     />
                   </div>
@@ -430,7 +430,7 @@ function EventList2Content() {
                   <div className="eventCard__img">
                     <img
                       className="w-1/1 rounded-top-8"
-                      src="assets/img/event-list/9.png"
+                      src="/assets/img/event-list/9.png"
                       alt="image"
                     />
                   </div>

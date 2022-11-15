@@ -8,7 +8,7 @@ function BecomeInstructor8() {
           <div className="col-xl-5 offset-xl-1 col-lg-6">
             <img
               className="w-1/1"
-              src="assets/img/home-8/features/1.png"
+              src="/assets/img/home-8/features/1.png"
               alt="image"
             />
           </div>

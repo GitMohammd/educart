@@ -34,7 +34,7 @@ function MemberShipPrice() {
                 <div className="priceCard__period">per month</div>
                 <img
                   className="mt-30"
-                  src="assets/img/pricing/1.svg"
+                  src="/assets/img/pricing/1.svg"
                   alt="icon"
                 />
                 <div className="priceCard__text text-left pr-15 mt-40">
@@ -89,7 +89,7 @@ function MemberShipPrice() {
                 <div className="priceCard__period">per month</div>
                 <img
                   className="mt-30"
-                  src="assets/img/pricing/2.svg"
+                  src="/assets/img/pricing/2.svg"
                   alt="icon"
                 />
                 <div className="priceCard__text text-left pr-15 mt-40">
@@ -144,7 +144,7 @@ function MemberShipPrice() {
                 <div className="priceCard__period">per month</div>
                 <img
                   className="mt-30"
-                  src="assets/img/pricing/3.svg"
+                  src="/assets/img/pricing/3.svg"
                   alt="icon"
                 />
                 <div className="priceCard__text text-left pr-15 mt-40">

@@ -20,7 +20,10 @@ function ShopSingleRelatedProduct() {
           <div className="col-lg-3 col-sm-6">
             <div className="productCard -type-1 text-center">
               <div className="productCard__image">
-                <img src="assets/img/shop/products/1.png" alt="Product image" />
+                <img
+                  src="/assets/img/shop/products/1.png"
+                  alt="Product image"
+                />
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
@@ -55,7 +58,10 @@ function ShopSingleRelatedProduct() {
           <div className="col-lg-3 col-sm-6">
             <div className="productCard -type-1 text-center">
               <div className="productCard__image">
-                <img src="assets/img/shop/products/2.png" alt="Product image" />
+                <img
+                  src="/assets/img/shop/products/2.png"
+                  alt="Product image"
+                />
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
@@ -90,7 +96,10 @@ function ShopSingleRelatedProduct() {
           <div className="col-lg-3 col-sm-6">
             <div className="productCard -type-1 text-center">
               <div className="productCard__image">
-                <img src="assets/img/shop/products/3.png" alt="Product image" />
+                <img
+                  src="/assets/img/shop/products/3.png"
+                  alt="Product image"
+                />
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
@@ -125,7 +134,10 @@ function ShopSingleRelatedProduct() {
           <div className="col-lg-3 col-sm-6">
             <div className="productCard -type-1 text-center">
               <div className="productCard__image">
-                <img src="assets/img/shop/products/4.png" alt="Product image" />
+                <img
+                  src="/assets/img/shop/products/4.png"
+                  alt="Product image"
+                />
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">

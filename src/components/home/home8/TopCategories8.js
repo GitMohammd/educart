@@ -20,7 +20,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-orange-2">
-                <img src="assets/img/home-8/categories/1.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/1.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Digital
@@ -34,7 +34,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-green-2">
-                <img src="assets/img/home-8/categories/2.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/2.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Web <br />
@@ -47,7 +47,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-purple-2">
-                <img src="assets/img/home-8/categories/3.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/3.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Art &<br />
@@ -60,7 +60,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-yellow-5">
-                <img src="assets/img/home-8/categories/4.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/4.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Personal
@@ -74,7 +74,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-green-6">
-                <img src="assets/img/home-8/categories/5.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/5.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 IT and
@@ -88,7 +88,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-light-10">
-                <img src="assets/img/home-8/categories/6.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/6.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Social
@@ -102,7 +102,7 @@ function TopCategories8() {
           <div className="col-lg-auto col-sm-4 col-6">
             <div className="text-center">
               <div className="d-flex justify-center items-center rounded-8 size-90 mx-auto bg-green-7">
-                <img src="assets/img/home-8/categories/7.svg" alt="icon" />
+                <img src="/assets/img/home-8/categories/7.svg" alt="icon" />
               </div>
               <h5 className="text-17 lh-15 fw-500 mt-20">
                 Graphic

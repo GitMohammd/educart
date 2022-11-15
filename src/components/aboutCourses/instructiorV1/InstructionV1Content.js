@@ -117,7 +117,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/1.png" alt="image" />
+                <img src="/assets/img/team/1.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Floyd Miles</h4>
@@ -148,7 +148,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/2.png" alt="image" />
+                <img src="/assets/img/team/2.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Cameron Williamson</h4>
@@ -179,7 +179,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/3.png" alt="image" />
+                <img src="/assets/img/team/3.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Brooklyn Simmons</h4>
@@ -210,7 +210,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/4.png" alt="image" />
+                <img src="/assets/img/team/4.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Wade Warren</h4>
@@ -241,7 +241,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/5.png" alt="image" />
+                <img src="/assets/img/team/5.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Bessie Cooper</h4>
@@ -272,7 +272,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/6.png" alt="image" />
+                <img src="/assets/img/team/6.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Albert Flores</h4>
@@ -303,7 +303,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/7.png" alt="image" />
+                <img src="/assets/img/team/7.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Cody Fisher</h4>
@@ -334,7 +334,7 @@ function InstructionV1Content() {
               className="teamCard -type-1"
             >
               <div className="teamCard__image">
-                <img src="assets/img/team/8.png" alt="image" />
+                <img src="/assets/img/team/8.png" alt="image" />
               </div>
               <div className="teamCard__content">
                 <h4 className="teamCard__title">Theresa Webb</h4>

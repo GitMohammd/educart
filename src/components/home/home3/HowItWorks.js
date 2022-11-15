@@ -20,7 +20,7 @@ function HowItWorks() {
           <div className="col-xl-2 col-lg-3 col-md-6">
             <div className="d-flex flex-column items-center text-center">
               <div className="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                <img src="assets/img/home-3/works/1.svg" alt="image" />
+                <img src="/assets/img/home-3/works/1.svg" alt="image" />
                 <div className="side-badge">
                   <div className="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                     <span className="text-14 fw-500 text-white">01</span>
@@ -35,14 +35,14 @@ function HowItWorks() {
 
           <div className="col-auto xl:d-none">
             <div className="pt-30">
-              <img src="assets/img/misc/lines/1.svg" alt="icon" />
+              <img src="/assets/img/misc/lines/1.svg" alt="icon" />
             </div>
           </div>
 
           <div className="col-xl-2 col-lg-3 col-md-6">
             <div className="d-flex flex-column items-center text-center">
               <div className="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                <img src="assets/img/home-3/works/2.svg" alt="image" />
+                <img src="/assets/img/home-3/works/2.svg" alt="image" />
                 <div className="side-badge">
                   <div className="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                     <span className="text-14 fw-500 text-white">02</span>
@@ -57,14 +57,14 @@ function HowItWorks() {
 
           <div className="col-auto xl:d-none">
             <div className="pt-30">
-              <img src="assets/img/misc/lines/2.svg" alt="icon" />
+              <img src="/assets/img/misc/lines/2.svg" alt="icon" />
             </div>
           </div>
 
           <div className="col-xl-2 col-lg-3 col-md-6">
             <div className="d-flex flex-column items-center text-center">
               <div className="relative size-120 d-flex justify-center items-center rounded-full bg-light-4">
-                <img src="assets/img/home-3/works/3.svg" alt="image" />
+                <img src="/assets/img/home-3/works/3.svg" alt="image" />
                 <div className="side-badge">
                   <div className="size-35 d-flex justify-center items-center rounded-full bg-dark-1 -dark-bg-purple-1">
                     <span className="text-14 fw-500 text-white">03</span>

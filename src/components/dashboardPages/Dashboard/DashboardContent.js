@@ -243,7 +243,7 @@ function DashboardContent() {
                     <div className="d-flex">
                       <img
                         className="size-40"
-                        src="assets/img/dashboard/avatars/1.png"
+                        src="/assets/img/dashboard/avatars/1.png"
                         alt="avatar"
                       />
                       <div className="ml-10 w-1/1">
@@ -268,7 +268,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <img
                         className="size-40"
-                        src="assets/img/dashboard/avatars/2.png"
+                        src="/assets/img/dashboard/avatars/2.png"
                         alt="avatar"
                       />
                       <div className="ml-10 w-1/1">
@@ -293,7 +293,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <img
                         className="size-40"
-                        src="assets/img/dashboard/avatars/3.png"
+                        src="/assets/img/dashboard/avatars/3.png"
                         alt="avatar"
                       />
                       <div className="ml-10 w-1/1">
@@ -318,7 +318,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <img
                         className="size-40"
-                        src="assets/img/dashboard/avatars/4.png"
+                        src="/assets/img/dashboard/avatars/4.png"
                         alt="avatar"
                       />
                       <div className="ml-10 w-1/1">
@@ -343,7 +343,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <img
                         className="size-40"
-                        src="assets/img/dashboard/avatars/5.png"
+                        src="/assets/img/dashboard/avatars/5.png"
                         alt="avatar"
                       />
                       <div className="ml-10 w-1/1">
@@ -382,7 +382,7 @@ function DashboardContent() {
                     <div className="d-flex">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/recent-courses/1.png"
+                          src="/assets/img/dashboard/recent-courses/1.png"
                           alt="image"
                         />
                       </div>
@@ -394,7 +394,7 @@ function DashboardContent() {
                           <div className="d-flex items-center">
                             <img
                               className="size-16 object-cover mr-8"
-                              src="assets/img/general/avatar-1.png"
+                              src="/assets/img/general/avatar-1.png"
                               alt="icon"
                             />
                             <div className="text-14 lh-1">Ali Tufan</div>
@@ -414,7 +414,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/recent-courses/2.png"
+                          src="/assets/img/dashboard/recent-courses/2.png"
                           alt="image"
                         />
                       </div>
@@ -426,7 +426,7 @@ function DashboardContent() {
                           <div className="d-flex items-center">
                             <img
                               className="size-16 object-cover mr-8"
-                              src="assets/img/general/avatar-1.png"
+                              src="/assets/img/general/avatar-1.png"
                               alt="icon"
                             />
                             <div className="text-14 lh-1">Ali Tufan</div>
@@ -446,7 +446,7 @@ function DashboardContent() {
                     <div className="d-flex border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/recent-courses/3.png"
+                          src="/assets/img/dashboard/recent-courses/3.png"
                           alt="image"
                         />
                       </div>
@@ -459,7 +459,7 @@ function DashboardContent() {
                           <div className="d-flex items-center">
                             <img
                               className="size-16 object-cover mr-8"
-                              src="assets/img/general/avatar-1.png"
+                              src="/assets/img/general/avatar-1.png"
                               alt="icon"
                             />
                             <div className="text-14 lh-1">Ali Tufan</div>
@@ -490,7 +490,7 @@ function DashboardContent() {
                     <div className="d-flex items-center">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/actions/1.png"
+                          src="/assets/img/dashboard/actions/1.png"
                           alt="image"
                         />
                       </div>
@@ -505,7 +505,7 @@ function DashboardContent() {
                     <div className="d-flex items-center border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/actions/2.png"
+                          src="/assets/img/dashboard/actions/2.png"
                           alt="image"
                         />
                       </div>
@@ -520,7 +520,7 @@ function DashboardContent() {
                     <div className="d-flex items-center border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/actions/3.png"
+                          src="/assets/img/dashboard/actions/3.png"
                           alt="image"
                         />
                       </div>
@@ -535,7 +535,7 @@ function DashboardContent() {
                     <div className="d-flex items-center border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/actions/4.png"
+                          src="/assets/img/dashboard/actions/4.png"
                           alt="image"
                         />
                       </div>
@@ -550,7 +550,7 @@ function DashboardContent() {
                     <div className="d-flex items-center border-top-light">
                       <div className="shrink-0">
                         <img
-                          src="assets/img/dashboard/actions/5.png"
+                          src="/assets/img/dashboard/actions/5.png"
                           alt="image"
                         />
                       </div>

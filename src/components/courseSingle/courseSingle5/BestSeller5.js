@@ -85,7 +85,7 @@ function BestSeller5() {
               <div className="relative pt-40">
                 <img
                   className="w-1/1"
-                  src="assets/img/misc/image.png"
+                  src="/assets/img/misc/image.png"
                   alt="image"
                 />
                 <div className="absolute-full-center d-flex justify-center items-center">

@@ -75,7 +75,7 @@ function BecomeInstructorContent() {
           <div className="col-lg-3 col-md-6">
             <div className="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
               <div className="coursesCard__image">
-                <img src="assets/img/home-5/learning/1.svg" alt="image" />
+                <img src="/assets/img/home-5/learning/1.svg" alt="image" />
               </div>
               <div className="coursesCard__content mt-30">
                 <h5 className="coursesCard__title text-18 lh-1 fw-500">
@@ -91,7 +91,7 @@ function BecomeInstructorContent() {
           <div className="col-lg-3 col-md-6">
             <div className="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
               <div className="coursesCard__image">
-                <img src="assets/img/home-5/learning/2.svg" alt="image" />
+                <img src="/assets/img/home-5/learning/2.svg" alt="image" />
               </div>
               <div className="coursesCard__content mt-30">
                 <h5 className="coursesCard__title text-18 lh-1 fw-500">
@@ -107,7 +107,7 @@ function BecomeInstructorContent() {
           <div className="col-lg-3 col-md-6">
             <div className="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
               <div className="coursesCard__image">
-                <img src="assets/img/home-5/learning/3.svg" alt="image" />
+                <img src="/assets/img/home-5/learning/3.svg" alt="image" />
               </div>
               <div className="coursesCard__content mt-30">
                 <h5 className="coursesCard__title text-18 lh-1 fw-500">
@@ -123,7 +123,7 @@ function BecomeInstructorContent() {
           <div className="col-lg-3 col-md-6">
             <div className="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
               <div className="coursesCard__image">
-                <img src="assets/img/home-5/learning/4.svg" alt="image" />
+                <img src="/assets/img/home-5/learning/4.svg" alt="image" />
               </div>
               <div className="coursesCard__content mt-30">
                 <h5 className="coursesCard__title text-18 lh-1 fw-500">
