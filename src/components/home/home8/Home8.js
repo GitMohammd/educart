@@ -3,6 +3,8 @@ import React from "react";
 import Navigation7 from "../home7/Navigation7";
 import Bannar8 from "./Bannar8";
 import BecomeInstructor8 from "./BecomeInstructor8";
+import BecomeStudent from "./BecomeStudent";
+
 import BestInstructor8 from "./BestInstructor8";
 import Footer8 from "./Footer8";
 import GrowCareer from "./GrowCareer";
@@ -33,7 +35,7 @@ function Home7() {
             <StudentsSay />
             <TrustedCompany8 />
             <BecomeInstructor8 />
-            <BecomeInstructor8 />
+            <BecomeStudent />
             <Footer8 />
           </div>
         </main>
