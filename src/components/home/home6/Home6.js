@@ -9,10 +9,11 @@ import FutureLearn from "./FutureLearn";
 import LearnNewSkill6 from "./LearnNewSkill6";
 import LearnWithEducrat from "./LearnWithEducrat";
 import Navigation6 from "./Navigation6";
-import TopCatagories6 from "./TopCatagories6";
+// import TopCatagories6 from "./TopCatagories6";
 import TrustedCompany6 from "./TrustedCompany6";
 import TrustedTeacher from "./TrustedTeacher";
 import UpcommingEvent6 from "./UpcommingEvent6";
+import TopCatagories from "../home1/TopCotegories";
 
 function Home6() {
   return (
@@ -42,7 +43,7 @@ function Home6() {
                 />
               </svg>
             </div>
-            <TopCatagories6 />
+            <TopCatagories />
             <LearnWithEducrat />
             <TrustedCompany6 />
             <div class="svg-shape">

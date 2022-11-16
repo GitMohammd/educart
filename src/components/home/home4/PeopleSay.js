@@ -6,7 +6,7 @@ import Slider from "react-slick";
 function PeopleSay() {
   const sliderRef = useRef(null);
   const settings = {
-    dots: true,
+    dots: false,
     centerMode: true,
     arrows: false,
     // infinite: true,
