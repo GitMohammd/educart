@@ -15621,3 +15621,11 @@ table.table td {
   margin-left: -5px;
 }
 
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  box-shadow: none !important;
+}
+.sidebar.-courses > * + * {
+  border-top: 1px solid #dddddd;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
