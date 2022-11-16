@@ -96,7 +96,7 @@ function Navigation2() {
                           </li>
 
                           <li>
-                            <Link to={"/"}>Home 1</Link>
+                            <Link to={"/home1"}>Home 1</Link>
                           </li>
 
                           <li>
@@ -399,9 +399,9 @@ function Navigation2() {
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-survey.html">
+                                    <Link data-barba to={"/survey"}>
                                       Survey
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
