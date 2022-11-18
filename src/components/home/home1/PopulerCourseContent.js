@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PopulerCourseContent() {
   return (
@@ -7,7 +8,7 @@ function PopulerCourseContent() {
         <div className="row y-gap-30 justify-center">
           <div className="col-lg-3 col-md-6">
             <div data-anim-child="slide-up delay-1">
-              <a href="courses-single-1.html" className="coursesCard -type-1 ">
+              <Link to="/courseSingle1" className="coursesCard -type-1 ">
                 <div className="relative">
                   <div className="coursesCard__image overflow-hidden rounded-8">
                     <img
@@ -81,7 +82,7 @@ function PopulerCourseContent() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
