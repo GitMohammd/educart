@@ -29,6 +29,7 @@ function PopulerCourses() {
                     data-tab-target=".-tab-item-2"
                     type="button"
                   >
+                    {console.log("active", isActive)}
                     All Categories
                   </button>
                 )}

@@ -353,11 +353,8 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <Home9TopCatagories />
-
             <ExploreFeaturedCourses />
-
             <section class="layout-pt-md layout-pb-md">
               <div class="container">
                 <div class="row y-gap-20 justify-center text-center">
@@ -435,7 +432,6 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <section class="layout-pt-md layout-pb-md">
               <div data-anim-wrap class="container">
                 <div
@@ -700,9 +696,8 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <LetestBook />
-
+            cd
             <section class="layout-pt-md layout-pb-md">
               <div data-anim-wrap class="container">
                 <div
@@ -802,7 +797,6 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <section class="layout-pt-md layout-pb-lg">
               <div class="container">
                 <div class="row y-gap-20 justify-center text-center">
@@ -995,7 +989,6 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <section class="layout-pt-lg layout-pb-lg section-bg">
               <div class="section-bg__item">
                 <img
@@ -1034,7 +1027,6 @@ function Left10() {
                 </div>
               </div>
             </section>
-
             <section class="layout-pt-lg layout-pb-lg">
               <div class="container">
                 <div class="row justify-center">
