@@ -104,7 +104,7 @@ function BestSeller() {
                     <div className="text-24 lh-1 text-dark-1 fw-500">
                       $96.00
                     </div>
-                    <div className="lh-1 line-through">$76.00</div>
+                    <div className="lh-1 line-through">$176.00</div>
                   </div>
 
                   <button className="button -md -purple-1 text-white w-1/1">
