@@ -21,7 +21,9 @@
     "provider": "Ali Tufan",
     "providerImg": "/assets/img/general/avatar-1.png",
     "previousCost": "179",
-    "offerCost": "79"
+    "offerCost": "79",
+    "populerityTag": "POPULER",
+    "sellingTag": "BEST SELLERS"
   },
   {
     "id": "03",

@@ -1,6 +1,6 @@
 import React from "react";
 
-function BestSeller() {
+function BestSeller({ singleCourse }) {
   return (
     <section className="page-header -type-5 bg-light-6">
       <div className="page-header__bg">
@@ -34,7 +34,7 @@ function BestSeller() {
 
               <div data-anim="slide-up delay-1">
                 <h1 className="text-30 lh-14 pr-60 lg:pr-0">
-                  User Experience Design Essentials - Adobe XD UI UX Design
+                  {singleCourse?.name}
                 </h1>
               </div>
 
@@ -73,10 +73,10 @@ function BestSeller() {
                 <div
                   className="bg-image size-30 rounded-full js-lazy"
                   data-bg="img/avatars/small-1.png"
-                  style={{
-                    backgroundImage: `url('assets/img/avatars/small-1.png')`,
-                  }}
-                ></div>
+                >
+                  {" "}
+                  <img src={singleCourse?.providerImg} alt="" />
+                </div>
                 <div className="text-14 lh-1 ml-10">Ali Tufan</div>
               </div>
             </div>
@@ -84,11 +84,7 @@ function BestSeller() {
             <div className="courses-single-info js-pin-content">
               <div className="bg-white shadow-2 rounded-8 border-light py-10 px-10">
                 <div className="relative">
-                  <img
-                    className="w-1/1"
-                    src="/assets/img/misc/1.png"
-                    alt="image"
-                  />
+                  <img className="w-1/1" src={singleCourse?.img} alt="image" />
                   <div className="absolute-full-center d-flex justify-center items-center">
                     <a
                       href="#"
@@ -102,9 +98,11 @@ function BestSeller() {
                 <div className="courses-single-info__content pt-30 pb-20 px-20">
                   <div className="d-flex justify-between items-center mb-30">
                     <div className="text-24 lh-1 text-dark-1 fw-500">
-                      $96.00
+                      ${singleCourse?.offerCost}
                     </div>
-                    <div className="lh-1 line-through">$176.00</div>
+                    <div className="lh-1 line-through">
+                      ${singleCourse?.previousCost}
+                    </div>
                   </div>
 
                   <button className="button -md -purple-1 text-white w-1/1">
@@ -148,7 +146,7 @@ function BestSeller() {
                         <div className="icon-bar-chart-2"></div>
                         <div className="ml-10">Skill level</div>
                       </div>
-                      <div>Beginner</div>
+                      <div>{singleCourse?.lavel}</div>
                     </div>
 
                     <div className="d-flex justify-between py-8 border-top-light">

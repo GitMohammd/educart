@@ -1589,7 +1589,7 @@ function Overview() {
                   <div className="col-12">
                     <label
                       className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                      for="title"
+                      htmlFor="title"
                     >
                       Review Title
                     </label>
@@ -1602,7 +1602,7 @@ function Overview() {
                   <div className="col-12">
                     <label
                       className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                      for="comment"
+                      htmlFor="comment"
                     >
                       Review Content
                     </label>

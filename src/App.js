@@ -74,9 +74,11 @@ import SignUp from "./components/SignUp/SignUp";
 import UiElements from "./components/uiElementsPage/UiElements";
 import PopulerCourseContent from "./components/home/home1/PopulerCourseContent";
 import NotFoundContent from "./components/404Page/NotFoundContent";
+import CourseCreateContext from "./components/context/courseContext/CourseCreateContext";
 
 function App() {
   return (
+    // <CourseCreateContext.Provider>
     <Routes>
       <Route path="/" element={<Navigate to="/home1/allCategories" />} />
       <Route path="/home1" element={<Home1 />}>
@@ -111,6 +113,7 @@ function App() {
       <Route path="/courselist8" element={<CourseList8 />} />
       <Route path="/courselist9" element={<CourseList8 />} />
       <Route path="/courseSingle1" element={<CourseSingle1 />} />
+      <Route path="/courseSingle1/:courseId" element={<CourseSingle1 />} />
       <Route path="/courseSingle2" element={<CourseSingle2 />} />
       <Route path="/courseSingle3" element={<CourseSingle3 />} />
       <Route path="/courseSingle4" element={<CourseSingle4 />} />
@@ -164,6 +167,7 @@ function App() {
       <Route path="/UIElements" element={<UiElements />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
+    // </CourseCreateContext.Provider>
   );
 }
 
