@@ -1460,7 +1460,7 @@ function Overview() {
                             className="bg-image rounded-full js-lazy"
                             data-bg="img/avatars/1.png"
                             style={{
-                              backgroundImage: `url('img/avatars/1.png')`,
+                              backgroundImage: `url('/assets/img/avatars/1.png')`,
                             }}
                           ></div>
                         </div>
@@ -1512,7 +1512,7 @@ function Overview() {
                             className="bg-image rounded-full js-lazy"
                             data-bg="img/avatars/1.png"
                             style={{
-                              backgroundImage: `url('img/avatars/1.png')`,
+                              backgroundImage: `url('/assets/img/avatars/1.png')`,
                             }}
                           ></div>
                         </div>

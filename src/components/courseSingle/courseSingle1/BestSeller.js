@@ -1,6 +1,10 @@
 import React from "react";
+import UseCourse from "../../Hooks/UseCourse";
 
 function BestSeller({ singleCourse }) {
+  const AddCart = UseCourse();
+  // console.log(hi, "contexxt");
+
   return (
     <section className="page-header -type-5 bg-light-6">
       <div className="page-header__bg">
@@ -105,7 +109,10 @@ function BestSeller({ singleCourse }) {
                     </div>
                   </div>
 
-                  <button className="button -md -purple-1 text-white w-1/1">
+                  <button
+                    onClick={() => AddCart(singleCourse?.id)}
+                    className="button -md -purple-1 text-white w-1/1"
+                  >
                     Add To Cart
                   </button>
                   <button className="button -md -outline-dark-1 text-dark-1 w-1/1 mt-10">

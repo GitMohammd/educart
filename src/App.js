@@ -74,100 +74,101 @@ import SignUp from "./components/SignUp/SignUp";
 import UiElements from "./components/uiElementsPage/UiElements";
 import PopulerCourseContent from "./components/home/home1/PopulerCourseContent";
 import NotFoundContent from "./components/404Page/NotFoundContent";
-import CourseCreateContext from "./components/context/courseContext/CourseCreateContext";
+
+import ContextProvider from "./components/context/cartContext/ContextProvider";
 
 function App() {
   return (
-    // <CourseCreateContext.Provider>
-    <Routes>
-      <Route path="/" element={<Navigate to="/home1/allCategories" />} />
-      <Route path="/home1" element={<Home1 />}>
-        <Route index element={<PopulerCourseContent />} />
-        <Route path="allCategories" element={<PopulerCourseContent />} />
-        <Route path="writting" element={<PopulerCourseContent />} />
-        <Route path="business" element={<PopulerCourseContent />} />
-        <Route path="photo" element={<PopulerCourseContent />} />
-        <Route path="lifeStyle" element={<PopulerCourseContent />} />
-        <Route path="illustration" element={<PopulerCourseContent />} />
-        <Route path="design" element={<PopulerCourseContent />} />
-        <Route path="animation" element={<PopulerCourseContent />} />
+    <ContextProvider>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home1/allCategories" />} />
+        <Route path="/home1" element={<Home1 />}>
+          <Route index element={<PopulerCourseContent />} />
+          <Route path="allCategories" element={<PopulerCourseContent />} />
+          <Route path="writting" element={<PopulerCourseContent />} />
+          <Route path="business" element={<PopulerCourseContent />} />
+          <Route path="photo" element={<PopulerCourseContent />} />
+          <Route path="lifeStyle" element={<PopulerCourseContent />} />
+          <Route path="illustration" element={<PopulerCourseContent />} />
+          <Route path="design" element={<PopulerCourseContent />} />
+          <Route path="animation" element={<PopulerCourseContent />} />
 
-        <Route path="*" element={<NotFoundContent />} />
-      </Route>
-      <Route path="/home2" element={<Home2 />} />
-      <Route path="/home3" element={<Home3 />} />
-      <Route path="/home4" element={<Home4 />} />
-      <Route path="/home5" element={<Home5 />} />
-      <Route path="/home6" element={<Home6 />} />
-      <Route path="/home7" element={<Home7 />} />
-      <Route path="/home8" element={<Home8 />} />
-      <Route path="/home9" element={<Home9 />} />
-      <Route path="/home10" element={<Home10 />} />
-      <Route path="/courselist1" element={<CourseList1 />} />
-      <Route path="/courselist2" element={<CourseList2 />} />
-      <Route path="/courselist3" element={<CourseList3 />} />
-      <Route path="/courselist4" element={<CourseList4 />} />
-      <Route path="/courselist5" element={<CourseList5 />} />
-      <Route path="/courselist6" element={<CourseList6 />} />
-      <Route path="/courselist7" element={<CourseList7 />} />
-      <Route path="/courselist8" element={<CourseList8 />} />
-      <Route path="/courselist9" element={<CourseList8 />} />
-      <Route path="/courseSingle1" element={<CourseSingle1 />} />
-      <Route path="/courseSingle1/:courseId" element={<CourseSingle1 />} />
-      <Route path="/courseSingle2" element={<CourseSingle2 />} />
-      <Route path="/courseSingle3" element={<CourseSingle3 />} />
-      <Route path="/courseSingle4" element={<CourseSingle4 />} />
-      <Route path="/courseSingle5" element={<CourseSingle5 />} />
-      <Route path="/courseSingle6" element={<CourseSingle6 />} />
-      <Route path="/LessonPagev1" element={<LessonPagev1 />} />
-      <Route path="/LessonPagev2" element={<LessonPagev2 />} />
-      <Route path="/InstructorsListv1" element={<InstructorV1 />} />
-      <Route path="/InstructorsListv2" element={<InstructorV2 />} />
-      <Route path="/InstructorsSingle" element={<InstructiorSingle />} />
-      <Route path="/BecomeanInstructor" element={<BecomeAnInstructor />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/myCourses" element={<MyCourses />} />
-      <Route path="/bookmarks" element={<Bookmarks />} />
-      <Route path="/addListing" element={<AddListing />} />
-      <Route path="/reviews" element={<Reviews />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/administration" element={<Administration />} />
-      <Route path="/assignment" element={<Assingment />} />
-      <Route path="/calender" element={<Calender />} />
-      <Route path="/singleDashboard" element={<SingleDashboard />} />
-      <Route path="/dictionary" element={<Dictionary />} />
-      <Route path="/forums" element={<Forums />} />
-      <Route path="/grades" element={<Grade />} />
-      <Route path="/messages" element={<Massage />} />
-      <Route path="/Participants" element={<Participants />} />
-      <Route path="/quiz" element={<Quiz />} />
-      <Route path="/survey" element={<Survey />} />
-      <Route path="/eventList1" element={<EventList1 />} />
-      <Route path="/eventList2" element={<EventList2 />} />
-      <Route path="/eventSingle" element={<SingleEvent />} />
-      <Route path="/blogList1" element={<BlogList1 />} />
-      <Route path="/blogList2" element={<BlogList2 />} />
-      <Route path="/blogList3" element={<BlogList3 />} />
-      <Route path="/blogSingle" element={<SingleBlog />} />
-      <Route path="/about1" element={<AboutPages1 />} />
-      <Route path="/about2" element={<AboutPage2 />} />
-      <Route path="/contact1" element={<ContactPage1 />} />
-      <Route path="/contact2" element={<ContactPage2 />} />
-      <Route path="/shopCart" element={<ShopCart />} />
-      <Route path="/shopCheckout" element={<ShopCheckout />} />
-      <Route path="/shopList" element={<ShopList />} />
-      <Route path="/shopOrder" element={<ShopOrder />} />
-      <Route path="/shopSingle" element={<ShopSingle />} />
-      <Route path="/membershipPlans" element={<MemberShip />} />
+          <Route path="*" element={<NotFoundContent />} />
+        </Route>
+        <Route path="/home2" element={<Home2 />} />
+        <Route path="/home3" element={<Home3 />} />
+        <Route path="/home4" element={<Home4 />} />
+        <Route path="/home5" element={<Home5 />} />
+        <Route path="/home6" element={<Home6 />} />
+        <Route path="/home7" element={<Home7 />} />
+        <Route path="/home8" element={<Home8 />} />
+        <Route path="/home9" element={<Home9 />} />
+        <Route path="/home10" element={<Home10 />} />
+        <Route path="/courselist1" element={<CourseList1 />} />
+        <Route path="/courselist2" element={<CourseList2 />} />
+        <Route path="/courselist3" element={<CourseList3 />} />
+        <Route path="/courselist4" element={<CourseList4 />} />
+        <Route path="/courselist5" element={<CourseList5 />} />
+        <Route path="/courselist6" element={<CourseList6 />} />
+        <Route path="/courselist7" element={<CourseList7 />} />
+        <Route path="/courselist8" element={<CourseList8 />} />
+        <Route path="/courselist9" element={<CourseList8 />} />
+        <Route path="/courseSingle1" element={<CourseSingle1 />} />
+        <Route path="/courseSingle1/:courseId" element={<CourseSingle1 />} />
+        <Route path="/courseSingle2" element={<CourseSingle2 />} />
+        <Route path="/courseSingle3" element={<CourseSingle3 />} />
+        <Route path="/courseSingle4" element={<CourseSingle4 />} />
+        <Route path="/courseSingle5" element={<CourseSingle5 />} />
+        <Route path="/courseSingle6" element={<CourseSingle6 />} />
+        <Route path="/LessonPagev1" element={<LessonPagev1 />} />
+        <Route path="/LessonPagev2" element={<LessonPagev2 />} />
+        <Route path="/InstructorsListv1" element={<InstructorV1 />} />
+        <Route path="/InstructorsListv2" element={<InstructorV2 />} />
+        <Route path="/InstructorsSingle" element={<InstructiorSingle />} />
+        <Route path="/BecomeanInstructor" element={<BecomeAnInstructor />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/myCourses" element={<MyCourses />} />
+        <Route path="/bookmarks" element={<Bookmarks />} />
+        <Route path="/addListing" element={<AddListing />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/administration" element={<Administration />} />
+        <Route path="/assignment" element={<Assingment />} />
+        <Route path="/calender" element={<Calender />} />
+        <Route path="/singleDashboard" element={<SingleDashboard />} />
+        <Route path="/dictionary" element={<Dictionary />} />
+        <Route path="/forums" element={<Forums />} />
+        <Route path="/grades" element={<Grade />} />
+        <Route path="/messages" element={<Massage />} />
+        <Route path="/Participants" element={<Participants />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/survey" element={<Survey />} />
+        <Route path="/eventList1" element={<EventList1 />} />
+        <Route path="/eventList2" element={<EventList2 />} />
+        <Route path="/eventSingle" element={<SingleEvent />} />
+        <Route path="/blogList1" element={<BlogList1 />} />
+        <Route path="/blogList2" element={<BlogList2 />} />
+        <Route path="/blogList3" element={<BlogList3 />} />
+        <Route path="/blogSingle" element={<SingleBlog />} />
+        <Route path="/about1" element={<AboutPages1 />} />
+        <Route path="/about2" element={<AboutPage2 />} />
+        <Route path="/contact1" element={<ContactPage1 />} />
+        <Route path="/contact2" element={<ContactPage2 />} />
+        <Route path="/shopCart" element={<ShopCart />} />
+        <Route path="/shopCheckout" element={<ShopCheckout />} />
+        <Route path="/shopList" element={<ShopList />} />
+        <Route path="/shopOrder" element={<ShopOrder />} />
+        <Route path="/shopSingle" element={<ShopSingle />} />
+        <Route path="/membershipPlans" element={<MemberShip />} />
 
-      <Route path="/FAQs" element={<Faq />} />
-      <Route path="/helpCenter" element={<HelpCenter />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<SignUp />} />
-      <Route path="/UIElements" element={<UiElements />} />
-      <Route path="/*" element={<NotFound />} />
-    </Routes>
-    // </CourseCreateContext.Provider>
+        <Route path="/FAQs" element={<Faq />} />
+        <Route path="/helpCenter" element={<HelpCenter />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/UIElements" element={<UiElements />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </ContextProvider>
   );
 }
 

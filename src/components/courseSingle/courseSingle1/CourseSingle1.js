@@ -5,7 +5,7 @@ import Navigation from "../../shared/Navigation";
 import BestSeller from "./BestSeller";
 import Overview from "./Overview";
 import YouMayLike from "./YouMayLike";
-import UseCourseContext from "../../Hooks/UseCourseContext";
+import UseCourseContext from "../../Hooks/UseCourse";
 import { useParams } from "react-router-dom";
 
 function CourseSingle1() {
@@ -18,18 +18,6 @@ function CourseSingle1() {
   }, []);
 
   const singleCourse = courses.find(({ id }) => id === courseId);
-  // const {
-  //   id,
-  //   img,
-  //   name,
-  //   lesson,
-  //   offerCost,
-  //   previousCost,
-  //   providerImg,
-  //   time,
-  //   populerityTag,
-  //   sellingTag,
-  // } = singleCourse?;
 
   return (
     <div className="preloader-visible" data-barba="wrapper">
