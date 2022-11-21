@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { useLocalstorage } from "./UseLocalstorage";
 
 const UseCourseCart = () => {
-  const [courseItems, setCourseItems] = useState([]);
+  const [courseItems, setCourseItems] = useLocalstorage("CourseCart", []);
 
   const getCourseQuantity = (id) => {
     return courseItems.find((item) => item.id === id)?.quantity || 0;
   };
   const increaseCourseQuantity = (id) => {
     setCourseItems((currItems) => {
-      if (currItems.find((item) => item.id === id) == null) {
+      if (currItems?.find((item) => item.id === id) == null) {
         return [...currItems, { id, quantity: 1 }];
       } else {
-        return currItems.map((item) => {
+        return currItems?.map((item) => {
           if (item.id === id) {
             return { ...item, quantity: item.quantity + 1 };
           } else {

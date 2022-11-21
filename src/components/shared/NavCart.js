@@ -20,7 +20,6 @@ function NavCart() {
 
   // console.log(cartCourseItemId, cartCourse, "course Item");
 
-  const hi = false;
   return (
     <div className="js-cart-toggle">
       {cartCourse >= 0 ? (
