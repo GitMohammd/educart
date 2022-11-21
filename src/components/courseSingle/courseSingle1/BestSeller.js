@@ -1,9 +1,14 @@
 import React from "react";
-import UseCourse from "../../Hooks/UseCourse";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
+import UseCourse from "../../Hooks/UseCourseCart";
 
 function BestSeller({ singleCourse }) {
-  const AddCart = UseCourse();
-  // console.log(hi, "contexxt");
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
 
   return (
     <section className="page-header -type-5 bg-light-6">
@@ -110,7 +115,7 @@ function BestSeller({ singleCourse }) {
                   </div>
 
                   <button
-                    onClick={() => AddCart(singleCourse?.id)}
+                    onClick={() => increaseCourseQuantity(singleCourse?.id)}
                     className="button -md -purple-1 text-white w-1/1"
                   >
                     Add To Cart

@@ -5,7 +5,7 @@ import Navigation from "../../shared/Navigation";
 import BestSeller from "./BestSeller";
 import Overview from "./Overview";
 import YouMayLike from "./YouMayLike";
-import UseCourseContext from "../../Hooks/UseCourse";
+import UseCourseContext from "../../Hooks/UseCourseCart";
 import { useParams } from "react-router-dom";
 
 function CourseSingle1() {
@@ -24,14 +24,13 @@ function CourseSingle1() {
       <div className="barba-container" data-barba="container">
         <main className="main-content  ">
           <Navigation />
-          <div className="content-wrapper  js-content-wrapper">
+          <div className="content-wrapper js-content-wrapper">
             <SubNav />
             <div className="js-pin-container">
               <BestSeller singleCourse={singleCourse} />
               <Overview />
             </div>
             <YouMayLike />
-            <UseCourseContext />
 
             <Footer />
           </div>

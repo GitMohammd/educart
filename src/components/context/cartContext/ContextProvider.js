@@ -1,10 +1,10 @@
 import React, { createContext } from "react";
-import UseCourse from "../../Hooks/UseCourse";
+import UseCourseCart from "../../Hooks/UseCourseCart";
 
 export const CartContext = createContext();
 
 const ContextProvider = ({ children }) => {
-  const allContext = UseCourse();
+  const allContext = UseCourseCart();
   return (
     <CartContext.Provider value={allContext}>{children}</CartContext.Provider>
   );
