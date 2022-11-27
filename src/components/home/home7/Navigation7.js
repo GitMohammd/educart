@@ -1,318 +1,335 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation7() {
+  const [navColor, setNavColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 1) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
     <header
       data-anim="fade"
       data-add-bg="bg-white"
-      class="header -type-4 js-header"
+      className={
+        navColor
+          ? "header -type-4 js-header bg-white"
+          : "header -type-4 js-header "
+      }
     >
-      <div class="header__container py-10">
-        <div class="row justify-between items-center">
-          <div class="col-auto">
-            <div class="header-left d-flex items-center">
-              <div class="header__logo pr-30 xl:pr-20 md:pr-0">
+      <div className="header__container py-10">
+        <div className="row justify-between items-center">
+          <div className="col-auto">
+            <div className="header-left d-flex items-center">
+              <div className="header__logo pr-30 xl:pr-20 md:pr-0">
                 <a data-barba href="index.html">
                   <img src="/assets/img/general/logo-dark.svg" alt="logo" />
                 </a>
               </div>
 
-              <div class="header__explore xl:d-none">
+              <div className="header__explore xl:d-none">
                 <a
                   href="#"
-                  class="d-flex items-center"
+                  className="d-flex items-center"
                   data-el-toggle=".js-explore-toggle"
                 >
-                  <i class="icon icon-explore mr-15"></i>
+                  <i className="icon icon-explore mr-15"></i>
                   Explore
                 </a>
 
-                <div class="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
-                  <div class="explore__item">
+                <div className="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Architecture<div class="icon-chevron-right text-11"></div>
+                      Architecture
+                      <div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Business<div class="icon-chevron-right text-11"></div>
+                      Business<div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       Computer Programming
                     </a>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       Data Analysis
                     </a>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Design<div class="icon-chevron-right text-11"></div>
+                      Design<div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       Education
                     </a>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Electronics<div class="icon-chevron-right text-11"></div>
+                      Electronics
+                      <div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Language<div class="icon-chevron-right text-11"></div>
+                      Language<div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
-                      Marketing<div class="icon-chevron-right text-11"></div>
+                      Marketing
+                      <div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       Music Arts
                     </a>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       Social Science
                     </a>
                   </div>
 
-                  <div class="explore__item">
+                  <div className="explore__item">
                     <a
                       href="#"
-                      class="d-flex items-center justify-between text-dark-1"
+                      className="d-flex items-center justify-between text-dark-1"
                     >
                       Photography & Video
-                      <div class="icon-chevron-right text-11"></div>
+                      <div className="icon-chevron-right text-11"></div>
                     </a>
-                    <div class="explore__subnav rounded-8">
-                      <a class="text-dark-1" href="#">
+                    <div className="explore__subnav rounded-8">
+                      <a className="text-dark-1" href="#">
                         Web Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Graphic Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Design Tools
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         User Experience Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Game Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         3D & Animation
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Fashion Design
                       </a>
-                      <a class="text-dark-1" href="#">
+                      <a className="text-dark-1" href="#">
                         Interior Design
                       </a>
                     </div>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-dark-1">
+                  <div className="explore__item">
+                    <a href="#" className="text-dark-1">
                       IT & Software
                     </a>
                   </div>
 
-                  <div class="explore__item">
-                    <a href="#" class="text-purple-1 underline">
+                  <div className="explore__item">
+                    <a href="#" className="text-purple-1 underline">
                       View All Courses
                     </a>
                   </div>
@@ -321,32 +338,34 @@ function Navigation7() {
             </div>
           </div>
 
-          <div class="col-auto">
-            <div class="header-menu js-mobile-menu-toggle ">
-              <div class="header-menu__content">
-                <div class="mobile-bg js-mobile-bg"></div>
+          <div className="col-auto">
+            <div className="header-menu js-mobile-menu-toggle ">
+              <div className="header-menu__content">
+                <div className="mobile-bg js-mobile-bg"></div>
 
-                <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                  <Link class="text-dark-1" to={"/login"}>
+                <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+                  <Link className="text-dark-1" to={"/login"}>
                     Log in
                   </Link>
 
-                  <Link class="text-dark-1 ml-30" to={"/register"}>
+                  <Link className="text-dark-1 ml-30" to={"/register"}>
                     Sign Up
                   </Link>
                 </div>
 
-                <div class="menu js-navList">
-                  <ul class="menu__nav text-dark-1 -is-active">
-                    <li class="menu-item-has-children">
+                <div className="menu js-navList">
+                  <ul className="menu__nav text-dark-1 -is-active">
+                    <li className="menu-item-has-children">
                       <a data-barba href="#">
-                        Home <i class="icon-chevron-right text-13 ml-10"></i>
+                        Home{" "}
+                        <i className="icon-chevron-right text-13 ml-10"></i>
                       </a>
 
-                      <ul class="subnav">
-                        <li class="menu__backButton js-nav-list-back">
+                      <ul className="subnav">
+                        <li className="menu__backButton js-nav-list-back">
                           <a href="#">
-                            <i class="icon-chevron-left text-13 mr-10"></i> Home
+                            <i className="icon-chevron-left text-13 mr-10"></i>{" "}
+                            Home
                           </a>
                         </li>
 
@@ -392,20 +411,21 @@ function Navigation7() {
                       </ul>
                     </li>
 
-                    <li class="menu-item-has-children -has-mega-menu">
+                    <li className="menu-item-has-children -has-mega-menu">
                       <a data-barba href="#">
-                        Courses <i class="icon-chevron-right text-13 ml-10"></i>
+                        Courses{" "}
+                        <i className="icon-chevron-right text-13 ml-10"></i>
                       </a>
 
-                      <div class="mega xl:d-none">
-                        <div class="mega__menu">
-                          <div class="row x-gap-40">
-                            <div class="col">
-                              <h4 class="text-17 fw-500 mb-20">
+                      <div className="mega xl:d-none">
+                        <div className="mega__menu">
+                          <div className="row x-gap-40">
+                            <div className="col">
+                              <h4 className="text-17 fw-500 mb-20">
                                 Course List Layouts
                               </h4>
 
-                              <ul class="mega__list">
+                              <ul className="mega__list">
                                 <li>
                                   <a data-barba href="courses-list-1.html">
                                     Course List v1
@@ -462,12 +482,12 @@ function Navigation7() {
                               </ul>
                             </div>
 
-                            <div class="col">
-                              <h4 class="text-17 fw-500 mb-20">
+                            <div className="col">
+                              <h4 className="text-17 fw-500 mb-20">
                                 Course Single Layouts
                               </h4>
 
-                              <ul class="mega__list">
+                              <ul className="mega__list">
                                 <li>
                                   <a data-barba href="courses-single-1.html">
                                     Course Single v1
@@ -506,12 +526,12 @@ function Navigation7() {
                               </ul>
                             </div>
 
-                            <div class="col">
-                              <h4 class="text-17 fw-500 mb-20">
+                            <div className="col">
+                              <h4 className="text-17 fw-500 mb-20">
                                 About Courses
                               </h4>
 
-                              <ul class="mega__list">
+                              <ul className="mega__list">
                                 <li>
                                   <a data-barba href="lesson-single-1.html">
                                     Lesson Page v1
@@ -550,12 +570,12 @@ function Navigation7() {
                               </ul>
                             </div>
 
-                            <div class="col">
-                              <h4 class="text-17 fw-500 mb-20">
+                            <div className="col">
+                              <h4 className="text-17 fw-500 mb-20">
                                 Dashboard Pages
                               </h4>
 
-                              <ul class="mega__list">
+                              <ul className="mega__list">
                                 <li>
                                   <a data-barba href="dashboard.html">
                                     Dashboard
@@ -660,12 +680,12 @@ function Navigation7() {
                               </ul>
                             </div>
 
-                            <div class="col">
-                              <h4 class="text-17 fw-500 mb-20">
+                            <div className="col">
+                              <h4 className="text-17 fw-500 mb-20">
                                 Popular Courses
                               </h4>
 
-                              <ul class="mega__list">
+                              <ul className="mega__list">
                                 <li>
                                   <a data-barba href="#">
                                     Web Developer
@@ -711,18 +731,18 @@ function Navigation7() {
                             </div>
                           </div>
 
-                          <div class="mega-banner bg-purple-1 ml-40">
-                            <div class="text-24 lh-15 text-white fw-700">
+                          <div className="mega-banner bg-purple-1 ml-40">
+                            <div className="text-24 lh-15 text-white fw-700">
                               Join more than
                               <br />
-                              <span class="text-green-1">
+                              <span className="text-green-1">
                                 8 million learners
                               </span>
                               worldwide
                             </div>
                             <a
                               href="#"
-                              class="button -md -green-1 text-dark-1 fw-500 col-12"
+                              className="button -md -green-1 text-dark-1 fw-500 col-12"
                             >
                               Start Learning For Free
                             </a>
@@ -730,24 +750,24 @@ function Navigation7() {
                         </div>
                       </div>
 
-                      <ul class="subnav d-none xl:d-block">
-                        <li class="menu__backButton js-nav-list-back">
+                      <ul className="subnav d-none xl:d-block">
+                        <li className="menu__backButton js-nav-list-back">
                           <a href="#">
-                            <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                            <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                             Courses
                           </a>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             Course List Layouts
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Course List Layouts
                               </a>
                             </li>
@@ -792,16 +812,16 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             Course Single Layouts
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Course Single Layouts
                               </a>
                             </li>
@@ -844,16 +864,16 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             About Courses
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 About Courses
                               </a>
                             </li>
@@ -892,16 +912,16 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             Dashboard Pages
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Dashboard Pages
                               </a>
                             </li>
@@ -978,16 +998,16 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             Popular Courses
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Popular Courses
                               </a>
                             </li>
@@ -1024,14 +1044,15 @@ function Navigation7() {
                       </ul>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li className="menu-item-has-children">
                       <a data-barba href="#">
-                        Events <i class="icon-chevron-right text-13 ml-10"></i>
+                        Events{" "}
+                        <i className="icon-chevron-right text-13 ml-10"></i>
                       </a>
-                      <ul class="subnav">
-                        <li class="menu__backButton js-nav-list-back">
+                      <ul className="subnav">
+                        <li className="menu__backButton js-nav-list-back">
                           <a href="#">
-                            <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                            <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                             Events
                           </a>
                         </li>
@@ -1056,14 +1077,16 @@ function Navigation7() {
                       </ul>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li className="menu-item-has-children">
                       <a data-barba href="#">
-                        Blog <i class="icon-chevron-right text-13 ml-10"></i>
+                        Blog{" "}
+                        <i className="icon-chevron-right text-13 ml-10"></i>
                       </a>
-                      <ul class="subnav">
-                        <li class="menu__backButton js-nav-list-back">
+                      <ul className="subnav">
+                        <li className="menu__backButton js-nav-list-back">
                           <a href="#">
-                            <i class="icon-chevron-left text-13 mr-10"></i> Blog
+                            <i className="icon-chevron-left text-13 mr-10"></i>{" "}
+                            Blog
                           </a>
                         </li>
 
@@ -1093,28 +1116,29 @@ function Navigation7() {
                       </ul>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li className="menu-item-has-children">
                       <a data-barba href="#">
-                        Pages <i class="icon-chevron-right text-13 ml-10"></i>
+                        Pages{" "}
+                        <i className="icon-chevron-right text-13 ml-10"></i>
                       </a>
 
-                      <ul class="subnav">
-                        <li class="menu__backButton js-nav-list-back">
+                      <ul className="subnav">
+                        <li className="menu__backButton js-nav-list-back">
                           <a href="#">
-                            <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                            <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                             Pages
                           </a>
                         </li>
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             About Us
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
 
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 About Us
                               </a>
                             </li>
@@ -1133,15 +1157,15 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
                             Contact
-                            <div class="icon-chevron-right text-11"></div>
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Contact
                               </a>
                             </li>
@@ -1160,14 +1184,15 @@ function Navigation7() {
                           </ul>
                         </li>
 
-                        <li class="menu-item-has-children">
+                        <li className="menu-item-has-children">
                           <a href="#">
-                            Shop<div class="icon-chevron-right text-11"></div>
+                            Shop
+                            <div className="icon-chevron-right text-11"></div>
                           </a>
-                          <ul class="subnav">
-                            <li class="menu__backButton js-nav-list-back">
+                          <ul className="subnav">
+                            <li className="menu__backButton js-nav-list-back">
                               <a href="#">
-                                <i class="icon-chevron-left text-13 mr-10"></i>{" "}
+                                <i className="icon-chevron-left text-13 mr-10"></i>{" "}
                                 Shop
                               </a>
                             </li>
@@ -1254,15 +1279,15 @@ function Navigation7() {
                   </ul>
                 </div>
 
-                <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
-                  <div class="mobile-footer__number">
-                    <div class="text-17 fw-500 text-dark-1">Call us</div>
-                    <div class="text-17 fw-500 text-purple-1">
+                <div className="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                  <div className="mobile-footer__number">
+                    <div className="text-17 fw-500 text-dark-1">Call us</div>
+                    <div className="text-17 fw-500 text-purple-1">
                       800 388 80 90
                     </div>
                   </div>
 
-                  <div class="lh-2 mt-10">
+                  <div className="lh-2 mt-10">
                     <div>
                       329 Queensberry Street,
                       <br /> North Melbourne VIC 3051, Australia.
@@ -1270,112 +1295,112 @@ function Navigation7() {
                     <div>hi@educrat.com</div>
                   </div>
 
-                  <div class="mobile-socials mt-10">
+                  <div className="mobile-socials mt-10">
                     <a
                       href="#"
-                      class="d-flex items-center justify-center rounded-full size-40"
+                      className="d-flex items-center justify-center rounded-full size-40"
                     >
-                      <i class="fa fa-facebook"></i>
+                      <i className="fa fa-facebook"></i>
                     </a>
 
                     <a
                       href="#"
-                      class="d-flex items-center justify-center rounded-full size-40"
+                      className="d-flex items-center justify-center rounded-full size-40"
                     >
-                      <i class="fa fa-twitter"></i>
+                      <i className="fa fa-twitter"></i>
                     </a>
 
                     <a
                       href="#"
-                      class="d-flex items-center justify-center rounded-full size-40"
+                      className="d-flex items-center justify-center rounded-full size-40"
                     >
-                      <i class="fa fa-instagram"></i>
+                      <i className="fa fa-instagram"></i>
                     </a>
 
                     <a
                       href="#"
-                      class="d-flex items-center justify-center rounded-full size-40"
+                      className="d-flex items-center justify-center rounded-full size-40"
                     >
-                      <i class="fa fa-linkedin"></i>
+                      <i className="fa fa-linkedin"></i>
                     </a>
                   </div>
                 </div>
               </div>
 
               <div
-                class="header-menu-close"
+                className="header-menu-close"
                 data-el-toggle=".js-mobile-menu-toggle"
               >
-                <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
-                  <div class="icon-close text-dark-1 text-16"></div>
+                <div className="size-40 d-flex items-center justify-center rounded-full bg-white">
+                  <div className="icon-close text-dark-1 text-16"></div>
                 </div>
               </div>
 
-              <div class="header-menu-bg"></div>
+              <div className="header-menu-bg"></div>
             </div>
           </div>
 
-          <div class="col-auto">
-            <div class="header-right d-flex items-center">
-              <div class="header-right__icons text-white d-flex items-center">
-                <div class="">
+          <div className="col-auto">
+            <div className="header-right d-flex items-center">
+              <div className="header-right__icons text-white d-flex items-center">
+                <div className="">
                   <button
-                    class="d-flex items-center text-dark-1"
+                    className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-search-toggle"
                   >
-                    <i class="text-20 icon icon-search"></i>
+                    <i className="text-20 icon icon-search"></i>
                   </button>
 
-                  <div class="toggle-element js-search-toggle">
-                    <div class="header-search pt-90 bg-white shadow-4">
-                      <div class="container">
-                        <div class="header-search__field">
-                          <div class="icon icon-search text-dark-1"></div>
+                  <div className="toggle-element js-search-toggle">
+                    <div className="header-search pt-90 bg-white shadow-4">
+                      <div className="container">
+                        <div className="header-search__field">
+                          <div className="icon icon-search text-dark-1"></div>
                           <input
                             type="text"
-                            class="col-12 text-18 lh-12 text-dark-1 fw-500"
+                            className="col-12 text-18 lh-12 text-dark-1 fw-500"
                             placeholder="What do you want to learn?"
                           />
 
                           <button
-                            class="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
+                            className="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
                             data-el-toggle=".js-search-toggle"
                           >
                             <img src="/assets/img/menus/close.svg" alt="icon" />
                           </button>
                         </div>
 
-                        <div class="header-search__content mt-30">
-                          <div class="text-17 text-dark-1 fw-500">
+                        <div className="header-search__content mt-30">
+                          <div className="text-17 text-dark-1 fw-500">
                             Popular Right Now
                           </div>
 
-                          <div class="d-flex y-gap-5 flex-column mt-20">
-                            <a href="#" class="text-dark-1">
+                          <div className="d-flex y-gap-5 flex-column mt-20">
+                            <a href="#" className="text-dark-1">
                               The Ultimate Drawing Course - Beginner to Advanced
                             </a>
-                            <a href="#" class="text-dark-1">
+                            <a href="#" className="text-dark-1">
                               Character Art School: Complete Character Drawing
                               Course
                             </a>
-                            <a href="#" class="text-dark-1">
+                            <a href="#" className="text-dark-1">
                               Complete Blender Creator: Learn 3D Modelling for
                               Beginners
                             </a>
-                            <a href="#" class="text-dark-1">
+                            <a href="#" className="text-dark-1">
                               User Experience Design Essentials - Adobe XD UI UX
                               Design
                             </a>
-                            <a href="#" class="text-dark-1">
+                            <a href="#" className="text-dark-1">
                               Graphic Design Masterclass - Learn GREAT Design
                             </a>
-                            <a href="#" class="text-dark-1">
+                            <a href="#" className="text-dark-1">
                               Adobe Photoshop CC – Essentials Training Course
                             </a>
                           </div>
 
-                          <div class="mt-30">
-                            <button class="uppercase underline">
+                          <div className="mt-30">
+                            <button className="uppercase underline">
                               PRESS ENTER TO SEE ALL SEARCH RESULTS
                             </button>
                           </div>
@@ -1383,44 +1408,44 @@ function Navigation7() {
                       </div>
                     </div>
                     <div
-                      class="header-search__bg"
+                      className="header-search__bg"
                       data-el-toggle=".js-search-toggle"
                     ></div>
                   </div>
                 </div>
 
-                <div class="relative pl-30 sm:pl-15">
+                <div className="relative pl-30 sm:pl-15">
                   <button
-                    class="d-flex items-center text-dark-1"
+                    className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-cart-toggle"
                   >
-                    <i class="text-20 icon icon-basket"></i>
+                    <i className="text-20 icon icon-basket"></i>
                   </button>
 
-                  <div class="toggle-element js-cart-toggle">
-                    <div class="header-cart bg-white -dark-bg-dark-1 rounded-8">
-                      <div class="px-30 pt-30 pb-10">
-                        <div class="row justify-between x-gap-40 pb-20">
-                          <div class="col">
-                            <div class="row x-gap-10 y-gap-10">
-                              <div class="col-auto">
+                  <div className="toggle-element js-cart-toggle">
+                    <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
+                      <div className="px-30 pt-30 pb-10">
+                        <div className="row justify-between x-gap-40 pb-20">
+                          <div className="col">
+                            <div className="row x-gap-10 y-gap-10">
+                              <div className="col-auto">
                                 <img
                                   src="/assets/img/menus/cart/1.png"
                                   alt="image"
                                 />
                               </div>
 
-                              <div class="col">
-                                <div class="text-dark-1 lh-15">
+                              <div className="col">
+                                <div className="text-dark-1 lh-15">
                                   The Ultimate Drawing Course Beginner to
                                   Advanced...
                                 </div>
 
-                                <div class="d-flex items-center mt-10">
-                                  <div class="lh-12 fw-500 line-through text-light-1 mr-10">
+                                <div className="d-flex items-center mt-10">
+                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
                                     $179
                                   </div>
-                                  <div class="text-18 lh-12 fw-500 text-dark-1">
+                                  <div className="text-18 lh-12 fw-500 text-dark-1">
                                     $79
                                   </div>
                                 </div>
@@ -1428,7 +1453,7 @@ function Navigation7() {
                             </div>
                           </div>
 
-                          <div class="col-auto">
+                          <div className="col-auto">
                             <button>
                               <img
                                 src="asstes/img/menus/close.svg"
@@ -1438,27 +1463,27 @@ function Navigation7() {
                           </div>
                         </div>
 
-                        <div class="row justify-between x-gap-40 pb-20">
-                          <div class="col">
-                            <div class="row x-gap-10 y-gap-10">
-                              <div class="col-auto">
+                        <div className="row justify-between x-gap-40 pb-20">
+                          <div className="col">
+                            <div className="row x-gap-10 y-gap-10">
+                              <div className="col-auto">
                                 <img
                                   src="/assets/img/menus/cart/2.png"
                                   alt="image"
                                 />
                               </div>
 
-                              <div class="col">
-                                <div class="text-dark-1 lh-15">
+                              <div className="col">
+                                <div className="text-dark-1 lh-15">
                                   User Experience Design Essentials - Adobe XD
                                   UI UX...
                                 </div>
 
-                                <div class="d-flex items-center mt-10">
-                                  <div class="lh-12 fw-500 line-through text-light-1 mr-10">
+                                <div className="d-flex items-center mt-10">
+                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
                                     $179
                                   </div>
-                                  <div class="text-18 lh-12 fw-500 text-dark-1">
+                                  <div className="text-18 lh-12 fw-500 text-dark-1">
                                     $79
                                   </div>
                                 </div>
@@ -1466,7 +1491,7 @@ function Navigation7() {
                             </div>
                           </div>
 
-                          <div class="col-auto">
+                          <div className="col-auto">
                             <button>
                               <img
                                 src="/assets/img/menus/close.svg"
@@ -1477,24 +1502,24 @@ function Navigation7() {
                         </div>
                       </div>
 
-                      <div class="px-30 pt-20 pb-30 border-top-light">
-                        <div class="d-flex justify-between">
-                          <div class="text-18 lh-12 text-dark-1 fw-500">
+                      <div className="px-30 pt-20 pb-30 border-top-light">
+                        <div className="d-flex justify-between">
+                          <div className="text-18 lh-12 text-dark-1 fw-500">
                             Total:
                           </div>
-                          <div class="text-18 lh-12 text-dark-1 fw-500">
+                          <div className="text-18 lh-12 text-dark-1 fw-500">
                             $659
                           </div>
                         </div>
 
-                        <div class="row x-gap-20 y-gap-10 pt-30">
-                          <div class="col-sm-6">
-                            <button class="button py-20 -dark-1 text-white -dark-button-white col-12">
+                        <div className="row x-gap-20 y-gap-10 pt-30">
+                          <div className="col-sm-6">
+                            <button className="button py-20 -dark-1 text-white -dark-button-white col-12">
                               View Cart
                             </button>
                           </div>
-                          <div class="col-sm-6">
-                            <button class="button py-20 -purple-1 text-white col-12">
+                          <div className="col-sm-6">
+                            <button className="button py-20 -purple-1 text-white col-12">
                               Checkout
                             </button>
                           </div>
@@ -1504,23 +1529,23 @@ function Navigation7() {
                   </div>
                 </div>
 
-                <div class="d-none xl:d-block pl-30 sm:pl-15">
+                <div className="d-none xl:d-block pl-30 sm:pl-15">
                   <button
-                    class="text-dark-1 items-center"
+                    className="text-dark-1 items-center"
                     data-el-toggle=".js-mobile-menu-toggle"
                   >
-                    <i class="text-11 icon icon-mobile-menu"></i>
+                    <i className="text-11 icon icon-mobile-menu"></i>
                   </button>
                 </div>
               </div>
 
-              <div class="header-right__buttons d-flex items-center ml-30 xl:ml-20 lg:d-none">
-                <Link class="button -underline text-purple-1" to={"/login"}>
+              <div className="header-right__buttons d-flex items-center ml-30 xl:ml-20 lg:d-none">
+                <Link className="button -underline text-purple-1" to={"/login"}>
                   Log in
                 </Link>
 
                 <Link
-                  class="button h-50 px-30 -purple-3 -rounded text-purple-1 ml-15"
+                  className="button h-50 px-30 -purple-3 -rounded text-purple-1 ml-15"
                   to={"/register"}
                 >
                   Sign Up

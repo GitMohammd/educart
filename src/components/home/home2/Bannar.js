@@ -1,44 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Bannar() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const sliderImage = [
+    { url: "assets/img/home-2/mainSlider/bg.png" },
+    { url: "assets/img/home-2/mainSlider/bg" },
+    { url: "assets/img/home-2/mainSlider/bg.png" },
+  ];
+
+  const goPrevious = () => {
+    const isFirstSlide = currentImage === 0;
+    const newIndex = isFirstSlide ? sliderImage.length - 1 : currentImage - 1;
+    console.log(newIndex, "newIndex");
+    setCurrentImage(newIndex);
+  };
+  const goNext = () => {
+    const isLastSlide = currentImage === sliderImage.length - 1;
+    const newIndex = isLastSlide ? 0 : currentImage + 1;
+    console.log(newIndex, "newIndex");
+    setCurrentImage(newIndex);
+  };
+
+  const slide = {
+    opacity: 1,
+    transition: "1000ms opacity ease-in-out",
+    transitionDelay: "1000ms",
+  };
+  const currentSlide = {
+    opacity: 1,
+    backgroundImage: `url(${sliderImage[currentImage].url})`,
+  };
   return (
     <section data-anim-wrap className="mainSlider -type-1 js-mainSlider">
       <div className="swiper-wrapper">
         <div className="swiper-slide">
-          <div data-anim-child="fade" className="mainSlider__bg">
-            <div
-              className="bg-image js-lazy"
-              data-bg="assets/img/home-2/mainSlider/bg.png"
-              style={{
-                backgroundImage: `url("assets/img/home-2/mainSlider/bg.png")`,
-              }}
-            ></div>
+          <div data-anim-child="fade" className="mainSlider__bg" style={slide}>
+            <div className="bg-image js-lazy" style={currentSlide}></div>
           </div>
         </div>
 
-        <div className="swiper-slide">
+        {/* <div className="swiper-slide">
           <div data-anim-child="fade" className="mainSlider__bg">
             <div
               className="bg-image js-lazy"
-              data-bg="assets/img/home-2/mainSlider/bg.png"
               style={{
                 backgroundImage: `url("assets/img/home-2/mainSlider/bg.png")`,
               }}
             ></div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="swiper-slide">
+        {/* <div className="swiper-slide">
           <div data-anim-child="fade" className="mainSlider__bg">
             <div
               className="bg-image js-lazy"
-              data-bg="assets/img/home-2/mainSlider/bg.png"
               style={{
                 backgroundImage: `url("assets/img/home-2/mainSlider/bg.png")`,
               }}
             ></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="container">
@@ -81,7 +102,7 @@ function Bannar() {
         >
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="/assets/img/home-2/mainSlider/icons/1.svg" alt="icon" />
+              <img src="assets/img/home-2/mainSlider/icons/1.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 100,000 online courses
               </h4>
@@ -93,7 +114,7 @@ function Bannar() {
 
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="/assets/img/home-2/mainSlider/icons/2.svg" alt="icon" />
+              <img src="assets/img/home-2/mainSlider/icons/2.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 Expert instruction
               </h4>
@@ -105,7 +126,7 @@ function Bannar() {
 
           <div className="col-xl-3 col-md-4 col-sm-6">
             <div className="mainSlider-item text-center">
-              <img src="/assets/img/home-2/mainSlider/icons/3.svg" alt="icon" />
+              <img src="assets/img/home-2/mainSlider/icons/3.svg" alt="icon" />
               <h4 className="text-20 fw-500 lh-18 text-white mt-8">
                 Lifetime access
               </h4>
@@ -115,11 +136,17 @@ function Bannar() {
         </div>
       </div>
 
-      <button className="swiper-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev">
+      <button
+        className="swiper-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev"
+        onClick={goPrevious}
+      >
         <i className="icon icon-arrow-left text-24"></i>
       </button>
 
-      <button className="swiper-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next">
+      <button
+        className="swiper-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next"
+        onClick={goNext}
+      >
         <i className="icon icon-arrow-right text-24"></i>
       </button>
     </section>

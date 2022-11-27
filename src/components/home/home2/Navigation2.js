@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation2() {
+  const [navColor, setNavColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 1) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
     <header
       data-anim="fade"
       data-add-bg="bg-dark-1"
-      className="header -type-5 js-header "
+      className={
+        navColor
+          ? "header -type-5 js-header bg-dark-1"
+          : "header -type-5 js-header"
+      }
     >
       <div className="d-flex items-center bg-purple-1 py-10">
         <div className="container">

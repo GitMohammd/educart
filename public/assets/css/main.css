@@ -5806,7 +5806,6 @@ h6 {
 }
 
 .masthead.-type-7 .masthead__bg {
-  z-index: -1;
   position: absolute;
   top: 0;
   left: 15px;
@@ -5816,7 +5815,6 @@ h6 {
 
 @media (max-width: 1700px) {
   .masthead.-type-7 .masthead__bg {
-    z-index: -1;
     top: 0;
     left: -15px;
     right: -15px;
@@ -5825,7 +5823,6 @@ h6 {
 }
 
 .masthead.-type-7 .masthead__bg > img {
-  z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
@@ -15634,3 +15631,31 @@ table.table td {
   padding-top: 0px !important;
   margin-top: 0px !important;
 }
+/* ============ react slideshow============ */
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.indicator {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border: 1px #666 solid;
+  margin: 0;
+}
+
+.indicator.active {
+  color: #fff;
+  background: #666;
+}
+/* ============== mui ============ */

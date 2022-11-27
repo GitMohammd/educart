@@ -1,28 +1,30 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
-function Courses({ course }) {
+function FilterCourses({ course }) {
   const {
     id,
     img,
+    lavel,
     name,
-    lesson,
     offerCost,
-    previousCost,
-    providerImg,
-    time,
     populerityTag,
+    previousCost,
+    provider,
+    providerImg,
     sellingTag,
+    time,
   } = course;
-
   return (
     <div className="col-lg-3 col-md-6">
-      <div data-anim-child="slide-up delay-1">
-        <Link to={`/courseSingle1/${id}`} className="coursesCard -type-1 ">
+      <div data-anim-child="slide-up delay-2">
+        <a
+          href="courses-single-1.html"
+          className="coursesCard -type-1 -hover-shadow border-light rounded-8"
+        >
           <div className="relative">
-            <div className="coursesCard__image overflow-hidden rounded-8">
+            <div className="coursesCard__image overflow-hidden rounded-top-8">
               <img className="w-1/1" src={img} alt="image" />
-              <div className="coursesCard__image_overlay rounded-8"></div>
+              <div className="coursesCard__image_overlay rounded-top-8"></div>
             </div>
             <div className="d-flex justify-between py-10 px-10 absolute-full-center z-3">
               <div>
@@ -43,7 +45,7 @@ function Courses({ course }) {
             </div>
           </div>
 
-          <div className="h-100 pt-15">
+          <div className="h-100 pt-15 pb-10 px-20">
             <div className="d-flex items-center">
               <div className="text-14 lh-1 text-yellow-1 mr-10">4.5</div>
               <div className="d-flex x-gap-5 items-center">
@@ -63,7 +65,7 @@ function Courses({ course }) {
                 <div className="mr-8">
                   <img src="/assets/img/coursesCards/icons/1.svg" alt="icon" />
                 </div>
-                <div className="text-14 lh-1">{lesson} lesson</div>
+                <div className="text-14 lh-1">6 lesson</div>
               </div>
 
               <div className="d-flex items-center">
@@ -77,7 +79,7 @@ function Courses({ course }) {
                 <div className="mr-8">
                   <img src="/assets/img/coursesCards/icons/3.svg" alt="icon" />
                 </div>
-                <div className="text-14 lh-1">Beginner</div>
+                <div className="text-14 lh-1">{lavel}</div>
               </div>
             </div>
 
@@ -93,10 +95,10 @@ function Courses({ course }) {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
   );
 }
 
-export default Courses;
+export default FilterCourses;

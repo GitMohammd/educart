@@ -7,7 +7,7 @@ import BecomeStudent from "./BecomeStudent";
 import LearningPath from "./LearningPath";
 import LearningSolutions from "./LearningSolutions";
 import Navigation2 from "./Navigation2";
-import PopulerCourses from "./PopulerCourses";
+import PopulerCourses2 from "./PopulerCourses2";
 import TopCatagories from "./TopCatagories";
 import TopStudents from "./TopStudents";
 import UpcommingEvents from "./UpcommingEvents";
@@ -22,7 +22,7 @@ function Home2() {
 
           <div className="content-wrapper  js-content-wrapper">
             <Bannar />
-            <PopulerCourses />
+            <PopulerCourses2 />
             <LearningPath />
             <LearningSolutions />
             <UpcommingEvents />

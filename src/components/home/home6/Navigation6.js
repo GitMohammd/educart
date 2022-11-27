@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation6() {
+  const [navColor, setNavColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 1) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
     <header
       data-anim="fade"
       data-add-bg="bg-white"
-      className="header -type-4 js-header"
+      className={
+        navColor
+          ? "header -type-4 js-header bg-white"
+          : "header -type-4 js-header "
+      }
     >
       <div className="header__container py-5 border-bottom-dark">
         <div className="row justify-between items-center">

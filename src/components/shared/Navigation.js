@@ -5,6 +5,7 @@ import NavCart from "./NavCart";
 function Navigation() {
   const [isCartOpen, setCartOpen] = useState(false);
   const [isExploreOpen, setExploreOpen] = useState(false);
+  const [isSearchOpen, setSearchOpen] = useState(false);
 
   const handleCartOpen = () => [setCartOpen(!isCartOpen)];
   const handlExploreOpen = () => [setExploreOpen(!isExploreOpen)];
@@ -1327,11 +1328,18 @@ function Navigation() {
                   <button
                     className="d-flex items-center text-white"
                     data-el-toggle=".js-search-toggle"
+                    onClick={() => setSearchOpen(true)}
                   >
                     <i className="text-20 icon icon-search"></i>
                   </button>
 
-                  <div className="toggle-element js-search-toggle">
+                  <div
+                    className={
+                      isSearchOpen
+                        ? "toggle-element js-search-toggle -is-el-visible"
+                        : "toggle-element js-search-toggle"
+                    }
+                  >
                     <div className="header-search pt-90 bg-white shadow-4">
                       <div className="container">
                         <div className="header-search__field">
@@ -1345,6 +1353,7 @@ function Navigation() {
                           <button
                             className="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
                             data-el-toggle=".js-search-toggle"
+                            onClick={() => setSearchOpen(false)}
                           >
                             <img src="/assets/img/menus/close.svg" alt="icon" />
                           </button>
