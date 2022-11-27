@@ -130,142 +130,213 @@ function CourseList1() {
     }
   };
 
-  const testCourse = courses.filter((course) => {
-    return course.catagoryFilter === "art";
-  });
+  // const filterPopulerCourse = courses
+  //   ?.filter((popcourse) => {
+  //     return populerCourse === ""
+  //       ? popcourse
+  //       : popcourse.popular?.includes(populerCourse);
+  //   })
+  //   .map((course) => {
+  //     return course.id;
+  //   });
 
-  const FilterCatagoryCourses = catagoryfilterItems.catagory
-    ?.map((catagoryItems) => {
-      console.log(typeof catagoryItems);
-      return catagoryItems === ""
-        ? courses
-        : courses.filter((course) => {
+  const filterPopulerCourse = courses?.filter((popcourse) => {
+    return populerCourse === ""
+      ? popcourse
+      : popcourse.popular?.includes(populerCourse);
+  });
+  // .map((catagoryCourses) => {
+  //   return catagoryfilterItems.catagory;
+  // });
+
+  const FilterCatagoryCourses =
+    catagoryfilterItems.catagory.length > 0
+      ? catagoryfilterItems.catagory?.map((catagoryItems) => {
+          return filterPopulerCourse.filter((course) => {
             return course.catagoryFilter.includes(catagoryItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
+        })
+      : filterPopulerCourse;
 
-  const FilterRatingCourses = ratingfilterItems.rating
-    ?.map((ratingItems) => {
-      return ratingItems === ""
-        ? courses
-        : courses.filter((course) => {
+  const FilterRatingCourses =
+    ratingfilterItems.rating.length > 0
+      ? ratingfilterItems.rating?.map((ratingItems) => {
+          return FilterCatagoryCourses.filter((course) => {
             return course.ratings.includes(ratingItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const FilterInstructorCourses = instructorfilterItems.instructor
-    ?.map((instructorItems) => {
-      return instructorItems === ""
-        ? courses
-        : courses.filter((course) => {
-            return course.instructor.includes(instructorItems);
+        })
+      : FilterCatagoryCourses;
+
+  const FilterInstructorCourses =
+    instructorfilterItems.instructor.length > 0
+      ? instructorfilterItems.instructor?.map((instructorItem) => {
+          return FilterRatingCourses.filter((course) => {
+            return course.instructor.includes(instructorItem);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const FilterPriceCourses = pricefilterItems.price
-    ?.map((priceItems) => {
-      return priceItems === "all"
-        ? courses
-        : courses.filter((course) => {
+        })
+      : FilterRatingCourses;
+
+  const FilterPriceCourses =
+    pricefilterItems.price.length > 0
+      ? pricefilterItems.price?.map((priceItems) => {
+          return FilterInstructorCourses.filter((course) => {
             return course.price.includes(priceItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const FilterLavelCourses = lavelfilterItems.lavel
-    ?.map((lavelItems) => {
-      return lavelItems === "allLevels"
-        ? courses
-        : courses.filter((course) => {
+        })
+      : FilterInstructorCourses;
+
+  const FilterLavelCourses =
+    lavelfilterItems.lavel.length > 0
+      ? lavelfilterItems.lavel?.map((lavelItems) => {
+          return FilterPriceCourses.filter((course) => {
             return course.lavel.includes(lavelItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const FilterLanguageCourses = languagefilterItems.language
-    ?.map((languageItems) => {
-      return languageItems === ""
-        ? courses
-        : courses.filter((course) => {
+        })
+      : FilterPriceCourses;
+
+  const FilterLanguageCourses =
+    languagefilterItems.language.length > 0
+      ? languagefilterItems.language?.map((languageItems) => {
+          return FilterLavelCourses.filter((course) => {
             return course.language.includes(languageItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const FilterDurationCourses = durationfilterItems.duration
-    ?.map((durationItems) => {
-      return durationItems === ""
-        ? courses
-        : courses.filter((course) => {
+        })
+      : FilterLavelCourses;
+
+  const FilterDurationCourses =
+    durationfilterItems.duration.length > 0
+      ? durationfilterItems.duration?.map((durationItems) => {
+          return FilterLanguageCourses.filter((course) => {
             return course.duration.includes(durationItems);
           });
-    })
-    .map((course) => {
-      return course.map((singleCourse) => {
-        return singleCourse.id;
-      });
-    })
-    .flat();
-  const filterPopulerCourse = courses
-    ?.filter((popcourse) => {
-      return populerCourse === ""
-        ? popcourse
-        : popcourse.popular?.includes(populerCourse);
-    })
-    .map((course) => {
-      return course.id;
-    });
+        })
+      : FilterLanguageCourses;
 
-  const filterResultCourses = [
-    FilterCatagoryCourses,
-    FilterRatingCourses,
-    FilterInstructorCourses,
-    FilterPriceCourses,
-    FilterLavelCourses,
-    FilterLanguageCourses,
-    FilterDurationCourses,
-    filterPopulerCourse,
-  ];
+  const filteredCourses = FilterDurationCourses.flat();
 
-  const filterCoursesINtid = filterResultCourses.flat().map((id) => {
-    return id;
-  });
+  console.log(filteredCourses, "testCourse");
+  // const FilterCatagoryCourses = catagoryfilterItems.catagory
+  //   ?.map((catagoryItems) => {
+  //     return catagoryItems === ""
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.catagoryFilter.includes(catagoryItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
 
-  const filterCoursesid = [...new Set(filterCoursesINtid)];
+  // const FilterRatingCourses = ratingfilterItems.rating
+  //   ?.map((ratingItems) => {
+  //     return ratingItems === ""
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.ratings.includes(ratingItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
+  // const FilterInstructorCourses = instructorfilterItems.instructor
+  //   ?.map((instructorItems) => {
+  //     return instructorItems === ""
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.instructor.includes(instructorItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
+  // const FilterPriceCourses = pricefilterItems.price
+  //   ?.map((priceItems) => {
+  //     return priceItems === "all"
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.price.includes(priceItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
+  // const FilterLavelCourses = lavelfilterItems.lavel
+  //   ?.map((lavelItems) => {
+  //     return lavelItems === "allLevels"
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.lavel.includes(lavelItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
+  // const FilterLanguageCourses = languagefilterItems.language
+  //   ?.map((languageItems) => {
+  //     return languageItems === ""
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.language.includes(languageItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
+  // const FilterDurationCourses = durationfilterItems.duration
+  //   ?.map((durationItems) => {
+  //     return durationItems === ""
+  //       ? courses
+  //       : courses.filter((course) => {
+  //           return course.duration.includes(durationItems);
+  //         });
+  //   })
+  //   .map((course) => {
+  //     return course.map((singleCourse) => {
+  //       return singleCourse.id;
+  //     });
+  //   })
+  //   .flat();
 
-  const filteredCourses = filterCoursesid.map((id) => {
-    return courses.filter((course) => {
-      return id === "" ? course : course.id.includes(id);
-    });
-  });
+  // const filterResultCourses = [
+  //   FilterCatagoryCourses,
+  //   FilterRatingCourses,
+  //   FilterInstructorCourses,
+  //   FilterPriceCourses,
+  //   FilterLavelCourses,
+  //   FilterLanguageCourses,
+  //   FilterDurationCourses,
+  //   filterPopulerCourse,
+  // ];
+
+  // const filterCoursesINtid = filterResultCourses.flat().map((id) => {
+  //   return id;
+  // });
+
+  // const filterCoursesid = [...new Set(filterCoursesINtid)];
+
+  // const filteredCourses = filterCoursesid.map((id) => {
+  //   return courses.filter((course) => {
+  //     return id === "" ? course : course.id.includes(id);
+  //   });
+  // });
 
   // console.log(filteredCourses);
   //   // FilterCourses.map((course) pricefilterItems=> {

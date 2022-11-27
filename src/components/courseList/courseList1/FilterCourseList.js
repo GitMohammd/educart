@@ -20,7 +20,7 @@ function FilterCourseList({ course }) {
     providerImg,
     ratings,
     time,
-  } = course[0];
+  } = course;
   // console.log(typeof course);
   // console.log(course);
   return (
