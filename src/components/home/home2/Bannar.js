@@ -4,8 +4,9 @@ function Bannar() {
   const [currentImage, setCurrentImage] = useState(0);
   const sliderImage = [
     { url: "assets/img/home-2/mainSlider/bg.png" },
-    { url: "assets/img/home-2/mainSlider/bg" },
+    { url: "assets/img/home-3/masthead/bg.png" },
     { url: "assets/img/home-2/mainSlider/bg.png" },
+    { url: "assets/img/home-3/masthead/bg.png" },
   ];
 
   const goPrevious = () => {
@@ -27,18 +28,22 @@ function Bannar() {
     transitionDelay: "1000ms",
   };
   const currentSlide = {
-    opacity: 1,
+    // opacity: 1,
     backgroundImage: `url(${sliderImage[currentImage].url})`,
   };
   return (
     <section data-anim-wrap className="mainSlider -type-1 js-mainSlider">
       <div className="swiper-wrapper">
         <div className="swiper-slide">
-          <div data-anim-child="fade" className="mainSlider__bg" style={slide}>
+          <div data-anim-child="fade" className="mainSlider__bg">
             <div className="bg-image js-lazy" style={currentSlide}></div>
           </div>
         </div>
 
+        {sliderImage.map((img) => {
+          <img src={img} alt="" srcset="" />;
+        })}
+
         {/* <div className="swiper-slide">
           <div data-anim-child="fade" className="mainSlider__bg">
             <div
@@ -60,6 +65,14 @@ function Bannar() {
             ></div>
           </div>
         </div> */}
+      </div>
+
+      <div className="swiper-wrapper">
+        <div className="swiper-slide">
+          <div data-anim-child="fade" className="mainSlider__bg">
+            <div className="bg-image js-lazy" style={currentSlide}></div>
+          </div>
+        </div>
       </div>
 
       <div className="container">

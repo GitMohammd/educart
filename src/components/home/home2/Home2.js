@@ -22,6 +22,7 @@ function Home2() {
 
           <div className="content-wrapper  js-content-wrapper">
             <Bannar />
+
             <PopulerCourses2 />
             <LearningPath />
             <LearningSolutions />
