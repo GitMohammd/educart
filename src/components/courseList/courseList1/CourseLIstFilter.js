@@ -110,14 +110,14 @@ function CourseLIstFilter(props) {
                         </div>
                       </div>
 
-                      <div className="sidebar__more mt-15">
+                      {/* <div className="sidebar__more mt-15">
                         <a
                           href="#"
                           className="text-14 fw-500 underline text-purple-1"
                         >
                           Show more
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </Typography>
                 </AccordionDetails>
@@ -303,14 +303,14 @@ function CourseLIstFilter(props) {
                           <div className="sidebar-checkbox__count">(34)</div>
                         </div>
                       </div>
-                      <div className="sidebar__more mt-15">
+                      {/* <div className="sidebar__more mt-15">
                         <a
                           href="#"
                           className="text-14 fw-500 underline text-purple-1"
                         >
                           Show more
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </Typography>
                 </AccordionDetails>
@@ -501,14 +501,14 @@ function CourseLIstFilter(props) {
                           <div className="sidebar-checkbox__count">(34)</div>
                         </div>
                       </div>
-                      <div className="sidebar__more mt-15">
+                      {/* <div className="sidebar__more mt-15">
                         <a
                           href="#"
                           className="text-14 fw-500 underline text-purple-1"
                         >
                           Show more
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </Typography>
                 </AccordionDetails>

@@ -8,6 +8,7 @@ import FilterCourseList from "./FilterCourseList";
 
 function CourseList1() {
   const [courses, setCourses] = useState([]);
+
   // console.log(courses, "newcourses");
   useEffect(() => {
     fetch("/allCourses.json")
@@ -37,6 +38,10 @@ function CourseList1() {
   const [durationfilterItems, setDurationLanguageFilterItems] = useState({
     duration: [],
   });
+
+  const handlePopulerCourseChange = (event) => {
+    setPopulerCourse(event.target.value);
+  };
 
   const handleCatagoryChange = (e) => {
     const { value, checked } = e.target;
@@ -130,24 +135,11 @@ function CourseList1() {
     }
   };
 
-  // const filterPopulerCourse = courses
-  //   ?.filter((popcourse) => {
-  //     return populerCourse === ""
-  //       ? popcourse
-  //       : popcourse.popular?.includes(populerCourse);
-  //   })
-  //   .map((course) => {
-  //     return course.id;
-  //   });
-
   const filterPopulerCourse = courses?.filter((popcourse) => {
     return populerCourse === ""
       ? popcourse
       : popcourse.popular?.includes(populerCourse);
   });
-  // .map((catagoryCourses) => {
-  //   return catagoryfilterItems.catagory;
-  // });
 
   const FilterCatagoryCourses =
     catagoryfilterItems.catagory.length > 0
@@ -214,153 +206,20 @@ function CourseList1() {
 
   const filteredCourses = FilterDurationCourses.flat();
 
-  console.log(filteredCourses, "testCourse");
-  // const FilterCatagoryCourses = catagoryfilterItems.catagory
-  //   ?.map((catagoryItems) => {
-  //     return catagoryItems === ""
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.catagoryFilter.includes(catagoryItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
+  const [paginationShowCourse, setPaginationShowCourse] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [coursePerPage, setCoursePerPage] = useState(10);
 
-  // const FilterRatingCourses = ratingfilterItems.rating
-  //   ?.map((ratingItems) => {
-  //     return ratingItems === ""
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.ratings.includes(ratingItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
-  // const FilterInstructorCourses = instructorfilterItems.instructor
-  //   ?.map((instructorItems) => {
-  //     return instructorItems === ""
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.instructor.includes(instructorItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
-  // const FilterPriceCourses = pricefilterItems.price
-  //   ?.map((priceItems) => {
-  //     return priceItems === "all"
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.price.includes(priceItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
-  // const FilterLavelCourses = lavelfilterItems.lavel
-  //   ?.map((lavelItems) => {
-  //     return lavelItems === "allLevels"
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.lavel.includes(lavelItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
-  // const FilterLanguageCourses = languagefilterItems.language
-  //   ?.map((languageItems) => {
-  //     return languageItems === ""
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.language.includes(languageItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
-  // const FilterDurationCourses = durationfilterItems.duration
-  //   ?.map((durationItems) => {
-  //     return durationItems === ""
-  //       ? courses
-  //       : courses.filter((course) => {
-  //           return course.duration.includes(durationItems);
-  //         });
-  //   })
-  //   .map((course) => {
-  //     return course.map((singleCourse) => {
-  //       return singleCourse.id;
-  //     });
-  //   })
-  //   .flat();
+  // Get Current Course
 
-  // const filterResultCourses = [
-  //   FilterCatagoryCourses,
-  //   FilterRatingCourses,
-  //   FilterInstructorCourses,
-  //   FilterPriceCourses,
-  //   FilterLavelCourses,
-  //   FilterLanguageCourses,
-  //   FilterDurationCourses,
-  //   filterPopulerCourse,
-  // ];
+  const indexOfLastCourse = currentPage * coursePerPage;
+  const indexOfFirstCourse = indexOfLastCourse - coursePerPage;
+  const currentCourse = filteredCourses.slice(
+    indexOfFirstCourse,
+    indexOfLastCourse
+  );
 
-  // const filterCoursesINtid = filterResultCourses.flat().map((id) => {
-  //   return id;
-  // });
-
-  // const filterCoursesid = [...new Set(filterCoursesINtid)];
-
-  // const filteredCourses = filterCoursesid.map((id) => {
-  //   return courses.filter((course) => {
-  //     return id === "" ? course : course.id.includes(id);
-  //   });
-  // });
-
-  // console.log(filteredCourses);
-  //   // FilterCourses.map((course) pricefilterItems=> {
-  //   //   return course.map((cor) => {
-  //   //     console.log(cor);
-  //   //   });
-  //   // }),
-  //   "filtercourses"
-  // );
-
-  // console.log(newCourse, "newCourse");
-  // console.log(
-  //   catagoryfilterItems,
-  //   ratingfilterItems,
-  //   instructorfilterItems,
-  //   pricefilterItems,
-  //   lavelfilterItems,
-  //   languagefilterItems,
-  //   typeof durationfilterItems
-  // );
-
-  const handlePopulerCourseChange = (event) => {
-    setPopulerCourse(event.target.value);
-  };
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
@@ -371,7 +230,9 @@ function CourseList1() {
             <UserInterface />
             <CourseListMain1
               courses={courses}
-              filteredCourses={filteredCourses}
+              coursePerPage={coursePerPage}
+              totalCourse={filteredCourses.length}
+              currentCourse={currentCourse}
               populerCourse={populerCourse}
               setPopulerCourse={setPopulerCourse}
               // handleCourseChange={handleCourseChange}
