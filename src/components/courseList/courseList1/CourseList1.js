@@ -209,7 +209,7 @@ function CourseList1() {
   const [paginationShowCourse, setPaginationShowCourse] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [coursePerPage, setCoursePerPage] = useState(10);
+  const [coursePerPage] = useState(12);
 
   // Get Current Course
 
@@ -219,6 +219,9 @@ function CourseList1() {
     indexOfFirstCourse,
     indexOfLastCourse
   );
+
+  // change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="preloader-visible" data-barba="wrapper">
@@ -232,7 +235,10 @@ function CourseList1() {
               courses={courses}
               coursePerPage={coursePerPage}
               totalCourse={filteredCourses.length}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
               currentCourse={currentCourse}
+              paginate={paginate}
               populerCourse={populerCourse}
               setPopulerCourse={setPopulerCourse}
               // handleCourseChange={handleCourseChange}

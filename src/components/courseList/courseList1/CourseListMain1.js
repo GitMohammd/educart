@@ -7,14 +7,16 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FilterCourseList from "./FilterCourseList";
 import Pagination from "./Pagination";
-// import { Pagination } from "@mui/material";
 
 function CourseListMain1(props) {
   const {
     courses,
     coursePerPage,
     totalCourse,
+    currentPage,
     currentCourse,
+    setCurrentPage,
+    paginate,
     populerCourse,
     setPopulerCourse,
     handleCatagoryChange,
@@ -120,7 +122,10 @@ function CourseListMain1(props) {
             </div>
             <Pagination
               coursePerPage={coursePerPage}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
               totalCourse={totalCourse}
+              paginate={paginate}
             />
 
             {/* <div className="row justify-center pt-90 lg:pt-50">
