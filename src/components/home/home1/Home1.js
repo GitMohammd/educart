@@ -23,7 +23,6 @@ function Home1() {
           <div className="content-wrapper  js-content-wrapper">
             <Masthead />
             <TrustedCompany />
-            {/*not working properly  */}
             <TopCotegories />
             <PopulerCourses />
             <WhatPeopleSay />

@@ -1,7 +1,42 @@
-import React, { useEffect } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import Courses from "./Courses";
 
 function PopulerCourses() {
+  const [courses, setCourses] = useState([]);
+  useEffect(() => {
+    fetch("/courses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+  const [defaultActive, setDefaultActive] = useState(true);
+
+  const [allCatagoryActive, setAllCatagoryActive] = useState("");
+  const [aniatmiontActive, setAniatmiontActive] = useState("");
+
+  const [DesinActive, setDesignActive] = useState("");
+
+  const [illustrationActive, setillustrationActive] = useState("");
+
+  const [lifestyleActive, setLifestyleActive] = useState("");
+
+  const [photoActive, setPhoteActive] = useState("");
+
+  const [businessActive, setbusinessActive] = useState("");
+
+  const [writtionActive, setwrittionActive] = useState("");
+
+  const handleClick = (e) => {
+    setDefaultActive(false);
+    setAllCatagoryActive(e === "allCategories" ? true : false);
+    setAniatmiontActive(e === "animation" ? true : false);
+    setDesignActive(e === "design" ? true : false);
+    setillustrationActive(e === "illustration" ? true : false);
+    setLifestyleActive(e === "lifestyle" ? true : false);
+    setPhoteActive(e === "photo" ? true : false);
+    setbusinessActive(e === "business" ? true : false);
+    setwrittionActive(e === "writing" ? true : false);
+  };
+
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div data-anim-wrap className="container">
@@ -19,136 +54,112 @@ function PopulerCourses() {
 
         <div className="tabs -pills pt-50 js-tabs">
           <div className="tabs__controls d-flex justify-center x-gap-10 js-tabs-controls">
-            <div>
-              <NavLink to="/home1/allCategories">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    All Categories
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("allCategories")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  allCatagoryActive || defaultActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                All Categories
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/animation">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Animation
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("animation")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  aniatmiontActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Animation
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/design">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Design
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("design")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  DesinActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Design
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/illustration">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Illustration
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("illustration")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  illustrationActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Illustration
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/lifeStyle">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Lifestyle
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("lifestyle")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  lifestyleActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Lifestyle
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/photo">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Photo &amp; Film
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("photo")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  photoActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Photo &amp; Film
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/business">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Business
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("business")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  businessActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Business
+              </button>
             </div>
 
-            <div>
-              <NavLink to="/home1/writting">
-                {({ isActive }) => (
-                  <button
-                    className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                      isActive ? " is-active" : " "
-                    }`}
-                    data-tab-target=".-tab-item-2"
-                    type="button"
-                  >
-                    Writing
-                  </button>
-                )}
-              </NavLink>
+            <div onClick={() => handleClick("writing")}>
+              <button
+                className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
+                  writtionActive ? " is-active" : " "
+                }`}
+                data-tab-target=".-tab-item-2"
+                type="button"
+              >
+                Writing
+              </button>
             </div>
           </div>
 
-          <Outlet />
+          <div className="tabs__content pt-60 js-tabs-content">
+            <div className="tabs__pane -tab-item-1 is-active">
+              <div className="row y-gap-30 justify-center">
+                {courses.map((course) => (
+                  <Courses key={course.id} course={course}></Courses>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
