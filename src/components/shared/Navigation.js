@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import NavCart from "./NavCart";
 
 function Navigation() {
+  const explorBtnRef = useRef();
   const [isCartOpen, setCartOpen] = useState(false);
   const [isExploreOpen, setExploreOpen] = useState(false);
   const [isSearchOpen, setSearchOpen] = useState(false);
 
+  useEffect(() => {
+    const closeExplore = (e) => {
+      console.log(e, isExploreOpen, explorBtnRef);
+      if (e.path[0] !== explorBtnRef.current) {
+        setExploreOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeExplore);
+    return () => {
+      document.body.removeEventListener("click", closeExplore);
+    };
+  }, []);
+
   const handleCartOpen = () => [setCartOpen(!isCartOpen)];
-  const handlExploreOpen = () => [setExploreOpen(!isExploreOpen)];
 
   return (
     <header
@@ -28,10 +41,11 @@ function Navigation() {
 
               <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
                 <a
+                  ref={explorBtnRef}
                   href="#"
                   className="d-flex items-center"
                   data-el-toggle=".js-explore-toggle"
-                  onClick={handlExploreOpen}
+                  onClick={() => setExploreOpen((prev) => !prev)}
                 >
                   <i className="icon icon-explore mr-15"></i>
                   Explore
