@@ -11,16 +11,12 @@ function NavCart() {
     courses?.filter((course) => course.id === id)
   );
 
-  console.log(cartCourse.length, "cartcourse");
   useEffect(() => {
     fetch("/courses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, [courseItems]);
 
-  // console.log(cartCourseItemId, cartCourse, "course Item");
-
-  const hi = false;
   return (
     <div className="js-cart-toggle">
       {cartCourse >= 0 ? (

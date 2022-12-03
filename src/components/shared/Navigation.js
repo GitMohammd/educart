@@ -10,7 +10,6 @@ function Navigation() {
 
   useEffect(() => {
     const closeExplore = (e) => {
-      console.log(e, isExploreOpen, explorBtnRef);
       if (e.path[0] !== explorBtnRef.current) {
         setExploreOpen(false);
       }

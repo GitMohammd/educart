@@ -62,6 +62,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-2"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -80,6 +81,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-3"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -98,6 +100,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-4"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -116,6 +119,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-5"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -134,6 +138,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-6"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -152,6 +157,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-7"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
@@ -170,6 +176,7 @@ function TopCotegories() {
                 <div
                   data-anim-child="slide-left delay-7"
                   className="featureCard -type-1 -featureCard-hover"
+                  style={{ cursor: "pointer" }}
                 >
                   <div className="featureCard__content">
                     <div className="featureCard__icon">
