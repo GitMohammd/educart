@@ -5,13 +5,13 @@ import { useForm, Controller } from "react-hook-form";
 function Footer() {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [involveEmail, setInvolveEmail] = useState("");
-  console.log(involveEmail.email.length, snackbarOpen);
-  const { vertical, horizontal, open } = snackbarOpen;
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
-    (await data.email.length) ? setSnackbarOpen(true) : setSnackbarOpen(false);
+    (await data?.email?.length)
+      ? setSnackbarOpen(true)
+      : setSnackbarOpen(false);
 
-    (await data.email.length) ? setInvolveEmail(data) : setInvolveEmail(data);
+    (await data?.email?.length) ? setInvolveEmail(data) : setInvolveEmail(data);
   };
 
   const handleClick = () => {

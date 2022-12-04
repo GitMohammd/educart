@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 function MemberShipPrice() {
+  const [save30, setSave30] = useState(false);
+  const handleSave = (e) => {
+    setSave30(e.target.checked);
+    console.log(e.target.checked);
+  };
   return (
     <section className="layout-pt-sm layout-pb-md">
       <div data-anim-wrap className="container">
@@ -10,7 +15,7 @@ function MemberShipPrice() {
               <div className="text-14 text-dark-1">Monthly</div>
               <div className="form-switch px-20">
                 <div className="switch" data-switch=".js-switch-content">
-                  <input type="checkbox" />
+                  <input onClick={handleSave} type="checkbox" />
                   <span className="switch__slider"></span>
                 </div>
               </div>
@@ -84,7 +89,7 @@ function MemberShipPrice() {
                   Professional
                 </div>
                 <div className="priceCard__price text-45 lh-11 fw-700 text-dark-1 mt-15">
-                  $599.95
+                  ${!save30 ? "599.95" : "350.95"}
                 </div>
                 <div className="priceCard__period">per month</div>
                 <img
@@ -139,7 +144,7 @@ function MemberShipPrice() {
                   Business
                 </div>
                 <div className="priceCard__price text-45 lh-11 fw-700 text-dark-1 mt-15">
-                  $999.95
+                  ${!save30 ? "999.95" : "850.95"}
                 </div>
                 <div className="priceCard__period">per month</div>
                 <img
