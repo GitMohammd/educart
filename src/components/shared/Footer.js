@@ -3,21 +3,26 @@ import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 
 function Footer() {
-  const [snackbarOpen, setSnackbarOpen] = useState({
-    open: false,
-    vertical: "top",
-    horizontal: "center",
-  });
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [involveEmail, setInvolveEmail] = useState("");
+  console.log(involveEmail.email.length, snackbarOpen);
   const { vertical, horizontal, open } = snackbarOpen;
   const { register, handleSubmit } = useForm();
-  const handleClick = (newState) => () => {
-    setSnackbarOpen({ open: true, ...newState });
+  const onSubmit = async (data) => {
+    (await data.email.length) ? setSnackbarOpen(true) : setSnackbarOpen(false);
+
+    (await data.email.length) ? setInvolveEmail(data) : setInvolveEmail(data);
   };
-  const handleSnackbarClose = () => {
-    setSnackbarOpen({ ...snackbarOpen, open: false });
+
+  const handleClick = () => {
+    // involveEmail.email.length ? setSnackbarOpen(true) : setSnackbarOpen(false);
   };
-  const onSubmit = (data) => {
-    console.log(data);
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setSnackbarOpen(false);
   };
 
   return (
@@ -121,14 +126,7 @@ function Footer() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-group">
                     <input type="email" {...register("email")} />
-                    {/* <input type="email" placeholder="Email..." /> */}
-                    <button
-                      onClick={handleClick({
-                        vertical: "bottom",
-                        horizontal: "center",
-                      })}
-                      type="submit"
-                    >
+                    <button onClick={handleClick} type="submit">
                       Submit
                     </button>
                   </div>
@@ -136,8 +134,8 @@ function Footer() {
               </div>
               <Snackbar
                 autoHideDuration={4000}
-                anchorOrigin={{ vertical, horizontal }}
-                open={open}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                open={snackbarOpen}
                 onClose={handleSnackbarClose}
                 message="I love snacks"
                 key={"bottom" + "center"}
