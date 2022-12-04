@@ -14,7 +14,7 @@ function ShopList() {
           <div className="content-wrapper  js-content-wrapper">
             <SubNav />
             <ShopListTitle />
-            {/* <ShopListContent /> */}
+            <ShopListContent />
             <Footer />
           </div>
         </main>

@@ -1,6 +1,32 @@
-import React from "react";
+import { Alert, Snackbar } from "@mui/material";
+import React, { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
 
 function ShopCartContent() {
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarWrongOpen, setSnackbarWrongOpen] = useState(false);
+
+  const [coupon, setCoupon] = useState("");
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    (await data?.couponCode) === "apply"
+      ? setSnackbarOpen(true)
+      : setSnackbarWrongOpen(true);
+
+    (await data?.couponCode) === "apply" ? setCoupon(data) : setCoupon("");
+  };
+  const handleClick = () => {
+    // involveEmail.email.length ? setSnackbarOpen(true) : setSnackbarOpen(false);
+  };
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setSnackbarOpen(false);
+    setSnackbarWrongOpen(false);
+  };
+
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div className="container">
@@ -246,18 +272,55 @@ function ShopCartContent() {
             <div className="shopCart-footer px-16 mt-30">
               <div className="row justify-between y-gap-30">
                 <div className="col-xl-5">
-                  <form className="" action="post">
+                  <form className="" onSubmit={handleSubmit(onSubmit)}>
                     <div className="d-flex justify-between border-dark">
                       <input
+                        placeholder="Coupon Code"
                         className="rounded-8 px-25 py-20"
                         type="text"
-                        placeholder="Coupon Code"
+                        {...register("couponCode")}
                       />
-                      <button className="text-black fw-500" type="submit">
+                      <button
+                        className="text-black fw-500"
+                        type="submit"
+                        onClick={handleClick}
+                      >
                         Apply coupon
                       </button>
                     </div>
                   </form>
+                  <Snackbar
+                    autoHideDuration={4000}
+                    anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                    open={snackbarOpen}
+                    onClose={handleSnackbarClose}
+                    message="I love snacks"
+                    key={"bottom" + "center"}
+                  >
+                    <Alert
+                      onClose={handleSnackbarClose}
+                      severity="success"
+                      sx={{ width: "100%" }}
+                    >
+                      Thank you for "Coupon" apply!
+                    </Alert>
+                  </Snackbar>
+                  <Snackbar
+                    autoHideDuration={4000}
+                    anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                    open={snackbarWrongOpen}
+                    onClose={handleSnackbarClose}
+                    message="I love snacks"
+                    key={"bottom" + "center"}
+                  >
+                    <Alert
+                      onClose={handleSnackbarClose}
+                      severity="error"
+                      sx={{ width: "100%" }}
+                    >
+                      sorry !! Your "Coupon" is not correct
+                    </Alert>
+                  </Snackbar>
                 </div>
 
                 <div className="col-auto">

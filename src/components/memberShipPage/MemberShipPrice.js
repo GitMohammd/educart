@@ -4,7 +4,6 @@ function MemberShipPrice() {
   const [save30, setSave30] = useState(false);
   const handleSave = (e) => {
     setSave30(e.target.checked);
-    console.log(e.target.checked);
   };
   return (
     <section className="layout-pt-sm layout-pb-md">

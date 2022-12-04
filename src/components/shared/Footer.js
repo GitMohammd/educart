@@ -137,7 +137,7 @@ function Footer() {
                 anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                 open={snackbarOpen}
                 onClose={handleSnackbarClose}
-                message="I love snacks"
+                message=" Thank you for involving to us"
                 key={"bottom" + "center"}
               >
                 <Alert
@@ -145,7 +145,7 @@ function Footer() {
                   severity="success"
                   sx={{ width: "100%" }}
                 >
-                  This is a success message!
+                  Thank you for involving to us!
                 </Alert>
               </Snackbar>
             </div>

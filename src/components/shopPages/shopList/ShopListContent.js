@@ -56,31 +56,31 @@ function ShopListContent() {
                 <h5 className="sidebar__title">Filter by price</h5>
 
                 <div className="sidebar-content -slider">
-                  <div slider id="slider-distance">
+                  <div id="slider-distance">
                     <div>
-                      <div inverse-left style="width:70%;"></div>
-                      <div inverse-right style="width:70%;"></div>
-                      <div range style="left:30%; right:40%;"></div>
+                      <div style={{ width: "70%" }}></div>
+                      <div style={{ width: "70%" }}></div>
+                      <div style={{ left: "30%", right: "40%" }}></div>
 
-                      <span thumb style="left:30%;"></span>
-                      <span thumb style="left:60%;"></span>
+                      <span style={{ left: "30%" }}></span>
+                      <span style={{ left: "60%" }}></span>
 
-                      <div sign className="px-0" style="left:30%;">
+                      <div className="px-0" style={{ left: "30%" }}>
                         <span id="value">30</span>
                       </div>
-                      <div sign className="px-0" style="left:60%;">
+                      <div className="px-0" style={{ left: "60%" }}>
                         <span id="value">60</span>
                       </div>
                     </div>
 
                     <input
                       type="range"
-                      tabindex="0"
+                      tabIndex="0"
                       value="30"
                       max="100"
                       min="0"
                       step="1"
-                      oninput="
+                      onInput="
             this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
             var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
             var children = this.parentNode.childNodes[1].childNodes;
@@ -93,12 +93,12 @@ function ShopListContent() {
 
                     <input
                       type="range"
-                      tabindex="0"
+                      tabIndex="0"
                       value="60"
                       max="100"
                       min="0"
                       step="1"
-                      oninput="
+                      onInput="
             this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
             var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
             var children = this.parentNode.childNodes[1].childNodes;
@@ -223,7 +223,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/1.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/1.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -260,7 +263,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/2.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/2.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -297,7 +303,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/3.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/3.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -334,7 +343,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/4.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/4.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -371,7 +383,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/5.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/5.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -408,7 +423,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/6.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/6.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -445,7 +463,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/7.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/7.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -482,7 +503,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/8.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/8.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
@@ -519,7 +543,10 @@ function ShopListContent() {
               <div className="col-lg-4 col-sm-6">
                 <div className="productCard -type-1 text-center">
                   <div className="productCard__image">
-                    <img src="img/shop/products/9.png" alt="Product image" />
+                    <img
+                      src="assets/img/shop/products/9.png"
+                      alt="Product image"
+                    />
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
