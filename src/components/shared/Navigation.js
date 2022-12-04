@@ -1267,9 +1267,9 @@ function Navigation() {
                   </li>
 
                   <li>
-                    <a data-barba href="contact-1.html">
+                    <Link data-barba to={"/contact1"}>
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
