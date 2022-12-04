@@ -1,6 +1,25 @@
-import React from "react";
+import { Alert, Snackbar } from "@mui/material";
+import React, { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
 
 function Footer() {
+  const [snackbarOpen, setSnackbarOpen] = useState({
+    open: false,
+    vertical: "top",
+    horizontal: "center",
+  });
+  const { vertical, horizontal, open } = snackbarOpen;
+  const { register, handleSubmit } = useForm();
+  const handleClick = (newState) => () => {
+    setSnackbarOpen({ open: true, ...newState });
+  };
+  const handleSnackbarClose = () => {
+    setSnackbarOpen({ ...snackbarOpen, open: false });
+  };
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <footer className="footer -type-1 bg-dark-1 -green-links">
       <div className="container">
@@ -99,13 +118,38 @@ function Footer() {
               </div>
               <div className="footer-columns-form">
                 <div>We don’t send spam so don’t worry.</div>
-                <form action="post">
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-group">
-                    <input type="text" placeholder="Email..." />
-                    <button type="submit">Submit</button>
+                    <input type="email" {...register("email")} />
+                    {/* <input type="email" placeholder="Email..." /> */}
+                    <button
+                      onClick={handleClick({
+                        vertical: "bottom",
+                        horizontal: "center",
+                      })}
+                      type="submit"
+                    >
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>
+              <Snackbar
+                autoHideDuration={4000}
+                anchorOrigin={{ vertical, horizontal }}
+                open={open}
+                onClose={handleSnackbarClose}
+                message="I love snacks"
+                key={"bottom" + "center"}
+              >
+                <Alert
+                  onClose={handleSnackbarClose}
+                  severity="success"
+                  sx={{ width: "100%" }}
+                >
+                  This is a success message!
+                </Alert>
+              </Snackbar>
             </div>
           </div>
         </div>
