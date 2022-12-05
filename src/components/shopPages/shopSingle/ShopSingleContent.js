@@ -2,8 +2,15 @@ import React from "react";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import AddIcon from "@mui/icons-material/Add";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 function ShopSingleContent() {
+  const sliderImage = [
+    { url: "/assets/img/shop/single/1.png" },
+    { url: "/assets/img/shop/single/2.png" },
+    { url: "/assets/img/shop/single/3.png" },
+    { url: "/assets/img/shop/single/4.png" },
+  ];
   return (
     <section className="layout-pt-lg layout-pb-md">
       <div className="container">
@@ -50,7 +57,6 @@ function ShopSingleContent() {
 
                       <div className="gallery__button -bottom-right">
                         <AddIcon sx={{ color: "secondary" }} />
-                        {/* <i className="icon" data-feather="plus"></i> */}
                       </div>
                     </a>
                   </div>
@@ -71,7 +77,7 @@ function ShopSingleContent() {
                       </div>
 
                       <div className="gallery__button -bottom-right">
-                        <i className="icon" data-feather="plus"></i>
+                        <AddIcon sx={{ color: "secondary" }} />
                       </div>
                     </a>
                   </div>
@@ -92,7 +98,7 @@ function ShopSingleContent() {
                       </div>
 
                       <div className="gallery__button -bottom-right">
-                        <i className="icon" data-feather="plus"></i>
+                        <AddIcon sx={{ color: "secondary" }} />
                       </div>
                     </a>
                   </div>
@@ -161,12 +167,10 @@ function ShopSingleContent() {
                     <div className="input-counter__controls">
                       <button className="input-counter__up js-down">
                         <RemoveCircleOutlineIcon />
-                        {/* <i className="icon" data-feather="minus"></i> */}
                       </button>
 
                       <button className="input-counter__down js-up">
                         <AddCircleOutlineIcon />
-                        {/* <i className="icon" data-feather="plus"></i> */}
                       </button>
                     </div>
                   </div>
@@ -181,7 +185,7 @@ function ShopSingleContent() {
 
               <div className="pt-30">
                 <button className="d-flex items-center text-light-1">
-                  <i className="icon size-20 mr-8" data-feather="heart"></i>
+                  <FavoriteBorderIcon />
                   Add to withlist
                 </button>
               </div>

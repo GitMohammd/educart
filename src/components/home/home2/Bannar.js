@@ -43,28 +43,6 @@ function Bannar() {
         {sliderImage.map((img) => {
           <img src={img} alt="" srcset="" />;
         })}
-
-        {/* <div className="swiper-slide">
-          <div data-anim-child="fade" className="mainSlider__bg">
-            <div
-              className="bg-image js-lazy"
-              style={{
-                backgroundImage: `url("assets/img/home-2/mainSlider/bg.png")`,
-              }}
-            ></div>
-          </div>
-        </div> */}
-
-        {/* <div className="swiper-slide">
-          <div data-anim-child="fade" className="mainSlider__bg">
-            <div
-              className="bg-image js-lazy"
-              style={{
-                backgroundImage: `url("assets/img/home-2/mainSlider/bg.png")`,
-              }}
-            ></div>
-          </div>
-        </div> */}
       </div>
 
       <div className="swiper-wrapper">

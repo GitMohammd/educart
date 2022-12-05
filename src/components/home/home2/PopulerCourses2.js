@@ -12,7 +12,7 @@ function PopulerCourses2() {
   // console.log(filterCourses, "filterCourses");
 
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -27,7 +27,7 @@ function PopulerCourses2() {
     ?.filter((catacourse) => {
       return cataValue === ""
         ? catacourse
-        : catacourse.catagory?.includes(cataValue);
+        : catacourse.popular?.includes(cataValue);
     })
     .filter((ratcourse) => {
       return ratvalue === "" ? ratcourse : ratcourse.rating?.includes(ratvalue);
