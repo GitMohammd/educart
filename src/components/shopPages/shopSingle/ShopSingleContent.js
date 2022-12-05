@@ -1,4 +1,6 @@
 import React from "react";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 function ShopSingleContent() {
   return (
@@ -156,11 +158,13 @@ function ShopSingleContent() {
 
                     <div className="input-counter__controls">
                       <button className="input-counter__up js-down">
-                        <i className="icon" data-feather="minus"></i>
+                        <RemoveCircleOutlineIcon />
+                        {/* <i className="icon" data-feather="minus"></i> */}
                       </button>
 
                       <button className="input-counter__down js-up">
-                        <i className="icon" data-feather="plus"></i>
+                        <AddCircleOutlineIcon />
+                        {/* <i className="icon" data-feather="plus"></i> */}
                       </button>
                     </div>
                   </div>

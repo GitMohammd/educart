@@ -1,6 +1,21 @@
-import React from "react";
+import { Reviews } from "@mui/icons-material";
+import React, { useState } from "react";
 
 function ShopSingleDescription() {
+  const [description, setDescription] = useState(true);
+  const [review, setReview] = useState(false);
+  console.log(description, review);
+
+  const handleClick = (prop) => {
+    if (prop === "descriptions") {
+      setDescription(true);
+      setReview(false);
+    }
+    if (prop === "reviews") {
+      setReview(true);
+      setDescription(false);
+    }
+  };
   return (
     <section className="layout-pt-md layout-pb-md">
       <div className="tabs -active-purple-1 js-tabs">
@@ -8,14 +23,24 @@ function ShopSingleDescription() {
           <div className="col-12">
             <div className="tabs__controls d-flex justify-center js-tabs-controls">
               <button
-                className="tabs__button js-tabs-button is-active"
+                onClick={() => handleClick("descriptions")}
+                className={
+                  description
+                    ? "tabs__button js-tabs-button is-active"
+                    : "tabs__button js-tabs-button"
+                }
                 data-tab-target=".-tab-item-1"
                 type="button"
               >
                 Description
               </button>
               <button
-                className="tabs__button js-tabs-button ml-30"
+                onClick={() => handleClick("reviews")}
+                className={
+                  review
+                    ? "tabs__button js-tabs-button ml-30 is-active"
+                    : "tabs__button js-tabs-button ml-30"
+                }
                 data-tab-target=".-tab-item-2"
                 type="button"
               >
@@ -28,7 +53,13 @@ function ShopSingleDescription() {
             <div className="row justify-center">
               <div className="col-xl-8 col-lg-10 justify-center">
                 <div className="tabs__content js-tabs-content">
-                  <div className="tabs__pane -tab-item-1 is-active">
+                  <div
+                    className={
+                      description
+                        ? "tabs__pane -tab-item-1 is-active"
+                        : " tabs__pane -tab-item-1 "
+                    }
+                  >
                     <h4 className="text-18 fw-500">
                       What makes a good brand book?
                     </h4>
@@ -45,7 +76,7 @@ function ShopSingleDescription() {
                     </p>
                   </div>
 
-                  <div className="tabs__pane -tab-item-2">
+                  <div className="tabs__pane -tab-item-2 is-active">
                     <div className="blogPost -comments">
                       <div className="blogPost__content">
                         <h2 className="text-20 fw-500">Reviews</h2>
@@ -175,7 +206,7 @@ function ShopSingleDescription() {
                         <div className="col-12">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="title"
+                            htmlFor="title"
                           >
                             Review Title
                           </label>
@@ -188,7 +219,7 @@ function ShopSingleDescription() {
                         <div className="col-12">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="comment"
+                            htmlFor="comment"
                           >
                             Review Content
                           </label>
