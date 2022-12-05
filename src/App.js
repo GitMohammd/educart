@@ -74,6 +74,7 @@ import SignUp from "./components/SignUp/SignUp";
 import UiElements from "./components/uiElementsPage/UiElements";
 
 import ContextProvider from "./components/context/cartContext/ContextProvider";
+import DemoSingle1 from "./components/courseSingle/demoCourseSIngle1/DemoSingle1";
 
 function App() {
   return (
@@ -100,7 +101,7 @@ function App() {
         <Route path="/courselist7" element={<CourseList7 />} />
         <Route path="/courselist8" element={<CourseList8 />} />
         <Route path="/courselist9" element={<CourseList8 />} />
-        <Route path="/courseSingle1" element={<CourseSingle1 />} />
+        <Route path="/courseSingle1" element={<DemoSingle1 />} />
         <Route path="/courseSingle1/:courseId" element={<CourseSingle1 />} />
         <Route path="/courseSingle2" element={<CourseSingle2 />} />
         <Route path="/courseSingle3" element={<CourseSingle3 />} />

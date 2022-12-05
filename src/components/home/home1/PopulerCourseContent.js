@@ -9,6 +9,7 @@ function PopulerCourseContent() {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+
   return (
     <div className="tabs__content pt-60 js-tabs-content">
       <div className="tabs__pane -tab-item-1 is-active">

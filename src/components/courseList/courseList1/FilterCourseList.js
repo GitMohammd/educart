@@ -1,4 +1,5 @@
 import React from "react";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function FilterCourseList({ course }) {
   const {
@@ -21,6 +22,12 @@ function FilterCourseList({ course }) {
     ratings,
     time,
   } = course;
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
   // console.log(typeof course);
   // console.log(course);
   return (
@@ -47,9 +54,7 @@ function FilterCourseList({ course }) {
             <div className="text-13 lh-1 ml-10">(1991)</div>
           </div>
 
-          <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
-            Learn Figma - UI/UX Design Essential Training
-          </div>
+          <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">{name}</div>
 
           <div className="d-flex x-gap-10 items-center pt-10">
             <div className="d-flex items-center">
@@ -90,9 +95,7 @@ function FilterCourseList({ course }) {
 
       <div className="side-content__item">
         <div className="px-30 pt-20 pb-30 bg-white rounded-8 border-light shadow-2">
-          <div className="text-18 lh-16 text-dark-1">
-            Complete Python Bootcamp From Zero to Hero in Python
-          </div>
+          <div className="text-18 lh-16 text-dark-1">{name}</div>
 
           <div className="row x-gap-10 y-gap-10 items-center pt-15">
             <div className="col-auto">
@@ -182,7 +185,10 @@ function FilterCourseList({ course }) {
 
           <div className="row x-gap-20 y-gap-15 items-center pt-30">
             <div className="col">
-              <button className="button -md h-60 -purple-1 text-white col-12">
+              <button
+                onClick={() => increaseCourseQuantity(id)}
+                className="button -md h-60 -purple-1 text-white col-12"
+              >
                 Add To Cart
               </button>
             </div>

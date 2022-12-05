@@ -4,7 +4,7 @@ import Courses from "./Courses";
 function PopulerCourses() {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -154,7 +154,7 @@ function PopulerCourses() {
           <div className="tabs__content pt-60 js-tabs-content">
             <div className="tabs__pane -tab-item-1 is-active">
               <div className="row y-gap-30 justify-center">
-                {courses.map((course) => (
+                {courses.slice(0, 8).map((course) => (
                   <Courses key={course.id} course={course}></Courses>
                 ))}
               </div>

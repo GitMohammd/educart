@@ -12,7 +12,7 @@ function NavCart() {
   );
 
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, [courseItems]);

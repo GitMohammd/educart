@@ -11,13 +11,17 @@ import { useParams } from "react-router-dom";
 function CourseSingle1() {
   const [courses, setCourses] = useState([]);
   let { courseId } = useParams();
+  // useEffect(() => {
+  //   fetch("/allCourses.json")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }, []);
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
-
-  const singleCourse = courses.find(({ id }) => id === courseId);
+  const singleCourse = courses?.find(({ id }) => id === courseId);
 
   return (
     <div className="preloader-visible" data-barba="wrapper">
