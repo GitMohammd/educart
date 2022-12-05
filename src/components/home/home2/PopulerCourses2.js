@@ -30,7 +30,9 @@ function PopulerCourses2() {
         : catacourse.popular?.includes(cataValue);
     })
     .filter((ratcourse) => {
-      return ratvalue === "" ? ratcourse : ratcourse.rating?.includes(ratvalue);
+      return ratvalue === ""
+        ? ratcourse
+        : ratcourse.populerCourseRating?.includes(ratvalue);
     })
     .filter((diffcourse) => {
       return diffvalue === ""
@@ -52,6 +54,9 @@ function PopulerCourses2() {
   const handleDiffChange = (event) => {
     setDiffValue(event.target.value);
   };
+
+  const filteredCourse =
+    newCourse.length > 7 ? newCourse.slice(0, 8) : newCourse;
 
   return (
     <section className="layout-pt-lg layout-pb-lg">
@@ -281,7 +286,7 @@ function PopulerCourses2() {
             </div>
           </div> */}
 
-          {newCourse?.map((course) => (
+          {filteredCourse?.map((course) => (
             <FilterCourses key={course.id} course={course} />
           ))}
 
