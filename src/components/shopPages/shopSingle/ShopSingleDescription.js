@@ -55,9 +55,9 @@ function ShopSingleDescription() {
                 <div className="tabs__content js-tabs-content">
                   <div
                     className={
-                      description
+                      description && !review
                         ? "tabs__pane -tab-item-1 is-active"
-                        : " tabs__pane -tab-item-1 "
+                        : "tabs__pane -tab-item-1 "
                     }
                   >
                     <h4 className="text-18 fw-500">
@@ -76,7 +76,13 @@ function ShopSingleDescription() {
                     </p>
                   </div>
 
-                  <div className="tabs__pane -tab-item-2 is-active">
+                  <div
+                    className={
+                      !description && review
+                        ? "tabs__pane -tab-item-2 is-active"
+                        : "tabs__pane -tab-item-2 "
+                    }
+                  >
                     <div className="blogPost -comments">
                       <div className="blogPost__content">
                         <h2 className="text-20 fw-500">Reviews</h2>
