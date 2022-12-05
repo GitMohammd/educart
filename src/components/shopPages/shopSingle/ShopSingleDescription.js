@@ -4,7 +4,6 @@ import React, { useState } from "react";
 function ShopSingleDescription() {
   const [description, setDescription] = useState(true);
   const [review, setReview] = useState(false);
-  console.log(description, review);
 
   const handleClick = (prop) => {
     if (prop === "descriptions") {

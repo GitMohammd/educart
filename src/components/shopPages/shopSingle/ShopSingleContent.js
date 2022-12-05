@@ -1,6 +1,7 @@
 import React from "react";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+import AddIcon from "@mui/icons-material/Add";
 
 function ShopSingleContent() {
   return (
@@ -27,7 +28,7 @@ function ShopSingleContent() {
                       </div>
 
                       <div className="gallery__button -bottom-right">
-                        <i className="icon" data-feather="plus"></i>
+                        <AddIcon fontSize="large" />
                       </div>
                     </a>
                   </div>
@@ -48,7 +49,8 @@ function ShopSingleContent() {
                       </div>
 
                       <div className="gallery__button -bottom-right">
-                        <i className="icon" data-feather="plus"></i>
+                        <AddIcon sx={{ color: "secondary" }} />
+                        {/* <i className="icon" data-feather="plus"></i> */}
                       </div>
                     </a>
                   </div>

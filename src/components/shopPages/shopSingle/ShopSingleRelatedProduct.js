@@ -1,4 +1,6 @@
 import React from "react";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 function ShopSingleRelatedProduct() {
   return (
@@ -27,10 +29,10 @@ function ShopSingleRelatedProduct() {
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="eye"></i>
+                    <VisibilityIcon />
                   </a>
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="heart"></i>
+                    <FavoriteBorderIcon />
                   </a>
                 </div>
               </div>
@@ -65,10 +67,10 @@ function ShopSingleRelatedProduct() {
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="eye"></i>
+                    <VisibilityIcon />
                   </a>
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="heart"></i>
+                    <FavoriteBorderIcon />
                   </a>
                 </div>
               </div>
@@ -103,10 +105,10 @@ function ShopSingleRelatedProduct() {
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="eye"></i>
+                    <VisibilityIcon />
                   </a>
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="heart"></i>
+                    <FavoriteBorderIcon />
                   </a>
                 </div>
               </div>
@@ -141,10 +143,10 @@ function ShopSingleRelatedProduct() {
 
                 <div className="productCard__controls">
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="eye"></i>
+                    <VisibilityIcon />
                   </a>
                   <a href="#" className="productCard__icon">
-                    <i className="icon" data-feather="heart"></i>
+                    <FavoriteBorderIcon />
                   </a>
                 </div>
               </div>
