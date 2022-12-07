@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import AddIcon from "@mui/icons-material/Add";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function ShopSingleContent() {
+  const { getCourseQuantity, increaseCourseQuantity, decreaseCourseQuantity } =
+    UseCourseContext();
+  const [currentImg, setCurrentImg] = useState(1);
   const sliderImage = [
     { url: "/assets/img/shop/single/1.png" },
     { url: "/assets/img/shop/single/2.png" },
     { url: "/assets/img/shop/single/3.png" },
     { url: "/assets/img/shop/single/4.png" },
   ];
+
+  const CourseQuantity = getCourseQuantity(51);
+  console.log(CourseQuantity);
+
   return (
     <section className="layout-pt-lg layout-pb-md">
       <div className="container">
@@ -29,7 +37,7 @@ function ShopSingleContent() {
                       <div className="ratio ratio-63:57">
                         <img
                           className="absolute-full-center rounded-8"
-                          src="/assets/img/shop/single/1.png"
+                          src={`/assets/img/shop/single/${currentImg}.png`}
                           alt="project image"
                         />
                       </div>
@@ -39,74 +47,16 @@ function ShopSingleContent() {
                       </div>
                     </a>
                   </div>
-
-                  <div className="swiper-slide">
-                    <a
-                      data-barba
-                      href="img/shop/single/2.png"
-                      className="gallery__item js-gallery"
-                      data-gallery="gallery1"
-                    >
-                      <div className="ratio ratio-63:57">
-                        <img
-                          className="absolute-full-center rounded-8"
-                          src="/assets/img/shop/single/2.png"
-                          alt="project image"
-                        />
-                      </div>
-
-                      <div className="gallery__button -bottom-right">
-                        <AddIcon sx={{ color: "secondary" }} />
-                      </div>
-                    </a>
-                  </div>
-
-                  <div className="swiper-slide">
-                    <a
-                      data-barba
-                      href="img/shop/single/3.png"
-                      className="gallery__item js-gallery"
-                      data-gallery="gallery1"
-                    >
-                      <div className="ratio ratio-63:57">
-                        <img
-                          className="absolute-full-center rounded-8"
-                          src="/assets/img/shop/single/3.png"
-                          alt="project image"
-                        />
-                      </div>
-
-                      <div className="gallery__button -bottom-right">
-                        <AddIcon sx={{ color: "secondary" }} />
-                      </div>
-                    </a>
-                  </div>
-
-                  <div className="swiper-slide">
-                    <a
-                      data-barba
-                      href="img/shop/single/4.png"
-                      className="gallery__item js-gallery"
-                      data-gallery="gallery1"
-                    >
-                      <div className="ratio ratio-63:57">
-                        <img
-                          className="absolute-full-center rounded-8"
-                          src="/assets/img/shop/single/4.png"
-                          alt="project image"
-                        />
-                      </div>
-
-                      <div className="gallery__button -bottom-right">
-                        <AddIcon sx={{ color: "secondary" }} />
-                      </div>
-                    </a>
-                  </div>
                 </div>
               </div>
 
               <div className="row y-gap-10 x-gap-10 pt-10 js-slider-pagination">
-                <div data-cursor className="col-auto gallery__item">
+                <div
+                  onClick={() => setCurrentImg(1)}
+                  style={{ cursor: "pointer" }}
+                  data-cursor
+                  className="col-auto gallery__item"
+                >
                   <img
                     className="size-90 object-cover rounded-8"
                     src="/assets/img/shop/single/1.png"
@@ -114,7 +64,12 @@ function ShopSingleContent() {
                   />
                 </div>
 
-                <div data-cursor className="col-auto gallery__item">
+                <div
+                  onClick={() => setCurrentImg(2)}
+                  style={{ cursor: "pointer" }}
+                  data-cursor
+                  className="col-auto gallery__item"
+                >
                   <img
                     className="size-90 object-cover rounded-8"
                     src="/assets/img/shop/single/2.png"
@@ -122,7 +77,12 @@ function ShopSingleContent() {
                   />
                 </div>
 
-                <div data-cursor className="col-auto gallery__item">
+                <div
+                  onClick={() => setCurrentImg(3)}
+                  style={{ cursor: "pointer" }}
+                  data-cursor
+                  className="col-auto gallery__item"
+                >
                   <img
                     className="size-90 object-cover rounded-8"
                     src="/assets/img/shop/single/3.png"
@@ -130,7 +90,12 @@ function ShopSingleContent() {
                   />
                 </div>
 
-                <div data-cursor className="col-auto gallery__item">
+                <div
+                  onClick={() => setCurrentImg(4)}
+                  style={{ cursor: "pointer" }}
+                  data-cursor
+                  className="col-auto gallery__item"
+                >
                   <img
                     className="size-90 object-cover rounded-8"
                     src="/assets/img/shop/single/4.png"
@@ -161,15 +126,21 @@ function ShopSingleContent() {
                       className="input-counter__counter"
                       type="number"
                       placeholder="value..."
-                      value="0"
+                      value={CourseQuantity}
                     />
 
                     <div className="input-counter__controls">
-                      <button className="input-counter__up js-down">
+                      <button
+                        onClick={() => decreaseCourseQuantity(51)}
+                        className="input-counter__up js-down"
+                      >
                         <RemoveCircleOutlineIcon />
                       </button>
 
-                      <button className="input-counter__down js-up">
+                      <button
+                        onClick={() => increaseCourseQuantity(51)}
+                        className="input-counter__down js-up"
+                      >
                         <AddCircleOutlineIcon />
                       </button>
                     </div>
@@ -177,7 +148,10 @@ function ShopSingleContent() {
                 </div>
 
                 <div className="col-auto">
-                  <button className="button h-50 px-45 -purple-1 text-white">
+                  <button
+                    onClick={() => increaseCourseQuantity(51)}
+                    className="button h-50 px-45 -purple-1 text-white"
+                  >
                     Add to cart
                   </button>
                 </div>
