@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
+import RelatedProduct from "./RelatedProduct";
 
 function ShopSingleRelatedProduct() {
+  const { courseItems, removeCourseQuantity } = UseCourseContext();
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    fetch("/allCourses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, [courseItems]);
+  const RelatedProducts = courses.slice(50, 54);
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div className="container">
@@ -19,7 +30,11 @@ function ShopSingleRelatedProduct() {
         </div>
 
         <div className="row y-gap-32 pt-60 sm:pt-40">
-          <div className="col-lg-3 col-sm-6">
+          {RelatedProducts.map((product) => (
+            <RelatedProduct key={product.id} product={product} />
+          ))}
+
+          {/* <div className="col-lg-3 col-sm-6">
             <div className="productCard -type-1 text-center">
               <div className="productCard__image">
                 <img
@@ -46,10 +61,7 @@ function ShopSingleRelatedProduct() {
                 <div className="text-17 fw-500 text-purple-1 mt-15">$55.00</div>
 
                 <div className="productCard__button d-inline-block">
-                  <a
-                    href="#"
-                    className="button -md -outline-purple-1 -rounded text-dark-1 mt-15"
-                  >
+                  <a className="button -md -outline-purple-1 -rounded text-dark-1 mt-15">
                     Add To Cart
                   </a>
                 </div>
@@ -169,7 +181,7 @@ function ShopSingleRelatedProduct() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

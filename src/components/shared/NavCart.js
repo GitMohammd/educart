@@ -5,10 +5,19 @@ import UseCourseContext from "../context/cartContext/UseCourseContext";
 function NavCart() {
   const { courseItems, removeCourseQuantity } = UseCourseContext();
   const [courses, setCourses] = useState([]);
-  const cartCourseItemId = courseItems?.map((courseItem) => courseItem?.id);
+  const cartCourseItemId = courseItems?.map((courseItem) => {
+    return courseItem?.id;
+    // return console.log(courseItem.id);
+  });
+
+  const testcartCourse = cartCourseItemId?.map((id) =>
+    courses?.filter((course) => console.log(course.id === id))
+  );
+
+  console.log(testcartCourse, courseItems);
 
   const cartCourse = cartCourseItemId?.map((id) =>
-    courses?.filter((course) => course.id === id)
+    courses?.filter((course) => course.id == id)
   );
 
   useEffect(() => {
