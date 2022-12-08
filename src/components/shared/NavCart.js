@@ -10,15 +10,17 @@ function NavCart() {
     // return console.log(courseItem.id);
   });
 
+  console.log(cartCourseItemId);
+
   const testcartCourse = cartCourseItemId?.map((id) =>
     courses?.filter((course) => console.log(course.id === id))
   );
 
-  console.log(testcartCourse, courseItems);
-
   const cartCourse = cartCourseItemId?.map((id) =>
     courses?.filter((course) => course.id == id)
   );
+
+  console.log(cartCourse.map((course) => course[0]?.id));
 
   useEffect(() => {
     fetch("/allCourses.json")

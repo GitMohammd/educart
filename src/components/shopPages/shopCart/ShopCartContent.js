@@ -78,7 +78,7 @@ function ShopCartContent() {
                 </div>
               </div>
               {cartCourse?.map((course) => {
-                return <ShopCourses course={course} />;
+                return <ShopCourses key={course.id} course={course} />;
               })}
 
               <div className="shopCart-footer px-16 mt-30">
