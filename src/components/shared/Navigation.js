@@ -33,9 +33,9 @@ function Navigation() {
           <div className="col-auto">
             <div className="header-left">
               <div className="header__logo ">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img src="/assets/img/general/logo.svg" alt="logo" />
-                </a>
+                </Link>
               </div>
 
               <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
@@ -587,103 +587,112 @@ function Navigation() {
 
                             <ul className="mega__list">
                               <li>
-                                <Link data-barba to={"/dashboard"}>
+                                <Link data-barba to={"/dashboards/dashboard"}>
                                   Dashboard{" "}
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/myCourses"}>
+                                <Link data-barba to={"/dashboards/myCourses"}>
                                   My Courses
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/bookmarks"}>
+                                <Link data-barba to={"/dashboards/bookmarks"}>
                                   Bookmarks
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/addListing"}>
+                                <Link data-barba to={"/dashboards/addListing"}>
                                   Add Listing
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/reviews"}>
+                                <Link data-barba to={"/dashboards/reviews"}>
                                   Reviews
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/settings"}>
+                                <Link data-barba to={"/dashboards/settings"}>
                                   Settings
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/administration"}>
+                                <Link
+                                  data-barba
+                                  to={"/dashboards/administration"}
+                                >
                                   Administration
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/assignment"}>
+                                <Link data-barba to={"/dashboards/assignment"}>
                                   Assignment
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/calender"}>
+                                <Link data-barba to={"/dashboards/calender"}>
                                   Calender
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/singleDashboard"}>
+                                <Link
+                                  data-barba
+                                  to={"/dashboards/singleDashboard"}
+                                >
                                   Single Dashboard
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/Dictionary"}>
+                                <Link data-barba to={"/dashboards/Dictionary"}>
                                   Dictionary
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/forums"}>
+                                <Link data-barba to={"/dashboards/forums"}>
                                   Forums
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/grades"}>
+                                <Link data-barba to={"/dashboards/grades"}>
                                   Grades
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/messages"}>
+                                <Link data-barba to={"/dashboards/messages"}>
                                   Messages
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/Participants"}>
+                                <Link
+                                  data-barba
+                                  to={"/dashboards/Participants"}
+                                >
                                   Participants
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/quiz"}>
+                                <Link data-barba to={"/dashboards/quiz"}>
                                   Quiz
                                 </Link>
                               </li>
 
                               <li>
-                                <Link data-barba to={"/survey"}>
+                                <Link data-barba to={"/dashboards/survey"}>
                                   Survey
                                 </Link>
                               </li>

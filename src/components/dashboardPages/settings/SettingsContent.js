@@ -95,7 +95,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               First Name
                             </label>
@@ -110,7 +110,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Last Name
                             </label>
@@ -125,7 +125,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Phone
                             </label>
@@ -140,7 +140,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Birthday
                             </label>
@@ -155,7 +155,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Address Line 1
                             </label>
@@ -170,7 +170,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Address Line 2
                             </label>
@@ -185,7 +185,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               State
                             </label>
@@ -200,7 +200,7 @@ function SettingsContent() {
                           <div className="col-md-6">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Country
                             </label>
@@ -215,7 +215,7 @@ function SettingsContent() {
                           <div className="col-12">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Personal info
                             </label>
@@ -241,7 +241,7 @@ function SettingsContent() {
                         <div className="col-md-7">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Current password
                           </label>
@@ -256,7 +256,7 @@ function SettingsContent() {
                         <div className="col-md-7">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             New password
                           </label>
@@ -271,7 +271,7 @@ function SettingsContent() {
                         <div className="col-md-7">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Confirm New Password
                           </label>
@@ -296,7 +296,7 @@ function SettingsContent() {
                         <div className="col-md-6">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Twitter
                           </label>
@@ -311,7 +311,7 @@ function SettingsContent() {
                         <div className="col-md-6">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Facebook
                           </label>
@@ -326,7 +326,7 @@ function SettingsContent() {
                         <div className="col-md-6">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Instagram
                           </label>
@@ -341,7 +341,7 @@ function SettingsContent() {
                         <div className="col-md-6">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             LinkedIn Profile URL
                           </label>
@@ -599,7 +599,7 @@ function SettingsContent() {
                         <div className="col-md-7">
                           <label
                             className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                            for="name"
+                            htmlFor="name"
                           >
                             Enter Password
                           </label>

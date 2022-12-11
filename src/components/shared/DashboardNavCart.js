@@ -1,8 +1,25 @@
-import React, { useState } from "react";
+import { Key } from "@mui/icons-material";
+import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import UseCourseContext from "../context/cartContext/UseCourseContext";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
 
-function NavCart() {
+function DashboardNavCart() {
+  const cartBtnRef = useRef();
+  const [isCartOpen, setCartOpen] = useState(false);
+  console.log(isCartOpen);
+  useEffect(() => {
+    const cartBtnOpen = (e) => {
+      if (e.path[0] !== cartBtnRef.current) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", cartBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", cartBtnOpen);
+    };
+  }, []);
+
   const { courseItems, removeCourseQuantity } = UseCourseContext();
   const [courses, setCourses] = useState([]);
   const cartCourseItemId = courseItems?.map((courseItem) => {
@@ -18,7 +35,6 @@ function NavCart() {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, [courseItems]);
-
   return (
     <div className="js-cart-toggle">
       {cartCourse >= 0 ? (
@@ -43,7 +59,10 @@ function NavCart() {
         <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
           <div className="px-30 pt-30 pb-10">
             {cartCourse?.map((course) => (
-              <div className="row justify-between x-gap-40 pb-20">
+              <div
+                key={course[0].id}
+                className="row justify-between x-gap-40 pb-20"
+              >
                 <div className="col">
                   <div className="row x-gap-10 y-gap-10">
                     <div className="col-auto">
@@ -51,7 +70,9 @@ function NavCart() {
                     </div>
 
                     <div className="col">
-                      <div className="text-dark-1 lh-15">{course[0]?.name}</div>
+                      <div className="text-dark-1 lh-15">
+                        {course[0]?.name}{" "}
+                      </div>
 
                       <div className="d-flex items-center mt-10">
                         <div className="lh-12 fw-500 line-through text-light-1 mr-10">
@@ -64,7 +85,6 @@ function NavCart() {
                     </div>
                   </div>
                 </div>
-
                 <div className="col-auto">
                   <button onClick={() => removeCourseQuantity(course[0]?.id)}>
                     <img src="/assets/img/menus/close.svg" alt="icon" />
@@ -73,7 +93,6 @@ function NavCart() {
               </div>
             ))}
           </div>
-
           <div className="px-30 pt-20 pb-30 border-top-light">
             <div className="d-flex justify-between">
               <div className="text-18 lh-12 text-dark-1 fw-500">Total:</div>
@@ -99,4 +118,4 @@ function NavCart() {
   );
 }
 
-export default NavCart;
+export default DashboardNavCart;

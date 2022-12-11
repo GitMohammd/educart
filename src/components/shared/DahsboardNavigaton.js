@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import UseCourseContext from "../context/cartContext/UseCourseContext";
+import DashboardNavCart from "./DashboardNavCart";
 
-function DahsboardNavigaton() {
+function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
+  const coursesBtnRef = useRef();
+  const [isCourseOpen, setCourseOpen] = useState(false);
+  useEffect(() => {
+    const courseBtnOpen = (e) => {
+      if (e.path[0] !== coursesBtnRef.current) {
+        setCourseOpen(false);
+      }
+    };
+    document.body.addEventListener("click", courseBtnOpen);
+
+    return () => {
+      document.body.removeEventListener("click", courseBtnOpen);
+    };
+  }, []);
+  const cartBtnRef = useRef();
+  const [isCartOpen, setCartOpen] = useState(false);
+  useEffect(() => {
+    const cartBtnOpen = (e) => {
+      if (e.path[0] !== cartBtnRef.current) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", cartBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", cartBtnOpen);
+    };
+  }, []);
+
   return (
     <header className="header -dashboard -dark-bg-dark-1 js-header">
       <div className="header__container py-20 px-30">
@@ -9,13 +39,16 @@ function DahsboardNavigaton() {
           <div className="col-auto">
             <div className="d-flex items-center">
               <div className="header__explore text-dark-1">
-                <button className="d-flex items-center js-dashboard-home-9-sidebar-toggle">
+                <button
+                  onClick={() => setLeftBarOpen(!isLeftBar)}
+                  className="d-flex items-center js-dashboard-home-9-sidebar-toggle"
+                >
                   <i className="icon -dark-text-white icon-explore"></i>
                 </button>
               </div>
 
               <div className="header__logo ml-30 md:ml-20">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img
                     className="-light-d-none"
                     src="/assets/img/general/logo.svg"
@@ -26,7 +59,7 @@ function DahsboardNavigaton() {
                     src="/assets/img/general/logo-dark.svg"
                     alt="logo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -41,112 +74,122 @@ function DahsboardNavigaton() {
                   <div className="dropdown__item -dark-bg-dark-2 -dark-border-white-10">
                     <div className="text-14 y-gap-15">
                       <div>
-                        <Link to={"/dashboard"} className="d-block text-dark-1">
-                          <i className="text-20 icon-discovery mr-15"></i>
+                        <Link
+                          to={"/dashboards/dashboard"}
+                          className="d-block text-dark-1"
+                        >
                           Dashboard
                         </Link>
                       </div>
                       <div>
-                        <Link className="d-block text-dark-1" to={"/myCourses"}>
-                          <i className="text-20 icon-play-button mr-15"></i>
+                        <Link
+                          className="d-block text-dark-1"
+                          to={"/dashboards/myCourses"}
+                        >
                           My Courses
                         </Link>
                       </div>
                       <div>
-                        <Link to={"/bookmarks"} className="d-block text-dark-1">
-                          <i className="text-20 icon-bookmark mr-15"></i>
+                        <Link
+                          to={"/dashboards/bookmarks"}
+                          className="d-block text-dark-1"
+                        >
                           Bookmarks
                         </Link>
                       </div>
                       <div>
                         <Link
-                          to={"/addListing"}
+                          to={"/dashboards/addListing"}
                           className="d-block text-dark-1"
                         >
                           Add Listing
                         </Link>
                       </div>
                       <div>
-                        <a
-                          href="dshb-reviews.html"
+                        <Link
+                          to={"/dashboards/reviews"}
                           className="d-block text-dark-1"
                         >
                           Reviews
-                        </a>
+                        </Link>
                       </div>
                       <div>
-                        <a
-                          href="dshb-settings.html"
+                        <Link
+                          to={"/dashboards/settings"}
                           className="d-block text-dark-1"
                         >
                           Settings
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="relative">
-                  <a
-                    href="#"
+                  <button
+                    ref={coursesBtnRef}
+                    onClick={() => setCourseOpen((prev) => !prev)}
                     className="d-flex items-center text-dark-1 ml-20"
                     data-el-toggle=".js-courses-toggle"
                   >
                     My Courses
                     <i className="text-9 icon-chevron-down ml-10"></i>
-                  </a>
+                  </button>
+                  {!isCourseOpen ? (
+                    ""
+                  ) : (
+                    <div className="js-courses-toggle">
+                      <div className="toggle-bottom -courses bg-white -dark-bg-dark-1 shadow-4 border-light rounded-8 mt-20">
+                        <div className="px-30 py-30">
+                          <div className="d-flex mb-20">
+                            <img
+                              className="size-80 fit-cover"
+                              src="/assets/img/menus/cart/1.png"
+                              alt="image"
+                            />
 
-                  <div className="toggle-element js-courses-toggle">
-                    <div className="toggle-bottom -courses bg-white -dark-bg-dark-1 shadow-4 border-light rounded-8 mt-20">
-                      <div className="px-30 py-30">
-                        <div className="d-flex mb-20">
-                          <img
-                            className="size-80 fit-cover"
-                            src="/assets/img/menus/cart/1.png"
-                            alt="image"
-                          />
-
-                          <div className="ml-15">
-                            <div className="text-dark-1 lh-15 fw-500">
-                              Complete Python Bootcamp From Zero to Hero in
-                              Python
-                            </div>
-                            <div className="progress-bar mt-20">
-                              <div className="progress-bar__bg bg-light-3"></div>
-                              <div className="progress-bar__bar bg-purple-1 w-1/3"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="d-flex mb-20">
-                          <img
-                            className="size-80 fit-cover"
-                            src="/assets/img/menus/cart/2.png"
-                            alt="image"
-                          />
-
-                          <div className="ml-15">
-                            <div className="text-dark-1 lh-15 fw-500">
-                              The Ultimate Drawing Course Beginner to Advanced
-                            </div>
-                            <div className="progress-bar mt-20">
-                              <div className="progress-bar__bg bg-light-3"></div>
-                              <div className="progress-bar__bar bg-purple-1 w-1/3"></div>
+                            <div className="ml-15">
+                              <div className="text-dark-1 lh-15 fw-500">
+                                Complete Python Bootcamp From Zero to Hero in
+                                Python
+                              </div>
+                              <div className="progress-bar mt-20">
+                                <div className="progress-bar__bg bg-light-3"></div>
+                                <div className="progress-bar__bar bg-purple-1 w-1/3"></div>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div className="mt-20">
-                          <a
-                            href="#"
-                            className="button py-20 -dark-1 text-white -dark-bg-purple-1 -dark-border-dark-2 col-12"
-                          >
-                            Go to My Learning
-                          </a>
+                          <div className="d-flex mb-20">
+                            <img
+                              className="size-80 fit-cover"
+                              src="/assets/img/menus/cart/2.png"
+                              alt="image"
+                            />
+
+                            <div className="ml-15">
+                              <div className="text-dark-1 lh-15 fw-500">
+                                The Ultimate Drawing Course Beginner to Advanced
+                              </div>
+                              <div className="progress-bar mt-20">
+                                <div className="progress-bar__bg bg-light-3"></div>
+                                <div className="progress-bar__bar bg-purple-1 w-1/3"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="mt-20">
+                            <a
+                              href="#"
+                              className="button py-20 -dark-1 text-white -dark-bg-purple-1 -dark-border-dark-2 col-12"
+                            >
+                              Go to My Learning
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
 
@@ -159,17 +202,10 @@ function DahsboardNavigaton() {
 
                 <div className="relative">
                   <button
-                    onClick={(event) => {
-                      if (document.fullscreenElement) {
-                        document
-                          .exitFullscreen()
-                          .then(() =>
-                            console.log("Document Exited from Full screen mode")
-                          )
-                          .catch((err) => console.error(err));
-                      } else {
-                        document.documentElement.requestFullscreen();
-                      }
+                    onClick={() => {
+                      document.fullscreenElement
+                        ? document.exitFullscreen()
+                        : document.documentElement.requestFullscreen();
                     }}
                     data-maximize
                     className="d-flex text-light-1 items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
@@ -180,118 +216,18 @@ function DahsboardNavigaton() {
 
                 <div className="relative">
                   <button
-                    className="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
+                    ref={cartBtnRef}
+                    // onClick={() => setCartOpen((prev) => !prev)}
+                    onClick={() => setCartOpen((prev) => !prev)}
+                    class="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-cart-toggle"
                   >
-                    <i className="text-20 icon icon-basket"></i>
+                    <i class="text-20 icon icon-basket"></i>
                   </button>
-
-                  <div className="toggle-element js-cart-toggle">
-                    <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
-                      <div className="px-30 pt-30 pb-10">
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/1.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  The Ultimate Drawing Course Beginner to
-                                  Advanced...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="/assets/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/2.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  User Experience Design Essentials - Adobe XD
-                                  UI UX...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="/assets/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="px-30 pt-20 pb-30 border-top-light">
-                        <div className="d-flex justify-between">
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            Total:
-                          </div>
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            $659
-                          </div>
-                        </div>
-
-                        <div className="row x-gap-20 y-gap-10 pt-30">
-                          <div className="col-sm-6">
-                            <button className="button py-20 -dark-1 text-white -dark-button-white col-12">
-                              View Cart
-                            </button>
-                          </div>
-                          <div className="col-sm-6">
-                            <button className="button py-20 -purple-1 text-white col-12">
-                              Checkout
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {isCartOpen ? <DashboardNavCart /> : ""}
                 </div>
+
+                {/* <DashboardNavCart /> */}
 
                 <div className="relative">
                   <a
@@ -422,7 +358,7 @@ function DahsboardNavigaton() {
                       <div className="sidebar -dashboard">
                         <div className="sidebar__item -is-active -dark-bg-dark-2">
                           <Link
-                            to={"/dashboard"}
+                            to={"/dashboards/dashboard"}
                             className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
                           >
                             <i className="text-20 icon-discovery mr-15"></i>
@@ -433,7 +369,7 @@ function DahsboardNavigaton() {
                         <div className="sidebar__item">
                           <Link
                             className="d-flex items-center text-17 lh-1 fw-500"
-                            to={"/myCourses"}
+                            to={"/dashboards/myCourses"}
                           >
                             <i className="text-20 icon-play-button mr-15"></i>
                             My Courses
@@ -442,7 +378,7 @@ function DahsboardNavigaton() {
 
                         <div className="sidebar__item">
                           <Link
-                            to={"/bookmarks"}
+                            to={"/dashboards/bookmarks"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-bookmark mr-15"></i>
@@ -452,7 +388,7 @@ function DahsboardNavigaton() {
 
                         <div className="sidebar__item">
                           <Link
-                            to={"/messages"}
+                            to={"/dashboards/messages"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-message mr-15"></i>
@@ -462,7 +398,7 @@ function DahsboardNavigaton() {
 
                         <div className="sidebar__item">
                           <Link
-                            to={"/addListing"}
+                            to={"/dashboards/addListing"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-message mr-15"></i>
@@ -472,7 +408,7 @@ function DahsboardNavigaton() {
 
                         <div className="sidebar__item">
                           <Link
-                            to={"/reviews"}
+                            to={"/dashboards/reviews"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-message mr-15"></i>
@@ -482,7 +418,7 @@ function DahsboardNavigaton() {
 
                         <div className="sidebar__item">
                           <Link
-                            to={"/settings"}
+                            to={"/dashboards/settings"}
                             className="d-flex items-center text-17 lh-1 fw-500"
                           >
                             <i className="text-20 icon-message mr-15"></i>

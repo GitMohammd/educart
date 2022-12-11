@@ -8,7 +8,7 @@ function Dashboardleft() {
         <div className="sidebar -dashboard">
           <div className="sidebar__item -is-active -dark-bg-dark-2">
             <Link
-              to={"/dashboard"}
+              to={"/dashboards/dashboard"}
               className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
             >
               <i className="text-20 icon-discovery mr-15"></i>
@@ -19,7 +19,7 @@ function Dashboardleft() {
           <div className="sidebar__item">
             <Link
               className="d-flex items-center text-17 lh-1 fw-500"
-              to={"/myCourses"}
+              to={"/dashboards/myCourses"}
             >
               <i className="text-20 icon-play-button mr-15"></i>
               My Courses
@@ -28,7 +28,7 @@ function Dashboardleft() {
 
           <div className="sidebar__item">
             <Link
-              to={"/bookmarks"}
+              to={"/dashboards/bookmarks"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-bookmark mr-15"></i>
@@ -38,7 +38,7 @@ function Dashboardleft() {
 
           <div className="sidebar__item">
             <Link
-              to={"/messages"}
+              to={"/dashboards/messages"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-message mr-15"></i>
@@ -48,7 +48,7 @@ function Dashboardleft() {
 
           <div className="sidebar__item">
             <Link
-              to={"/addListing"}
+              to={"/dashboards/addListing"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-message mr-15"></i>
@@ -58,7 +58,7 @@ function Dashboardleft() {
 
           <div className="sidebar__item">
             <Link
-              to={"/reviews"}
+              to={"/dashboards/reviews"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-message mr-15"></i>
@@ -68,7 +68,7 @@ function Dashboardleft() {
 
           <div className="sidebar__item">
             <Link
-              to={"/settings"}
+              to={"/dashboards/settings"}
               className="d-flex items-center text-17 lh-1 fw-500"
             >
               <i className="text-20 icon-message mr-15"></i>

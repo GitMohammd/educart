@@ -26,7 +26,7 @@ function AddListingContent() {
                     <div className="col-12">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Course Title*
                       </label>
@@ -41,7 +41,7 @@ function AddListingContent() {
                     <div className="col-12">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Short Description*
                       </label>
@@ -56,7 +56,7 @@ function AddListingContent() {
                     <div className="col-12">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Course Description*
                       </label>
@@ -71,7 +71,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         What will students learn in your course?*
                       </label>
@@ -86,7 +86,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Requirements*
                       </label>
@@ -101,7 +101,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Course Level*
                       </label>
@@ -112,7 +112,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Audio Language*
                       </label>
@@ -123,7 +123,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Close Caption*
                       </label>
@@ -134,7 +134,7 @@ function AddListingContent() {
                     <div className="col-md-6">
                       <label
                         className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                        for="name"
+                        htmlFor="name"
                       >
                         Course Category*
                       </label>
@@ -485,7 +485,7 @@ function AddListingContent() {
                           <div className="form-upload col-12">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Course thumbnail*
                             </label>
@@ -534,7 +534,7 @@ function AddListingContent() {
                           <div className="form-upload col-12">
                             <label
                               className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                              for="name"
+                              htmlFor="name"
                             >
                               Video URL*
                             </label>
