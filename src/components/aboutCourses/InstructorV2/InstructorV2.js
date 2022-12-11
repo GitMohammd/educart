@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SubNav from "../../shared/SubNav";
 import Footer from "../../shared/Footer";
 import Navigation from "../../shared/Navigation";
@@ -6,6 +6,9 @@ import InstructorHeader from "../instructiorV1/InstructorHeader";
 import InstructorV2Content from "./InstructorV2Content";
 
 function InstructorV2() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">

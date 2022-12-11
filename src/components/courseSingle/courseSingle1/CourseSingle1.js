@@ -9,6 +9,9 @@ import UseCourseContext from "../../Hooks/UseCourseCart";
 import { useParams } from "react-router-dom";
 
 function CourseSingle1() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   const [courses, setCourses] = useState([]);
   let { courseId } = useParams();
   // useEffect(() => {

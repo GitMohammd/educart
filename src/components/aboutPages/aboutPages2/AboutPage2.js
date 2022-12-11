@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BecomeInstructor from "../../home/home2/BecomeInstructor";
 import BecomeStudent from "../../home/home2/BecomeStudent";
 import HowItWorks from "../../home/home3/HowItWorks";
@@ -15,6 +15,9 @@ import AboutPageContent from "../aboutPages1/AboutPageContent";
 import AboutPageHeader from "../aboutPages1/AboutPageHeader";
 
 function AboutPage2() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">
       <div className="barba-container" data-barba="container">

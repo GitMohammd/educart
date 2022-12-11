@@ -7,6 +7,9 @@ import UserInterface from "./UserInterface";
 import FilterCourseList from "./FilterCourseList";
 
 function CourseList1() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   const [courses, setCourses] = useState([]);
 
   // console.log(courses, "newcourses");

@@ -32,6 +32,21 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
     };
   }, []);
 
+  const [isDark, setDark] = useState(false);
+  console.log(isDark, "dark");
+
+  useEffect(() => {
+    isDark
+      ? document.documentElement.classList.remove("-dark-mode")
+      : document.documentElement.classList.add("-dark-mode");
+  }, [isDark]);
+
+  // const handleDarkMode = () => {
+  //   isDark
+  //     ? document.documentElement.classList.toggle("-dark-mode")
+  //     : document.documentElement.classList.toggle("-dark-mode");
+  // };
+
   return (
     <header className="header -dashboard -dark-bg-dark-1 js-header">
       <div className="header__container py-20 px-30">
@@ -195,7 +210,10 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
 
               <div className="d-flex items-center sm:d-none">
                 <div className="relative">
-                  <button className="js-darkmode-toggle text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light">
+                  <button
+                    onClick={() => setDark(!isDark)}
+                    className="js-darkmode-toggle text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
+                  >
                     <i className="text-24 icon icon-night"></i>
                   </button>
                 </div>

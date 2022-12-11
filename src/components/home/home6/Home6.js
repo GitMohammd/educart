@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Blog6 from "./Blog6";
 import DownloadApp from "./DownloadApp";
 import EducationCourses from "./EducationCourses";
@@ -16,6 +16,9 @@ import UpcommingEvent6 from "./UpcommingEvent6";
 import TopCatagories from "../home1/TopCotegories";
 
 function Home6() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   return (
     <div className="barba-container" data-barba="wrapper">
       <div className="barba-container" data-barba="container">

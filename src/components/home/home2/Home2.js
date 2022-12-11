@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../shared/Footer";
 import TrustedCompany from "../../shared/TrustedCompany";
 import Bannar from "./Bannar";
@@ -14,6 +14,9 @@ import UpcommingEvents from "./UpcommingEvents";
 import Footer2 from "./Footer2";
 
 function Home2() {
+  useEffect(() => {
+    document.documentElement.classList.remove("-dark-mode");
+  }, []);
   return (
     <div className="barba-container" data-barba="wrapper">
       <div className="barba-container" data-barba="container">
