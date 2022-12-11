@@ -15659,3 +15659,6 @@ table.table td {
   background: #666;
 }
 /* ============== mui ============ */
+.maxHeight {
+  max-height: 140px;
+}

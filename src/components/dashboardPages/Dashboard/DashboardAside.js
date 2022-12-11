@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-function DashboardAside() {
+function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
+  const [isStarred, setStarred] = useState(false);
   return (
-    <aside className="sidebar-menu toggle-element js-msg-toggle js-dsbh-sidebar-menu">
+    <aside
+      className={
+        isSideBarOpen
+          ? "sidebar-menu toggle-element js-msg-toggle js-dsbh-sidebar-menu -is-el-visible"
+          : "sidebar-menu toggle-element js-msg-toggle js-dsbh-sidebar-menu "
+      }
+    >
       <div className="sidebar-menu__bg"></div>
 
       <div className="sidebar-menu__content scroll-bar-1 py-30 px-40 sm:py-25 sm:px-20 bg-white -dark-bg-dark-1">
@@ -65,6 +72,7 @@ function DashboardAside() {
               </div>
               <div className="col-auto">
                 <button
+                  onClick={() => setSideBarOpen(false)}
                   data-el-toggle=".js-msg-toggle"
                   className="button -purple-3 text-purple-1 size-40 d-flex items-center justify-center rounded-full"
                 >
@@ -91,8 +99,17 @@ function DashboardAside() {
             </form>
 
             <div className="accordion -block text-left pt-20 js-accordion">
-              <div className="accordion__item border-light rounded-16">
-                <div className="accordion__button">
+              <div
+                className={
+                  !isStarred
+                    ? "accordion__item border-light rounded-16 "
+                    : "accordion__item border-light rounded-16  is-active"
+                }
+              >
+                <div
+                  onClick={() => setStarred(!isStarred)}
+                  className="accordion__button"
+                >
                   <div className="accordion__icon size-30 -dark-bg-dark-2 mr-10">
                     <div className="icon d-flex items-center justify-center">
                       <span className="lh-1 fw-500">2</span>
@@ -106,7 +123,11 @@ function DashboardAside() {
                   </span>
                 </div>
 
-                <div className="accordion__content">
+                <div
+                  style={{ maxHeight: isStarred ? "140px" : "0px" }}
+                  className="accordion__content"
+                  // className={!isStarred ? " accordion__content maxHeight" : ""}
+                >
                   <div className="accordion__content__inner pl-20 pr-20 pb-20">
                     <div
                       data-sidebar-menu-target="messages-2"

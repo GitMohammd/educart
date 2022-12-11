@@ -7,7 +7,6 @@ import LocalMallIcon from "@mui/icons-material/LocalMall";
 function DashboardNavCart() {
   const cartBtnRef = useRef();
   const [isCartOpen, setCartOpen] = useState(false);
-  console.log(isCartOpen);
   useEffect(() => {
     const cartBtnOpen = (e) => {
       if (e.path[0] !== cartBtnRef.current) {

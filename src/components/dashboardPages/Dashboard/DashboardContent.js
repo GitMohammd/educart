@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useOutletContext } from "react-router-dom";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function DashboardContent() {
+  const weekBtnRef = useRef();
   const [isLeftBar, setLeftBarOpen] = useOutletContext();
+
+  const [isStaticWeek, setSaticWeek] = useState(false);
+  useEffect(() => {
+    const weekBtnOpen = (e) => {
+      if (!weekBtnRef.current.contains(e.target)) {
+        setSaticWeek(false);
+      }
+    };
+    document.body.addEventListener("click", weekBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", weekBtnOpen);
+    };
+  }, []);
+
   return (
     <div
       className={
@@ -93,18 +109,26 @@ function DashboardContent() {
               <div className="rounded-16 bg-white -dark-bg-dark-1 shadow-4 h-100">
                 <div className="d-flex justify-between items-center py-20 px-30 border-bottom-light">
                   <h2 className="text-17 lh-1 fw-500">Earning Statistics</h2>
-                  <div className="">
-                    <div className="dropdown js-dropdown js-category-active">
+                  <div ref={weekBtnRef} className="">
+                    <div className="dropdown ">
                       <div
+                        onClick={() => setSaticWeek((prev) => !prev)}
                         className="dropdown__button d-flex items-center text-14 bg-white -dark-bg-dark-1 border-light rounded-8 px-20 py-10 text-14 lh-12"
-                        data-el-toggle=".js-category-toggle"
-                        data-el-toggle-active=".js-category-active"
+                        // data-el-toggle=".js-category-toggle"
+                        // data-el-toggle-active=".js-category-active"
                       >
-                        <span className="js-dropdown-title">This Week</span>
+                        {" "}
+                        <span className="">This Week</span>
                         <i className="icon text-9 ml-40 icon-chevron-down"></i>
                       </div>
 
-                      <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle">
+                      <div
+                        className={
+                          isStaticWeek
+                            ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle -is-el-visible"
+                            : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle"
+                        }
+                      >
                         <div className="text-14 y-gap-15 js-dropdown-list">
                           <div>
                             <a href="#" className="d-block js-dropdown-link">

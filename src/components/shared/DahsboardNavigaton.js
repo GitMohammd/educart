@@ -1,14 +1,31 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 import UseCourseContext from "../context/cartContext/UseCourseContext";
 import DashboardNavCart from "./DashboardNavCart";
 
-function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
+function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
+  const notifBtnRef = useRef();
+  const [isNotify, setNotify] = useState(false);
+  useEffect(() => {
+    const notifyOpen = (e) => {
+      console.log(e);
+      // if (e.path[0] !== notifBtnRef.current) {
+      //   setNotify(false);
+      // }
+      if (!notifBtnRef.current.contains(e.target)) {
+        setNotify(false);
+      }
+    };
+    document.addEventListener("mousedown", notifyOpen);
+    return () => {
+      document.removeEventListener("mousedown", notifyOpen);
+    };
+  }, []);
   const coursesBtnRef = useRef();
   const [isCourseOpen, setCourseOpen] = useState(false);
   useEffect(() => {
     const courseBtnOpen = (e) => {
-      if (e.path[0] !== coursesBtnRef.current) {
+      if (!coursesBtnRef.current.contains(e.target)) {
         setCourseOpen(false);
       }
     };
@@ -22,7 +39,7 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
   const [isCartOpen, setCartOpen] = useState(false);
   useEffect(() => {
     const cartBtnOpen = (e) => {
-      if (e.path[0] !== cartBtnRef.current) {
+      if (!cartBtnRef.current.contains(e.target)) {
         setCartOpen(false);
       }
     };
@@ -32,7 +49,7 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
     };
   }, []);
 
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(true);
   console.log(isDark, "dark");
 
   useEffect(() => {
@@ -140,12 +157,10 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
                   </div>
                 </div>
 
-                <div className="relative">
+                <div ref={coursesBtnRef} className="relative">
                   <button
-                    ref={coursesBtnRef}
                     onClick={() => setCourseOpen((prev) => !prev)}
                     className="d-flex items-center text-dark-1 ml-20"
-                    data-el-toggle=".js-courses-toggle"
                   >
                     My Courses
                     <i className="text-9 icon-chevron-down ml-10"></i>
@@ -232,41 +247,46 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen }) {
                   </button>
                 </div>
 
-                <div className="relative">
+                <div ref={cartBtnRef} className="relative">
                   <button
-                    ref={cartBtnRef}
                     // onClick={() => setCartOpen((prev) => !prev)}
                     onClick={() => setCartOpen((prev) => !prev)}
-                    class="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
+                    className="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-cart-toggle"
                   >
-                    <i class="text-20 icon icon-basket"></i>
+                    <i className="text-20 icon icon-basket"></i>
                   </button>
                   {isCartOpen ? <DashboardNavCart /> : ""}
                 </div>
 
-                {/* <DashboardNavCart /> */}
-
                 <div className="relative">
-                  <a
+                  <button
                     href="#"
+                    onClick={() => setSideBarOpen(true)}
                     className="d-flex items-center text-light-1 justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-msg-toggle"
                   >
                     <i className="text-24 icon icon-email"></i>
-                  </a>
+                  </button>
                 </div>
 
-                <div className="relative">
-                  <a
+                <div ref={notifBtnRef} className="relative">
+                  <button
                     href="#"
+                    onClick={() => setNotify((prev) => !prev)}
                     className="d-flex items-center text-light-1 justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-notif-toggle"
                   >
                     <i className="text-24 icon icon-notification"></i>
-                  </a>
+                  </button>
 
-                  <div className="toggle-element js-notif-toggle">
+                  <div
+                    className={
+                      isNotify
+                        ? "toggle-element js-notif-toggle -is-el-visible"
+                        : "toggle-element js-notif-toggle"
+                    }
+                  >
                     <div className="toggle-bottom -notifications bg-white -dark-bg-dark-1 shadow-4 border-light rounded-8 mt-10">
                       <div className="py-30 px-30">
                         <div className="y-gap-40">
