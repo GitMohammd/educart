@@ -2,6 +2,12 @@ import React, { useState } from "react";
 
 function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
   const [isStarred, setStarred] = useState(false);
+  const [isGroup, setGroup] = useState(false);
+  const [isPrivate, setPrivate] = useState(false);
+  const [isStarredOpen, setStarredOpen] = useState(false);
+  const [isGroupOpen, setGroupOpen] = useState(false);
+  const [isPrivateOpen, setPrivateOpen] = useState(false);
+
   return (
     <aside
       className={
@@ -18,7 +24,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
             <div className="-sidebar-buttons">
               <button
                 data-sidebar-menu-button="messages"
-                className="text-17 text-dark-1 fw-500 -is-button-active"
+                className={
+                  isStarredOpen
+                    ? "text-17 text-dark-1 fw-500 "
+                    : "text-17 text-dark-1 fw-500 -is-button-active"
+                }
               >
                 Messages
               </button>
@@ -26,7 +36,12 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
               <button
                 data-sidebar-menu-button="messages-2"
                 data-sidebar-menu-target="messages"
-                className="d-flex items-center text-17 text-dark-1 fw-500"
+                onClick={() => setStarredOpen(false)}
+                className={
+                  isStarredOpen
+                    ? "d-flex items-center text-17 text-dark-1 fw-500 -is-button-active"
+                    : "d-flex items-center text-17 text-dark-1 fw-500 "
+                }
               >
                 <div className="icon-chevron-left text-11 text-purple-1 mr-10"></div>
                 Messages
@@ -85,7 +100,12 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
         <div className="relative js-menu-switch">
           <div
             data-sidebar-menu-open="messages"
-            className="sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
+            className={
+              isStarredOpen || isGroupOpen || isPrivateOpen
+                ? "sidebar-menu__item -sidebar-menu "
+                : "sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
+            }
+            // className="sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
           >
             <form className="search-field rounded-8 h-50" action="post">
               <input
@@ -126,9 +146,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
                 <div
                   style={{ maxHeight: isStarred ? "140px" : "0px" }}
                   className="accordion__content"
-                  // className={!isStarred ? " accordion__content maxHeight" : ""}
                 >
-                  <div className="accordion__content__inner pl-20 pr-20 pb-20">
+                  <div
+                    onClick={() => setStarredOpen(true)}
+                    className="accordion__content__inner pl-20 pr-20 pb-20"
+                  >
                     <div
                       data-sidebar-menu-target="messages-2"
                       className="row x-gap-10 y-gap-10 pointer"
@@ -178,8 +200,17 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
                 </div>
               </div>
 
-              <div className="accordion__item border-light rounded-16">
-                <div className="accordion__button">
+              <div
+                className={
+                  !isGroup
+                    ? "accordion__item border-light rounded-16 "
+                    : "accordion__item border-light rounded-16  is-active"
+                }
+              >
+                <div
+                  onClick={() => setGroup(!isGroup)}
+                  className="accordion__button"
+                >
                   <div className="accordion__icon size-30 -dark-bg-dark-2 mr-10">
                     <div className="icon d-flex items-center justify-center">
                       <span className="lh-1 fw-500">2</span>
@@ -191,8 +222,14 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
                   <span className="text-17 fw-500 text-dark-1 pt-3">Group</span>
                 </div>
 
-                <div className="accordion__content">
-                  <div className="accordion__content__inner pl-20 pr-20 pb-20">
+                <div
+                  style={{ maxHeight: isGroup ? "140px" : "0px" }}
+                  className="accordion__content"
+                >
+                  <div
+                    onClick={() => setGroupOpen(true)}
+                    className="accordion__content__inner pl-20 pr-20 pb-20"
+                  >
                     <div
                       data-sidebar-menu-target="messages-2"
                       className="row x-gap-10 y-gap-10 pointer"
@@ -242,8 +279,17 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
                 </div>
               </div>
 
-              <div className="accordion__item border-light rounded-16">
-                <div className="accordion__button">
+              <div
+                className={
+                  !isPrivate
+                    ? "accordion__item border-light rounded-16 "
+                    : "accordion__item border-light rounded-16  is-active"
+                }
+              >
+                <div
+                  onClick={() => setPrivate(!isPrivate)}
+                  className="accordion__button"
+                >
                   <div className="accordion__icon size-30 -dark-bg-dark-2 mr-10">
                     <div className="icon d-flex items-center justify-center">
                       <span className="lh-1 fw-500">2</span>
@@ -257,7 +303,10 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
                   </span>
                 </div>
 
-                <div className="accordion__content">
+                <div
+                  style={{ maxHeight: isPrivate ? "140px" : "0px" }}
+                  className="accordion__content"
+                >
                   <div className="accordion__content__inner pl-20 pr-20 pb-20">
                     <div
                       data-sidebar-menu-target="messages-2"
@@ -312,7 +361,13 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
 
           <div
             data-sidebar-menu-open="messages-2"
-            className="sidebar-menu__item -sidebar-menu"
+            className={
+              isStarredOpen
+                ? "sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
+                : "sidebar-menu__item -sidebar-menu "
+            }
+
+            // className="sidebar-menu__item -sidebar-menu"
           >
             <div className="row x-gap-10 y-gap-10">
               <div className="col-auto">
