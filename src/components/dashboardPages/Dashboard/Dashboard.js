@@ -16,7 +16,9 @@ function Dashboard() {
             setLeftBarOpen={setLeftBarOpen}
           />
           <div className="content-wrapper  js-content-wrapper">
-            {isLeftBar ? <Dashboardleft /> : ""}
+            {/* {isLeftBar ? <Dashboardleft /> : ""} */}
+            <Dashboardleft isLeftBar={isLeftBar} />
+
             <Outlet context={[isLeftBar, setLeftBarOpen]} />
             <DashboardAside />
           </div>

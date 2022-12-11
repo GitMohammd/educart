@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Dashboardleft() {
+function Dashboardleft({ isLeftBar }) {
   return (
-    <div className="dashboard -home-9 js-dashboard-home-9">
+    <div
+      className={
+        isLeftBar
+          ? "dashboard -home-9 js-dashboard-home-9"
+          : "dashboard -home-9 js-dashboard-home-9 -is-sidebar-hidden"
+      }
+      // className="dashboard -home-9 js-dashboard-home-9"
+    >
       <div className="dashboard__sidebar scroll-bar-1">
         <div className="sidebar -dashboard">
           <div className="sidebar__item -is-active -dark-bg-dark-2">

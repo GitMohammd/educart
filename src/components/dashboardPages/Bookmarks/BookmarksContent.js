@@ -1,8 +1,17 @@
 import React from "react";
+import { Link, useOutletContext } from "react-router-dom";
 
 function BookmarksContent() {
+  const [isLeftBar, setLeftBarOpen] = useOutletContext();
+
   return (
-    <div className="">
+    <div
+      className={
+        isLeftBar
+          ? "dashboard -home-9 js-dashboard-home-9 "
+          : "dashboard -home-9 js-dashboard-home-9 -is-sidebar-hidden"
+      }
+    >
       <div className="dashboard__main">
         <div className="dashboard__content bg-light-4">
           <div className="row pb-50 mb-10">

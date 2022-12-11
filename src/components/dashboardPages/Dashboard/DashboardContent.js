@@ -3,9 +3,14 @@ import { Link, useOutletContext } from "react-router-dom";
 
 function DashboardContent() {
   const [isLeftBar, setLeftBarOpen] = useOutletContext();
-  console.log(isLeftBar);
   return (
-    <div className="dashboard -home-9 js-dashboard-home-9 -is-sidebar-hidden">
+    <div
+      className={
+        isLeftBar
+          ? "dashboard -home-9 js-dashboard-home-9 "
+          : "dashboard -home-9 js-dashboard-home-9 -is-sidebar-hidden"
+      }
+    >
       <div className="dashboard__main">
         <div className="dashboard__content bg-light-4">
           <div className="row pb-50 mb-10">
