@@ -1,7 +1,9 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import DahsboardNavigaton from "../../shared/DahsboardNavigaton";
 import DashboardAside from "./DashboardAside";
 import DashboardContent from "./DashboardContent";
+import Dashboardleft from "./Dashboardleft";
 
 function Dashboard() {
   return (
@@ -10,7 +12,8 @@ function Dashboard() {
         <main className="main-content  ">
           <DahsboardNavigaton />
           <div className="content-wrapper  js-content-wrapper">
-            <DashboardContent />
+            <Dashboardleft />
+            <Outlet />
             <DashboardAside />
           </div>
         </main>

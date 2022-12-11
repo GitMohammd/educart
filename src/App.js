@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Home1 from "./components/home/home1/Home1";
 import Home2 from "./components/home/home2/Home2";
 import Home3 from "./components/home/home3/Home3";
@@ -32,23 +32,27 @@ import InstructorV1 from "./components/aboutCourses/instructiorV1/InstructorV1";
 import InstructorV2 from "./components/aboutCourses/InstructorV2/InstructorV2";
 import InstructiorSingle from "./components/aboutCourses/instructorSingle/InstructiorSingle";
 import BecomeAnInstructor from "./components/aboutCourses/becomeAnInstructor/BecomeAnInstructor";
+// ------------------------ Dashboard start---------------------
 import Dashboard from "./components/dashboardPages/Dashboard/Dashboard";
-import MyCourses from "./components/dashboardPages/myCourses/MyCourses";
-import Bookmarks from "./components/dashboardPages/Bookmarks/Bookmarks";
-import AddListing from "./components/dashboardPages/addListing/AddListing";
-import Reviews from "./components/dashboardPages/reviews/Reviews";
-import Settings from "./components/dashboardPages/settings/Settings";
-import Administration from "./components/dashboardPages/administration/Administration";
-import Calender from "./components/dashboardPages/calander/Calender";
-import Assingment from "./components/dashboardPages/assignment/Assingment";
-import SingleDashboard from "./components/dashboardPages/singleDashboard/SingleDashboard";
-import Dictionary from "./components/dashboardPages/dictionary/Dictionary";
-import Forums from "./components/dashboardPages/forums/Forums";
-import Grade from "./components/dashboardPages/grade/Grade";
-import Massage from "./components/dashboardPages/massage/Massage";
-import Participants from "./components/dashboardPages/participants/Participants";
-import Quiz from "./components/dashboardPages/quiz/Quiz";
-import Survey from "./components/dashboardPages/survey/Survey";
+import MyCoursesContent from "./components/dashboardPages/myCourses/MyCoursesContent";
+import BookmarksContent from "./components/dashboardPages/Bookmarks/BookmarksContent";
+
+import AssignmentContent from "./components/dashboardPages/assignment/AssignmentContent";
+
+import DicronaryContent from "./components/dashboardPages/dictionary/DicronaryContent";
+import ReviewsContent from "./components/dashboardPages/reviews/ReviewsContent";
+import AddListingContent from "./components/dashboardPages/addListing/AddListingContent";
+import SettingsContent from "./components/dashboardPages/settings/SettingsContent";
+import AdministrationContent from "./components/dashboardPages/administration/AdministrationContent";
+import CalenderContent from "./components/dashboardPages/calander/CalenderContent";
+import SingleDashboardContent from "./components/dashboardPages/singleDashboard/SingleDashboardContent";
+import ForumsContent from "./components/dashboardPages/forums/ForumsContent";
+import GradeContent from "./components/dashboardPages/grade/GradeContent";
+import MassageContent from "./components/dashboardPages/massage/MassageContent";
+import ParticipantsContent from "./components/dashboardPages/participants/ParticipantsContent";
+import QuizContent from "./components/dashboardPages/quiz/QuizContent";
+import SurveyContent from "./components/dashboardPages/survey/SurveyContent";
+// ----------------------------- Dashboard end -----------------------------
 import EventList1 from "./components/eventsPages/eventList1/EventList1";
 import EventList2 from "./components/eventsPages/eventList2/EventList2";
 import SingleEvent from "./components/eventsPages/singleEvent/SingleEvent";
@@ -75,6 +79,7 @@ import UiElements from "./components/uiElementsPage/UiElements";
 
 import ContextProvider from "./components/context/cartContext/ContextProvider";
 import DemoSingle1 from "./components/courseSingle/demoCourseSIngle1/DemoSingle1";
+import DashboardContent from "./components/dashboardPages/Dashboard/DashboardContent";
 
 function App() {
   return (
@@ -82,7 +87,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home1 />} />
         <Route path="/home1" element={<Home1 />} />
-
         <Route path="/home2" element={<Home2 />} />
         <Route path="/home3" element={<Home3 />} />
         <Route path="/home4" element={<Home4 />} />
@@ -114,23 +118,32 @@ function App() {
         <Route path="/InstructorsListv2" element={<InstructorV2 />} />
         <Route path="/InstructorsSingle" element={<InstructiorSingle />} />
         <Route path="/BecomeanInstructor" element={<BecomeAnInstructor />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/myCourses" element={<MyCourses />} />
-        <Route path="/bookmarks" element={<Bookmarks />} />
-        <Route path="/addListing" element={<AddListing />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/administration" element={<Administration />} />
-        <Route path="/assignment" element={<Assingment />} />
-        <Route path="/calender" element={<Calender />} />
-        <Route path="/singleDashboard" element={<SingleDashboard />} />
-        <Route path="/dictionary" element={<Dictionary />} />
-        <Route path="/forums" element={<Forums />} />
-        <Route path="/grades" element={<Grade />} />
-        <Route path="/messages" element={<Massage />} />
-        <Route path="/Participants" element={<Participants />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/survey" element={<Survey />} />
+        // Dashboard start -----------------------------
+        <Route
+          path="/dashboards"
+          element={<Navigate to={"/dashboards/dashboard"} />}
+        ></Route>
+        <Route path="/dashboards/*" element={<Dashboard />}>
+          <Route path="dashboard" element={<DashboardContent />} />
+          <Route path="myCourses" element={<MyCoursesContent />} />
+          <Route path="bookmarks" element={<BookmarksContent />} />
+          <Route path="addListing" element={<AddListingContent />} />
+          <Route path="reviews" element={<ReviewsContent />} />
+          <Route path="settings" element={<SettingsContent />} />
+          <Route path="administration" element={<AdministrationContent />} />
+          <Route path="assignment" element={<AssignmentContent />} />
+          <Route path="calender" element={<CalenderContent />} />
+          <Route path="singleDashboard" element={<SingleDashboardContent />} />
+          <Route path="dictionary" element={<DicronaryContent />} />
+          <Route path="forums" element={<ForumsContent />} />
+          <Route path="grades" element={<GradeContent />} />
+          <Route path="messages" element={<MassageContent />} />
+          <Route path="Participants" element={<ParticipantsContent />} />
+          <Route path="quiz" element={<QuizContent />} />
+          <Route path="survey" element={<SurveyContent />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+        // Dashboard end -------------------------------
         <Route path="/eventList1" element={<EventList1 />} />
         <Route path="/eventList2" element={<EventList2 />} />
         <Route path="/eventSingle" element={<SingleEvent />} />
@@ -148,7 +161,6 @@ function App() {
         <Route path="/shopOrder" element={<ShopOrder />} />
         <Route path="/shopSingle" element={<ShopSingle />} />
         <Route path="/membershipPlans" element={<MemberShip />} />
-
         <Route path="/FAQs" element={<Faq />} />
         <Route path="/helpCenter" element={<HelpCenter />} />
         <Route path="/login" element={<Login />} />

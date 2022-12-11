@@ -17,6 +17,7 @@ function ShopSingleContent() {
   ];
 
   const CourseQuantity = getCourseQuantity(51);
+  console.log(CourseQuantity);
 
   return (
     <section className="layout-pt-lg layout-pb-md">
@@ -130,14 +131,14 @@ function ShopSingleContent() {
 
                     <div className="input-counter__controls">
                       <button
-                        onClick={() => decreaseCourseQuantity("51")}
+                        onClick={() => decreaseCourseQuantity(51)}
                         className="input-counter__up js-down"
                       >
                         <RemoveCircleOutlineIcon />
                       </button>
 
                       <button
-                        onClick={() => increaseCourseQuantity("51")}
+                        onClick={() => increaseCourseQuantity(51)}
                         className="input-counter__down js-up"
                       >
                         <AddCircleOutlineIcon />
@@ -148,7 +149,7 @@ function ShopSingleContent() {
 
                 <div className="col-auto">
                   <button
-                    onClick={() => increaseCourseQuantity("51")}
+                    onClick={() => increaseCourseQuantity(51)}
                     className="button h-50 px-45 -purple-1 text-white"
                   >
                     Add to cart
