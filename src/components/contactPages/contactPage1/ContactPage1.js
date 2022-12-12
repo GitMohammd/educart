@@ -6,7 +6,12 @@ import ContentMain from "./ContentMain";
 
 function ContactPage1() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">

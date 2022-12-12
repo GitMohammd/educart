@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Dashboardleft({ isLeftBar }) {
+  const location = useLocation();
   return (
     <div
       className={
@@ -13,7 +14,13 @@ function Dashboardleft({ isLeftBar }) {
     >
       <div className="dashboard__sidebar scroll-bar-1">
         <div className="sidebar -dashboard">
-          <div className="sidebar__item -is-active -dark-bg-dark-2">
+          <div
+            className={
+              location.pathname === "/dashboards/dashboard"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/dashboard"}
               className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
@@ -23,17 +30,29 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/myCourses"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+            // className="sidebar__item -dark-bg-dark-2 -is-active"
+          >
             <Link
               className="d-flex items-center text-17 lh-1 fw-500"
-              to={"/dashboards/myCourses"}
+              to="/dashboards/myCourses"
             >
               <i className="text-20 icon-play-button mr-15"></i>
               My Courses
             </Link>
           </div>
-
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/bookmarks"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/bookmarks"}
               className="d-flex items-center text-17 lh-1 fw-500"
@@ -43,7 +62,13 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/messages"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/messages"}
               className="d-flex items-center text-17 lh-1 fw-500"
@@ -53,7 +78,13 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/addListing"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/addListing"}
               className="d-flex items-center text-17 lh-1 fw-500"
@@ -63,7 +94,13 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/reviews"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/reviews"}
               className="d-flex items-center text-17 lh-1 fw-500"
@@ -73,7 +110,13 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/settings"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <Link
               to={"/dashboards/settings"}
               className="d-flex items-center text-17 lh-1 fw-500"
@@ -83,7 +126,13 @@ function Dashboardleft({ isLeftBar }) {
             </Link>
           </div>
 
-          <div className="sidebar__item">
+          <div
+            className={
+              location.pathname === "/dashboards/logout"
+                ? "sidebar__item -dark-bg-dark-2 -is-active"
+                : "sidebar__item -dark-bg-dark-2 "
+            }
+          >
             <a href="#" className="d-flex items-center text-17 lh-1 fw-500">
               <i className="text-20 icon-power mr-15"></i>
               Logout

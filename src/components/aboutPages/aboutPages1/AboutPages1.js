@@ -12,7 +12,12 @@ import BestInstructors from "../../home/home3/BestInstructors";
 
 function AboutPages1() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">

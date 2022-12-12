@@ -22,7 +22,6 @@ function DashbardAsideNavigation(props) {
     isContractOpen,
     setContractOpen,
   } = props;
-  console.log(isMassageOpen);
   return (
     <div className="row items-center justify-between mb-30">
       <div className="col-auto">

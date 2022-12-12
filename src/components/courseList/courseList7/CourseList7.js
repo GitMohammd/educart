@@ -6,7 +6,12 @@ import CourseListMain7 from "./CourseListMain7";
 
 function CourseList7() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">

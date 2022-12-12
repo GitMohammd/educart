@@ -10,7 +10,12 @@ import PupulerInstructotLi6 from "./PupulerInstructotLi6";
 
 function CourseList6() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">

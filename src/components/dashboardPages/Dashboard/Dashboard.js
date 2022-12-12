@@ -6,7 +6,12 @@ import Dashboardleft from "./Dashboardleft";
 
 function Dashboard() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   const [isLeftBar, setLeftBarOpen] = useState(true);
   const [isSideBarOpen, setSideBarOpen] = useState(false);

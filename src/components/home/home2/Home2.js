@@ -15,7 +15,12 @@ import Footer2 from "./Footer2";
 
 function Home2() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="barba-container" data-barba="wrapper">

@@ -16,7 +16,12 @@ import WeAreProud from "./WeAreProud";
 
 function Home7() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="barba-container" data-barba="wrapper">

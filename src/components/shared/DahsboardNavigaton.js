@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useOutletContext } from "react-router-dom";
+import { Link, useLocation, useOutletContext } from "react-router-dom";
 import UseCourseContext from "../context/cartContext/UseCourseContext";
 import DashboardNavCart from "./DashboardNavCart";
 
 function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
+  const location = useLocation();
   const notifBtnRef = useRef();
   const [isNotify, setNotify] = useState(false);
   useEffect(() => {
@@ -42,6 +43,20 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
     document.body.addEventListener("click", cartBtnOpen);
     return () => {
       document.body.removeEventListener("click", cartBtnOpen);
+    };
+  }, []);
+
+  const profileBtnRef = useRef();
+  const [isProfileOpen, setProfileOpen] = useState(false);
+  useEffect(() => {
+    const profileBtnOpen = (e) => {
+      if (!profileBtnRef.current.contains(e.target)) {
+        setProfileOpen(false);
+      }
+    };
+    document.body.addEventListener("click", profileBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", profileBtnOpen);
     };
   }, []);
 
@@ -376,8 +391,15 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                 </div>
               </div>
 
-              <div className="relative d-flex items-center ml-10">
-                <a href="#" data-el-toggle=".js-profile-toggle">
+              <div
+                ref={profileBtnRef}
+                className="relative d-flex items-center ml-10"
+              >
+                <a
+                  onClick={() => setProfileOpen((prev) => !prev)}
+                  href="#"
+                  data-el-toggle=".js-profile-toggle"
+                >
                   <img
                     className="size-50"
                     src="/assets/img/misc/user-profile.png"
@@ -385,11 +407,24 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                   />
                 </a>
 
-                <div className="toggle-element js-profile-toggle">
+                <div
+                  className={
+                    isProfileOpen
+                      ? "toggle-element js-profile-toggle -is-el-visible"
+                      : "toggle-element js-profile-toggle"
+                  }
+                  // className="toggle-element js-profile-toggle -is-el-visible"
+                >
                   <div className="toggle-bottom -profile bg-white -dark-bg-dark-1 shadow-4 border-light rounded-8 mt-10">
                     <div className="px-30 py-30">
                       <div className="sidebar -dashboard">
-                        <div className="sidebar__item -is-active -dark-bg-dark-2">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/dashboard"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/dashboard"}
                             className="d-flex items-center text-17 lh-1 fw-500 -dark-text-white"
@@ -399,7 +434,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/myCourses"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             className="d-flex items-center text-17 lh-1 fw-500"
                             to={"/dashboards/myCourses"}
@@ -409,7 +450,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/bookmarks"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/bookmarks"}
                             className="d-flex items-center text-17 lh-1 fw-500"
@@ -419,7 +466,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/messages"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/messages"}
                             className="d-flex items-center text-17 lh-1 fw-500"
@@ -429,7 +482,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/addListing"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/addListing"}
                             className="d-flex items-center text-17 lh-1 fw-500"
@@ -439,7 +498,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/reviews"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/reviews"}
                             className="d-flex items-center text-17 lh-1 fw-500"
@@ -449,7 +514,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/settings"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <Link
                             to={"/dashboards/settings"}
                             className="d-flex items-center text-17 lh-1 fw-500"
@@ -459,7 +530,13 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
                           </Link>
                         </div>
 
-                        <div className="sidebar__item">
+                        <div
+                          className={
+                            location.pathname === "/dashboards/logout"
+                              ? "sidebar__item -dark-bg-dark-2 -is-active"
+                              : "sidebar__item -dark-bg-dark-2 "
+                          }
+                        >
                           <a
                             href="#"
                             className="d-flex items-center text-17 lh-1 fw-500"

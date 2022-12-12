@@ -5,7 +5,12 @@ import Right from "./Right";
 
 function Home9() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="barba-container" data-barba="wrapper">

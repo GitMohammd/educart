@@ -17,7 +17,12 @@ import TopCatagories from "../home1/TopCotegories";
 
 function Home6() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="barba-container" data-barba="wrapper">

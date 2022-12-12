@@ -16,7 +16,12 @@ import AboutPageHeader from "../aboutPages1/AboutPageHeader";
 
 function AboutPage2() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   return (
     <div className="preloader-visible" data-barba="wrapper">

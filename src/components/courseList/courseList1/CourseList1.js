@@ -8,7 +8,12 @@ import FilterCourseList from "./FilterCourseList";
 
 function CourseList1() {
   useEffect(() => {
-    document.documentElement.classList.remove("-dark-mode");
+    {
+      document.exitFullscreen();
+    }
+    {
+      document.documentElement.classList.remove("-dark-mode");
+    }
   }, []);
   const [courses, setCourses] = useState([]);
 
