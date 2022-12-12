@@ -13,7 +13,7 @@ import BestInstructors from "../../home/home3/BestInstructors";
 function AboutPages1() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

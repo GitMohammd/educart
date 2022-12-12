@@ -19,7 +19,7 @@ import WhyLearn8 from "./WhyLearn8";
 function Home7() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

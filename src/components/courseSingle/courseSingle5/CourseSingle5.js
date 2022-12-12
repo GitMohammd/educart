@@ -9,7 +9,7 @@ import BestSeller5 from "./BestSeller5";
 function CourseSingle5() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

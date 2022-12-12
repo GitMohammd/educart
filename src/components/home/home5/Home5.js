@@ -17,7 +17,7 @@ import TopCatagories5 from "./TopCatagories5";
 function Home5() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

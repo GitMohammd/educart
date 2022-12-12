@@ -8,7 +8,7 @@ import InstructorV2Content from "./InstructorV2Content";
 function InstructorV2() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

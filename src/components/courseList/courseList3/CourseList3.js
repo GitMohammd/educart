@@ -8,7 +8,7 @@ import CourseListMain3 from "./CourseListMain3";
 function CourseList3() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

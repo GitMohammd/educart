@@ -17,7 +17,7 @@ import AboutPageHeader from "../aboutPages1/AboutPageHeader";
 function AboutPage2() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

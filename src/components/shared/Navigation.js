@@ -1266,12 +1266,6 @@ function Navigation() {
                           Register
                         </Link>
                       </li>
-
-                      <li>
-                        <Link data-barba to={"/UIElements"}>
-                          UI Elements
-                        </Link>
-                      </li>
                     </ul>
                   </li>
 

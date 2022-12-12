@@ -17,7 +17,7 @@ import UpcomingEvents from "./UpcomingEvents";
 function Home4() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

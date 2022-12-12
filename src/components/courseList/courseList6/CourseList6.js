@@ -11,7 +11,7 @@ import PupulerInstructotLi6 from "./PupulerInstructotLi6";
 function CourseList6() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

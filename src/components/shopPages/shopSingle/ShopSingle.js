@@ -9,7 +9,7 @@ import ShopSingleRelatedProduct from "./ShopSingleRelatedProduct";
 function ShopSingle() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

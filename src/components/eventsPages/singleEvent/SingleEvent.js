@@ -8,7 +8,7 @@ import SingleEventContent from "./SingleEventContent";
 function SingleEvent() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

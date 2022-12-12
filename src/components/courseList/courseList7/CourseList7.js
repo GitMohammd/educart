@@ -7,7 +7,7 @@ import CourseListMain7 from "./CourseListMain7";
 function CourseList7() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

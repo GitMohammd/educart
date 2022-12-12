@@ -8,7 +8,7 @@ import EventList2Content from "./EventList2Content";
 function EventList2() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

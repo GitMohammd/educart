@@ -9,7 +9,7 @@ import SubNav2 from "./SubNav2";
 function CourseSingle2() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

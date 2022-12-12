@@ -75,7 +75,6 @@ import Faq from "./components/fAQPage/Faq";
 import HelpCenter from "./components/helpCenter/HelpCenter";
 import Login from "./components/LoginPage/Login";
 import SignUp from "./components/SignUp/SignUp";
-import UiElements from "./components/uiElementsPage/UiElements";
 
 import ContextProvider from "./components/context/cartContext/ContextProvider";
 import DemoSingle1 from "./components/courseSingle/demoCourseSIngle1/DemoSingle1";
@@ -165,7 +164,7 @@ function App() {
         <Route path="/helpCenter" element={<HelpCenter />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
-        <Route path="/UIElements" element={<UiElements />} />
+        {/* <Route path="/UIElements" element={<UiElements />} /> */}
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </ContextProvider>

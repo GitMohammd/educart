@@ -8,7 +8,7 @@ import CourseListMain2 from "./CourseListMain2";
 function CourseList2() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");

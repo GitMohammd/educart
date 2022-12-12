@@ -8,7 +8,7 @@ import ShopCartTitle from "./ShopCartTitle";
 function ShopCart() {
   useEffect(() => {
     {
-      document.exitFullscreen();
+      document.exitFullscreen().catch((err) => Promise.resolve(err));
     }
     {
       document.documentElement.classList.remove("-dark-mode");
