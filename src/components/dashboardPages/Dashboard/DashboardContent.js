@@ -5,6 +5,9 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 function DashboardContent() {
   const weekBtnRef = useRef();
   const [isLeftBar, setLeftBarOpen] = useOutletContext();
+  const [thisWeek, setThisWeek] = useState(null);
+  console.log(thisWeek);
+  const thisWeekValue = thisWeek === null ? "This Week" : thisWeek;
 
   const [isStaticWeek, setSaticWeek] = useState(false);
   useEffect(() => {
@@ -118,7 +121,7 @@ function DashboardContent() {
                         // data-el-toggle-active=".js-category-active"
                       >
                         {" "}
-                        <span className="">This Week</span>
+                        <span className="">{thisWeekValue}</span>
                         <i className="icon text-9 ml-40 icon-chevron-down"></i>
                       </div>
 
@@ -130,28 +133,28 @@ function DashboardContent() {
                         }
                       >
                         <div className="text-14 y-gap-15 js-dropdown-list">
-                          <div>
-                            <a href="#" className="d-block js-dropdown-link">
+                          <div onClick={() => setThisWeek("Animation")}>
+                            <button className="d-block js-dropdown-link">
                               Animation
-                            </a>
+                            </button>
                           </div>
 
-                          <div>
-                            <a href="#" className="d-block js-dropdown-link">
+                          <div onClick={() => setThisWeek("Design")}>
+                            <button className="d-block js-dropdown-link">
                               Design
-                            </a>
+                            </button>
                           </div>
 
-                          <div>
-                            <a href="#" className="d-block js-dropdown-link">
+                          <div onClick={() => setThisWeek("Illustration")}>
+                            <button className="d-block js-dropdown-link">
                               Illustration
-                            </a>
+                            </button>
                           </div>
 
-                          <div>
-                            <a href="#" className="d-block js-dropdown-link">
+                          <div onClick={() => setThisWeek("Business")}>
+                            <button className="d-block js-dropdown-link">
                               Business
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
