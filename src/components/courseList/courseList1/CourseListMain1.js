@@ -29,8 +29,6 @@ function CourseListMain1(props) {
     handlePopulerCourseChange,
   } = props;
 
-  // console.log(filteredCourses, "newCourse");
-
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div data-anim-wrap className="container">

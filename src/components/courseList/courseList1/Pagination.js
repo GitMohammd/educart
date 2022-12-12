@@ -7,7 +7,6 @@ function Pagination({
   totalCourse,
   paginate,
 }) {
-  console.log(currentPage);
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalCourse / coursePerPage); i++) {
     pageNumbers.push(i);
@@ -15,11 +14,11 @@ function Pagination({
   return (
     <div className="row justify-center pt-90 lg:pt-50">
       <div className="col-auto">
-        <div
-          onClick={() => setCurrentPage(currentPage - 1)}
-          className="pagination -buttons"
-        >
-          <button className="pagination__button -prev">
+        <div className="pagination -buttons">
+          <button
+            onClick={() => paginate(currentPage - 1 <= 0 ? 1 : currentPage - 1)}
+            className="pagination__button -prev"
+          >
             <div className="icon icon-chevron-left"></div>
           </button>
 
@@ -36,8 +35,8 @@ function Pagination({
           {pageNumbers.map((number) => (
             <div key={number} className="pagination__count">
               <a
-                className={currentPage === number ? "-count-is-active" : ""}
                 href="#"
+                className={currentPage === number ? "-count-is-active" : ""}
                 onClick={() => paginate(number)}
               >
                 {number}
@@ -46,7 +45,14 @@ function Pagination({
           ))}
 
           <button
-            onClick={() => setCurrentPage(currentPage + 1)}
+            onClick={() =>
+              paginate(
+                currentPage + 1 > pageNumbers.length + 1
+                  ? pageNumbers.length
+                  : currentPage + 1
+              )
+            }
+            // onClick={() => paginate(3)}
             className="pagination__button -next"
           >
             <div className="icon icon-chevron-right"></div>

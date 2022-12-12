@@ -207,7 +207,7 @@ function CourseList1() {
         })
       : FilterLanguageCourses;
 
-  const filteredCourses = FilterDurationCourses.flat();
+  const filteredCourses = FilterDurationCourses;
 
   const [paginationShowCourse, setPaginationShowCourse] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -218,6 +218,7 @@ function CourseList1() {
 
   const indexOfLastCourse = currentPage * coursePerPage;
   const indexOfFirstCourse = indexOfLastCourse - coursePerPage;
+
   const currentCourse = filteredCourses.slice(
     indexOfFirstCourse,
     indexOfLastCourse
@@ -225,6 +226,8 @@ function CourseList1() {
 
   // change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // const paginate = (pageNumber) => console.log(pageNumber);
+  console.log(currentPage, "currentCourse");
 
   return (
     <div className="preloader-visible" data-barba="wrapper">
