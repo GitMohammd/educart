@@ -4,17 +4,18 @@ function DashboardAsideMassageContent(props) {
   const {
     isSideBarOpen,
     setSideBarOpen,
+    isAside,
     isStarred,
     isGroup,
     isPrivate,
     isGroupOpen,
     isSettingOpen,
     isPrivateOpen,
-    isStarredOpen,
+    isMassageOpen,
     setStarred,
     setGroup,
     setPrivate,
-    setStarredOpen,
+    setMassageOpen,
     setGroupOpen,
     setPrivateOpen,
     setSettingOpen,
@@ -25,7 +26,7 @@ function DashboardAsideMassageContent(props) {
     <div
       data-sidebar-menu-open="messages-2"
       className={
-        isStarredOpen
+        isMassageOpen
           ? "sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
           : "sidebar-menu__item -sidebar-menu "
       }

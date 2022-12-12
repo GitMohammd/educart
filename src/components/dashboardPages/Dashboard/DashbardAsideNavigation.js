@@ -4,23 +4,25 @@ function DashbardAsideNavigation(props) {
   const {
     isSideBarOpen,
     setSideBarOpen,
+    isAside,
     isStarred,
     isGroup,
     isPrivate,
     isGroupOpen,
     isSettingOpen,
     isPrivateOpen,
-    isStarredOpen,
+    isMassageOpen,
     setStarred,
     setGroup,
     setPrivate,
-    setStarredOpen,
+    setMassageOpen,
     setGroupOpen,
     setPrivateOpen,
     setSettingOpen,
     isContractOpen,
     setContractOpen,
   } = props;
+  console.log(isMassageOpen);
   return (
     <div className="row items-center justify-between mb-30">
       <div className="col-auto">
@@ -28,9 +30,9 @@ function DashbardAsideNavigation(props) {
           <button
             data-sidebar-menu-button="messages"
             className={
-              isStarredOpen || isSettingOpen || isContractOpen
-                ? "text-17 text-dark-1 fw-500 "
-                : "text-17 text-dark-1 fw-500 -is-button-active"
+              isStarred && !isMassageOpen
+                ? "text-17 text-dark-1 fw-500 -is-button-active"
+                : "text-17 text-dark-1 fw-500 "
             }
           >
             Messages
@@ -39,9 +41,11 @@ function DashbardAsideNavigation(props) {
           <button
             data-sidebar-menu-button="messages-2"
             data-sidebar-menu-target="messages"
-            onClick={() => setStarredOpen(false)}
+            onClick={() => {
+              setMassageOpen(false);
+            }}
             className={
-              isStarredOpen
+              isMassageOpen
                 ? "d-flex items-center text-17 text-dark-1 fw-500 -is-button-active"
                 : "d-flex items-center text-17 text-dark-1 fw-500 "
             }
@@ -53,7 +57,10 @@ function DashbardAsideNavigation(props) {
           <button
             data-sidebar-menu-button="settings"
             data-sidebar-menu-target="messages"
-            onClick={() => setSettingOpen(false)}
+            onClick={() => {
+              setSettingOpen(false);
+              setStarred(true);
+            }}
             className={
               isSettingOpen
                 ? "d-flex items-center text-17 text-dark-1 fw-500 -is-button-active"
@@ -67,7 +74,10 @@ function DashbardAsideNavigation(props) {
           <button
             data-sidebar-menu-button="contacts"
             data-sidebar-menu-target="messages"
-            onClick={() => setContractOpen(false)}
+            onClick={() => {
+              setContractOpen(false);
+              setStarred(true);
+            }}
             className={
               isContractOpen
                 ? "d-flex items-center text-17 text-dark-1 fw-500 -is-button-active"
@@ -85,7 +95,12 @@ function DashbardAsideNavigation(props) {
           <div className="col-auto">
             <button
               data-sidebar-menu-target="settings"
-              onClick={() => setSettingOpen(true)}
+              onClick={() => {
+                setSettingOpen(true);
+                setStarred(false);
+                setMassageOpen(false);
+                setContractOpen(false);
+              }}
               className="button -purple-3 text-purple-1 size-40 d-flex items-center justify-center rounded-full"
             >
               <div className="icon-setting text-16"></div>
@@ -94,7 +109,12 @@ function DashbardAsideNavigation(props) {
           <div className="col-auto">
             <button
               data-sidebar-menu-target="contacts"
-              onClick={() => setContractOpen(true)}
+              onClick={() => {
+                setContractOpen(true);
+                setStarred(false);
+                setMassageOpen(false);
+                setSettingOpen(false);
+              }}
               className="button -purple-3 text-purple-1 size-40 d-flex items-center justify-center rounded-full"
             >
               <div className="icon-friend text-16"></div>

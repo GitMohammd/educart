@@ -8,10 +8,6 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
   const [isNotify, setNotify] = useState(false);
   useEffect(() => {
     const notifyOpen = (e) => {
-      console.log(e);
-      // if (e.path[0] !== notifBtnRef.current) {
-      //   setNotify(false);
-      // }
       if (!notifBtnRef.current.contains(e.target)) {
         setNotify(false);
       }
@@ -50,7 +46,6 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
   }, []);
 
   const [isDark, setDark] = useState(true);
-  console.log(isDark, "dark");
 
   useEffect(() => {
     isDark

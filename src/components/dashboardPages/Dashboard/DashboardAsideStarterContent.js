@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 function DashboardAsideStarterContent(props) {
+  const [isFirstOpen, setFirstOpen] = useState(false);
   const {
     isSideBarOpen,
     setSideBarOpen,
+    isAside,
     isStarred,
     isGroup,
     isPrivate,
     isGroupOpen,
     isSettingOpen,
     isPrivateOpen,
-    isStarredOpen,
+    isMassageOpen,
     setStarred,
     setGroup,
     setPrivate,
-    setStarredOpen,
+    setMassageOpen,
     setGroupOpen,
     setPrivateOpen,
     setSettingOpen,
@@ -25,9 +27,9 @@ function DashboardAsideStarterContent(props) {
     <div
       data-sidebar-menu-open="messages"
       className={
-        isStarredOpen || isSettingOpen
-          ? "sidebar-menu__item -sidebar-menu "
-          : "sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
+        isStarred && !isMassageOpen
+          ? "sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
+          : "sidebar-menu__item -sidebar-menu "
       }
       // className="sidebar-menu__item -sidebar-menu -sidebar-menu-opened"
     >
@@ -45,13 +47,13 @@ function DashboardAsideStarterContent(props) {
       <div className="accordion -block text-left pt-20 js-accordion">
         <div
           className={
-            !isStarred
-              ? "accordion__item border-light rounded-16 "
-              : "accordion__item border-light rounded-16  is-active"
+            isFirstOpen
+              ? "accordion__item border-light rounded-16  is-active"
+              : "accordion__item border-light rounded-16 "
           }
         >
           <div
-            onClick={() => setStarred(!isStarred)}
+            onClick={() => setFirstOpen(!isFirstOpen)}
             className="accordion__button"
           >
             <div className="accordion__icon size-30 -dark-bg-dark-2 mr-10">
@@ -66,11 +68,15 @@ function DashboardAsideStarterContent(props) {
           </div>
 
           <div
-            style={{ maxHeight: isStarred ? "140px" : "0px" }}
+            style={{ maxHeight: isFirstOpen ? "140px" : "0px" }}
             className="accordion__content"
           >
             <div
-              onClick={() => setStarredOpen(true)}
+              onClick={() => {
+                setMassageOpen(true);
+                setSettingOpen(false);
+                setContractOpen(false);
+              }}
               className="accordion__content__inner pl-20 pr-20 pb-20"
             >
               <div
@@ -146,7 +152,11 @@ function DashboardAsideStarterContent(props) {
             className="accordion__content"
           >
             <div
-              onClick={() => setGroupOpen(true)}
+              onClick={() => {
+                setMassageOpen(true);
+                setSettingOpen(false);
+                setContractOpen(false);
+              }}
               className="accordion__content__inner pl-20 pr-20 pb-20"
             >
               <div
@@ -224,7 +234,14 @@ function DashboardAsideStarterContent(props) {
             style={{ maxHeight: isPrivate ? "140px" : "0px" }}
             className="accordion__content"
           >
-            <div className="accordion__content__inner pl-20 pr-20 pb-20">
+            <div
+              onClick={() => {
+                setMassageOpen(true);
+                setSettingOpen(false);
+                setContractOpen(false);
+              }}
+              className="accordion__content__inner pl-20 pr-20 pb-20"
+            >
               <div
                 data-sidebar-menu-target="messages-2"
                 className="row x-gap-10 y-gap-10 pointer"

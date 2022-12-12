@@ -6,10 +6,10 @@ import DashboardAsideSettingContent from "./DashboardAsideSettingContent";
 import DashboardAsideStarterContent from "./DashboardAsideStarterContent";
 
 function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
-  const [isStarred, setStarred] = useState(false);
+  const [isStarred, setStarred] = useState(true);
   const [isGroup, setGroup] = useState(false);
   const [isPrivate, setPrivate] = useState(false);
-  const [isStarredOpen, setStarredOpen] = useState(false);
+  const [isMassageOpen, setMassageOpen] = useState(false);
   const [isGroupOpen, setGroupOpen] = useState(false);
   const [isPrivateOpen, setPrivateOpen] = useState(false);
   const [isSettingOpen, setSettingOpen] = useState(false);
@@ -35,11 +35,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
           isGroupOpen={isGroupOpen}
           isSettingOpen={isSettingOpen}
           isPrivateOpen={isPrivateOpen}
-          isStarredOpen={isStarredOpen}
+          isMassageOpen={isMassageOpen}
           setStarred={setStarred}
           setGroup={setGroup}
           setPrivate={setPrivate}
-          setStarredOpen={setStarredOpen}
+          setMassageOpen={setMassageOpen}
           setGroupOpen={setGroupOpen}
           setPrivateOpen={setPrivateOpen}
           setSettingOpen={setSettingOpen}
@@ -56,11 +56,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
             isGroupOpen={isGroupOpen}
             isSettingOpen={isSettingOpen}
             isPrivateOpen={isPrivateOpen}
-            isStarredOpen={isStarredOpen}
+            isMassageOpen={isMassageOpen}
             setStarred={setStarred}
             setGroup={setGroup}
             setPrivate={setPrivate}
-            setStarredOpen={setStarredOpen}
+            setMassageOpen={setMassageOpen}
             setGroupOpen={setGroupOpen}
             setPrivateOpen={setPrivateOpen}
             setSettingOpen={setSettingOpen}
@@ -77,11 +77,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
             isGroupOpen={isGroupOpen}
             isSettingOpen={isSettingOpen}
             isPrivateOpen={isPrivateOpen}
-            isStarredOpen={isStarredOpen}
+            isMassageOpen={isMassageOpen}
             setStarred={setStarred}
             setGroup={setGroup}
             setPrivate={setPrivate}
-            setStarredOpen={setStarredOpen}
+            setMassageOpen={setMassageOpen}
             setGroupOpen={setGroupOpen}
             setPrivateOpen={setPrivateOpen}
             setSettingOpen={setSettingOpen}
@@ -97,11 +97,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
             isGroupOpen={isGroupOpen}
             isSettingOpen={isSettingOpen}
             isPrivateOpen={isPrivateOpen}
-            isStarredOpen={isStarredOpen}
+            isMassageOpen={isMassageOpen}
             setStarred={setStarred}
             setGroup={setGroup}
             setPrivate={setPrivate}
-            setStarredOpen={setStarredOpen}
+            setMassageOpen={setMassageOpen}
             setGroupOpen={setGroupOpen}
             setPrivateOpen={setPrivateOpen}
             setSettingOpen={setSettingOpen}
@@ -118,11 +118,11 @@ function DashboardAside({ isSideBarOpen, setSideBarOpen }) {
             isGroupOpen={isGroupOpen}
             isSettingOpen={isSettingOpen}
             isPrivateOpen={isPrivateOpen}
-            isStarredOpen={isStarredOpen}
+            isMassageOpen={isMassageOpen}
             setStarred={setStarred}
             setGroup={setGroup}
             setPrivate={setPrivate}
-            setStarredOpen={setStarredOpen}
+            setMassageOpen={setMassageOpen}
             setGroupOpen={setGroupOpen}
             setPrivateOpen={setPrivateOpen}
             setSettingOpen={setSettingOpen}
