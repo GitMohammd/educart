@@ -3,7 +3,6 @@ import { useLocalaStogage } from "./useLocalaStogage";
 
 const UseCourseCart = () => {
   const [courseItems, setCourseItems] = useLocalaStogage("educartCourses", []);
-  console.log(courseItems);
 
   const getCourseQuantity = (id) => {
     return courseItems.find((item) => item.id === id)?.quantity || 0;
