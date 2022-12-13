@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import CheckIcon from "@mui/icons-material/Check";
 
 function OverView6() {
+  const [isShowMore, setIsShowMore] = useState(false);
+
   return (
     <section className="layout-pt-lg layout-pb-md">
       <div className="container">
@@ -55,8 +58,17 @@ function OverView6() {
                 <div className="tabs__pane -tab-item-1 is-active">
                   <h4 className="text-20 fw-500">Description</h4>
 
-                  <div className="show-more mt-30 js-show-more">
-                    <div className="show-more__content">
+                  <div
+                    className={
+                      isShowMore
+                        ? "show-more mt-30 js-show-more is-active"
+                        : "show-more mt-30 js-show-more"
+                    }
+                  >
+                    <div
+                      className="show-more__content"
+                      style={{ maxHeight: isShowMore ? "260px" : "" }}
+                    >
                       <p className="">
                         Phasellus enim magna, varius et commodo ut, ultricies
                         vitae velit. Ut nulla tellus, eleifend euismod
@@ -83,7 +95,10 @@ function OverView6() {
                       </p>
                     </div>
 
-                    <button className="show-more__button text-purple-1 fw-500 underline mt-30">
+                    <button
+                      onClick={() => setIsShowMore(!isShowMore)}
+                      className="show-more__button text-purple-1 fw-500 underline mt-30"
+                    >
                       Show more
                     </button>
                   </div>
@@ -94,15 +109,15 @@ function OverView6() {
                       <div className="col-md-6">
                         <div className="y-gap-20">
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Become a UX designer.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>
                               You will be able to add UX designer to your CV
@@ -110,29 +125,29 @@ function OverView6() {
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Become a UI designer.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Build &amp; test a full website design.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Create your first UX brief &amp; persona.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>How to use premade UI kits.</p>
                           </div>
@@ -142,29 +157,29 @@ function OverView6() {
                       <div className="col-md-6">
                         <div className="y-gap-20">
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Create quick wireframes.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Downloadable exercise files</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>Build a UX project from beginning to end.</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>
                               Learn to design websites &amp; mobile phone apps.
@@ -172,15 +187,15 @@ function OverView6() {
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>All the techniques used by UX professionals</p>
                           </div>
 
                           <div className="d-flex items-center">
-                            <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                              <i className="size-12" data-feather="check"></i>
+                            <div className="d-flex justify-center items-center  size-20 mr-10">
+                              <CheckIcon />
                             </div>
                             <p>
                               You will be able to talk correctly with other UX

@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import CheckIcon from "@mui/icons-material/Check";
 
 function Overview() {
+  const [isShowMore, setIsShowMore] = useState(false);
+  const [isCourseContent, setCourseContent] = useState(false);
+  const [isBrife, setBrife] = useState(false);
+  const [isType, setType] = useState(false);
+  const [isPryto, setPryto] = useState(false);
+  const [isWirefirm, setWirefirm] = useState(false);
   return (
     <section className="layout-pt-md layout-pb-md">
       <div className="container">
@@ -46,8 +55,17 @@ function Overview() {
             <div id="overview" className="pt-60 lg:pt-40 to-over">
               <h4 className="text-18 fw-500">Description</h4>
 
-              <div className="show-more mt-30 js-show-more">
-                <div className="show-more__content">
+              <div
+                className={
+                  isShowMore
+                    ? "show-more mt-30 js-show-more is-active"
+                    : "show-more mt-30 js-show-more"
+                }
+              >
+                <div
+                  className="show-more__content"
+                  style={{ maxHeight: isShowMore ? "260px" : "" }}
+                >
                   <p className="">
                     Phasellus enim magna, varius et commodo ut, ultricies vitae
                     velit. Ut nulla tellus, eleifend euismod pellentesque vel,
@@ -72,7 +90,10 @@ function Overview() {
                   </p>
                 </div>
 
-                <button className="show-more__button text-purple-1 fw-500 underline mt-30">
+                <button
+                  onClick={() => setIsShowMore(!isShowMore)}
+                  className="show-more__button text-purple-1 fw-500 underline mt-30"
+                >
                   Show more
                 </button>
               </div>
@@ -83,43 +104,43 @@ function Overview() {
                   <div className="col-md-6">
                     <div className="y-gap-20">
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Become a UX designer.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>You will be able to add UX designer to your CV</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Become a UI designer.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Build &amp; test a full website design.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Create your first UX brief &amp; persona.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>How to use premade UI kits.</p>
                       </div>
@@ -129,43 +150,43 @@ function Overview() {
                   <div className="col-md-6">
                     <div className="y-gap-20">
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Create quick wireframes.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Downloadable exercise files</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Build a UX project from beginning to end.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>Learn to design websites &amp; mobile phone apps.</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>All the techniques used by UX professionals</p>
                       </div>
 
                       <div className="d-flex items-center">
-                        <div className="d-flex justify-center items-center border-light rounded-full size-20 mr-10">
-                          <i className="size-12" data-feather="check"></i>
+                        <div className="d-flex justify-center items-center  size-20 mr-10">
+                          <CheckIcon />
                         </div>
                         <p>
                           You will be able to talk correctly with other UX
@@ -202,15 +223,27 @@ function Overview() {
 
               <div className="mt-10">
                 <div className="accordion -block-2 text-left js-accordion">
-                  <div className="accordion__item">
-                    <div className="accordion__button py-20 px-30 bg-light-4">
+                  <div
+                    className={
+                      isCourseContent
+                        ? "accordion__item is-active"
+                        : "accordion__item"
+                    }
+                  >
+                    <div
+                      onClick={() => setCourseContent(!isCourseContent)}
+                      className="accordion__button py-20 px-30 bg-light-4"
+                    >
                       <div className="d-flex items-center">
                         <div className="accordion__icon">
-                          <div
-                            className="icon"
-                            data-feather="chevron-down"
-                          ></div>
-                          <div className="icon" data-feather="chevron-up"></div>
+                          <div className="icon" data-feather="chevron-down">
+                            {" "}
+                            <KeyboardArrowDownIcon />
+                          </div>
+                          <div className="icon" data-feather="chevron-up">
+                            {" "}
+                            <KeyboardArrowUpIcon />
+                          </div>
                         </div>
                         <span className="text-17 fw-500 text-dark-1">
                           Course Content
@@ -220,7 +253,10 @@ function Overview() {
                       <div>5 lectures • 87 min</div>
                     </div>
 
-                    <div className="accordion__content">
+                    <div
+                      style={{ maxHeight: isCourseContent ? "340px" : "" }}
+                      className="accordion__content"
+                    >
                       <div className="accordion__content__inner px-30 py-30">
                         <div className="y-gap-20">
                           <div className="d-flex justify-between">
@@ -416,15 +452,23 @@ function Overview() {
                     </div>
                   </div>
 
-                  <div className="accordion__item">
-                    <div className="accordion__button py-20 px-30 bg-light-4">
+                  <div
+                    className={
+                      isBrife ? "accordion__item is-active" : "accordion__item"
+                    }
+                  >
+                    <div
+                      onClick={() => setBrife(!isBrife)}
+                      className="accordion__button py-20 px-30 bg-light-4"
+                    >
                       <div className="d-flex items-center">
                         <div className="accordion__icon">
-                          <div
-                            className="icon"
-                            data-feather="chevron-down"
-                          ></div>
-                          <div className="icon" data-feather="chevron-up"></div>
+                          <div className="icon" data-feather="chevron-down">
+                            <KeyboardArrowDownIcon />
+                          </div>
+                          <div className="icon" data-feather="chevron-up">
+                            <KeyboardArrowUpIcon />
+                          </div>
                         </div>
                         <span className="text-17 fw-500 text-dark-1">
                           The Brief
@@ -434,7 +478,10 @@ function Overview() {
                       <div>5 lectures • 87 min</div>
                     </div>
 
-                    <div className="accordion__content">
+                    <div
+                      style={{ maxHeight: isBrife ? "340px" : "" }}
+                      className="accordion__content"
+                    >
                       <div className="accordion__content__inner px-30 py-30">
                         <div className="y-gap-20">
                           <div className="d-flex justify-between">
@@ -630,15 +677,24 @@ function Overview() {
                     </div>
                   </div>
 
-                  <div className="accordion__item">
-                    <div className="accordion__button py-20 px-30 bg-light-4">
+                  <div
+                    className={
+                      isType ? "accordion__item is-active" : "accordion__item"
+                    }
+                  >
+                    <div
+                      onClick={() => setType(!isType)}
+                      className="accordion__button py-20 px-30 bg-light-4"
+                    >
                       <div className="d-flex items-center">
                         <div className="accordion__icon">
-                          <div
-                            className="icon"
-                            data-feather="chevron-down"
-                          ></div>
-                          <div className="icon" data-feather="chevron-up"></div>
+                          <div className="icon" data-feather="chevron-down">
+                            {" "}
+                            <KeyboardArrowDownIcon />{" "}
+                          </div>
+                          <div className="icon" data-feather="chevron-up">
+                            <KeyboardArrowUpIcon />
+                          </div>
                         </div>
                         <span className="text-17 fw-500 text-dark-1">
                           Type, Color &amp; Icon Introduction
@@ -648,7 +704,10 @@ function Overview() {
                       <div>5 lectures • 87 min</div>
                     </div>
 
-                    <div className="accordion__content">
+                    <div
+                      style={{ maxHeight: isType ? "340px" : "" }}
+                      className="accordion__content"
+                    >
                       <div className="accordion__content__inner px-30 py-30">
                         <div className="y-gap-20">
                           <div className="d-flex justify-between">
@@ -844,15 +903,23 @@ function Overview() {
                     </div>
                   </div>
 
-                  <div className="accordion__item">
-                    <div className="accordion__button py-20 px-30 bg-light-4">
+                  <div
+                    className={
+                      isPryto ? "accordion__item is-active" : "accordion__item"
+                    }
+                  >
+                    <div
+                      onClick={() => setPryto(!isPryto)}
+                      className="accordion__button py-20 px-30 bg-light-4"
+                    >
                       <div className="d-flex items-center">
                         <div className="accordion__icon">
-                          <div
-                            className="icon"
-                            data-feather="chevron-down"
-                          ></div>
-                          <div className="icon" data-feather="chevron-up"></div>
+                          <div className="icon" data-feather="chevron-down">
+                            <KeyboardArrowDownIcon />
+                          </div>
+                          <div className="icon" data-feather="chevron-up">
+                            <KeyboardArrowUpIcon />
+                          </div>
                         </div>
                         <span className="text-17 fw-500 text-dark-1">
                           Prototyping a App - Introduction
@@ -862,7 +929,10 @@ function Overview() {
                       <div>5 lectures • 87 min</div>
                     </div>
 
-                    <div className="accordion__content">
+                    <div
+                      style={{ maxHeight: isPryto ? "340px" : "" }}
+                      className="accordion__content"
+                    >
                       <div className="accordion__content__inner px-30 py-30">
                         <div className="y-gap-20">
                           <div className="d-flex justify-between">
@@ -1058,15 +1128,25 @@ function Overview() {
                     </div>
                   </div>
 
-                  <div className="accordion__item">
-                    <div className="accordion__button py-20 px-30 bg-light-4">
+                  <div
+                    className={
+                      isWirefirm
+                        ? "accordion__item is-active"
+                        : "accordion__item"
+                    }
+                  >
+                    <div
+                      onClick={() => setWirefirm(!isWirefirm)}
+                      className="accordion__button py-20 px-30 bg-light-4"
+                    >
                       <div className="d-flex items-center">
                         <div className="accordion__icon">
-                          <div
-                            className="icon"
-                            data-feather="chevron-down"
-                          ></div>
-                          <div className="icon" data-feather="chevron-up"></div>
+                          <div className="icon" data-feather="chevron-down">
+                            <KeyboardArrowDownIcon />
+                          </div>
+                          <div className="icon" data-feather="chevron-up">
+                            <KeyboardArrowUpIcon />
+                          </div>
                         </div>
                         <span className="text-17 fw-500 text-dark-1">
                           Wireframe Feedback
@@ -1076,7 +1156,10 @@ function Overview() {
                       <div>5 lectures • 87 min</div>
                     </div>
 
-                    <div className="accordion__content">
+                    <div
+                      style={{ maxHeight: isWirefirm ? "340px" : "" }}
+                      className="accordion__content"
+                    >
                       <div className="accordion__content__inner px-30 py-30">
                         <div className="y-gap-20">
                           <div className="d-flex justify-between">
