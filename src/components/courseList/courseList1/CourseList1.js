@@ -17,7 +17,6 @@ function CourseList1() {
   }, []);
   const [courses, setCourses] = useState([]);
 
-  // console.log(courses, "newcourses");
   useEffect(() => {
     fetch("/allCourses.json")
       .then((res) => res.json())
@@ -151,68 +150,114 @@ function CourseList1() {
 
   const FilterCatagoryCourses =
     catagoryfilterItems.catagory.length > 0
-      ? catagoryfilterItems.catagory?.map((catagoryItems) => {
-          return filterPopulerCourse.filter((course) => {
-            return course.catagoryFilter.includes(catagoryItems);
-          });
-        })
+      ? catagoryfilterItems.catagory
+          ?.map((catagoryItems) => {
+            return filterPopulerCourse.filter((course) => {
+              return course.catagoryFilter.includes(catagoryItems);
+            });
+          })
+          .flat()
       : filterPopulerCourse;
+  // console.log
+
+  const ratingFilter =
+    ratingfilterItems.rating.length > 0
+      ? ratingfilterItems.rating
+          .map((ratingItems) => {
+            return FilterCatagoryCourses.filter((course) =>
+              course.ratings.includes(ratingItems)
+            );
+          })
+          .flat()
+      : FilterCatagoryCourses;
+
+  // ? FilterCatagoryCourses.map((course) => {
+  //   return ratingfilterItems.rating.map((ratingItems) => {
+
+  //       return course.filter((ratCourse) => {
+  //         return ratCourse.ratings.includes(ratingItems);
+  //       });
+  //     });
+  //   })
+  // : FilterCatagoryCourses;
+
+  // return course;
+
+  console.log(ratingFilter.flat());
 
   const FilterRatingCourses =
     ratingfilterItems.rating.length > 0
       ? ratingfilterItems.rating?.map((ratingItems) => {
-          return FilterCatagoryCourses.filter((course) => {
-            return course.ratings.includes(ratingItems);
+          FilterCatagoryCourses.filter((course) => {
+            return course?.ratings?.includes(ratingItems);
           });
         })
       : FilterCatagoryCourses;
 
-  const FilterInstructorCourses =
-    instructorfilterItems.instructor.length > 0
-      ? instructorfilterItems.instructor?.map((instructorItem) => {
-          return FilterRatingCourses.filter((course) => {
-            return course.instructor.includes(instructorItem);
-          });
-        })
-      : FilterRatingCourses;
+  // const FilterCatagoryCourses =
+  //   catagoryfilterItems.catagory.length > 0
+  //     ? catagoryfilterItems.catagory?.map((catagoryItems) => {
+  //         return filterPopulerCourse.filter((course) => {
+  //           return course.catagoryFilter.includes(catagoryItems);
+  //         });
+  //       })
+  //     : filterPopulerCourse;
 
-  const FilterPriceCourses =
-    pricefilterItems.price.length > 0
-      ? pricefilterItems.price?.map((priceItems) => {
-          return FilterInstructorCourses.filter((course) => {
-            return course.price.includes(priceItems);
-          });
-        })
-      : FilterInstructorCourses;
+  // const FilterRatingCourses =
+  //   ratingfilterItems.rating.length > 0
+  //     ? ratingfilterItems.rating?.map((ratingItems) => {
+  //         FilterCatagoryCourses?.filter((course) => {
+  //           return course?.ratings?.includes(ratingItems);
+  //         });
+  //       })
+  //     : FilterCatagoryCourses;
 
-  const FilterLavelCourses =
-    lavelfilterItems.lavel.length > 0
-      ? lavelfilterItems.lavel?.map((lavelItems) => {
-          return FilterPriceCourses.filter((course) => {
-            return course.lavel.includes(lavelItems);
-          });
-        })
-      : FilterPriceCourses;
+  // const FilterInstructorCourses =
+  //   instructorfilterItems.instructor.length > 0
+  //     ? instructorfilterItems.instructor?.map((instructorItem) => {
+  //         return FilterRatingCourses.filter((course) => {
+  //           return course.instructor.includes(instructorItem);
+  //         });
+  //       })
+  //     : FilterRatingCourses;
 
-  const FilterLanguageCourses =
-    languagefilterItems.language.length > 0
-      ? languagefilterItems.language?.map((languageItems) => {
-          return FilterLavelCourses.filter((course) => {
-            return course.language.includes(languageItems);
-          });
-        })
-      : FilterLavelCourses;
+  // const FilterPriceCourses =
+  //   pricefilterItems.price.length > 0
+  //     ? pricefilterItems.price?.map((priceItems) => {
+  //         return FilterInstructorCourses.filter((course) => {
+  //           return course.price.includes(priceItems);
+  //         });
+  //       })
+  //     : FilterInstructorCourses;
 
-  const FilterDurationCourses =
-    durationfilterItems.duration.length > 0
-      ? durationfilterItems.duration?.map((durationItems) => {
-          return FilterLanguageCourses.filter((course) => {
-            return course.duration.includes(durationItems);
-          });
-        })
-      : FilterLanguageCourses;
+  // const FilterLavelCourses =
+  //   lavelfilterItems.lavel.length > 0
+  //     ? lavelfilterItems.lavel?.map((lavelItems) => {
+  //         return FilterPriceCourses.filter((course) => {
+  //           return course.lavel.includes(lavelItems);
+  //         });
+  //       })
+  //     : FilterPriceCourses;
 
-  const filteredCourses = FilterDurationCourses;
+  // const FilterLanguageCourses =
+  //   languagefilterItems.language.length > 0
+  //     ? languagefilterItems.language?.map((languageItems) => {
+  //         return FilterLavelCourses.filter((course) => {
+  //           return course.language.includes(languageItems);
+  //         });
+  //       })
+  //     : FilterLavelCourses;
+
+  // const FilterDurationCourses =
+  //   durationfilterItems.duration.length > 0
+  //     ? durationfilterItems.duration?.map((durationItems) => {
+  //         return FilterLanguageCourses.filter((course) => {
+  //           return course.duration.includes(durationItems);
+  //         });
+  //       })
+  //     : FilterLanguageCourses;
+
+  const filteredCourses = courses;
 
   const [paginationShowCourse, setPaginationShowCourse] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -228,11 +273,8 @@ function CourseList1() {
     indexOfFirstCourse,
     indexOfLastCourse
   );
-
   // change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  // const paginate = (pageNumber) => console.log(pageNumber);
-  console.log(currentPage, "currentCourse");
 
   return (
     <div className="preloader-visible" data-barba="wrapper">
