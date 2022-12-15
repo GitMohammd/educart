@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function PerosonalLearning() {
+  const catRef = useRef();
+  const difRef = useRef();
+
+  const [cataValue, setCataValue] = useState("");
+  const [diffvalue, setDiffValue] = useState("");
+
+  useEffect(() => {
+    const closeCat = (e) => {
+      if (!catRef.current.contains(e.target)) {
+        setIscatOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCat);
+    return () => {
+      document.body.removeEventListener("click", closeCat);
+    };
+  }, []);
+  useEffect(() => {
+    const closeDiff = (e) => {
+      if (!difRef.current.contains(e.target)) {
+        setIsDifOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeDiff);
+    return () => {
+      document.body.removeEventListener("click", closeDiff);
+    };
+  }, []);
+  const [isCatOpen, setIscatOpen] = useState(false);
+  const [isDifOpen, setIsDifOpen] = useState(false);
   return (
     <section className="layout-pt-lg layout-pb-lg bg-dark-2 relative">
       <div className="side-image pr-25 lg:d-none">
@@ -21,76 +53,127 @@ function PerosonalLearning() {
             </div>
 
             <div className="row x-gap-20 y-gap-20 pt-60 lg:pt-40">
-              <div className="col-auto">
-                <div className="dropdown js-dropdown js-catb-active">
+              <div ref={catRef} className="col-auto">
+                <div
+                  onClick={() => setIscatOpen((prev) => !prev)}
+                  className="dropdown js-dropdown js-catb-active"
+                >
                   <div
+                    style={{
+                      width: "143px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
                     className="dropdown__button d-flex items-center bg-dark-1 text-14 text-white h-60"
                     data-el-toggle=".js-catb-toggle"
                     data-el-toggle-active=".js-catb-active"
                   >
-                    <span className="js-dropdown-title">Category</span>
-                    <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                    <span className="js-dropdown-title">
+                      {" "}
+                      {cataValue === ""
+                        ? "Category"
+                        : cataValue.charAt(0).toUpperCase() +
+                          cataValue.slice(1)}
+                    </span>{" "}
+                    <span>
+                      {" "}
+                      {isCatOpen ? (
+                        <KeyboardArrowUpIcon />
+                      ) : (
+                        <KeyboardArrowDownIcon />
+                      )}{" "}
+                    </span>
                   </div>
 
-                  <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-catb-toggle">
-                    <div className="text-14 y-gap-15 js-dropdown-list">
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                  <div
+                    className={
+                      isCatOpen
+                        ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-catb-toggle -is-el-visible"
+                        : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-catb-toggle "
+                    }
+                  >
+                    <div class="text-14 y-gap-15 js-dropdown-list">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button class="d-block js-dropdown-link">
                           Animation
-                        </a>
+                        </button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
-                          Design
-                        </a>
+
+                      <div onClick={() => setCataValue("design")}>
+                        <button class="d-block js-dropdown-link">Design</button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+
+                      <div onClick={() => setCataValue("illustration")}>
+                        <button class="d-block js-dropdown-link">
                           Illustration
-                        </a>
+                        </button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+
+                      <div onClick={() => setCataValue("lifestyle")}>
+                        <button class="d-block js-dropdown-link">
                           Lifestyle
-                        </a>
+                        </button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+
+                      <div onClick={() => setCataValue("business")}>
+                        <button class="d-block js-dropdown-link">
                           Business
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="col-auto">
-                <div className="dropdown js-dropdown js-diff-active">
+              <div ref={difRef} className="col-auto">
+                <div
+                  onClick={() => setIsDifOpen((prev) => !prev)}
+                  className="dropdown js-dropdown js-diff-active"
+                >
                   <div
+                    style={{
+                      width: "143px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
                     className="dropdown__button d-flex items-center bg-dark-1 text-14 text-white h-60"
                     data-el-toggle=".js-diff-toggle"
                     data-el-toggle-active=".js-diff-active"
                   >
-                    <span className="js-dropdown-title">Difficulty</span>
-                    <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                    <span className="js-dropdown-title">
+                      {" "}
+                      {isDifOpen === ""
+                        ? "Category"
+                        : diffvalue.charAt(0).toUpperCase() +
+                          diffvalue.slice(1)}
+                    </span>
+                    {isDifOpen ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}{" "}
                   </div>
 
-                  <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle">
-                    <div className="text-14 y-gap-15 js-dropdown-list">
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
-                          Easy
-                        </a>
+                  <div
+                    className={
+                      isDifOpen
+                        ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle -is-el-visible"
+                        : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle "
+                    }
+                  >
+                    <div class="text-14 y-gap-15 js-dropdown-list">
+                      <div onClick={() => setDiffValue("hard")}>
+                        <button class="d-block js-dropdown-link">Hard</button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
-                          Medium
-                        </a>
+
+                      <div onClick={() => setDiffValue("meduium")}>
+                        <button class="d-block js-dropdown-link">
+                          Meduium
+                        </button>
                       </div>
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
-                          Hard
-                        </a>
+
+                      <div onClick={() => setDiffValue("easy")}>
+                        <button class="d-block js-dropdown-link">Easy</button>
                       </div>
                     </div>
                   </div>

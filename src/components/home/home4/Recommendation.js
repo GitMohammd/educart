@@ -1,27 +1,38 @@
-import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import React, { useEffect, useRef, useState } from "react";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function Recommendation() {
-  const [value, setValue] = useState("");
+  const catRef = useRef();
+  const difRef = useRef();
+
+  const [cataValue, setCataValue] = useState("");
   const [diffvalue, setDiffValue] = useState("");
-  // const [toggleDiff, setToggleDiff] = useState(false);
-  // const handleDiffChange = (event) => {
-  //   setDiffValue(event.target.value);
-  // };
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
-  // const HandleToggleDiff = () => {};
-
-  const handleDiffChange = (event) => {
-    setDiffValue(event.target.value);
-  };
+  useEffect(() => {
+    const closeCat = (e) => {
+      if (!catRef.current.contains(e.target)) {
+        setIscatOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCat);
+    return () => {
+      document.body.removeEventListener("click", closeCat);
+    };
+  }, []);
+  useEffect(() => {
+    const closeDiff = (e) => {
+      if (!difRef.current.contains(e.target)) {
+        setIsDifOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeDiff);
+    return () => {
+      document.body.removeEventListener("click", closeDiff);
+    };
+  }, []);
+  const [isCatOpen, setIscatOpen] = useState(false);
+  const [isDifOpen, setIsDifOpen] = useState(false);
 
   return (
     <section className="layout-pt-lg layout-pb-lg border-top-light">
@@ -41,160 +52,125 @@ function Recommendation() {
         </div>
 
         <div className="row y-gap-20 justify-center pt-30">
-          <div className="col-auto">
-            <div className="dropdown js-dropdown js-catb-active">
-              <Box sx={{ minWidth: 120 }}>
-                <FormControl
-                  fullWidth
-                  className="dropdown__button text-14"
-                  style={{ height: "100%" }}
-                >
-                  <InputLabel id="demo-simple-select-label">
-                    Category
-                  </InputLabel>
-                  <Select
-                    // className="-dark-bg-dark-2 -dark-border-white-10"
-                    style={{ color: "black" }}
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={value}
-                    label="Category"
-                    onChange={handleChange}
-                  >
-                    <MenuItem value={10}>Design</MenuItem>
-                    <MenuItem value={20}>Illustration</MenuItem>
-                    <MenuItem value={30}>Lifestyle</MenuItem>
-                    <MenuItem value={40}>Business</MenuItem>
-                    {/* <div className=" -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-catb-toggle">
-                      <div className="text-14 y-gap-15 js-dropdown-list">
-                        <div>
-                          <MenuItem value={10}>Ten</MenuItem>
-                          <a href="#" className="d-block js-dropdown-link">
-                            <MenuItem value={10}>Ten</MenuItem>
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Design
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Illustration
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Lifestyle
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link"></a>
-                        </div>
-                      </div>
-                    </div> */}
-                  </Select>
-                </FormControl>
-              </Box>
-            </div>
-          </div>
-
-          <div className="col-auto">
-            <div className="dropdown js-dropdown js-catb-active">
-              <Box sx={{ minWidth: 120 }}>
-                <FormControl
-                  fullWidth
-                  className="dropdown__button text-14"
-                  style={{ height: "100%" }}
-                >
-                  <InputLabel id="demo-simple-select-label">
-                    Difficulty
-                  </InputLabel>
-                  <Select
-                    // className="-dark-bg-dark-2 -dark-border-white-10"
-                    style={{ color: "black" }}
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={diffvalue}
-                    label="Difficulty"
-                    onChange={handleDiffChange}
-                  >
-                    <MenuItem value={10}>Easy</MenuItem>
-                    <MenuItem value={20}>Medium</MenuItem>
-                    <MenuItem value={30}>Hard</MenuItem>
-                    {/* <div className=" -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-catb-toggle">
-                      <div className="text-14 y-gap-15 js-dropdown-list">
-                        <div>
-                          <MenuItem value={10}>Ten</MenuItem>
-                          <a href="#" className="d-block js-dropdown-link">
-                            <MenuItem value={10}>Ten</MenuItem>
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Design
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Illustration
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link">
-                            Lifestyle
-                          </a>
-                        </div>
-                        <div>
-                          <a href="#" className="d-block js-dropdown-link"></a>
-                        </div>
-                      </div>
-                    </div> */}
-                  </Select>
-                </FormControl>
-              </Box>
-            </div>
-          </div>
-          {/* <div className="col-auto">
-            <div className="dropdown js-dropdown js-diff-active">
+          <div ref={catRef} className="col-auto">
+            <div
+              onClick={() => setIscatOpen((prev) => !prev)}
+              className="dropdown js-dropdown js-catb-active"
+            >
               <div
+                style={{
+                  width: "143px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
                 className="dropdown__button d-flex items-center text-14 border-light h-60"
-                // data-el-toggle=".js-diff-toggle"
-                // data-el-toggle-active=".js-diff-active"
-                onClick={() => setToggleDiff(!toggleDiff)}
+                data-el-toggle=".js-catb-toggle"
+                data-el-toggle-active=".js-catb-active"
               >
-                <span className="js-dropdown-title">Difficulty</span>
-                <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                <span className="js-dropdown-title">
+                  {" "}
+                  {cataValue === ""
+                    ? "Category"
+                    : cataValue.charAt(0).toUpperCase() + cataValue.slice(1)}
+                </span>
+                <span>
+                  {" "}
+                  {isCatOpen ? (
+                    <KeyboardArrowUpIcon />
+                  ) : (
+                    <KeyboardArrowDownIcon />
+                  )}{" "}
+                </span>
               </div>
 
               <div
                 className={
-                  toggleDiff
-                    ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 -is-el-visible"
-                    : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 "
+                  isCatOpen
+                    ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop1-toggle -is-el-visible"
+                    : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop1-toggle "
                 }
               >
-                <div className="text-14 y-gap-15 js-dropdown-list">
-                  <div>
-                    <a href="#" className="d-block js-dropdown-link">
-                      Easy
-                    </a>
+                <div class="text-14 y-gap-15 js-dropdown-list">
+                  <div onClick={() => setCataValue("animation")}>
+                    <button class="d-block js-dropdown-link">Animation</button>
                   </div>
-                  <div>
-                    <a href="#" className="d-block js-dropdown-link">
-                      Medium
-                    </a>
+
+                  <div onClick={() => setCataValue("design")}>
+                    <button class="d-block js-dropdown-link">Design</button>
                   </div>
-                  <div>
-                    <a href="#" className="d-block js-dropdown-link">
-                      Hard
-                    </a>
+
+                  <div onClick={() => setCataValue("illustration")}>
+                    <button class="d-block js-dropdown-link">
+                      Illustration
+                    </button>
+                  </div>
+
+                  <div onClick={() => setCataValue("lifestyle")}>
+                    <button class="d-block js-dropdown-link">Lifestyle</button>
+                  </div>
+
+                  <div onClick={() => setCataValue("business")}>
+                    <button class="d-block js-dropdown-link">Business</button>
                   </div>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
 
+          <div ref={difRef} className="col-auto">
+            <div
+              onClick={() => setIsDifOpen((prev) => !prev)}
+              className="dropdown js-dropdown js-diff-active"
+            >
+              <div
+                style={{
+                  width: "143px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+                className="dropdown__button d-flex items-center text-14 border-light h-60"
+                data-el-toggle=".js-diff-toggle"
+                data-el-toggle-active=".js-diff-active"
+              >
+                <span className="js-dropdown-title">
+                  {" "}
+                  {diffvalue === ""
+                    ? "Diffiulty"
+                    : diffvalue.charAt(0).toUpperCase() + diffvalue.slice(1)}
+                </span>
+                <span>
+                  {" "}
+                  {isDifOpen ? (
+                    <KeyboardArrowUpIcon />
+                  ) : (
+                    <KeyboardArrowDownIcon />
+                  )}{" "}
+                </span>
+              </div>
+
+              <div
+                className={
+                  isDifOpen
+                    ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop3-toggle -is-el-visible"
+                    : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop3-toggle "
+                }
+              >
+                <div class="text-14 y-gap-15 js-dropdown-list">
+                  <div onClick={() => setDiffValue("hard")}>
+                    <button class="d-block js-dropdown-link">Hard</button>
+                  </div>
+
+                  <div onClick={() => setDiffValue("meduium")}>
+                    <button class="d-block js-dropdown-link">Meduium</button>
+                  </div>
+
+                  <div onClick={() => setDiffValue("easy")}>
+                    <button class="d-block js-dropdown-link">Easy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="col-auto">
             <a href="#" className="button -md -purple-1 text-white">
               Get Started Now

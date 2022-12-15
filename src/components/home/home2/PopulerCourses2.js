@@ -26,25 +26,25 @@ function PopulerCourses2() {
     };
   }, []);
   useEffect(() => {
-    const closeExplore = (e) => {
+    const closerat = (e) => {
       if (!ratRef.current.contains(e.target)) {
         setIsRetOpen(false);
       }
     };
-    document.body.addEventListener("click", closeExplore);
+    document.body.addEventListener("click", closerat);
     return () => {
-      document.body.removeEventListener("click", closeExplore);
+      document.body.removeEventListener("click", closerat);
     };
   }, []);
   useEffect(() => {
-    const closeExplore = (e) => {
+    const closeDiff = (e) => {
       if (!difRef.current.contains(e.target)) {
         setIsDifOpen(false);
       }
     };
-    document.body.addEventListener("click", closeExplore);
+    document.body.addEventListener("click", closeDiff);
     return () => {
-      document.body.removeEventListener("click", closeExplore);
+      document.body.removeEventListener("click", closeDiff);
     };
   }, []);
   useEffect(() => {
