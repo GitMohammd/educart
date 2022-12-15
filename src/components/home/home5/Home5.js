@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import TopStudents from "../home2/TopStudents";
 import Navigation4 from "../home4/Navigation4";
-import TopCategories4 from "../home4/TopCategories4";
 import BestInstructors5 from "./BestInstructors5";
 import Companys from "./Companys";
 import ExploreFeaturedCourses from "./ExploreFeaturedCourses";
@@ -13,6 +11,7 @@ import News$Events from "./News$Events";
 import PerosonalLearning from "./PerosonalLearning";
 import SimplePricing from "./SimplePricing";
 import TopCatagories5 from "./TopCatagories5";
+import TopStudent5 from "./TopStudent5";
 
 function Home5() {
   useEffect(() => {
@@ -35,7 +34,7 @@ function Home5() {
             <ExploreFeaturedCourses />
             <TopCatagories5 />
             <BestInstructors5 />
-            <TopStudents />
+            <TopStudent5 />
             <LearningJourney5 />
             <SimplePricing />
             <LearnForm />

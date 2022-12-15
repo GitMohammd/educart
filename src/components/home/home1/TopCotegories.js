@@ -191,6 +191,7 @@ function TopCotegories() {
               </div>
             </div>
           </Slider>
+          <br />
           <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
             <div className="col-auto">
               <button

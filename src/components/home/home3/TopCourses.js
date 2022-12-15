@@ -90,9 +90,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-1"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -184,9 +188,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-2"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -294,9 +302,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-3"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -388,9 +400,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-4"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -425,7 +441,7 @@ function TopCourses() {
                         </div>
 
                         <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
-                          The Ultimate Drawing Course Beginner to Advanced
+                          The Ultimate Drawing Course Beginner to
                         </div>
 
                         <div className="d-flex x-gap-10 items-center pt-10">
@@ -482,9 +498,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-5"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -520,7 +540,6 @@ function TopCourses() {
 
                         <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
                           Photography Masterclass: A Complete Guide to
-                          Photography
                         </div>
 
                         <div className="d-flex x-gap-10 items-center pt-10">
@@ -577,9 +596,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-6"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -671,9 +694,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-7"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -709,7 +736,6 @@ function TopCourses() {
 
                         <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
                           Complete Blender Creator: Learn 3D Modelling for
-                          Beginners
                         </div>
 
                         <div className="d-flex x-gap-10 items-center pt-10">
@@ -766,9 +792,13 @@ function TopCourses() {
                 <div className="swiper-slide">
                   <div
                     data-anim-child="slide-up delay-8"
+                    // style={{
+                    //   height: "388px",
+                    //   width: "300px",
+                    // }}
                     style={{
-                      height: "388px",
-                      width: "300px",
+                      marginLeft: "15px",
+                      marginRight: "15px",
                     }}
                   >
                     <a
@@ -804,7 +834,7 @@ function TopCourses() {
 
                         <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
                           The Complete Financial Analyst Training &amp;
-                          Investing Course
+                          Investing
                         </div>
 
                         <div className="d-flex x-gap-10 items-center pt-10">

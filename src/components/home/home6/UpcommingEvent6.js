@@ -6,7 +6,7 @@ import Slider from "react-slick";
 function UpcommingEvent6() {
   const sliderRef = useRef(null);
   const settings = {
-    dots: false,
+    dots: true,
     // centerMode: true,
     arrows: false,
     // infinite: true,
@@ -268,6 +268,7 @@ function UpcommingEvent6() {
                   </div>
                 </div>
               </Slider>
+              <br />
             </div>
 
             <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">

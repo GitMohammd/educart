@@ -15620,6 +15620,9 @@ table.table td {
 .testimonials__content {
   margin-left: -5px;
 }
+.slick-dots {
+  bottom: -55px !important;
+}
 
 /* --------mui style -------------- */
 

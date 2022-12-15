@@ -7,14 +7,14 @@ function Testimonials() {
   const settings = {
     // centerMode: true,
     arrows: false,
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3700,
     cssEase: "linear",
 
     responsive: [
@@ -79,7 +79,7 @@ function Testimonials() {
                         transformative–both professionally and personally. This
                         workshop will long remain a high point of my life.
                       </div>
-                      <br />
+
                       <div className="col-auto">
                         <div className="pagination__item is-active d-flex justify-center">
                           <img

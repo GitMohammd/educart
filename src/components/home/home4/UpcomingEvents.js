@@ -235,6 +235,7 @@ function UpcomingEvents() {
                 </div>
               </div>
             </Slider>
+            <br />
           </div>
 
           <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">

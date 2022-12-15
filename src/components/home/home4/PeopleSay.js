@@ -15,19 +15,28 @@ function PeopleSay() {
     slidesToScroll: 1,
 
     responsive: [
-      // {
-      //   breakpoint: 1024,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     infinite: true,
-      //     dots: true,
-      //   },
-      // },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1204,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           infinite: true,
           dots: true,
@@ -76,14 +85,13 @@ function PeopleSay() {
         >
           <div className="">
             <Slider {...settings} ref={sliderRef}>
-              <div className="swiper-slide">
+              <div className="">
                 <div
                   data-anim-child="slide-left delay-1"
                   className="testimonials -type-3 sm:px-20 sm:py-40 bg-white"
                   style={{
-                    height: "295px",
-                    // width: "630px",
-                    marginLeft: "25px",
+                    marginRightt: "15px",
+                    marginLeft: "15px",
                   }}
                 >
                   <div className="row y-gap-30 md:text-center md:justify-center">
@@ -125,14 +133,13 @@ function PeopleSay() {
                 </div>
               </div>
 
-              <div className="swiper-slide">
+              <div className="">
                 <div
                   data-anim-child="slide-left delay-2"
                   className="testimonials -type-3 sm:px-20 sm:py-40 bg-white"
                   style={{
-                    height: "295px",
-                    // width: "630px",
-                    marginLeft: "25px",
+                    marginRightt: "15px",
+                    marginLeft: "15px",
                   }}
                 >
                   <div className="row y-gap-30 md:text-center md:justify-center">
@@ -174,14 +181,13 @@ function PeopleSay() {
                 </div>
               </div>
 
-              <div className="swiper-slide">
+              <div className="">
                 <div
                   data-anim-child="slide-left delay-3"
                   className="testimonials -type-3 sm:px-20 sm:py-40 bg-white"
                   style={{
-                    height: "295px",
-                    // width: "630px",
-                    marginLeft: "25px",
+                    marginRightt: "15px",
+                    marginLeft: "15px",
                   }}
                 >
                   <div className="row y-gap-30 md:text-center md:justify-center">

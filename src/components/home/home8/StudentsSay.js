@@ -5,13 +5,18 @@ import Slider from "react-slick";
 function StudentsSay() {
   const sliderRef = useRef(null);
   const settings = {
-    dots: true,
-    centerMode: false,
+    infinite: true,
+    dots: false,
+    // centerMode: false,
     arrows: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 750,
+    autoplaySpeed: 3700,
+    cssEase: "linear",
 
     responsive: [
       // {
