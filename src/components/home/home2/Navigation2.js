@@ -71,9 +71,9 @@ function Navigation2() {
           <div className="col-auto">
             <div className="header-left">
               <div className="header__logo">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img src="/assets/img/general/logo.svg" alt="logo" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
