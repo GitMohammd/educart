@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation4() {
+  const explorBtnRef = useRef();
+  const [isExploreOpen, setExploreOpen] = useState(false);
+
+  useEffect(() => {
+    const closeExplore = (e) => {
+      if (!explorBtnRef.current.contains(e.target)) {
+        setExploreOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeExplore);
+    return () => {
+      document.body.removeEventListener("click", closeExplore);
+    };
+  }, []);
   return (
     <header
       data-anim="fade"
@@ -13,313 +27,325 @@ function Navigation4() {
           <div className="col-auto">
             <div className="header-left d-flex items-center">
               <div className="header__logo pr-30 xl:pr-20 md:pr-0">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img src="/assets/img/general/logo-dark.svg" alt="logo" />
-                </a>
+                </Link>
               </div>
 
-              <div className="header__explore px-30 xl:px-20 -before-border -after-border xl:d-none">
+              <div
+                ref={explorBtnRef}
+                className="header__explore px-30 xl:px-20 -before-border -after-border xl:d-none"
+              >
                 <a
                   href="#"
                   className="d-flex items-center"
                   data-el-toggle=".js-explore-toggle"
+                  onClick={() => setExploreOpen((prev) => !prev)}
                 >
                   <i className="icon icon-explore mr-15"></i>
                   Explore
                 </a>
+                {isExploreOpen ? (
+                  <div
+                    style={{ marginTop: "34.33px" }}
+                    className="explore-content py-25 rounded-8 bg-white js-explore-toggle"
+                  >
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Architecture
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
 
-                <div className="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Architecture
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Business
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Computer Programming
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Data Analysis
                       </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Design<div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Education
                       </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Electronics
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Language
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Marketing
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Music Arts
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Social Science
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Photography & Video
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        IT & Software
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-purple-1 underline">
+                        View All Courses
                       </a>
                     </div>
                   </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Business<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Computer Programming
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Data Analysis
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Design<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Education
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Electronics
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Language<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Marketing
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Music Arts
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Social Science
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Photography & Video
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      IT & Software
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-purple-1 underline">
-                      View All Courses
-                    </a>
-                  </div>
-                </div>
+                ) : (
+                  ""
+                )}
               </div>
 
               <div className="header-menu js-mobile-menu-toggle pl-30 xl:pl-20">

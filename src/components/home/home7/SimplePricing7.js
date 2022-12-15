@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SimplePricing7() {
+  const [price, setPrice] = useState(false);
+  const handlePrice = (e) => {
+    setPrice(e.target.checked);
+  };
   return (
     <section className="layout-pt-lg layout-pb-md">
       <div data-anim-wrap className="container">
@@ -18,7 +22,7 @@ function SimplePricing7() {
               <div className="text-14 text-dark-1">Monthly</div>
               <div className="form-switch px-20">
                 <div className="switch" data-switch=".js-switch-content">
-                  <input type="checkbox" />
+                  <input onClick={(e) => handlePrice(e)} type="checkbox" />
                   <span className="switch__slider"></span>
                 </div>
               </div>
@@ -95,7 +99,7 @@ function SimplePricing7() {
                   Professional
                 </div>
                 <div className="priceCard__price text-45 lh-11 fw-700 text-dark-1 mt-15">
-                  $599.95
+                  ${price ? "359.79" : "599.95"}
                 </div>
                 <div className="priceCard__period">per month</div>
                 <img
@@ -153,7 +157,7 @@ function SimplePricing7() {
                   Business
                 </div>
                 <div className="priceCard__price text-45 lh-11 fw-700 text-dark-1 mt-15">
-                  $999.95
+                  ${price ? "789.95" : "9999.95"}
                 </div>
                 <div className="priceCard__period">per month</div>
                 <img

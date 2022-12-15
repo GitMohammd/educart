@@ -10,7 +10,7 @@ function Navigation() {
 
   useEffect(() => {
     const closeExplore = (e) => {
-      if (e.path[0] !== explorBtnRef.current) {
+      if (!explorBtnRef.current.contains(e.target)) {
         setExploreOpen(false);
       }
     };
@@ -38,9 +38,11 @@ function Navigation() {
                 </Link>
               </div>
 
-              <div className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
+              <div
+                ref={explorBtnRef}
+                className="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none"
+              >
                 <a
-                  ref={explorBtnRef}
                   href="#"
                   className="d-flex items-center"
                   data-el-toggle=".js-explore-toggle"
