@@ -23,7 +23,7 @@ function CourseList1() {
       .then((data) => setCourses(data));
   }, []);
 
-  const [populerCourse, setPopulerCourse] = useState([]);
+  const [populerCourse, setPopulerCourse] = useState("");
   const [catagoryfilterItems, setCatagoryFilterItems] = useState({
     catagory: [],
   });
@@ -147,38 +147,6 @@ function CourseList1() {
       ? popcourse
       : popcourse.popular?.includes(populerCourse);
   });
-
-  // const FilterCatagoryCourses =
-  //   catagoryfilterItems.catagory.length > 0
-  //     ? catagoryfilterItems.catagory
-  //         ?.map((catagoryItems) => {
-  //           return filterPopulerCourse.filter((course) => {
-  //             return course.catagoryFilter.includes(catagoryItems);
-  //           });
-  //         })
-  //         .flat()
-  //     : filterPopulerCourse;
-  // console.log
-
-  // const ratingFilter =
-  //   ratingfilterItems.rating.length > 0
-  //     ? ratingfilterItems.rating
-  //         .map((ratingItems) => {
-  //           return FilterCatagoryCourses.filter((course) => {
-  //             return course.ratings.includes(ratingItems);
-  //           });
-  //         })
-  //         .flat()
-  //     : FilterCatagoryCourses;
-
-  // const FilterRatingCourses =
-  //   ratingfilterItems.rating.length > 0
-  //     ? ratingfilterItems.rating.map((ratingItems) => {
-  //         return FilterCatagoryCourses.filter((course) =>
-  //           course?.ratings?.includes(ratingItems)
-  //         );
-  //       })
-  //     : FilterCatagoryCourses;
 
   const FilterCatagoryCourses =
     catagoryfilterItems.catagory.length > 0

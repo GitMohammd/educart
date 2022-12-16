@@ -142,8 +142,8 @@ function PerosonalLearning() {
                   >
                     <span className="js-dropdown-title">
                       {" "}
-                      {isDifOpen === ""
-                        ? "Category"
+                      {diffvalue === ""
+                        ? "Diffiulty"
                         : diffvalue.charAt(0).toUpperCase() +
                           diffvalue.slice(1)}
                     </span>

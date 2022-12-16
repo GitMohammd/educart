@@ -1,9 +1,22 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import FeaturedCourse from "./FeaturedCourse";
 
 function ExploreFeaturedCourses() {
+  const [courses, setCourses] = useState([]);
+  const [type, setType] = useState("");
+
+  useEffect(() => {
+    fetch("/allCourses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+  const filterPopulerCourse = courses?.filter((typeCourse) => {
+    return type === "" ? typeCourse : typeCourse.type?.includes(type);
+  });
+
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -69,9 +82,11 @@ function ExploreFeaturedCourses() {
 
             <div className="col-auto">
               <div className="tabs__controls d-flex justify-center x-gap-10 js-tabs-controls">
-                <div>
+                <div onClick={() => setType("")}>
                   <button
-                    className="tabs__button px-20 py-8 rounded-200 js-tabs-button is-active"
+                    className={`tabs__button px-20 py-8 rounded-200 js-tabs-button${
+                      type === "" ? " is-active" : " "
+                    }`}
                     data-tab-target=".-tab-item-1"
                     type="button"
                   >
@@ -79,9 +94,11 @@ function ExploreFeaturedCourses() {
                   </button>
                 </div>
 
-                <div>
+                <div onClick={() => setType("trending")}>
                   <button
-                    className="tabs__button px-20 py-8 rounded-200 js-tabs-button "
+                    className={`tabs__button px-20 py-8 rounded-200 js-tabs-button${
+                      type === "trending" ? " is-active" : " "
+                    }`}
                     data-tab-target=".-tab-item-2"
                     type="button"
                   >
@@ -89,9 +106,11 @@ function ExploreFeaturedCourses() {
                   </button>
                 </div>
 
-                <div>
+                <div onClick={() => setType("popular")}>
                   <button
-                    className="tabs__button px-20 py-8 rounded-200 js-tabs-button "
+                    className={`tabs__button px-20 py-8 rounded-200 js-tabs-button${
+                      type === "popular" ? " is-active" : " "
+                    }`}
                     data-tab-target=".-tab-item-3"
                     type="button"
                   >
@@ -99,9 +118,11 @@ function ExploreFeaturedCourses() {
                   </button>
                 </div>
 
-                <div>
+                <div onClick={() => setType("fetured")}>
                   <button
-                    className="tabs__button px-20 py-8 rounded-200 js-tabs-button "
+                    className={`tabs__button px-20 py-8 rounded-200 js-tabs-button${
+                      type === "fetured" ? " is-active" : " "
+                    }`}
                     data-tab-target=".-tab-item-4"
                     type="button"
                   >
@@ -121,7 +142,11 @@ function ExploreFeaturedCourses() {
               >
                 <div className="">
                   <Slider {...settings} ref={sliderRef}>
-                    <div className="swiper-slide">
+                    {filterPopulerCourse.map((course) => {
+                      return <FeaturedCourse key={course.id} course={course} />;
+                    })}
+
+                    {/* <div className="swiper-slide">
                       <div
                         data-anim-child="slide-up delay-1"
                         style={{
@@ -908,7 +933,7 @@ function ExploreFeaturedCourses() {
                           </div>
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </Slider>
                 </div>
 
@@ -928,7 +953,7 @@ function ExploreFeaturedCourses() {
               </div>
             </div>
 
-            <div className="tabs__pane -tab-item-2 ">
+            {/* <div className="tabs__pane -tab-item-2 ">
               <div
                 className="overflow-hidden js-section-slider"
                 data-gap="30"
@@ -3152,7 +3177,7 @@ function ExploreFeaturedCourses() {
                   <i className="icon icon-arrow-right text-24"></i>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

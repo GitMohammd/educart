@@ -204,54 +204,6 @@ function Testimonials() {
                 </Slider>
               </div>
 
-              {/* <div className="pt-60 lg:pt-40">
-                <div className="pagination -avatars row x-gap-40 y-gap-20 justify-center js-testimonials-pagination">
-                  <div className="col-auto">
-                    <div className="pagination__item is-active">
-                      <img
-                        src="/assets/img/home-3/testimonials/1.png"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-auto">
-                    <div className="pagination__item ">
-                      <img
-                        src="/assets/img/home-3/testimonials/2.png"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-auto">
-                    <div className="pagination__item ">
-                      <img
-                        src="/assets/img/home-3/testimonials/3.png"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-auto">
-                    <div className="pagination__item ">
-                      <img
-                        src="/assets/img/home-3/testimonials/4.png"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-auto">
-                    <div className="pagination__item ">
-                      <img
-                        src="/assets/img/home-3/testimonials/5.png"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
                 <div className="col-auto">
                   <button

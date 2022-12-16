@@ -1,14 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CourseLIstFilter from "./CourseLIstFilter";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FilterCourseList from "./FilterCourseList";
 import Pagination from "./Pagination";
 
 function CourseListMain1(props) {
+  const catRef = useRef();
+  const [isCatOpen, setIscatOpen] = useState(false);
+
+  useEffect(() => {
+    const closeCat = (e) => {
+      if (!catRef.current.contains(e.target)) {
+        setIscatOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCat);
+    return () => {
+      document.body.removeEventListener("click", closeCat);
+    };
+  }, []);
   const {
     courses,
     coursePerPage,
@@ -68,6 +80,72 @@ function CourseListMain1(props) {
                           </div>
 
                           <div
+                            ref={catRef}
+                            onClick={() => setIscatOpen((prev) => !prev)}
+                            class="dropdown js-dropdown js-category-active"
+                          >
+                            <div
+                              class="dropdown__button d-flex items-center text-14 rounded-8 px-20 py-10 text-14 lh-12"
+                              data-el-toggle=".js-category-toggle"
+                              data-el-toggle-active=".js-category-active"
+                            >
+                              <span class="js-dropdown-title">
+                                {populerCourse === ""
+                                  ? "Most Popular"
+                                  : populerCourse?.charAt(0).toUpperCase() +
+                                    populerCourse?.slice(1)}
+                              </span>
+                              {isCatOpen ? (
+                                <KeyboardArrowUpIcon />
+                              ) : (
+                                <KeyboardArrowDownIcon />
+                              )}{" "}
+                            </div>
+
+                            <div
+                              className={
+                                isCatOpen
+                                  ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle -is-el-visible"
+                                  : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle "
+                              }
+                            >
+                              <div class="text-14 y-gap-15 js-dropdown-list">
+                                <div
+                                  onClick={() => setPopulerCourse("animation")}
+                                >
+                                  <button class="d-block js-dropdown-link">
+                                    Animation
+                                  </button>
+                                </div>
+
+                                <div onClick={() => setPopulerCourse("design")}>
+                                  <button class="d-block js-dropdown-link">
+                                    Design
+                                  </button>
+                                </div>
+
+                                <div
+                                  onClick={() =>
+                                    setPopulerCourse("illustration")
+                                  }
+                                >
+                                  <button class="d-block js-dropdown-link">
+                                    Illustration
+                                  </button>
+                                </div>
+
+                                <div
+                                  onClick={() => setPopulerCourse("business")}
+                                >
+                                  <button class="d-block js-dropdown-link">
+                                    Business
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {/* 
+                          <div
                           // className="dropdown js-dropdown js-category-active"
                           >
                             <Box sx={{ minWidth: 220 }}>
@@ -104,7 +182,7 @@ function CourseListMain1(props) {
                                 </Select>
                               </FormControl>
                             </Box>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>

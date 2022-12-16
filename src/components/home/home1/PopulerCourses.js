@@ -3,39 +3,17 @@ import Courses from "./Courses";
 
 function PopulerCourses() {
   const [courses, setCourses] = useState([]);
+  const [catagory, setCatagory] = useState("");
+
   useEffect(() => {
     fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
-  const [defaultActive, setDefaultActive] = useState(true);
 
-  const [allCatagoryActive, setAllCatagoryActive] = useState("");
-  const [aniatmiontActive, setAniatmiontActive] = useState("");
-
-  const [DesinActive, setDesignActive] = useState("");
-
-  const [illustrationActive, setillustrationActive] = useState("");
-
-  const [lifestyleActive, setLifestyleActive] = useState("");
-
-  const [photoActive, setPhoteActive] = useState("");
-
-  const [businessActive, setbusinessActive] = useState("");
-
-  const [writtionActive, setwrittionActive] = useState("");
-
-  const handleClick = (e) => {
-    setDefaultActive(false);
-    setAllCatagoryActive(e === "allCategories" ? true : false);
-    setAniatmiontActive(e === "animation" ? true : false);
-    setDesignActive(e === "design" ? true : false);
-    setillustrationActive(e === "illustration" ? true : false);
-    setLifestyleActive(e === "lifestyle" ? true : false);
-    setPhoteActive(e === "photo" ? true : false);
-    setbusinessActive(e === "business" ? true : false);
-    setwrittionActive(e === "writing" ? true : false);
-  };
+  const filterPopulerCourse = courses?.filter((popcourse) => {
+    return catagory === "" ? popcourse : popcourse.popular?.includes(catagory);
+  });
 
   return (
     <section className="layout-pt-md layout-pb-lg">
@@ -54,10 +32,10 @@ function PopulerCourses() {
 
         <div className="tabs -pills pt-50 js-tabs">
           <div className="tabs__controls d-flex justify-center x-gap-10 js-tabs-controls">
-            <div onClick={() => handleClick("allCategories")}>
+            <div onClick={() => setCatagory("")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  allCatagoryActive || defaultActive ? " is-active" : " "
+                  catagory === "" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -66,10 +44,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("animation")}>
+            <div onClick={() => setCatagory("animation")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  aniatmiontActive ? " is-active" : " "
+                  catagory === "animation" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -78,10 +56,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("design")}>
+            <div onClick={() => setCatagory("design")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  DesinActive ? " is-active" : " "
+                  catagory === "design" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -90,10 +68,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("illustration")}>
+            <div onClick={() => setCatagory("illustration")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  illustrationActive ? " is-active" : " "
+                  catagory === "illustration" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -102,10 +80,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("lifestyle")}>
+            <div onClick={() => setCatagory("lifeStyle")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  lifestyleActive ? " is-active" : " "
+                  catagory === "lifeStyle" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -114,10 +92,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("photo")}>
+            <div onClick={() => setCatagory("photo")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  photoActive ? " is-active" : " "
+                  catagory === "photo" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -126,10 +104,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("business")}>
+            <div onClick={() => setCatagory("business")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  businessActive ? " is-active" : " "
+                  catagory === "business" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -138,10 +116,10 @@ function PopulerCourses() {
               </button>
             </div>
 
-            <div onClick={() => handleClick("writing")}>
+            <div onClick={() => setCatagory("writing")}>
               <button
                 className={`tabs__button px-15 py-8 rounded-8 js-tabs-button${
-                  writtionActive ? " is-active" : " "
+                  catagory === "writing" ? " is-active" : " "
                 }`}
                 data-tab-target=".-tab-item-2"
                 type="button"
@@ -154,7 +132,7 @@ function PopulerCourses() {
           <div className="tabs__content pt-60 js-tabs-content">
             <div className="tabs__pane -tab-item-1 is-active">
               <div className="row y-gap-30 justify-center">
-                {courses.slice(0, 8).map((course) => (
+                {filterPopulerCourse.slice(0, 8).map((course) => (
                   <Courses key={course.id} course={course}></Courses>
                 ))}
               </div>
