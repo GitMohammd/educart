@@ -90,27 +90,33 @@ function Recommendation() {
                     : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop1-toggle "
                 }
               >
-                <div class="text-14 y-gap-15 js-dropdown-list">
+                <div className="text-14 y-gap-15 js-dropdown-list">
                   <div onClick={() => setCataValue("animation")}>
-                    <button class="d-block js-dropdown-link">Animation</button>
+                    <button className="d-block js-dropdown-link">
+                      Animation
+                    </button>
                   </div>
 
                   <div onClick={() => setCataValue("design")}>
-                    <button class="d-block js-dropdown-link">Design</button>
+                    <button className="d-block js-dropdown-link">Design</button>
                   </div>
 
                   <div onClick={() => setCataValue("illustration")}>
-                    <button class="d-block js-dropdown-link">
+                    <button className="d-block js-dropdown-link">
                       Illustration
                     </button>
                   </div>
 
                   <div onClick={() => setCataValue("lifestyle")}>
-                    <button class="d-block js-dropdown-link">Lifestyle</button>
+                    <button className="d-block js-dropdown-link">
+                      Lifestyle
+                    </button>
                   </div>
 
                   <div onClick={() => setCataValue("business")}>
-                    <button class="d-block js-dropdown-link">Business</button>
+                    <button className="d-block js-dropdown-link">
+                      Business
+                    </button>
                   </div>
                 </div>
               </div>
@@ -155,17 +161,19 @@ function Recommendation() {
                     : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-drop3-toggle "
                 }
               >
-                <div class="text-14 y-gap-15 js-dropdown-list">
+                <div className="text-14 y-gap-15 js-dropdown-list">
                   <div onClick={() => setDiffValue("hard")}>
-                    <button class="d-block js-dropdown-link">Hard</button>
+                    <button className="d-block js-dropdown-link">Hard</button>
                   </div>
 
                   <div onClick={() => setDiffValue("meduium")}>
-                    <button class="d-block js-dropdown-link">Meduium</button>
+                    <button className="d-block js-dropdown-link">
+                      Meduium
+                    </button>
                   </div>
 
                   <div onClick={() => setDiffValue("easy")}>
-                    <button class="d-block js-dropdown-link">Easy</button>
+                    <button className="d-block js-dropdown-link">Easy</button>
                   </div>
                 </div>
               </div>

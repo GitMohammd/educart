@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function FeaturedCourses() {
   return (
@@ -16,17 +17,20 @@ function FeaturedCourses() {
             </div>
 
             <div className="d-inline-block mt-60 lg:mt-25">
-              <a href="#" className="button -icon -purple-1 text-white">
+              <Link
+                to={"/courselist1"}
+                className="button -icon -purple-1 text-white"
+              >
                 Browse All Courses
                 <i className="icon-arrow-top-right text-13 ml-10"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6 offset-xl-1">
             <div data-anim-child="slide-up delay-1">
-              <a
-                href="courses-single-1.html"
+              <Link
+                to={`/courseSingle1/${"01"}`}
                 className="coursesCard -type-1 shadow-3 rounded-8 bg-white"
               >
                 <div className="relative">
@@ -102,14 +106,14 @@ function FeaturedCourses() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6">
             <div data-anim-child="slide-up delay-2">
-              <a
-                href="courses-single-1.html"
+              <Link
+                to={`/courseSingle1/${"02"}`}
                 className="coursesCard -type-1 shadow-3 rounded-8 bg-white"
               >
                 <div className="relative">
@@ -193,7 +197,7 @@ function FeaturedCourses() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

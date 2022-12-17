@@ -379,7 +379,7 @@ function SingleEventContent() {
               </div>
 
               <a
-                onClick={() => increaseCourseQuantity(01)}
+                onClick={() => increaseCourseQuantity("01")}
                 href="#"
                 class="button -md col-12 -purple-1 text-white mt-30"
               >

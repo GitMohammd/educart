@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Blog() {
   return (
@@ -19,10 +20,13 @@ function Blog() {
           </div>
 
           <div className="col-auto">
-            <a href="#" className="button -icon -purple-3 text-purple-1">
+            <Link
+              to={"/blogList1"}
+              className="button -icon -purple-3 text-purple-1"
+            >
               Browse Blog
               <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
+            </Link>
           </div>
         </div>
 

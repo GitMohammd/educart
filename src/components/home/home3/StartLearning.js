@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function StartLearning() {
   return (
@@ -33,9 +34,12 @@ function StartLearning() {
                 data-anim-child="slide-up delay-4"
                 className="masthead__button mt-20"
               >
-                <a href="#" className="button -md -white text-dark-1">
+                <Link
+                  to={"/courselist1"}
+                  className="button -md -white text-dark-1"
+                >
                   Find Courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>

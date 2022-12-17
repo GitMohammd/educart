@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BestInstructors() {
   return (
@@ -21,10 +22,13 @@ function BestInstructors() {
           </div>
 
           <div className="col-auto">
-            <a href="#" className="button -icon -purple-3 text-purple-1">
+            <Link
+              to={"/InstructorsListv1"}
+              className="button -icon -purple-3 text-purple-1"
+            >
               View All İnstructors
               <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
+            </Link>
           </div>
         </div>
 

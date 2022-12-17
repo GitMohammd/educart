@@ -1,6 +1,29 @@
-import React from "react";
+import { Alert, Snackbar } from "@mui/material";
+import React, { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
 
 function Footer2() {
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [involveEmail, setInvolveEmail] = useState("");
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    (await data?.email?.length)
+      ? setSnackbarOpen(true)
+      : setSnackbarOpen(false);
+
+    (await data?.email?.length) ? setInvolveEmail(data) : setInvolveEmail(data);
+  };
+
+  const handleClick = () => {
+    // involveEmail.email.length ? setSnackbarOpen(true) : setSnackbarOpen(false);
+  };
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setSnackbarOpen(false);
+  };
   return (
     <footer className="footer -type-4 bg-dark-2">
       <div className="container">
@@ -9,17 +32,41 @@ function Footer2() {
             <div className="text-17 fw-500 text-white uppercase mb-25">
               GET IN TOUCH
             </div>
-            <form action="post" className="form-single-field -base mt-15">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="form-single-field -base mt-15"
+            >
               <input
+                type="email"
+                {...register("email")}
                 className="py-20 px-30 bg-dark-6 rounded-200 text-white"
-                type="text"
                 placeholder="Your Email"
               />
-              <button className="button -white rounded-full" type="submit">
+              <button
+                className="button -white rounded-full"
+                onClick={handleClick}
+                type="submit"
+              >
                 <div className="icon-arrow-right text-24 text-dark-1"></div>
               </button>
             </form>
           </div>
+          <Snackbar
+            autoHideDuration={4000}
+            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            open={snackbarOpen}
+            onClose={handleSnackbarClose}
+            message=" Thank you for involving to us"
+            key={"bottom" + "center"}
+          >
+            <Alert
+              onClose={handleSnackbarClose}
+              severity="success"
+              sx={{ width: "100%" }}
+            >
+              Thank you for involving to us!
+            </Alert>
+          </Snackbar>
 
           <div className="col-xl-4 col-lg-5 col-md-6">
             <div className="footer-header__logo">

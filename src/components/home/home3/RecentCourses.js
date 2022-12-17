@@ -3,6 +3,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FilterCourses from "../home2/FilterCourses";
 import useClickOutside from "../../Hooks/useClickOutside";
+import { Link } from "react-router-dom";
 
 function RecentCourses() {
   const [courses, setCourses] = useState([]);
@@ -129,10 +130,13 @@ function RecentCourses() {
 
         <div className="row justify-center pt-60 lg:pt-40">
           <div className="col-auto">
-            <a href="#" className="button -icon -purple-3 text-purple-1">
+            <Link
+              to={"/courselist1"}
+              className="button -icon -purple-3 text-purple-1"
+            >
               All Courses
               <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

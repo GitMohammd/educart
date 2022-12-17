@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BecomeInstructor() {
   return (
@@ -20,12 +21,13 @@ function BecomeInstructor() {
               Online learning is as easy and natural as chatting.
             </p>
             <div className="d-inline-block mt-20">
-              <a
+              <Link
+                to={"/BecomeanInstructor"}
                 href="#"
                 className="button -md -outline-purple-1 text-purple-1"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

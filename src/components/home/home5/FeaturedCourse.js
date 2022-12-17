@@ -2,6 +2,7 @@ import React from "react";
 
 function FeaturedCourse({ course }) {
   const {
+    id,
     name,
     img,
     time,
