@@ -9,12 +9,12 @@ function ShopSingleContent() {
   const { getCourseQuantity, increaseCourseQuantity, decreaseCourseQuantity } =
     UseCourseContext();
   const [currentImg, setCurrentImg] = useState(1);
-  const sliderImage = [
-    { url: "/assets/img/shop/single/1.png" },
-    { url: "/assets/img/shop/single/2.png" },
-    { url: "/assets/img/shop/single/3.png" },
-    { url: "/assets/img/shop/single/4.png" },
-  ];
+  // const sliderImage = [
+  //   { url: "/assets/img/shop/single/1.png" },
+  //   { url: "/assets/img/shop/single/2.png" },
+  //   { url: "/assets/img/shop/single/3.png" },
+  //   { url: "/assets/img/shop/single/4.png" },
+  // ];
 
   const CourseQuantity = getCourseQuantity(51);
   console.log(CourseQuantity);

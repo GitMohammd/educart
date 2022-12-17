@@ -3,6 +3,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FilterCourses from "./FilterCourses";
 import useClickOutside from "../../Hooks/useClickOutside";
+import { Link } from "react-router-dom";
 
 function PopulerCourses2() {
   const [courses, setCourses] = useState([]);
@@ -273,107 +274,6 @@ function PopulerCourses2() {
               </div>
             </div>
           </div>
-
-          {/* 
-          <div className="col-lg-auto">
-            <div className="d-flex items-center">
-              <div className="text-dark-1">Filter By:</div>
-
-              <div className="d-flex x-gap-20 items-center pl-15">
-                <div>
-                  <div className="dropdown js-dropdown js-drop1-active">
-                    <Box sx={{ minWidth: 120 }}>
-                      <FormControl
-                        fullWidth
-                        className="dropdown__button text-14"
-                        style={{ height: "100%" }}
-                      >
-                        <InputLabel id="demo-simple-select-label">
-                          Category
-                        </InputLabel>
-                        <Select
-                          // className="-dark-bg-dark-2 -dark-border-white-10"
-                          style={{ color: "black" }}
-                          labelId="demo-simple-select-label"
-                          id="demo-simple-select"
-                          value={cataValue}
-                          label="Category"
-                          onChange={handleCatChange}
-                        >
-                          <MenuItem value={""}>None</MenuItem>
-                          <MenuItem value={"design"}>Design</MenuItem>
-                          <MenuItem value={"illustration"}>
-                            Illustration
-                          </MenuItem>
-                          <MenuItem value={"lifestyle"}>Lifestyle</MenuItem>
-                          <MenuItem value={"business"}>Business</MenuItem>
-                        </Select>
-                      </FormControl>
-                    </Box>
-                  </div>
-                </div>
-                <div>
-                  <div className="dropdown js-dropdown js-drop2-active">
-                    <Box sx={{ minWidth: 120 }}>
-                      <FormControl
-                        fullWidth
-                        className="dropdown__button text-14"
-                        style={{ height: "100%" }}
-                      >
-                        <InputLabel id="demo-simple-select-label">
-                          Rating
-                        </InputLabel>
-                        <Select
-                          className="-dark-bg-dark-2 -dark-border-white-10"
-                          style={{ color: "black" }}
-                          labelId="demo-simple-select-label"
-                          id="demo-simple-select"
-                          value={ratvalue}
-                          label="Rating"
-                          onChange={handleRatChange}
-                        >
-                          <MenuItem value={""}>None</MenuItem>
-                          <MenuItem value={"great"}>Great</MenuItem>
-                          <MenuItem value={"good"}>Good</MenuItem>
-                          <MenuItem value={"medium"}>Medium</MenuItem>
-                          <MenuItem value={"low"}>Low</MenuItem>
-                        </Select>
-                      </FormControl>
-                    </Box>
-                  </div>
-                </div>
-                <div>
-                  <div className="dropdown js-dropdown js-drop3-active">
-                    <Box sx={{ minWidth: 120 }}>
-                      <FormControl
-                        fullWidth
-                        className="dropdown__button text-14"
-                        style={{ height: "100%" }}
-                      >
-                        <InputLabel id="demo-simple-select-label">
-                          Difficulty
-                        </InputLabel>
-                        <Select
-                          className="-dark-bg-dark-2 -dark-border-white-10"
-                          style={{ color: "black" }}
-                          labelId="demo-simple-select-label"
-                          id="demo-simple-select"
-                          value={diffvalue}
-                          label="Difficulty"
-                          onChange={handleDiffChange}
-                        >
-                          <MenuItem value={""}>None</MenuItem>
-                          <MenuItem value={"easy"}>Easy</MenuItem>
-                          <MenuItem value={"medium"}>Medium</MenuItem>
-                          <MenuItem value={"hard"}>Hard</MenuItem>
-                        </Select>
-                      </FormControl>
-                    </Box>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <div className="row y-gap-30 justify-center pt-50">
@@ -384,9 +284,12 @@ function PopulerCourses2() {
 
         <div className="row justify-center pt-60 lg:pt-40">
           <div className="col-auto">
-            <button className="button -md -outline-purple-1 text-purple-1">
+            <Link
+              to={"/courselist1"}
+              className="button -md -outline-purple-1 text-purple-1"
+            >
               View All Courses
-            </button>
+            </Link>
           </div>
         </div>
       </div>

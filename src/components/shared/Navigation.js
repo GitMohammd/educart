@@ -4,6 +4,7 @@ import NavCart from "./NavCart";
 
 function Navigation() {
   const explorBtnRef = useRef();
+  const cartRef = useRef();
   const [isCartOpen, setCartOpen] = useState(false);
   const [isExploreOpen, setExploreOpen] = useState(false);
   const [isSearchOpen, setSearchOpen] = useState(false);
@@ -19,8 +20,17 @@ function Navigation() {
       document.body.removeEventListener("click", closeExplore);
     };
   }, []);
-
-  const handleCartOpen = () => [setCartOpen(!isCartOpen)];
+  useEffect(() => {
+    const closeCart = (e) => {
+      if (!cartRef.current.contains(e.target)) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCart);
+    return () => {
+      document.body.removeEventListener("click", closeCart);
+    };
+  }, []);
 
   return (
     <header
@@ -1421,11 +1431,11 @@ function Navigation() {
                   </div>
                 </div>
 
-                <div className="relative ml-30 xl:ml-20">
+                <div ref={cartRef} className="relative ml-30 xl:ml-20">
                   <button
                     className="d-flex items-center text-white"
                     data-el-toggle=".js-cart-toggle"
-                    onClick={handleCartOpen}
+                    onClick={() => setCartOpen((prev) => !prev)}
                   >
                     <i className="text-20 icon icon-basket"></i>
                   </button>

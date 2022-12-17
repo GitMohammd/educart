@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function FilterCourses({ course }) {
   const {
@@ -17,8 +18,8 @@ function FilterCourses({ course }) {
   return (
     <div className="col-lg-3 col-md-6">
       <div data-anim-child="slide-up delay-2">
-        <a
-          href="courses-single-1.html"
+        <Link
+          to={`/courseSingle1/${id}`}
           className="coursesCard -type-1 -hover-shadow border-light rounded-8"
         >
           <div className="relative">
@@ -95,7 +96,7 @@ function FilterCourses({ course }) {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

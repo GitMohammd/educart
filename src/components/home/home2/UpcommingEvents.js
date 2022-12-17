@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function UpcommingEvents() {
   const sliderRef = useRef(null);
@@ -98,9 +99,7 @@ function UpcommingEvents() {
         >
           <div>
             <Slider {...settings} ref={sliderRef}>
-              <div
-              // className="swiper-slide"
-              >
+              <Link to={"/eventSingle"}>
                 <div
                   data-anim="slide-left delay-2"
                   className="eventCard -type-1"
@@ -139,9 +138,9 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="swiper-slide">
+              <Link to={"/eventSingle"}>
                 <div
                   data-anim="slide-left delay-3"
                   className="eventCard -type-1"
@@ -180,9 +179,9 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="swiper-slide">
+              <Link to={"/eventSingle"}>
                 <div
                   data-anim="slide-left delay-4"
                   className="eventCard -type-1"
@@ -221,9 +220,9 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="swiper-slide">
+              <Link to={"/eventSingle"}>
                 <div
                   data-anim="slide-left delay-5"
                   className="eventCard -type-1"
@@ -262,9 +261,10 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="swiper-slide">
+              <Link to={"/eventSingle"}>
+                {" "}
                 <div
                   data-anim="slide-left delay-6"
                   className="eventCard -type-1"
@@ -303,9 +303,9 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="swiper-slide">
+              <Link to={"/eventSingle"}>
                 <div
                   data-anim="slide-left delay-7"
                   className="eventCard -type-1"
@@ -344,20 +344,20 @@ function UpcommingEvents() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </Slider>
           </div>
         </div>
 
         <div className="row pt-60 lg:pt-40">
           <div className="col-auto">
-            <a
-              href="#"
+            <Link
+              to={"/eventList1"}
               className="button -icon -outline-purple-1 text-purple-1 fw-500"
             >
               View All Events
               <span className="icon-arrow-top-right text-14 ml-10"></span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

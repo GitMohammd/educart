@@ -1,6 +1,13 @@
 import React from "react";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function SingleEventContent() {
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
   return (
     <section class="pt-50 layout-pb-lg">
       <div data-anim-wrap class="container">
@@ -190,8 +197,10 @@ function SingleEventContent() {
                       <div class="comments__img mr-20">
                         <div
                           class="bg-image rounded-full js-lazy"
-                          data-bg="img/avatars/1.png"
-                        ></div>
+                          data-bg="assets/img/avatars/1.png"
+                        >
+                          <img src="assets/img/avatars/1.png" alt="" />
+                        </div>
                       </div>
 
                       <div class="comments__body md:mt-15">
@@ -238,8 +247,10 @@ function SingleEventContent() {
                       <div class="comments__img mr-20">
                         <div
                           class="bg-image rounded-full js-lazy"
-                          data-bg="img/avatars/1.png"
-                        ></div>
+                          data-bg="assets/img/avatars/1.png"
+                        >
+                          <img src="assets/img/avatars/1.png" alt="" />
+                        </div>
                       </div>
 
                       <div class="comments__body md:mt-15">
@@ -367,7 +378,11 @@ function SingleEventContent() {
                 <div>987</div>
               </div>
 
-              <a href="#" class="button -md col-12 -purple-1 text-white mt-30">
+              <a
+                onClick={() => increaseCourseQuantity(01)}
+                href="#"
+                class="button -md col-12 -purple-1 text-white mt-30"
+              >
                 Book Now
               </a>
 

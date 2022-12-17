@@ -1,12 +1,7 @@
 import React from "react";
 
-function Pagination({
-  coursePerPage,
-  currentPage,
-  setCurrentPage,
-  totalCourse,
-  paginate,
-}) {
+function Pagination({ coursePerPage, currentPage, totalCourse, paginate }) {
+  console.log(coursePerPage, currentPage, totalCourse, paginate);
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalCourse / coursePerPage); i++) {
     pageNumbers.push(i);
