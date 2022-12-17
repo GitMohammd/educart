@@ -217,35 +217,56 @@ function PopularCourses8() {
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="dropdown js-dropdown js-diff-active">
+              <div ref={difRef}>
+                <div
+                  onClick={() => setIsDifOpen((prev) => !prev)}
+                  className="dropdown js-dropdown js-diff-active"
+                >
                   <div
                     className="dropdown__button d-flex items-center text-14 rounded-8 px-15 py-10 text-dark-1"
                     data-el-toggle=".js-diff-toggle"
                     data-el-toggle-active=".js-diff-active"
                   >
-                    <span className="js-dropdown-title">Diffiulty</span>
-                    <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                    <span className="js-dropdown-title">
+                      {" "}
+                      {diffvalue === ""
+                        ? "Diffiulty"
+                        : diffvalue.charAt(0).toUpperCase() +
+                          diffvalue.slice(1)}
+                    </span>
+
+                    {isDifOpen ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}
+                    {/* <i className="icon text-9 ml-40 icon-chevron-down"></i> */}
                   </div>
 
-                  <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle">
+                  <div
+                    className={
+                      isDifOpen
+                        ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle -is-el-visible"
+                        : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-diff-toggle "
+                    }
+                  >
                     <div className="text-14 y-gap-15 js-dropdown-list">
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setDiffValue("hard")}>
+                        <button className="d-block js-dropdown-link">
                           Hard
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setDiffValue("meduium")}>
+                        <button className="d-block js-dropdown-link">
                           Meduium
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setDiffValue("easy")}>
+                        <button className="d-block js-dropdown-link">
                           Easy
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
