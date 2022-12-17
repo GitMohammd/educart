@@ -2,12 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useOutletContext } from "react-router-dom";
 import DashboardNavCart from "../../shared/DashboardNavCart";
 
-function Navigation9({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
+function Navigation9({
+  isLeftBar,
+  setLeftBarOpen,
+  setSideBarOpen,
+  isDark,
+  setDark,
+}) {
+  console.log(isLeftBar);
   const location = useLocation();
   const notifBtnRef = useRef();
   const [isNotify, setNotify] = useState(false);
-
-  const [isDark, setDark] = useState(true);
 
   useEffect(() => {
     isDark
