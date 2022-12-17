@@ -1,6 +1,60 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, useLocation, useOutletContext } from "react-router-dom";
+import DashboardNavCart from "../../shared/DashboardNavCart";
 
-function Navigation9() {
+function Navigation9({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
+  const location = useLocation();
+  const notifBtnRef = useRef();
+  const [isNotify, setNotify] = useState(false);
+
+  const [isDark, setDark] = useState(true);
+
+  useEffect(() => {
+    isDark
+      ? document.documentElement.classList.remove("-dark-mode")
+      : document.documentElement.classList.add("-dark-mode");
+  }, [isDark]);
+  useEffect(() => {
+    const notifyOpen = (e) => {
+      if (!notifBtnRef.current.contains(e.target)) {
+        setNotify(false);
+      }
+    };
+    document.addEventListener("mousedown", notifyOpen);
+    return () => {
+      document.removeEventListener("mousedown", notifyOpen);
+    };
+  }, []);
+  const coursesBtnRef = useRef();
+
+  const cartBtnRef = useRef();
+  const [isCartOpen, setCartOpen] = useState(false);
+  useEffect(() => {
+    const cartBtnOpen = (e) => {
+      if (!cartBtnRef.current.contains(e.target)) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", cartBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", cartBtnOpen);
+    };
+  }, []);
+
+  const profileBtnRef = useRef();
+  const [isProfileOpen, setProfileOpen] = useState(false);
+  useEffect(() => {
+    const profileBtnOpen = (e) => {
+      if (!profileBtnRef.current.contains(e.target)) {
+        setProfileOpen(false);
+      }
+    };
+    document.body.addEventListener("click", profileBtnOpen);
+    return () => {
+      document.body.removeEventListener("click", profileBtnOpen);
+    };
+  }, []);
+
   return (
     <header className="header -base-sidebar border-bottom-light bg-white js-header">
       <div className="header__container py-20 px-10">
@@ -8,13 +62,16 @@ function Navigation9() {
           <div className="col-auto">
             <div className="d-flex items-center">
               <div className="header__explore text-dark-1">
-                <button className="d-flex items-center js-dashboard-home-9-sidebar-toggle">
+                <button
+                  onClick={() => setLeftBarOpen(!isLeftBar)}
+                  className="d-flex items-center js-dashboard-home-9-sidebar-toggle"
+                >
                   <i className="icon -dark-text-white icon-explore"></i>
                 </button>
               </div>
 
               <div className="header__logo ml-30 md:ml-20">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img
                     className="-light-d-none"
                     src="/assets/img/general/logo.svg"
@@ -25,7 +82,7 @@ function Navigation9() {
                     src="/assets/img/general/logo-dark.svg"
                     alt="logo"
                   />
-                </a>
+                </Link>
               </div>
 
               <form
@@ -48,13 +105,21 @@ function Navigation9() {
             <div className="d-flex items-center">
               <div className="d-flex items-center sm:d-none">
                 <div>
-                  <button className="js-darkmode-toggle text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light">
+                  <button
+                    onClick={() => setDark(!isDark)}
+                    className="js-darkmode-toggle text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
+                  >
                     <i className="text-light-1 text-24 icon icon-night"></i>
                   </button>
                 </div>
 
                 <div className="relative">
                   <button
+                    onClick={() => {
+                      document.fullscreenElement
+                        ? document.exitFullscreen()
+                        : document.documentElement.requestFullscreen();
+                    }}
                     data-maximize
                     className="text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                   >
@@ -62,15 +127,17 @@ function Navigation9() {
                   </button>
                 </div>
 
-                <div className="relative ">
+                <div ref={cartBtnRef} className="relative ">
                   <button
+                    onClick={() => setCartOpen((prev) => !prev)}
                     className="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-cart-toggle"
                   >
                     <i className="text-20 icon icon-basket"></i>
                   </button>
+                  {isCartOpen ? <DashboardNavCart /> : ""}
 
-                  <div className="toggle-element js-cart-toggle">
+                  {/* <div className="toggle-element js-cart-toggle">
                     <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
                       <div className="px-30 pt-30 pb-10">
                         <div className="row justify-between x-gap-40 pb-20">
@@ -174,12 +241,13 @@ function Navigation9() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="relative">
                   <a
                     href="#"
+                    onClick={() => setSideBarOpen(true)}
                     className="d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-msg-toggle"
                   >
@@ -187,16 +255,23 @@ function Navigation9() {
                   </a>
                 </div>
 
-                <div className="relative">
+                <div ref={notifBtnRef} className="relative">
                   <a
                     href="#"
+                    onClick={() => setNotify((prev) => !prev)}
                     className="d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-notif-toggle"
                   >
                     <i className="text-24 icon icon-notification"></i>
                   </a>
 
-                  <div className="toggle-element js-notif-toggle">
+                  <div
+                    className={
+                      isNotify
+                        ? "toggle-element js-notif-toggle -is-el-visible"
+                        : "toggle-element js-notif-toggle"
+                    }
+                  >
                     <div className="toggle-bottom -notifications bg-white shadow-4 border-light rounded-8 mt-10">
                       <div className="py-30 px-30">
                         <div className="y-gap-40">
@@ -291,8 +366,15 @@ function Navigation9() {
                 </div>
               </div>
 
-              <div className="relative d-flex items-center ml-10">
-                <a href="#" data-el-toggle=".js-profile-toggle">
+              <div
+                ref={profileBtnRef}
+                className="relative d-flex items-center ml-10"
+              >
+                <a
+                  onClick={() => setProfileOpen((prev) => !prev)}
+                  href="#"
+                  data-el-toggle=".js-profile-toggle"
+                >
                   <img
                     className="size-50"
                     src="/assets/img/misc/user-profile.png"
@@ -300,7 +382,13 @@ function Navigation9() {
                   />
                 </a>
 
-                <div className="toggle-element js-profile-toggle">
+                <div
+                  className={
+                    isProfileOpen
+                      ? "toggle-element js-profile-toggle -is-el-visible"
+                      : "toggle-element js-profile-toggle"
+                  }
+                >
                   <div className="toggle-bottom -profile bg-white shadow-4 border-light rounded-8 mt-10">
                     <div className="px-30 py-30">
                       <div className="sidebar -dashboard">

@@ -4,10 +4,17 @@ import Home9TopCatagories from "./Home9TopCatagories";
 import ExploreFeaturedCourses from "../home5/ExploreFeaturedCourses";
 import LetestBook from "./LetestBook";
 
-function Left() {
+function Left({ isLeftBar }) {
   return (
     <div className="content-wrapper js-content-wrapper">
-      <div className="dashboard -home-9 px-0 js-dashboard-home-9">
+      <div
+        className={
+          isLeftBar
+            ? "dashboard -home-9 px-0 js-dashboard-home-9"
+            : "dashboard -home-9 px-0 js-dashboard-home-9 -is-sidebar-hidden"
+        }
+        // className="dashboard -home-9 px-0 js-dashboard-home-9"
+      >
         <div className="dashboard__sidebar -base scroll-bar-1 border-right-light lg:px-30">
           <div className="sidebar -base-sidebar">
             <div className="sidebar__inner">

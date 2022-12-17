@@ -14,7 +14,6 @@ function FeaturedCourse({ course }) {
     previousCost,
     offerCost,
   } = course;
-  console.log(course.name);
   return (
     <div className="swiper-slide">
       <div

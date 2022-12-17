@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function GrowCareer() {
   return (
@@ -28,9 +29,12 @@ function GrowCareer() {
               eiusmod tempor incididunt.
             </p>
             <div className="d-inline-block mt-25">
-              <a href="#" className="button -md -green-1 text-dark-1">
+              <Link
+                to={`/courseList1`}
+                className="button -md -green-1 text-dark-1"
+              >
                 Explore Courses
-              </a>
+              </Link>
             </div>
           </div>
 

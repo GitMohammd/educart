@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BestInstructor8() {
   return (
@@ -18,10 +19,13 @@ function BestInstructor8() {
             </div>
 
             <div class="d-inline-block">
-              <a href="#" class="button -icon -red-2 text-orange-1 mt-30">
+              <Link
+                to={"/InstructorsListv1"}
+                class="button -icon -red-2 text-orange-1 mt-30"
+              >
                 View All İnstructors
                 <i class="icon-arrow-top-right text-13 ml-10"></i>
-              </a>
+              </Link>
             </div>
           </div>
 

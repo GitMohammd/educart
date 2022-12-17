@@ -259,7 +259,6 @@ function DahsboardNavigaton({ isLeftBar, setLeftBarOpen, setSideBarOpen }) {
 
                 <div ref={cartBtnRef} className="relative">
                   <button
-                    // onClick={() => setCartOpen((prev) => !prev)}
                     onClick={() => setCartOpen((prev) => !prev)}
                     className="d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
                     data-el-toggle=".js-cart-toggle"
