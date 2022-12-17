@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function UpcommingEvent6() {
   const sliderRef = useRef(null);
@@ -68,13 +69,13 @@ function UpcommingEvent6() {
           </div>
 
           <div className="col-auto">
-            <a
-              href="#"
+            <Link
+              to={"/eventList1"}
               className="button -icon -purple-3 text-purple-1 -rounded"
             >
               Browse Event
               <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
+            </Link>
           </div>
         </div>
 

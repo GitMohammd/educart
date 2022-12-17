@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function RightCourses7() {
   return (
@@ -16,9 +17,9 @@ function RightCourses7() {
           </div>
 
           <div className="col-auto">
-            <a href="#" className="button -md -white text-dark-1">
+            <Link to={"/courselist1"} className="button -md -white text-dark-1">
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>

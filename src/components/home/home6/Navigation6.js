@@ -1,8 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import NavCart from "../../shared/NavCart";
 
 function Navigation6() {
   const [navColor, setNavColor] = useState(false);
+  const cartRef = useRef();
+  const [isCartOpen, setCartOpen] = useState(false);
+  const [isSearchOpen, setSearchOpen] = useState(false);
+  useEffect(() => {
+    const closeCart = (e) => {
+      if (!cartRef.current.contains(e.target)) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCart);
+    return () => {
+      document.body.removeEventListener("click", closeCart);
+    };
+  }, []);
 
   const changeColor = () => {
     if (window.scrollY >= 1) {
@@ -27,9 +42,9 @@ function Navigation6() {
           <div className="col-auto">
             <div className="header-left d-flex items-center">
               <div className="header__logo pr-30 xl:pr-20 md:pr-0">
-                <a data-barba href="index.html">
-                  <img src="/assets/img/general/logo-black.svg" alt="logo" />
-                </a>
+                <Link to={"/home1"}>
+                  <img src="/assets/img/general/logo-black.svg" alt="logo" />{" "}
+                </Link>
               </div>
 
               <div className="header-menu js-mobile-menu-toggle ">
@@ -37,11 +52,11 @@ function Navigation6() {
                   <div className="mobile-bg js-mobile-bg"></div>
 
                   <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                    <Link class="text-dark-1" to={"/login"}>
+                    <Link className="text-dark-1" to={"/login"}>
                       Log in
                     </Link>
 
-                    <Link class="text-dark-1 ml-30" to={"/register"}>
+                    <Link className="text-dark-1 ml-30" to={"/register"}>
                       Sign Up
                     </Link>
                   </div>
@@ -270,105 +285,141 @@ function Navigation6() {
 
                                 <ul className="mega__list">
                                   <li>
-                                    <Link data-barba to={"/dashboard"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/dashboard"}
+                                    >
                                       Dashboard{" "}
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/myCourses"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/myCourses"}
+                                    >
                                       My Courses
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/bookmarks"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/bookmarks"}
+                                    >
                                       Bookmarks
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/addListing"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/addListing"}
+                                    >
                                       Add Listing
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/reviews"}>
+                                    <Link data-barba to={"/dashboards/reviews"}>
                                       Reviews
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/settings"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/settings"}
+                                    >
                                       Settings
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/administration"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/administration"}
+                                    >
                                       Administration
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/assignment"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/assignment"}
+                                    >
                                       Assignment
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/calender"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/calender"}
+                                    >
                                       Calender
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/singleDashboard"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/singleDashboard"}
+                                    >
                                       Single Dashboard
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/Dictionary"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/Dictionary"}
+                                    >
                                       Dictionary
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/forums"}>
+                                    <Link data-barba to={"/dashboards/forums"}>
                                       Forums
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/grades"}>
+                                    <Link data-barba to={"/dashboards/grades"}>
                                       Grades
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/messages"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/messages"}
+                                    >
                                       Messages
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/Participants"}>
+                                    <Link
+                                      data-barba
+                                      to={"/dashboards/Participants"}
+                                    >
                                       Participants
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <Link data-barba to={"/quiz"}>
+                                    <Link data-barba to={"/dashboards/quiz"}>
                                       Quiz
                                     </Link>
                                   </li>
 
                                   <li>
-                                    <a data-barba href="dshb-survey.html">
+                                    <Link data-barba to={"/dashboards/survey"}>
                                       Survey
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
@@ -1049,11 +1100,18 @@ function Navigation6() {
                   <button
                     className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-search-toggle"
+                    onClick={() => setSearchOpen(true)}
                   >
                     <i className="text-20 icon icon-search"></i>
                   </button>
 
-                  <div className="toggle-element js-search-toggle">
+                  <div
+                    className={
+                      isSearchOpen
+                        ? "toggle-element js-search-toggle -is-el-visible"
+                        : "toggle-element js-search-toggle"
+                    }
+                  >
                     <div className="header-search pt-90 bg-white shadow-4">
                       <div className="container">
                         <div className="header-search__field">
@@ -1067,6 +1125,7 @@ function Navigation6() {
                           <button
                             className="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
                             data-el-toggle=".js-search-toggle"
+                            onClick={() => setSearchOpen(false)}
                           >
                             <img src="/assets/img/menus/close.svg" alt="icon" />
                           </button>
@@ -1116,119 +1175,16 @@ function Navigation6() {
                   </div>
                 </div>
 
-                <div className="relative pl-30 sm:pl-15">
+                <div ref={cartRef} className="relative pl-30 sm:pl-15">
                   <button
                     className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-cart-toggle"
+                    onClick={() => setCartOpen((prev) => !prev)}
                   >
                     <i className="text-20 icon icon-basket"></i>
                   </button>
 
-                  <div className="toggle-element js-cart-toggle">
-                    <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
-                      <div className="px-30 pt-30 pb-10">
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/1.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  The Ultimate Drawing Course Beginner to
-                                  Advanced...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="/assets/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/2.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  User Experience Design Essentials - Adobe XD
-                                  UI UX...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="/assets/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="px-30 pt-20 pb-30 border-top-light">
-                        <div className="d-flex justify-between">
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            Total:
-                          </div>
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            $659
-                          </div>
-                        </div>
-
-                        <div className="row x-gap-20 y-gap-10 pt-30">
-                          <div className="col-sm-6">
-                            <button className="button py-20 -dark-1 text-white -dark-button-white col-12">
-                              View Cart
-                            </button>
-                          </div>
-                          <div className="col-sm-6">
-                            <button className="button py-20 -purple-1 text-white col-12">
-                              Checkout
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {isCartOpen ? <NavCart /> : ""}
                 </div>
 
                 <div className="d-none xl:d-block pl-30 sm:pl-15">

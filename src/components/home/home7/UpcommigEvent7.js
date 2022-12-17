@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function UpcommigEvent7() {
   return (
@@ -19,13 +20,13 @@ function UpcommigEvent7() {
           </div>
 
           <div className="col-auto">
-            <a
-              href="#"
+            <Link
+              to={"/eventList1"}
               className="button -icon -purple-3 -rounded text-purple-1"
             >
               Browse Events
               <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,6 +1,29 @@
-import React from "react";
+import { Alert, Snackbar } from "@mui/material";
+import React, { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
 
 function Footer5() {
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [involveEmail, setInvolveEmail] = useState("");
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    (await data?.email?.length)
+      ? setSnackbarOpen(true)
+      : setSnackbarOpen(false);
+
+    (await data?.email?.length) ? setInvolveEmail(data) : setInvolveEmail(data);
+  };
+
+  const handleClick = () => {
+    // involveEmail.email.length ? setSnackbarOpen(true) : setSnackbarOpen(false);
+  };
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setSnackbarOpen(false);
+  };
   return (
     <footer className="footer -type-1 bg-purple-1">
       <div className="container">
@@ -101,11 +124,33 @@ function Footer5() {
                 <div>We don’t send spam so don’t worry.</div>
                 <form action="post">
                   <div className="form-group">
-                    <input type="text" placeholder="Email..." />
-                    <button type="submit">Submit</button>
+                    <input
+                      type="email"
+                      {...register("email")}
+                      placeholder="Email..."
+                    />
+                    <button onClick={handleClick} type="submit">
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>
+              <Snackbar
+                autoHideDuration={4000}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                open={snackbarOpen}
+                onClose={handleSnackbarClose}
+                message=" Thank you for involving to us"
+                key={"bottom" + "center"}
+              >
+                <Alert
+                  onClose={handleSnackbarClose}
+                  severity="success"
+                  sx={{ width: "100%" }}
+                >
+                  Thank you for involving to us!
+                </Alert>
+              </Snackbar>
             </div>
           </div>
         </div>

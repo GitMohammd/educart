@@ -14,7 +14,7 @@ function FreeAccount() {
                 <div className="col-12">
                   <label
                     className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                    for="email"
+                    htmlFor="email"
                   >
                     Email Address
                   </label>
@@ -23,7 +23,7 @@ function FreeAccount() {
                 <div className="col-12">
                   <label
                     className="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                    for="password"
+                    htmlFor="password"
                   >
                     Password
                   </label>

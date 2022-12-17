@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CoursesTought7() {
   return (
@@ -50,14 +51,21 @@ function CoursesTought7() {
             </p>
             <div className="d-flex x-gap-15 y-gap-15 flex-wrap pt-30">
               <div>
-                <a href="#" className="button -md -dark-1 text-white">
+                <Link
+                  to={"/InstructorsListv1"}
+                  className="button -md -dark-1 text-white"
+                >
                   Browse Teacher
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="#" className="button -md -outline-dark-1 text-dark-1">
+                <Link
+                  to={"/BecomeanInstructor"}
+                  href="#"
+                  className="button -md -outline-dark-1 text-dark-1"
+                >
                   Become a Teacher
-                </a>
+                </Link>
               </div>
             </div>
           </div>

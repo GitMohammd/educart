@@ -1,8 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import NavCart from "../../shared/NavCart";
 
 function Navigation7() {
   const [navColor, setNavColor] = useState(false);
+  const explorBtnRef = useRef();
+  const cartRef = useRef();
+  const [isCartOpen, setCartOpen] = useState(false);
+  const [isExploreOpen, setExploreOpen] = useState(false);
+  const [isSearchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const closeExplore = (e) => {
+      if (!explorBtnRef.current.contains(e.target)) {
+        setExploreOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeExplore);
+    return () => {
+      document.body.removeEventListener("click", closeExplore);
+    };
+  }, []);
+  useEffect(() => {
+    const closeCart = (e) => {
+      if (!cartRef.current.contains(e.target)) {
+        setCartOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCart);
+    return () => {
+      document.body.removeEventListener("click", closeCart);
+    };
+  }, []);
 
   const changeColor = () => {
     if (window.scrollY >= 1) {
@@ -27,313 +56,319 @@ function Navigation7() {
           <div className="col-auto">
             <div className="header-left d-flex items-center">
               <div className="header__logo pr-30 xl:pr-20 md:pr-0">
-                <a data-barba href="index.html">
+                <Link to={"/home1"}>
                   <img src="/assets/img/general/logo-dark.svg" alt="logo" />
-                </a>
+                </Link>
               </div>
 
-              <div className="header__explore xl:d-none">
+              <div ref={explorBtnRef} className="header__explore xl:d-none">
                 <a
                   href="#"
                   className="d-flex items-center"
                   data-el-toggle=".js-explore-toggle"
+                  onClick={() => setExploreOpen((prev) => !prev)}
                 >
                   <i className="icon icon-explore mr-15"></i>
                   Explore
                 </a>
+                {isExploreOpen ? (
+                  <div className="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle -is-el-visible">
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Architecture
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
 
-                <div className="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Architecture
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Business
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Computer Programming
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Data Analysis
                       </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Design<div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Education
                       </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Electronics
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Language
+                        <div className="icon-chevron-right text-11"></div>
                       </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Marketing
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Music Arts
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        Social Science
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a
+                        href="#"
+                        className="d-flex items-center justify-between text-dark-1"
+                      >
+                        Photography & Video
+                        <div className="icon-chevron-right text-11"></div>
+                      </a>
+                      <div className="explore__subnav rounded-8">
+                        <a className="text-dark-1" href="#">
+                          Web Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Graphic Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Design Tools
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          User Experience Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Game Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          3D & Animation
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Fashion Design
+                        </a>
+                        <a className="text-dark-1" href="#">
+                          Interior Design
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-dark-1">
+                        IT & Software
+                      </a>
+                    </div>
+
+                    <div className="explore__item">
+                      <a href="#" className="text-purple-1 underline">
+                        View All Courses
                       </a>
                     </div>
                   </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Business<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Computer Programming
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Data Analysis
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Design<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Education
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Electronics
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Language<div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Marketing
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Music Arts
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      Social Science
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a
-                      href="#"
-                      className="d-flex items-center justify-between text-dark-1"
-                    >
-                      Photography & Video
-                      <div className="icon-chevron-right text-11"></div>
-                    </a>
-                    <div className="explore__subnav rounded-8">
-                      <a className="text-dark-1" href="#">
-                        Web Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Graphic Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Design Tools
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        User Experience Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Game Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        3D & Animation
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Fashion Design
-                      </a>
-                      <a className="text-dark-1" href="#">
-                        Interior Design
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-dark-1">
-                      IT & Software
-                    </a>
-                  </div>
-
-                  <div className="explore__item">
-                    <a href="#" className="text-purple-1 underline">
-                      View All Courses
-                    </a>
-                  </div>
-                </div>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
@@ -427,57 +462,57 @@ function Navigation7() {
 
                               <ul className="mega__list">
                                 <li>
-                                  <a data-barba href="courses-list-1.html">
+                                  <Link data-barba to={"/courselist1"}>
                                     Course List v1
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-2.html">
+                                  <Link data-barba to={"/courselist2"}>
                                     Course List v2
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-3.html">
+                                  <Link data-barba to={"/courselist3"}>
                                     Course List v3
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-4.html">
+                                  <Link data-barba to={"/courselist4"}>
                                     Course List v4
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-5.html">
+                                  <Link data-barba to={"/courselist5"}>
                                     Course List v5
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-6.html">
+                                  <Link data-barba to={"/courselist6"}>
                                     Course List v6
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-7.html">
+                                  <Link data-barba to={"/courselist7"}>
                                     Course List v7
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-8.html">
+                                  <Link data-barba to={"/courselist8"}>
                                     Course List v8
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-list-9.html">
+                                  <Link data-barba to={"/courselist9"}>
                                     Course List v9
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -489,39 +524,39 @@ function Navigation7() {
 
                               <ul className="mega__list">
                                 <li>
-                                  <a data-barba href="courses-single-1.html">
+                                  <Link data-barba to={"/courseSingle1"}>
                                     Course Single v1
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-single-2.html">
+                                  <Link data-barba to={"/courseSingle2"}>
                                     Course Single v2
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-single-3.html">
+                                  <Link data-barba to={"/courseSingle3"}>
                                     Course Single v3
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-single-4.html">
+                                  <Link data-barba to={"/courseSingle4"}>
                                     Course Single v4
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-single-5.html">
+                                  <Link data-barba to={"/courseSingle5"}>
                                     Course Single v5
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="courses-single-6.html">
+                                  <Link data-barba to={"/courseSingle6"}>
                                     Course Single v6
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -533,39 +568,39 @@ function Navigation7() {
 
                               <ul className="mega__list">
                                 <li>
-                                  <a data-barba href="lesson-single-1.html">
+                                  <Link data-barba to={"/LessonPagev1"}>
                                     Lesson Page v1
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="lesson-single-2.html">
+                                  <Link data-barba to={"/LessonPagev2"}>
                                     Lesson Page v2
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="instructors-list-1.html">
+                                  <Link data-barba to={"/InstructorsListv1"}>
                                     Instructors List v1
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="instructors-list-2.html">
+                                  <Link data-barba to={"/InstructorsListv2"}>
                                     Instructors List v2
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="instructors-single.html">
+                                  <Link data-barba to={"/InstructorsSingle"}>
                                     Instructors Single
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="instructors-become.html">
+                                  <Link data-barba to={"/BecomeanInstructor"}>
                                     Become an Instructor
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -577,105 +612,123 @@ function Navigation7() {
 
                               <ul className="mega__list">
                                 <li>
-                                  <a data-barba href="dashboard.html">
-                                    Dashboard
-                                  </a>
+                                  <Link data-barba to={"/dashboards/dashboard"}>
+                                    Dashboard{" "}
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-courses.html">
+                                  <Link data-barba to={"/dashboards/myCourses"}>
                                     My Courses
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-boormarks.html">
+                                  <Link data-barba to={"/dashboards/bookmarks"}>
                                     Bookmarks
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-listing.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/addListing"}
+                                  >
                                     Add Listing
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-reviews.html">
+                                  <Link data-barba to={"/dashboards/reviews"}>
                                     Reviews
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-settings.html">
+                                  <Link data-barba to={"/dashboards/settings"}>
                                     Settings
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-administration.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/administration"}
+                                  >
                                     Administration
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-assignment.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/assignment"}
+                                  >
                                     Assignment
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-calendar.html">
-                                    Calendar
-                                  </a>
+                                  <Link data-barba to={"/dashboards/calender"}>
+                                    Calender
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-dashboard.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/singleDashboard"}
+                                  >
                                     Single Dashboard
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-dictionary.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/Dictionary"}
+                                  >
                                     Dictionary
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-forums.html">
+                                  <Link data-barba to={"/dashboards/forums"}>
                                     Forums
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-grades.html">
+                                  <Link data-barba to={"/dashboards/grades"}>
                                     Grades
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-messages.html">
+                                  <Link data-barba to={"/dashboards/messages"}>
                                     Messages
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-participants.html">
+                                  <Link
+                                    data-barba
+                                    to={"/dashboards/Participants"}
+                                  >
                                     Participants
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-quiz.html">
+                                  <Link data-barba to={"/dashboards/quiz"}>
                                     Quiz
-                                  </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                  <a data-barba href="dshb-survey.html">
+                                  <Link data-barba to={"/dashboards/survey"}>
                                     Survey
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -1347,11 +1400,18 @@ function Navigation7() {
                   <button
                     className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-search-toggle"
+                    onClick={() => setSearchOpen(true)}
                   >
                     <i className="text-20 icon icon-search"></i>
                   </button>
 
-                  <div className="toggle-element js-search-toggle">
+                  <div
+                    className={
+                      isSearchOpen
+                        ? "toggle-element js-search-toggle -is-el-visible"
+                        : "toggle-element js-search-toggle"
+                    }
+                  >
                     <div className="header-search pt-90 bg-white shadow-4">
                       <div className="container">
                         <div className="header-search__field">
@@ -1365,6 +1425,7 @@ function Navigation7() {
                           <button
                             className="d-flex items-center justify-center size-40 rounded-full bg-purple-3"
                             data-el-toggle=".js-search-toggle"
+                            onClick={() => setSearchOpen(false)}
                           >
                             <img src="/assets/img/menus/close.svg" alt="icon" />
                           </button>
@@ -1414,119 +1475,16 @@ function Navigation7() {
                   </div>
                 </div>
 
-                <div className="relative pl-30 sm:pl-15">
+                <div ref={cartRef} className="relative pl-30 sm:pl-15">
                   <button
                     className="d-flex items-center text-dark-1"
                     data-el-toggle=".js-cart-toggle"
+                    onClick={() => setCartOpen((prev) => !prev)}
                   >
                     <i className="text-20 icon icon-basket"></i>
                   </button>
 
-                  <div className="toggle-element js-cart-toggle">
-                    <div className="header-cart bg-white -dark-bg-dark-1 rounded-8">
-                      <div className="px-30 pt-30 pb-10">
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/1.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  The Ultimate Drawing Course Beginner to
-                                  Advanced...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="asstes/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-
-                        <div className="row justify-between x-gap-40 pb-20">
-                          <div className="col">
-                            <div className="row x-gap-10 y-gap-10">
-                              <div className="col-auto">
-                                <img
-                                  src="/assets/img/menus/cart/2.png"
-                                  alt="image"
-                                />
-                              </div>
-
-                              <div className="col">
-                                <div className="text-dark-1 lh-15">
-                                  User Experience Design Essentials - Adobe XD
-                                  UI UX...
-                                </div>
-
-                                <div className="d-flex items-center mt-10">
-                                  <div className="lh-12 fw-500 line-through text-light-1 mr-10">
-                                    $179
-                                  </div>
-                                  <div className="text-18 lh-12 fw-500 text-dark-1">
-                                    $79
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-auto">
-                            <button>
-                              <img
-                                src="/assets/img/menus/close.svg"
-                                alt="icon"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="px-30 pt-20 pb-30 border-top-light">
-                        <div className="d-flex justify-between">
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            Total:
-                          </div>
-                          <div className="text-18 lh-12 text-dark-1 fw-500">
-                            $659
-                          </div>
-                        </div>
-
-                        <div className="row x-gap-20 y-gap-10 pt-30">
-                          <div className="col-sm-6">
-                            <button className="button py-20 -dark-1 text-white -dark-button-white col-12">
-                              View Cart
-                            </button>
-                          </div>
-                          <div className="col-sm-6">
-                            <button className="button py-20 -purple-1 text-white col-12">
-                              Checkout
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {isCartOpen ? <NavCart /> : ""}
                 </div>
 
                 <div className="d-none xl:d-block pl-30 sm:pl-15">
