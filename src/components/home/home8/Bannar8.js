@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Bannar8() {
   return (
@@ -36,12 +37,12 @@ function Bannar8() {
                   </a>
                 </div>
                 <div className="col-auto">
-                  <a
-                    href="#"
+                  <Link
+                    to={"/courselist1"}
                     className="button -md -outline-light-5 text-dark-1"
                   >
                     Find Courses
-                  </a>
+                  </Link>
                 </div>
               </div>
 

@@ -1,6 +1,84 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function PopularCourses8() {
+  const [courses, setCourses] = useState([]);
+  const catRef = useRef();
+  const ratRef = useRef();
+  const difRef = useRef();
+
+  const [isCatOpen, setIscatOpen] = useState(false);
+  const [isRatOpen, setIsRetOpen] = useState(false);
+  const [isDifOpen, setIsDifOpen] = useState(false);
+
+  useEffect(() => {
+    const closeCat = (e) => {
+      if (!catRef.current.contains(e.target)) {
+        setIscatOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeCat);
+    return () => {
+      document.body.removeEventListener("click", closeCat);
+    };
+  }, []);
+  useEffect(() => {
+    const closerat = (e) => {
+      if (!ratRef.current.contains(e.target)) {
+        setIsRetOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closerat);
+    return () => {
+      document.body.removeEventListener("click", closerat);
+    };
+  }, []);
+  useEffect(() => {
+    const closeDiff = (e) => {
+      if (!difRef.current.contains(e.target)) {
+        setIsDifOpen(false);
+      }
+    };
+    document.body.addEventListener("click", closeDiff);
+    return () => {
+      document.body.removeEventListener("click", closeDiff);
+    };
+  }, []);
+  useEffect(() => {
+    fetch("/allCourses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+
+  const [value, setValue] = useState("");
+  const [cataValue, setCataValue] = useState("");
+  const [ratvalue, setRatValue] = useState("");
+  const [diffvalue, setDiffValue] = useState("");
+  const newCourse = courses
+    ?.filter((catacourse) => {
+      return cataValue === ""
+        ? catacourse
+        : catacourse.popular?.includes(cataValue);
+    })
+    .filter((ratcourse) => {
+      return ratvalue === ""
+        ? ratcourse
+        : ratcourse.populerCourseRating?.includes(ratvalue);
+    })
+    .filter((diffcourse) => {
+      return diffvalue === ""
+        ? diffcourse
+        : diffcourse.difficulty?.includes(diffvalue);
+    })
+    .map((course) => {
+      return course;
+    });
+
+  const filteredCourse =
+    newCourse.length > 7 ? newCourse.slice(0, 8) : newCourse;
+
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div data-anim-wrap className="container">
@@ -15,47 +93,66 @@ function PopularCourses8() {
             </div>
 
             <div className="d-flex x-gap-20 text-left pt-60 lg:pt-40">
-              <div>
-                <div className="dropdown js-dropdown js-category-active">
+              <div ref={catRef}>
+                <div
+                  onClick={() => setIscatOpen((prev) => !prev)}
+                  className="dropdown js-dropdown js-category-active"
+                >
                   <div
                     className="dropdown__button d-flex items-center text-14 rounded-8 px-15 py-10 text-dark-1"
                     data-el-toggle=".js-category-toggle"
                     data-el-toggle-active=".js-category-active"
                   >
-                    <span className="js-dropdown-title">Category</span>
-                    <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                    <span className="js-dropdown-title">
+                      {" "}
+                      {cataValue === ""
+                        ? "Category"
+                        : cataValue.charAt(0).toUpperCase() +
+                          cataValue.slice(1)}
+                    </span>
+                    {isCatOpen ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}
                   </div>
 
-                  <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle">
+                  <div
+                    className={
+                      isCatOpen
+                        ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle -is-el-visible"
+                        : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle "
+                    }
+                  >
                     <div className="text-14 y-gap-15 js-dropdown-list">
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button className="d-block js-dropdown-link">
                           Animation
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button className="d-block js-dropdown-link">
                           Design
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button className="d-block js-dropdown-link">
                           Illustration
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button className="d-block js-dropdown-link">
                           Lifestyle
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setCataValue("animation")}>
+                        <button className="d-block js-dropdown-link">
                           Business
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -64,38 +161,57 @@ function PopularCourses8() {
               <div>
                 <div className="dropdown js-dropdown js-rating-active">
                   <div
+                    ref={ratRef}
+                    onClick={() => setIsRetOpen((prev) => !prev)}
                     className="dropdown__button d-flex items-center text-14 rounded-8 px-15 py-10 text-dark-1"
                     data-el-toggle=".js-rating-toggle"
                     data-el-toggle-active=".js-rating-active"
                   >
-                    <span className="js-dropdown-title">Rating</span>
-                    <i className="icon text-9 ml-40 icon-chevron-down"></i>
+                    <span className="js-dropdown-title">
+                      {" "}
+                      {ratvalue === ""
+                        ? "Rating"
+                        : ratvalue.charAt(0).toUpperCase() + ratvalue.slice(1)}
+                    </span>
+                    {isRatOpen ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}
+                    {/* <i className="icon text-9 ml-40 icon-chevron-down"></i> */}
                   </div>
 
-                  <div className="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-rating-toggle">
+                  <div
+                    className={
+                      isRatOpen
+                        ? "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-rating-toggle -is-el-visible"
+                        : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-rating-toggle"
+                    }
+                    button
+                  >
                     <div className="text-14 y-gap-15 js-dropdown-list">
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setRatValue("great")}>
+                        <button className="d-block js-dropdown-link">
                           Great
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setRatValue("good")}>
+                        <button className="d-block js-dropdown-link">
                           Good
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setRatValue("medium")}>
+                        <button className="d-block js-dropdown-link">
                           Medium
-                        </a>
+                        </button>
                       </div>
 
-                      <div>
-                        <a href="#" className="d-block js-dropdown-link">
+                      <div onClick={() => setRatValue("low")}>
+                        <button className="d-block js-dropdown-link">
                           Low
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -824,9 +940,12 @@ function PopularCourses8() {
 
         <div className="row justify-center pt-60 lg:pt-40">
           <div className="col-auto">
-            <a href="#" className="button -md -outline-light-5 text-dark-1">
+            <Link
+              to={"/courselist1"}
+              className="button -md -outline-light-5 text-dark-1"
+            >
               View All Courses
-            </a>
+            </Link>
           </div>
         </div>
       </div>
