@@ -2,6 +2,9 @@
   {
     "id": "01",
     "img": "/assets/img/coursesCards/1.png",
+    "insrtrucotrImg": "/assets/img/team/1.png",
+    "instructorName": "Floyd Miles",
+    "profession": "President of Sales",
     "name": "Learn Figma - UI/UX Design Essential Training",
     "populerCourseRating": "great",
     "popular": "photo",
@@ -24,6 +27,9 @@
   {
     "id": "02",
     "img": "/assets/img/coursesCards/2.png",
+    "insrtrucotrImg": "/assets/img/team/2.png",
+    "instructorName": "Cameron Williamson",
+    "profession": "Web Designer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "animation",
     "catagoryFilter": "art",
@@ -48,6 +54,9 @@
   {
     "id": "03",
     "img": "/assets/img/coursesCards/3.png",
+    "insrtrucotrImg": "/assets/img/team/3.png",
+    "instructorName": "Brooklyn Simmons",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "animation",
     "catagoryFilter": "art",
@@ -69,6 +78,9 @@
   {
     "id": "04",
     "img": "/assets/img/coursesCards/4.png",
+    "insrtrucotrImg": "/assets/img/team/4.png",
+    "instructorName": "Wade Warren",
+    "profession": "Marketing Coordinator",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "illustration",
     "catagoryFilter": "softwareDevelopment",
@@ -90,6 +102,9 @@
   {
     "id": "05",
     "img": "/assets/img/coursesCards/5.png",
+    "insrtrucotrImg": "/assets/img/team/5.png",
+    "instructorName": "Bessie Cooper",
+    "profession": "Marketing Coordinator",
     "name": "Photography Masterclass: A Complete Guide to Photography",
     "popular": "design",
     "catagoryFilter": "music",
@@ -112,6 +127,9 @@
   {
     "id": "06",
     "img": "/assets/img/coursesCards/6.png",
+    "insrtrucotrImg": "/assets/img/team/6.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Instagram Marketing 2021: Complete Guide To Instagram ",
     "popular": "photo",
     "catagoryFilter": "photography",
@@ -133,6 +151,9 @@
   {
     "id": "07",
     "img": "/assets/img/coursesCards/7.png",
+    "insrtrucotrImg": "/assets/img/team/7.png",
+    "instructorName": "Cody Fisher",
+    "profession": "Web Designer",
     "name": "Complete Blender Creator: Learn 3D Modelling for ",
     "popular": "illustration",
     "catagoryFilter": "photography",
@@ -155,6 +176,9 @@
   {
     "id": "08",
     "img": "/assets/img/coursesCards/8.png",
+    "insrtrucotrImg": "/assets/img/team/8.png",
+    "instructorName": "Theresa Webb",
+    "profession": "Web Designer",
     "name": "The Complete Financial Analyst Training & Investing Course",
     "popular": "business",
     "catagoryFilter": "photography",
@@ -176,6 +200,8 @@
   {
     "id": "09",
     "img": "/assets/img/coursesCards/9.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": " Photography Masterclass: A Complete Guide to Photography",
     "popular": "photo",
     "catagoryFilter": "materialDesign",
@@ -197,6 +223,8 @@
   {
     "id": "10",
     "img": "/assets/img/coursesCards/10.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "business",
     "catagoryFilter": "materialDesign",
@@ -218,6 +246,8 @@
   {
     "id": "11",
     "img": "/assets/img/coursesCards/11.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -239,6 +269,8 @@
   {
     "id": "12",
     "img": "/assets/img/coursesCards/12.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -260,6 +292,8 @@
   {
     "id": "13",
     "img": "/assets/img/coursesCards/1.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Learn Figma - UI/UX Design Essential Training",
     "popular": "design",
     "catagoryFilter": "exercise",
@@ -282,6 +316,8 @@
   {
     "id": "14",
     "img": "/assets/img/coursesCards/2.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -307,6 +343,8 @@
   {
     "id": "15",
     "img": "/assets/img/coursesCards/3.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -330,6 +368,8 @@
   {
     "id": "16",
     "img": "/assets/img/coursesCards/4.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "writing",
     "catagoryFilter": "softwareDevelopment",
@@ -353,6 +393,8 @@
   {
     "id": "17",
     "img": "/assets/img/coursesCards/5.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Photography Masterclass: A Complete Guide to Photography",
     "popular": "writing",
     "catagoryFilter": "music",
@@ -376,6 +418,8 @@
   {
     "id": "18",
     "img": "/assets/img/coursesCards/6.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Instagram Marketing 2021: Complete Guide To Instagram ",
     "popular": "lifeStyle",
     "catagoryFilter": "photography",
@@ -398,6 +442,8 @@
   {
     "id": "19",
     "img": "/assets/img/coursesCards/7.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Blender Creator: Learn 3D Modelling for ",
     "popular": "illustration",
     "catagoryFilter": "photography",
@@ -420,6 +466,8 @@
   {
     "id": "20",
     "img": "/assets/img/coursesCards/8.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Complete Financial Analyst Training & Investing Course",
     "popular": "business",
     "catagoryFilter": "photography",
@@ -442,6 +490,8 @@
   {
     "id": "21",
     "img": "/assets/img/coursesCards/9.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": " Photography Masterclass: A Complete Guide to Photography",
     "popular": "writing",
     "catagoryFilter": "exercise",
@@ -464,6 +514,8 @@
   {
     "id": "22",
     "img": "/assets/img/coursesCards/10.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -486,6 +538,8 @@
   {
     "id": "23",
     "img": "/assets/img/coursesCards/11.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -508,6 +562,8 @@
   {
     "id": "24",
     "img": "/assets/img/coursesCards/12.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -530,6 +586,8 @@
   {
     "id": "25",
     "img": "/assets/img/coursesCards/1.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Learn Figma - UI/UX Design Essential Training",
     "popular": "design",
     "catagoryFilter": "exercise",
@@ -552,6 +610,8 @@
   {
     "id": "26",
     "img": "/assets/img/coursesCards/2.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -576,6 +636,8 @@
   {
     "id": "27",
     "img": "/assets/img/coursesCards/3.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -598,6 +660,8 @@
   {
     "id": "28",
     "img": "/assets/img/coursesCards/4.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "illustration",
     "catagoryFilter": "softwareDevelopment",
@@ -620,6 +684,8 @@
   {
     "id": "29",
     "img": "/assets/img/coursesCards/5.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Photography Masterclass: A Complete Guide to Photography",
     "popular": "design",
     "catagoryFilter": "music",
@@ -642,6 +708,8 @@
   {
     "id": "30",
     "img": "/assets/img/coursesCards/6.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Instagram Marketing 2021: Complete Guide To Instagram ",
     "popular": "lifeStyle",
     "catagoryFilter": "photography",
@@ -663,6 +731,8 @@
   {
     "id": "31",
     "img": "/assets/img/coursesCards/7.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Blender Creator: Learn 3D Modelling for ",
     "popular": "illustration",
     "catagoryFilter": "photography",
@@ -685,6 +755,8 @@
   {
     "id": "32",
     "img": "/assets/img/coursesCards/8.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Complete Financial Analyst Training & Investing Course",
     "popular": "business",
     "catagoryFilter": "photography",
@@ -707,6 +779,8 @@
   {
     "id": "33",
     "img": "/assets/img/coursesCards/9.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": " Photography Masterclass: A Complete Guide to Photography",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -729,6 +803,8 @@
   {
     "id": "34",
     "img": "/assets/img/coursesCards/10.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -751,6 +827,8 @@
   {
     "id": "35",
     "img": "/assets/img/coursesCards/11.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -773,6 +851,8 @@
   {
     "id": "36",
     "img": "/assets/img/coursesCards/12.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -795,6 +875,8 @@
   {
     "id": "37",
     "img": "/assets/img/coursesCards/1.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Learn Figma - UI/UX Design Essential Training",
     "popular": "design",
     "catagoryFilter": "exercise",
@@ -816,6 +898,8 @@
   {
     "id": "38",
     "img": "/assets/img/coursesCards/2.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -840,6 +924,8 @@
   {
     "id": "39",
     "img": "/assets/img/coursesCards/3.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "lifeStyle",
     "catagoryFilter": "art",
@@ -861,6 +947,8 @@
   {
     "id": "40",
     "img": "/assets/img/coursesCards/4.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "illustration",
 
@@ -884,6 +972,8 @@
   {
     "id": "41",
     "img": "/assets/img/coursesCards/5.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Photography Masterclass: A Complete Guide to Photography",
     "popular": "design",
     "populerCourseRating": "good",
@@ -906,6 +996,8 @@
   {
     "id": "42",
     "img": "/assets/img/coursesCards/6.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Instagram Marketing 2021: Complete Guide To Instagram ",
     "popular": "lifeStyle",
     "catagoryFilter": "photography",
@@ -927,6 +1019,8 @@
   {
     "id": "43",
     "img": "/assets/img/coursesCards/7.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Blender Creator: Learn 3D Modelling for ",
     "popular": "illustration",
     "catagoryFilter": "photography",
@@ -950,6 +1044,8 @@
   {
     "id": "44",
     "img": "/assets/img/coursesCards/8.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Complete Financial Analyst Training & Investing Course",
     "popular": "business",
     "catagoryFilter": "photography",
@@ -973,6 +1069,8 @@
   {
     "id": "45",
     "img": "/assets/img/coursesCards/9.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": " Photography Masterclass: A Complete Guide to Photography",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -996,6 +1094,8 @@
   {
     "id": "46",
     "img": "/assets/img/coursesCards/10.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Complete Python Bootcamp From Zero to Hero in Python",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1019,6 +1119,8 @@
   {
     "id": "47",
     "img": "/assets/img/coursesCards/11.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1043,6 +1145,8 @@
   {
     "id": "48",
     "img": "/assets/img/coursesCards/12.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1066,6 +1170,8 @@
   {
     "id": "49",
     "img": "/assets/img/coursesCards/11.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Angular - The Complete Guide (2022 Edition)",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1089,6 +1195,8 @@
   {
     "id": "50",
     "img": "/assets/img/coursesCards/12.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "The Ultimate Drawing Course Beginner to Advanced",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1113,6 +1221,8 @@
   {
     "id": "51",
     "img": "/assets/img/shop/products/1.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Wall Clock Brown",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1135,6 +1245,8 @@
   {
     "id": "52",
     "img": "/assets/img/shop/products/2.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Wall Clock Brown",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1158,6 +1270,8 @@
   {
     "id": "53",
     "img": "/assets/img/shop/products/3.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Wall Clock Brown",
     "popular": "business",
     "catagoryFilter": "exercise",
@@ -1181,6 +1295,8 @@
   {
     "id": "54",
     "img": "/assets/img/shop/products/4.png",
+    "instructorName": "Albert Flores",
+    "profession": "Dog Trainer",
     "name": "Wall Clock Brown",
     "popular": "business",
     "catagoryFilter": "exercise",

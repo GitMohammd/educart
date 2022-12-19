@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Pagination from "../../courseList/courseList1/Pagination";
 
 function InstructionV1Content() {
   const catRef = useRef();
@@ -8,9 +9,13 @@ function InstructionV1Content() {
   const [isCatOpen, setIscatOpen] = useState(false);
   const [isRatOpen, setIsRetOpen] = useState(false);
   const [courses, setCourses] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [coursePerPage] = useState(8);
+
+  console.log(courses);
 
   useEffect(() => {
-    fetch("/allInstructor.json")
+    fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -52,6 +57,13 @@ function InstructionV1Content() {
     .map((course) => {
       return course;
     });
+  const indexOfLastCourse = currentPage * coursePerPage;
+  const indexOfFirstCourse = indexOfLastCourse - coursePerPage;
+
+  // const filteredCourse =
+  //   newCourse.length > 7 ? newCourse.slice(0, 8) : newCourse;
+  const currentCourse = newCourse.slice(indexOfFirstCourse, indexOfLastCourse);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <section className="layout-pt-md layout-pb-lg">
@@ -109,31 +121,33 @@ function InstructionV1Content() {
                         : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle "
                     }
                   >
-                    <div class="text-14 y-gap-15 js-dropdown-list">
+                    <div className="text-14 y-gap-15 js-dropdown-list">
                       <div onClick={() => setCataValue("animation")}>
-                        <button class="d-block js-dropdown-link">
+                        <button className="d-block js-dropdown-link">
                           Animation
                         </button>
                       </div>
 
                       <div onClick={() => setCataValue("design")}>
-                        <button class="d-block js-dropdown-link">Design</button>
+                        <button className="d-block js-dropdown-link">
+                          Design
+                        </button>
                       </div>
 
                       <div onClick={() => setCataValue("illustration")}>
-                        <button class="d-block js-dropdown-link">
+                        <button className="d-block js-dropdown-link">
                           Illustration
                         </button>
                       </div>
 
                       <div onClick={() => setCataValue("lifestyle")}>
-                        <button class="d-block js-dropdown-link">
+                        <button className="d-block js-dropdown-link">
                           Lifestyle
                         </button>
                       </div>
 
                       <div onClick={() => setCataValue("business")}>
-                        <button class="d-block js-dropdown-link">
+                        <button className="d-block js-dropdown-link">
                           Business
                         </button>
                       </div>
@@ -171,21 +185,29 @@ function InstructionV1Content() {
                         : "toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle"
                     }
                   >
-                    <div class="text-14 y-gap-15 js-dropdown-list">
+                    <div className="text-14 y-gap-15 js-dropdown-list">
                       <div onClick={() => setRatValue("great")}>
-                        <button class="d-block js-dropdown-link">Great</button>
+                        <button className="d-block js-dropdown-link">
+                          Great
+                        </button>
                       </div>
 
                       <div onClick={() => setRatValue("good")}>
-                        <button class="d-block js-dropdown-link">Good</button>
+                        <button className="d-block js-dropdown-link">
+                          Good
+                        </button>
                       </div>
 
                       <div onClick={() => setRatValue("medium")}>
-                        <button class="d-block js-dropdown-link">Medium</button>
+                        <button className="d-block js-dropdown-link">
+                          Medium
+                        </button>
                       </div>
 
                       <div onClick={() => setRatValue("low")}>
-                        <button class="d-block js-dropdown-link">Low</button>
+                        <button className="d-block js-dropdown-link">
+                          Low
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -196,278 +218,51 @@ function InstructionV1Content() {
         </div>
 
         <div className="row y-gap-30">
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-2"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/1.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Floyd Miles</h4>
-                <p className="teamCard__text">President of Sales</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
+          {currentCourse.map((course) => (
+            <div key={course.id} className="col-lg-3 col-md-6">
+              <div
+                data-anim-child="slide-left delay-2"
+                className="teamCard -type-1"
+              >
+                <div className="teamCard__image">
+                  <img
+                    src={
+                      course.insrtrucotrImg ? course.insrtrucotrImg : course.img
+                    }
+                  />
+                </div>
+                <div className="teamCard__content">
+                  <h4 className="teamCard__title">{course.instructor}</h4>
+                  <p className="teamCard__text">{course.profession}</p>
+                  <div className="teamCard-info">
+                    <div className="d-flex items-center">
+                      <div className="icon-star text-yellow-1 text-14"></div>
+                      <div className="text-13 lh-1 ml-8">4.5</div>
+                    </div>
 
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
+                    <div className="d-flex items-center">
+                      <div className="icon-person-3 text-14"></div>
+                      <div className="text-13 lh-1 ml-8">692 Students</div>
+                    </div>
 
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
+                    <div className="d-flex items-center">
+                      <div className="icon-play text-14"></div>
+                      <div className="text-13 lh-1 ml-8">15 Course</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-3"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/2.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Cameron Williamson</h4>
-                <p className="teamCard__text">Web Designer</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-4"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/3.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Brooklyn Simmons</h4>
-                <p className="teamCard__text">Dog Trainer</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-5"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/4.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Wade Warren</h4>
-                <p className="teamCard__text">Marketing Coordinator</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-6"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/5.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Bessie Cooper</h4>
-                <p className="teamCard__text">Marketing Coordinator</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-7"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/6.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Albert Flores</h4>
-                <p className="teamCard__text">Dog Trainer</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-8"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/7.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Cody Fisher</h4>
-                <p className="teamCard__text">Web Designer</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-9"
-              className="teamCard -type-1"
-            >
-              <div className="teamCard__image">
-                <img src="/assets/img/team/8.png" alt="image" />
-              </div>
-              <div className="teamCard__content">
-                <h4 className="teamCard__title">Theresa Webb</h4>
-                <p className="teamCard__text">President of Sales</p>
-                <div className="teamCard-info">
-                  <div className="d-flex items-center">
-                    <div className="icon-star text-yellow-1 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">4.5</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-person-3 text-14"></div>
-                    <div className="text-13 lh-1 ml-8">692 Students</div>
-                  </div>
-
-                  <div className="d-flex items-center">
-                    <div className="icon-play text-14"></div>
-                    <div className="text-13 lh-1 ml-8">15 Course</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div className="row justify-center pt-60 lg:pt-40">
-          <div className="col-auto">
-            <div className="pagination -buttons">
-              <button className="pagination__button -prev">
-                <div className="icon icon-chevron-left"></div>
-              </button>
-
-              <div className="pagination__count">
-                <a href="#">1</a>
-                <a className="-count-is-active" href="#">
-                  2
-                </a>
-                <a href="#">3</a>
-                <span>...</span>
-                <a href="#">67</a>
-              </div>
-
-              <button className="pagination__button -next">
-                <div className="icon icon-chevron-right"></div>
-              </button>
-            </div>
-          </div>
-        </div>
+        <Pagination
+          coursePerPage={coursePerPage}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalCourse={newCourse.length}
+          paginate={paginate}
+        />
       </div>
     </section>
   );

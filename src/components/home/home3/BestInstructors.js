@@ -262,9 +262,12 @@ function BestInstructors() {
           <div className="col-auto">
             <p className="lh-1">
               Want to help people learn, grow and achieve more in life?{" "}
-              <a className="text-purple-1 underline" href="#">
+              <Link
+                to={"/BecomeanInstructor"}
+                className="text-purple-1 underline"
+              >
                 Become an instructor
-              </a>
+              </Link>
             </p>
           </div>
         </div>

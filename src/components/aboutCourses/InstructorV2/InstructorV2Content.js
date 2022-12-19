@@ -1,6 +1,255 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Checkbox } from "@mui/material";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 function InstructorV2Content() {
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    fetch("/allCourses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+
+  const [populerCourse, setPopulerCourse] = useState("");
+  const [catagoryfilterItems, setCatagoryFilterItems] = useState({
+    catagory: [],
+  });
+  const [ratingfilterItems, setRatingFilterItems] = useState({
+    rating: [],
+  });
+  const [instructorfilterItems, setInstructorCatagoryFilterItems] = useState({
+    instructor: [],
+  });
+  const [pricefilterItems, setPriceFilterItems] = useState({
+    price: [],
+  });
+  const [lavelfilterItems, setLavelFilterItems] = useState({
+    lavel: [],
+  });
+  const [languagefilterItems, setLanguageFilterItems] = useState({
+    language: [],
+  });
+  const [durationfilterItems, setDurationLanguageFilterItems] = useState({
+    duration: [],
+  });
+
+  const handlePopulerCourseChange = (event) => {
+    setPopulerCourse(event.target.value);
+  };
+
+  const handleCatagoryChange = (e) => {
+    const { value, checked } = e.target;
+    const { catagory } = catagoryfilterItems;
+    if (checked) {
+      setCatagoryFilterItems({
+        catagory: [...catagory, value],
+      });
+    } else {
+      setCatagoryFilterItems({
+        catagory: catagory.filter((e) => e !== value),
+      });
+    }
+  };
+  const handleRatingChange = (e) => {
+    const { value, checked } = e.target;
+    const { rating } = ratingfilterItems;
+    if (checked) {
+      setRatingFilterItems({
+        rating: [...rating, value],
+      });
+    } else {
+      setRatingFilterItems({
+        rating: rating.filter((e) => e !== value),
+      });
+    }
+  };
+  const handleinstructorChange = (e) => {
+    const { value, checked } = e.target;
+    const { instructor } = instructorfilterItems;
+    if (checked) {
+      setInstructorCatagoryFilterItems({
+        instructor: [...instructor, value],
+      });
+    } else {
+      setInstructorCatagoryFilterItems({
+        instructor: instructor.filter((e) => e !== value),
+      });
+    }
+  };
+  const handlePriceChange = (e) => {
+    const { value, checked } = e.target;
+    const { price } = pricefilterItems;
+    if (checked) {
+      setPriceFilterItems({
+        price: [...price, value],
+      });
+    } else {
+      setPriceFilterItems({
+        price: price.filter((e) => e !== value),
+      });
+    }
+  };
+  const handleLevelChange = (e) => {
+    const { value, checked } = e.target;
+    const { lavel } = lavelfilterItems;
+    if (checked) {
+      setLavelFilterItems({
+        lavel: [...lavel, value],
+      });
+    } else {
+      setLavelFilterItems({
+        lavel: lavel.filter((e) => e !== value),
+      });
+    }
+  };
+  const handLanguageChange = (e) => {
+    const { value, checked } = e.target;
+    const { language } = languagefilterItems;
+    if (checked) {
+      setLanguageFilterItems({
+        language: [...language, value],
+      });
+    } else {
+      setLanguageFilterItems({
+        language: language.filter((e) => e !== value),
+      });
+    }
+  };
+  const handDurationChange = (e) => {
+    const { value, checked } = e.target;
+    const { duration } = durationfilterItems;
+    if (checked) {
+      setDurationLanguageFilterItems({
+        duration: [...duration, value],
+      });
+    } else {
+      setDurationLanguageFilterItems({
+        duration: duration.filter((e) => e !== value),
+      });
+    }
+  };
+
+  const filterPopulerCourse = courses?.filter((popcourse) => {
+    return populerCourse === ""
+      ? popcourse
+      : popcourse.popular?.includes(populerCourse);
+  });
+
+  const FilterCatagoryCourses =
+    catagoryfilterItems.catagory.length > 0
+      ? catagoryfilterItems.catagory
+          ?.map((catagoryItems) => {
+            return filterPopulerCourse.filter((course) => {
+              return course.catagoryFilter.includes(catagoryItems);
+            });
+          })
+          .flat()
+      : filterPopulerCourse;
+
+  const FilterRatingCourses =
+    ratingfilterItems.rating.length > 0
+      ? ratingfilterItems.rating
+          ?.map((ratingItems) => {
+            return FilterCatagoryCourses?.filter((course) => {
+              return course?.ratings?.includes(ratingItems);
+            });
+          })
+          .flat()
+      : FilterCatagoryCourses;
+
+  const FilterInstructorCourses =
+    instructorfilterItems.instructor.length > 0
+      ? instructorfilterItems.instructor
+          ?.map((instructorItem) => {
+            return FilterRatingCourses.filter((course) => {
+              return course.instructor.includes(instructorItem);
+            });
+          })
+          .flat()
+      : FilterRatingCourses;
+
+  const FilterPriceCourses =
+    pricefilterItems.price.length > 0
+      ? pricefilterItems.price
+          ?.map((priceItems) => {
+            return FilterInstructorCourses.filter((course) => {
+              return course.price.includes(priceItems);
+            });
+          })
+          .flat()
+      : FilterInstructorCourses;
+
+  const FilterLavelCourses =
+    lavelfilterItems.lavel.length > 0
+      ? lavelfilterItems.lavel
+          ?.map((lavelItems) => {
+            return FilterPriceCourses.filter((course) => {
+              return course.lavel.includes(lavelItems);
+            });
+          })
+          .flat()
+      : FilterPriceCourses;
+
+  const FilterLanguageCourses =
+    languagefilterItems.language.length > 0
+      ? languagefilterItems.language
+          ?.map((languageItems) => {
+            return FilterLavelCourses.filter((course) => {
+              return course.language.includes(languageItems);
+            });
+          })
+          .flat()
+      : FilterLavelCourses;
+
+  const FilterDurationCourses =
+    durationfilterItems.duration.length > 0
+      ? durationfilterItems.duration
+          ?.map((durationItems) => {
+            return FilterLanguageCourses.filter((course) => {
+              return course.duration.includes(durationItems);
+            });
+          })
+          .flat()
+      : FilterLanguageCourses;
+
+  const filterIds = FilterDurationCourses.map((rating) => {
+    return rating.id;
+  });
+
+  const findUniqeId = [...new Set(filterIds)];
+
+  const filteredCoursesbyid = findUniqeId.map((filterId) => {
+    return courses.find((cor) => cor.id === filterId);
+  });
+
+  console.log(filteredCoursesbyid);
+
+  const filteredCourses = filteredCoursesbyid;
+
+  const [paginationShowCourse, setPaginationShowCourse] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [coursePerPage] = useState(12);
+
+  // Get Current Course
+
+  const indexOfLastCourse = currentPage * coursePerPage;
+  const indexOfFirstCourse = indexOfLastCourse - coursePerPage;
+
+  const currentCourse = filteredCourses.slice(
+    indexOfFirstCourse,
+    indexOfLastCourse
+  );
+  // change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <section className="layout-pt-md layout-pb-lg">
       <div data-anim-wrap className="container">
@@ -9,338 +258,329 @@ function InstructorV2Content() {
             <div data-anim="slide-up delay-2" className="sidebar -courses">
               <div className="sidebar__item">
                 <div className="accordion js-accordion">
-                  <div className="accordion__item">
-                    <div className="accordion__button items-center">
-                      <h5 className="sidebar__title">Category</h5>
+                  <div>
+                    <Accordion defaultExpanded={true}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <h5 className="sidebar__title">Category</h5>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography component={"span"}>
+                          <div className="accordion__content__inner">
+                            <div className="">
+                              <div className="sidebar-checkbox__item">
+                                <Checkbox
+                                  color="default"
+                                  onChange={handleCatagoryChange}
+                                  value={"art"}
+                                  lable={"art"}
+                                />
+                                Art
+                                <div className="sidebar-checkbox__count">
+                                  (18)
+                                </div>
+                              </div>
 
-                      <div className="accordion__icon">
-                        <div className="icon icon-chevron-down"></div>
-                        <div className="icon icon-chevron-up"></div>
-                      </div>
-                    </div>
+                              <div className="sidebar-checkbox__item">
+                                <Checkbox
+                                  color="default"
+                                  onChange={handleCatagoryChange}
+                                  value={"exercise"}
+                                />
+                                Exercise
+                                <div className="sidebar-checkbox__count">
+                                  (12)
+                                </div>
+                              </div>
 
-                    <div className="accordion__content">
-                      <div className="accordion__content__inner">
-                        <div className="sidebar-checkbox">
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__item">
+                                <Checkbox
+                                  color="default"
+                                  onChange={handleCatagoryChange}
+                                  value={"softwareDevelopment"}
+                                />
+                                Software Development
+                                <div className="sidebar-checkbox__count">
+                                  (23)
+                                </div>
+                              </div>
+
+                              <div className="sidebar-checkbox__item">
+                                <div className="sidebar-checkbox__item">
+                                  <Checkbox
+                                    color="default"
+                                    onChange={handleCatagoryChange}
+                                    value={"music"}
+                                  />
+                                  Music
+                                  <div className="sidebar-checkbox__count">
+                                    (67)
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="sidebar-checkbox__item">
+                                <div className="sidebar-checkbox__item">
+                                  <Checkbox
+                                    color="default"
+                                    onChange={handleCatagoryChange}
+                                    value={"materialDesign"}
+                                  />
+                                  Material Design
+                                  <div className="sidebar-checkbox__count">
+                                    (34)
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="sidebar-checkbox__item">
+                                <div className="sidebar-checkbox__item">
+                                  <Checkbox
+                                    color="default"
+                                    onChange={handleCatagoryChange}
+                                    value={"photography"}
+                                  />
+                                  Photography
+                                  <div className="sidebar-checkbox__count">
+                                    (12)
+                                  </div>
+                                </div>
                               </div>
                             </div>
 
-                            <div className="sidebar-checkbox__title">Art</div>
-                            <div className="sidebar-checkbox__count">(18)</div>
+                            {/* <div className="sidebar__more mt-15">
+                        <a
+                          href="#"
+                          className="text-14 fw-500 underline text-purple-1"
+                        >
+                          Show more
+                        </a>
+                      </div> */}
                           </div>
-
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
-                              </div>
-                            </div>
-
-                            <div className="sidebar-checkbox__title">
-                              Exercise
-                            </div>
-                            <div className="sidebar-checkbox__count">(12)</div>
-                          </div>
-
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
-                              </div>
-                            </div>
-
-                            <div className="sidebar-checkbox__title">
-                              Software Development
-                            </div>
-                            <div className="sidebar-checkbox__count">(23)</div>
-                          </div>
-
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
-                              </div>
-                            </div>
-
-                            <div className="sidebar-checkbox__title">Music</div>
-                            <div className="sidebar-checkbox__count">(67)</div>
-                          </div>
-
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
-                              </div>
-                            </div>
-
-                            <div className="sidebar-checkbox__title">
-                              Material Design
-                            </div>
-                            <div className="sidebar-checkbox__count">(34)</div>
-                          </div>
-
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
-                              </div>
-                            </div>
-
-                            <div className="sidebar-checkbox__title">
-                              Photography
-                            </div>
-                            <div className="sidebar-checkbox__count">(12)</div>
-                          </div>
-                        </div>
-
-                        <div className="sidebar__more mt-15">
-                          <a
-                            href="#"
-                            className="text-14 fw-500 underline text-purple-1"
-                          >
-                            Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                        </Typography>
+                      </AccordionDetails>
+                    </Accordion>
                   </div>
                 </div>
               </div>
 
               <div className="sidebar__item">
                 <div className="accordion js-accordion">
-                  <div className="accordion__item">
-                    <div className="accordion__button items-center">
+                  <Accordion defaultExpanded={true}>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel2a-content"
+                      id="panel2a-header"
+                    >
                       <h5 className="sidebar__title">Ratings</h5>
-
-                      <div className="accordion__icon">
-                        <div className="icon icon-chevron-down"></div>
-                        <div className="icon icon-chevron-up"></div>
-                      </div>
-                    </div>
-
-                    <div className="accordion__content">
-                      <div className="accordion__content__inner">
-                        <div className="sidebar-checkbox">
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-radio mr-10">
-                              <div className="radio">
-                                <input
-                                  type="radio"
-                                  name="radio"
-                                  checked="checked"
-                                />
-                                <div className="radio__mark">
-                                  <div className="radio__icon"></div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography component={"span"}>
+                        <div className="accordion__content__inner">
+                          <div className="">
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                icon={<CheckCircleOutlineIcon />}
+                                checkedIcon={<CheckCircleIcon />}
+                                onChange={handleRatingChange}
+                                value={4}
+                              />
+                              <div className="sidebar-checkbox__title d-flex items-center">
+                                <div className="d-flex x-gap-5 pr-10">
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
                                 </div>
+                                4.5 &amp; up
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (1991)
                               </div>
                             </div>
-                            <div className="sidebar-checkbox__title d-flex items-center">
-                              <div className="d-flex x-gap-5 pr-10">
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                              </div>
-                              4.5 &amp; up
-                            </div>
-                            <div className="sidebar-checkbox__count">
-                              (1991)
-                            </div>
-                          </div>
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-radio mr-10">
-                              <div className="radio">
-                                <input
-                                  type="radio"
-                                  name="radio"
-                                  checked="checked"
-                                />
-                                <div className="radio__mark">
-                                  <div className="radio__icon"></div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                icon={<CheckCircleOutlineIcon />}
+                                checkedIcon={<CheckCircleIcon />}
+                                onChange={handleRatingChange}
+                                value={4}
+                              />
+                              <div className="sidebar-checkbox__title d-flex items-center">
+                                <div className="d-flex x-gap-5 pr-10">
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
                                 </div>
+                                4.0 &amp; up
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (200)
                               </div>
                             </div>
-                            <div className="sidebar-checkbox__title d-flex items-center">
-                              <div className="d-flex x-gap-5 pr-10">
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                              </div>
-                              4.0 &amp; up
-                            </div>
-                            <div className="sidebar-checkbox__count">(200)</div>
-                          </div>
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-radio mr-10">
-                              <div className="radio">
-                                <input
-                                  type="radio"
-                                  name="radio"
-                                  checked="checked"
-                                />
-                                <div className="radio__mark">
-                                  <div className="radio__icon"></div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                icon={<CheckCircleOutlineIcon />}
+                                checkedIcon={<CheckCircleIcon />}
+                                onChange={handleRatingChange}
+                                value={3}
+                              />
+                              <div className="sidebar-checkbox__title d-flex items-center">
+                                <div className="d-flex x-gap-5 pr-10">
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
                                 </div>
+                                3.5 &amp; up
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (300)
                               </div>
                             </div>
-                            <div className="sidebar-checkbox__title d-flex items-center">
-                              <div className="d-flex x-gap-5 pr-10">
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                              </div>
-                              3.5 &amp; up
-                            </div>
-                            <div className="sidebar-checkbox__count">(300)</div>
-                          </div>
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-radio mr-10">
-                              <div className="radio">
-                                <input
-                                  type="radio"
-                                  name="radio"
-                                  checked="checked"
-                                />
-                                <div className="radio__mark">
-                                  <div className="radio__icon"></div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                icon={<CheckCircleOutlineIcon />}
+                                checkedIcon={<CheckCircleIcon />}
+                                onChange={handleRatingChange}
+                                value={3}
+                              />
+                              <div className="sidebar-checkbox__title d-flex items-center">
+                                <div className="d-flex x-gap-5 pr-10">
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
+                                  <div className="icon-star text-11 text-yellow-1"></div>
                                 </div>
+                                3.0 &amp; up
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (500)
                               </div>
                             </div>
-                            <div className="sidebar-checkbox__title d-flex items-center">
-                              <div className="d-flex x-gap-5 pr-10">
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                                <div className="icon-star text-11 text-yellow-1"></div>
-                              </div>
-                              3.0 &amp; up
-                            </div>
-                            <div className="sidebar-checkbox__count">(500)</div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
                 </div>
               </div>
 
               <div className="sidebar__item">
                 <div className="accordion js-accordion">
-                  <div className="accordion__item">
-                    <div className="accordion__button items-center">
+                  <Accordion defaultExpanded={true}>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel2a-content"
+                      id="panel2a-header"
+                    >
                       <h5 className="sidebar__title">Instructors</h5>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography component={"span"}>
+                        <div className="accordion__content__inner">
+                          <div className="">
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                onChange={handleinstructorChange}
+                                value={"janeCooper"}
+                              />
+                              <div className="sidebar-checkbox__title">
+                                Jane Cooper
+                              </div>
 
-                      <div className="accordion__icon">
-                        <div className="icon icon-chevron-down"></div>
-                        <div className="icon icon-chevron-up"></div>
-                      </div>
-                    </div>
-
-                    <div className="accordion__content">
-                      <div className="accordion__content__inner">
-                        <div className="sidebar-checkbox">
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__count">
+                                (18)
                               </div>
                             </div>
 
-                            <div className="sidebar-checkbox__title">
-                              Jane Cooper
-                            </div>
-                            <div className="sidebar-checkbox__count">(18)</div>
-                          </div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                onChange={handleinstructorChange}
+                                value={"jennyWilson"}
+                              />
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__title">
+                                Jenny Wilson
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (12)
                               </div>
                             </div>
 
-                            <div className="sidebar-checkbox__title">
-                              Jenny Wilson
-                            </div>
-                            <div className="sidebar-checkbox__count">(12)</div>
-                          </div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                onChange={handleinstructorChange}
+                                value={"robertFox"}
+                              />
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__title">
+                                Robert Fox
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (23)
                               </div>
                             </div>
 
-                            <div className="sidebar-checkbox__title">
-                              Robert Fox
-                            </div>
-                            <div className="sidebar-checkbox__count">(23)</div>
-                          </div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                onChange={handleinstructorChange}
+                                value={"jacobJones"}
+                              />
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__title">
+                                Jacob Jones
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (67)
                               </div>
                             </div>
 
-                            <div className="sidebar-checkbox__title">
-                              Jacob Jones
-                            </div>
-                            <div className="sidebar-checkbox__count">(67)</div>
-                          </div>
+                            <div className="sidebar-checkbox__item">
+                              <Checkbox
+                                color="default"
+                                onChange={handleinstructorChange}
+                                value={"albertFlores"}
+                              />
 
-                          <div className="sidebar-checkbox__item">
-                            <div className="form-checkbox">
-                              <input type="checkbox" />
-                              <div className="form-checkbox__mark">
-                                <div className="form-checkbox__icon icon-check"></div>
+                              <div className="sidebar-checkbox__title">
+                                Albert Flores
+                              </div>
+                              <div className="sidebar-checkbox__count">
+                                (34)
                               </div>
                             </div>
-
-                            <div className="sidebar-checkbox__title">
-                              Albert Flores
-                            </div>
-                            <div className="sidebar-checkbox__count">(34)</div>
                           </div>
+                          {/* <div className="sidebar__more mt-15">
+                        <a
+                          href="#"
+                          className="text-14 fw-500 underline text-purple-1"
+                        >
+                          Show more
+                        </a>
+                      </div> */}
                         </div>
-
-                        <div className="sidebar__more mt-15">
-                          <a
-                            href="#"
-                            className="text-14 fw-500 underline text-purple-1"
-                          >
-                            Show more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
                 </div>
               </div>
             </div>
