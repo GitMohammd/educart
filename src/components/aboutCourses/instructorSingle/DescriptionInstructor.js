@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function DescriptionInstructor() {
+  const [courses, setCourses] = useState([]);
+  let { instrucotorId } = useParams();
+  console.log(instrucotorId);
+  useEffect(() => {
+    fetch("/allCourses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+  const singleCourse = courses?.find(({ id }) => id === instrucotorId);
+  console.log(singleCourse);
   return (
     <section className="page-header -type-3">
       <div className="page-header__bg bg-purple-1"></div>
@@ -9,7 +20,18 @@ function DescriptionInstructor() {
           <div className="col-xl-8 col-lg-9 col-md-11">
             <div className="page-header__content">
               <div className="page-header__img">
-                <img src="/assets/img/Instructors-single/1.png" alt="image" />
+                {instrucotorId ? (
+                  <img
+                    src={
+                      singleCourse?.insrtrucotrImg
+                        ? singleCourse?.insrtrucotrImg
+                        : singleCourse?.img
+                    }
+                    alt="image"
+                  />
+                ) : (
+                  <img src="/assets/img/Instructors-single/1.png" alt="image" />
+                )}
               </div>
 
               <div className="page-header__info">

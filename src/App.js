@@ -116,6 +116,10 @@ function App() {
         <Route path="/InstructorsListv1" element={<InstructorV1 />} />
         <Route path="/InstructorsListv2" element={<InstructorV2 />} />
         <Route path="/InstructorsSingle" element={<InstructiorSingle />} />
+        <Route
+          path="/InstructorsSingle/:instrucotorId"
+          element={<InstructiorSingle />}
+        />
         <Route path="/BecomeanInstructor" element={<BecomeAnInstructor />} />
         // Dashboard start -----------------------------
         <Route

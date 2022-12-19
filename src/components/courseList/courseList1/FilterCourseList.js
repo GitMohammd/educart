@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function FilterCourseList({ course }) {
@@ -32,7 +33,7 @@ function FilterCourseList({ course }) {
   // console.log(course);
   return (
     <div className="side-content col-xl-4 col-lg-6 col-md-4 col-sm-6">
-      <a href="courses-single-1.html" className="coursesCard -type-1 ">
+      <Link to={`/courseSingle1/${id}`} className="coursesCard -type-1 ">
         <div className="relative">
           <div className="coursesCard__image overflow-hidden rounded-8">
             <img className="w-1/1" src={img} alt="image" />
@@ -91,7 +92,7 @@ function FilterCourseList({ course }) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
 
       <div className="side-content__item">
         <div className="px-30 pt-20 pb-30 bg-white rounded-8 border-light shadow-2">
