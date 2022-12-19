@@ -175,7 +175,9 @@ function LessonContent1() {
                           <div
                             className="bg-image rounded-full js-lazy"
                             data-bg="img/avatars/1.png"
-                          ></div>
+                          >
+                            <img src="assets/img/avatars/1.png" alt="" />
+                          </div>
                         </div>
 
                         <div className="comments__body md:mt-15">
@@ -224,7 +226,9 @@ function LessonContent1() {
                           <div
                             className="bg-image rounded-full js-lazy"
                             data-bg="img/avatars/1.png"
-                          ></div>
+                          >
+                            <img src="assets/img/avatars/1.png" alt="" />
+                          </div>
                         </div>
 
                         <div className="comments__body md:mt-15">

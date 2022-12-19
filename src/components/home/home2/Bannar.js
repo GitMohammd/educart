@@ -12,13 +12,13 @@ function Bannar() {
   const goPrevious = () => {
     const isFirstSlide = currentImage === 0;
     const newIndex = isFirstSlide ? sliderImage.length - 1 : currentImage - 1;
-    console.log(newIndex, "newIndex");
+
     setCurrentImage(newIndex);
   };
   const goNext = () => {
     const isLastSlide = currentImage === sliderImage.length - 1;
     const newIndex = isLastSlide ? 0 : currentImage + 1;
-    console.log(newIndex, "newIndex");
+
     setCurrentImage(newIndex);
   };
 

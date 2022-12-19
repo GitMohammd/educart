@@ -4,14 +4,14 @@ import { useParams } from "react-router-dom";
 function DescriptionInstructor() {
   const [courses, setCourses] = useState([]);
   let { instrucotorId } = useParams();
-  console.log(instrucotorId);
+
   useEffect(() => {
     fetch("/allCourses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
   const singleCourse = courses?.find(({ id }) => id === instrucotorId);
-  console.log(singleCourse);
+
   return (
     <section className="page-header -type-3">
       <div className="page-header__bg bg-purple-1"></div>

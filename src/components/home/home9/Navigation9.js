@@ -9,7 +9,6 @@ function Navigation9({
   isDark,
   setDark,
 }) {
-  console.log(isLeftBar);
   const location = useLocation();
   const notifBtnRef = useRef();
   const [isNotify, setNotify] = useState(false);

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BestSeller6() {
   return (
@@ -199,9 +200,12 @@ function BestSeller6() {
                     </button>
                   </div>
                   <div className="col-sm-6">
-                    <button className="button -md -outline-green-1 text-green-1 w-1/1">
+                    <Link
+                      to={"/shopCheckout"}
+                      className="button -md -outline-green-1 text-green-1 w-1/1"
+                    >
                       Buy Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

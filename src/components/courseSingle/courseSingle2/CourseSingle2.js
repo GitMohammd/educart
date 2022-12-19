@@ -22,7 +22,7 @@ function CourseSingle2() {
           <Navigation />
           <div className="content-wrapper  js-content-wrapper">
             <SubNav2 />
-            <div classname="js-pin-container">
+            <div className="js-pin-container">
               <BestSeller2 />
               <Overview />
             </div>

@@ -17,7 +17,6 @@ function ShopSingleContent() {
   // ];
 
   const CourseQuantity = getCourseQuantity(51);
-  console.log(CourseQuantity);
 
   return (
     <section className="layout-pt-lg layout-pb-md">

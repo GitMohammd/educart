@@ -6,7 +6,7 @@ function DashboardContent() {
   const weekBtnRef = useRef();
   const [isLeftBar, setLeftBarOpen] = useOutletContext();
   const [thisWeek, setThisWeek] = useState(null);
-  console.log(thisWeek);
+
   const thisWeekValue = thisWeek === null ? "This Week" : thisWeek;
 
   const [isStaticWeek, setSaticWeek] = useState(false);

@@ -14,11 +14,7 @@ function CourseSingle1() {
   }, []);
   const [courses, setCourses] = useState([]);
   let { courseId } = useParams();
-  // useEffect(() => {
-  //   fetch("/allCourses.json")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
+
   useEffect(() => {
     fetch("/allCourses.json")
       .then((res) => res.json())

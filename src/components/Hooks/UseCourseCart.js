@@ -8,7 +8,6 @@ const UseCourseCart = () => {
     return courseItems.find((item) => item.id === id)?.quantity || 0;
   };
   const increaseCourseQuantity = (id) => {
-    console.log(typeof id);
     setCourseItems((currItems) => {
       if (currItems.find((item) => item.id === id) == null) {
         return [...currItems, { id, quantity: 1 }];

@@ -4,7 +4,6 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 function ShopCourses({ course }) {
-  console.log(course[0]?.name);
   const {
     courseItems,
     getCourseQuantity,
@@ -13,7 +12,7 @@ function ShopCourses({ course }) {
     removeCourseQuantity,
   } = UseCourseContext();
   const quantity = getCourseQuantity(course[0]?.id);
-  console.log(quantity);
+
   return (
     <div className="px-30 pr-60 md:px-0">
       <div className="row y-gap-20 justify-between items-center pt-30 pb-30 border-bottom-light">

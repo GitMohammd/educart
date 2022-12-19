@@ -171,8 +171,6 @@ function InstructorV2Content() {
           .flat()
       : filterPopulerCourse;
 
-  console.log(filterPopulerCourse, "fi");
-
   const FilterRatingCourses =
     ratingfilterItems.rating.length > 0
       ? ratingfilterItems.rating
@@ -248,8 +246,6 @@ function InstructorV2Content() {
   const filteredCoursesbyid = findUniqeId.map((filterId) => {
     return courses.find((cor) => cor.id === filterId);
   });
-
-  console.log(filteredCoursesbyid);
 
   const filteredCourses = filteredCoursesbyid;
 

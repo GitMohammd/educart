@@ -12,8 +12,6 @@ function InstructionV1Content() {
   const [currentPage, setCurrentPage] = useState(1);
   const [coursePerPage] = useState(8);
 
-  console.log(courses);
-
   useEffect(() => {
     fetch("/allCourses.json")
       .then((res) => res.json())

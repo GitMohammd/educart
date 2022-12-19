@@ -235,8 +235,6 @@ function CourseList1() {
     return courses.find((cor) => cor.id === filterId);
   });
 
-  console.log(filteredCoursesbyid);
-
   const filteredCourses = filteredCoursesbyid;
 
   const [paginationShowCourse, setPaginationShowCourse] = useState([]);

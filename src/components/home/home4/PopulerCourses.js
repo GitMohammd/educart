@@ -92,7 +92,8 @@ function PopulerCourses() {
                   <div
                     data-anim-child="slide-up delay-1"
                     style={{
-                      marginLeft: "20px",
+                      marginLeft: "10px",
+                      marginRight: "10px",
                     }}
                   >
                     <Link
@@ -123,7 +124,7 @@ function PopulerCourses() {
                         </div>
 
                         <div className="text-17 lh-15 fw-500 text-dark-1 mt-10">
-                          Learn Figma - UI/UX Design Essential Training
+                          {course.name}{" "}
                         </div>
 
                         <div className="d-flex x-gap-10 items-center pt-10">

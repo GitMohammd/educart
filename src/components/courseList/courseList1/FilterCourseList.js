@@ -29,8 +29,7 @@ function FilterCourseList({ course }) {
     decreaseCourseQuantity,
     removeCourseQuantity,
   } = UseCourseContext();
-  // console.log(typeof course);
-  // console.log(course);
+
   return (
     <div className="side-content col-xl-4 col-lg-6 col-md-4 col-sm-6">
       <Link to={`/courseSingle1/${id}`} className="coursesCard -type-1 ">

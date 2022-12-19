@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function LessonPageAsideV2() {
+  const [isContentOpen, setContentOpen] = useState(false);
+
+  const [isBrifeOpen, setBrifeOpen] = useState(false);
+
+  const [isTypeOpen, setTypeOpen] = useState(false);
+  const [isPhotoOpen, setPhotoOpen] = useState(false);
+  const [isWireOpen, setWireOpen] = useState(false);
   return (
     <aside className="lesson-sidebar -type-2 lg:order-1">
       <div className="px-30 sm:px-20">
@@ -12,20 +21,33 @@ function LessonPageAsideV2() {
         </form>
 
         <div className="accordion -block-2 text-left js-accordion mt-30">
-          <div className="accordion__item">
+          <div
+            onClick={() => setContentOpen(!isContentOpen)}
+            className={
+              isContentOpen ? "accordion__item is-active" : "accordion__item"
+            }
+          >
             <div className="accordion__button py-20 px-30 bg-light-4">
               <div className="d-flex items-center">
-                <div className="accordion__icon">
-                  <div className="icon" data-feather="chevron-down"></div>
-                  <div className="icon" data-feather="chevron-up"></div>
-                </div>
-                <span className="text-17 fw-500 text-dark-1">
+                {isContentOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+
+                <span
+                  style={{ marginLeft: "15px" }}
+                  className="text-17 fw-500 text-dark-1"
+                >
                   Course Content
                 </span>
               </div>
             </div>
 
-            <div className="accordion__content">
+            <div
+              className="accordion__content"
+              style={{ maxHeight: isContentOpen ? "503px" : "" }}
+            >
               <div className="accordion__content__inner px-30 py-30">
                 <div className="y-gap-30">
                   <div className="">
@@ -191,18 +213,33 @@ function LessonPageAsideV2() {
             </div>
           </div>
 
-          <div className="accordion__item">
+          <div
+            onClick={() => setBrifeOpen(!isBrifeOpen)}
+            className={
+              isBrifeOpen ? "accordion__item is-active" : "accordion__item"
+            }
+          >
             <div className="accordion__button py-20 px-30 bg-light-4">
               <div className="d-flex items-center">
-                <div className="accordion__icon">
-                  <div className="icon" data-feather="chevron-down"></div>
-                  <div className="icon" data-feather="chevron-up"></div>
-                </div>
-                <span className="text-17 fw-500 text-dark-1">The Brief</span>
+                {isBrifeOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+
+                <span
+                  style={{ marginLeft: "15px" }}
+                  className="text-17 fw-500 text-dark-1"
+                >
+                  The Brief
+                </span>
               </div>
             </div>
 
-            <div className="accordion__content">
+            <div
+              className="accordion__content"
+              style={{ maxHeight: isBrifeOpen ? "503px" : "" }}
+            >
               <div className="accordion__content__inner px-30 py-30">
                 <div className="y-gap-30">
                   <div className="">
@@ -368,20 +405,33 @@ function LessonPageAsideV2() {
             </div>
           </div>
 
-          <div className="accordion__item">
+          <div
+            onClick={() => setTypeOpen(!isTypeOpen)}
+            className={
+              isTypeOpen ? "accordion__item is-active" : "accordion__item"
+            }
+          >
             <div className="accordion__button py-20 px-30 bg-light-4">
               <div className="d-flex items-center">
-                <div className="accordion__icon">
-                  <div className="icon" data-feather="chevron-down"></div>
-                  <div className="icon" data-feather="chevron-up"></div>
-                </div>
-                <span className="text-17 fw-500 text-dark-1">
+                {isTypeOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+
+                <span
+                  style={{ marginLeft: "15px" }}
+                  className="text-17 fw-500 text-dark-1"
+                >
                   Type, Color &amp; Icon Introduction
                 </span>
               </div>
             </div>
 
-            <div className="accordion__content">
+            <div
+              className="accordion__content"
+              style={{ maxHeight: isTypeOpen ? "503px" : "" }}
+            >
               <div className="accordion__content__inner px-30 py-30">
                 <div className="y-gap-30">
                   <div className="">
@@ -547,20 +597,33 @@ function LessonPageAsideV2() {
             </div>
           </div>
 
-          <div className="accordion__item">
+          <div
+            onClick={() => setPhotoOpen(!isPhotoOpen)}
+            className={
+              isPhotoOpen ? "accordion__item is-active" : "accordion__item"
+            }
+          >
             <div className="accordion__button py-20 px-30 bg-light-4">
               <div className="d-flex items-center">
-                <div className="accordion__icon">
-                  <div className="icon" data-feather="chevron-down"></div>
-                  <div className="icon" data-feather="chevron-up"></div>
-                </div>
-                <span className="text-17 fw-500 text-dark-1">
+                {isPhotoOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+
+                <span
+                  style={{ marginLeft: "15px" }}
+                  className="text-17 fw-500 text-dark-1"
+                >
                   Prototyping a App - Introduction
                 </span>
               </div>
             </div>
 
-            <div className="accordion__content">
+            <div
+              className="accordion__content"
+              style={{ maxHeight: isPhotoOpen ? "503px" : "" }}
+            >
               <div className="accordion__content__inner px-30 py-30">
                 <div className="y-gap-30">
                   <div className="">
@@ -726,20 +789,33 @@ function LessonPageAsideV2() {
             </div>
           </div>
 
-          <div className="accordion__item">
+          <div
+            onClick={() => setWireOpen(!isWireOpen)}
+            className={
+              isWireOpen ? "accordion__item is-active" : "accordion__item"
+            }
+          >
             <div className="accordion__button py-20 px-30 bg-light-4">
               <div className="d-flex items-center">
-                <div className="accordion__icon">
-                  <div className="icon" data-feather="chevron-down"></div>
-                  <div className="icon" data-feather="chevron-up"></div>
-                </div>
-                <span className="text-17 fw-500 text-dark-1">
+                {isWireOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+
+                <span
+                  style={{ marginLeft: "15px" }}
+                  className="text-17 fw-500 text-dark-1"
+                >
                   Wireframe Feedback
                 </span>
               </div>
             </div>
 
-            <div className="accordion__content">
+            <div
+              className="accordion__content"
+              style={{ maxHeight: isWireOpen ? "503px" : "" }}
+            >
               <div className="accordion__content__inner px-30 py-30">
                 <div className="y-gap-30">
                   <div className="">
