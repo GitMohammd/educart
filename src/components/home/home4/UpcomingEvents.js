@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function UpcomingEvents() {
   const sliderRef = useRef(null);
@@ -92,10 +93,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -119,10 +120,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -146,10 +147,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -173,10 +174,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -200,10 +201,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -227,10 +228,10 @@ function UpcomingEvents() {
                   </h4>
 
                   <div className="eventCard__button">
-                    <a href="#" className="button -icon -purple-1 text-white">
+                    <Link to={"/eventSingle"} className="button -icon -purple-1 text-white">
                       Buy Ticket
                       <i className="icon-arrow-top-right text-13 ml-10"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -32,91 +32,99 @@ function Blog() {
 
         <div className="row y-gap-30 pt-60">
           <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-2"
-              className="blogCard -type-1"
-            >
-              <div className="blogCard__image">
-                <img src="/assets/img/home-3/blog/1.png" alt="image" />
-              </div>
-              <div className="blogCard__content mt-20">
-                <a href="#" className="blogCard__category">
-                  EDUCATION
-                </a>
-                <h4 className="blogCard__title text-17 lh-15 mt-5">
-                  Eco-Education in Our Lives: We Can Change the Future
-                </h4>
-                <div className="blogCard__date text-14 mt-5">
-                  December 16, 2022
+            <Link to={"/blogSingle"}>
+              <div
+                data-anim-child="slide-left delay-2"
+                className="blogCard -type-1"
+              >
+                <div className="blogCard__image">
+                  <img src="/assets/img/home-3/blog/1.png" alt="image" />
+                </div>
+                <div className="blogCard__content mt-20">
+                  <a href="#" className="blogCard__category">
+                    EDUCATION
+                  </a>
+                  <h4 className="blogCard__title text-17 lh-15 mt-5">
+                    Eco-Education in Our Lives: We Can Change the Future
+                  </h4>
+                  <div className="blogCard__date text-14 mt-5">
+                    December 16, 2022
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-3"
-              className="blogCard -type-1"
-            >
-              <div className="blogCard__image">
-                <img src="/assets/img/home-3/blog/2.png" alt="image" />
-              </div>
-              <div className="blogCard__content mt-20">
-                <a href="#" className="blogCard__category">
-                  EDUCATION
-                </a>
-                <h4 className="blogCard__title text-17 lh-15 mt-5">
-                  Eco-Education in Our Lives: We Can Change the Future
-                </h4>
-                <div className="blogCard__date text-14 mt-5">
-                  December 16, 2022
+            <Link to={"/blogSingle"}>
+              <div
+                data-anim-child="slide-left delay-3"
+                className="blogCard -type-1"
+              >
+                <div className="blogCard__image">
+                  <img src="/assets/img/home-3/blog/2.png" alt="image" />
+                </div>
+                <div className="blogCard__content mt-20">
+                  <a href="#" className="blogCard__category">
+                    EDUCATION
+                  </a>
+                  <h4 className="blogCard__title text-17 lh-15 mt-5">
+                    Eco-Education in Our Lives: We Can Change the Future
+                  </h4>
+                  <div className="blogCard__date text-14 mt-5">
+                    December 16, 2022
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-4"
-              className="blogCard -type-1"
-            >
-              <div className="blogCard__image">
-                <img src="/assets/img/home-3/blog/3.png" alt="image" />
-              </div>
-              <div className="blogCard__content mt-20">
-                <a href="#" className="blogCard__category">
-                  EDUCATION
-                </a>
-                <h4 className="blogCard__title text-17 lh-15 mt-5">
-                  Eco-Education in Our Lives: We Can Change the Future
-                </h4>
-                <div className="blogCard__date text-14 mt-5">
-                  December 16, 2022
+            <Link to={"/blogSingle"}>
+              <div
+                data-anim-child="slide-left delay-4"
+                className="blogCard -type-1"
+              >
+                <div className="blogCard__image">
+                  <img src="/assets/img/home-3/blog/3.png" alt="image" />
+                </div>
+                <div className="blogCard__content mt-20">
+                  <a href="#" className="blogCard__category">
+                    EDUCATION
+                  </a>
+                  <h4 className="blogCard__title text-17 lh-15 mt-5">
+                    Eco-Education in Our Lives: We Can Change the Future
+                  </h4>
+                  <div className="blogCard__date text-14 mt-5">
+                    December 16, 2022
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <div
-              data-anim-child="slide-left delay-5"
-              className="blogCard -type-1"
-            >
-              <div className="blogCard__image">
-                <img src="/assets/img/home-3/blog/4.png" alt="image" />
-              </div>
-              <div className="blogCard__content mt-20">
-                <a href="#" className="blogCard__category">
-                  EDUCATION
-                </a>
-                <h4 className="blogCard__title text-17 lh-15 mt-5">
-                  Eco-Education in Our Lives: We Can Change the Future
-                </h4>
-                <div className="blogCard__date text-14 mt-5">
-                  December 16, 2022
+            <Link to={"/blogSingle"}>
+              <div
+                data-anim-child="slide-left delay-5"
+                className="blogCard -type-1"
+              >
+                <div className="blogCard__image">
+                  <img src="/assets/img/home-3/blog/4.png" alt="image" />
+                </div>
+                <div className="blogCard__content mt-20">
+                  <a href="#" className="blogCard__category">
+                    EDUCATION
+                  </a>
+                  <h4 className="blogCard__title text-17 lh-15 mt-5">
+                    Eco-Education in Our Lives: We Can Change the Future
+                  </h4>
+                  <div className="blogCard__date text-14 mt-5">
+                    December 16, 2022
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

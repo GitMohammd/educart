@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function UpcomingEvent8() {
   return (
@@ -50,13 +51,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -98,13 +99,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -146,13 +147,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -194,13 +195,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -242,13 +243,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -290,13 +291,13 @@ function UpcomingEvent8() {
 
                     <div className="col-auto">
                       <div className="-button-hover-1__button">
-                        <a
-                          href="#"
+                        <Link
+                          to={"/eventSingle"}
                           className="button -icon -orange-1 text-white"
                         >
                           Buy
                           <i className="icon-arrow-top-right text-13 ml-10"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

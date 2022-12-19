@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Blog6 from "./Blog6";
+// import Blog6 from "./Blog6";
 import DownloadApp from "./DownloadApp";
 import EducationCourses from "./EducationCourses";
 import FeaturedCourses6 from "./FeaturedCourses6";
@@ -14,6 +14,7 @@ import TrustedCompany6 from "./TrustedCompany6";
 import TrustedTeacher from "./TrustedTeacher";
 import UpcommingEvent6 from "./UpcommingEvent6";
 import TopCatagories from "../home1/TopCotegories";
+import Blog from "../home3/Blog";
 
 function Home6() {
   useEffect(() => {
@@ -89,7 +90,7 @@ function Home6() {
               </svg>
             </div>
             <UpcommingEvent6 />
-            <Blog6 />
+            <Blog />
             <DownloadApp />
             <Footer6 />
           </div>
