@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function DemoBestSeller() {
@@ -118,9 +119,12 @@ function DemoBestSeller() {
                   >
                     Add To Cart
                   </button>
-                  <button className="button -md -outline-dark-1 text-dark-1 w-1/1 mt-10">
+                  <Link
+                    to={"/shopCheckout"}
+                    className="button -md -outline-dark-1 text-dark-1 w-1/1 mt-10"
+                  >
                     Buy Now
-                  </button>
+                  </Link>
 
                   <div className="text-14 lh-1 text-center mt-30">
                     30-Day Money-Back Guarantee

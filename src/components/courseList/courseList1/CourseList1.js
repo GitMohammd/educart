@@ -52,6 +52,7 @@ function CourseList1() {
 
   const handleCatagoryChange = (e) => {
     const { value, checked } = e.target;
+    console.log(value, checked);
     const { catagory } = catagoryfilterItems;
     if (checked) {
       setCatagoryFilterItems({
@@ -237,8 +238,8 @@ function CourseList1() {
 
   const filteredCourses = filteredCoursesbyid;
 
-  const [paginationShowCourse, setPaginationShowCourse] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [paginationShowCourse, setPaginationShowCourse] = useState([]);
+  // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [coursePerPage] = useState(12);
 

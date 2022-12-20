@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function BestSeller6() {
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
   return (
     <section className="page-header -type-5 bg-dark-1">
       <div className="page-header__bg">
@@ -195,7 +202,10 @@ function BestSeller6() {
 
                 <div className="row x-gap-30 y-gap-20 pt-30">
                   <div className="col-sm-6">
-                    <button className="button -md -purple-1 text-white w-1/1">
+                    <button
+                      onClick={() => increaseCourseQuantity("01")}
+                      className="button -md -purple-1 text-white w-1/1"
+                    >
                       Add To Cart
                     </button>
                   </div>

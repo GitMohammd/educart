@@ -144,45 +144,6 @@ function CourseListMain1(props) {
                               </div>
                             </div>
                           </div>
-                          {/* 
-                          <div
-                          // className="dropdown js-dropdown js-category-active"
-                          >
-                            <Box sx={{ minWidth: 220 }}>
-                              <FormControl
-                                fullWidth
-                                // className="dropdown__button text-14"
-                                // style={{ height: "100%" }}
-                              >
-                                <InputLabel
-                                // id="demo-simple-select-label"
-                                >
-                                  Most Popular
-                                </InputLabel>
-                                <Select
-                                  // className="-dark-bg-dark-2 -dark-border-white-10"
-                                  // style={{ color: "black" }}
-                                  // labelId="demo-simple-select-label"
-                                  // id="demo-simple-select"
-                                  value={populerCourse}
-                                  label="Most Popular"
-                                  onChange={handlePopulerCourseChange}
-                                >
-                                  <MenuItem value={""}>none</MenuItem>
-                                  <MenuItem value={"animation"}>
-                                    Animation
-                                  </MenuItem>
-                                  <MenuItem value={"design"}>Design</MenuItem>
-                                  <MenuItem value={"illustration"}>
-                                    Illustration
-                                  </MenuItem>
-                                  <MenuItem value={"business"}>
-                                    Business
-                                  </MenuItem>
-                                </Select>
-                              </FormControl>
-                            </Box>
-                          </div> */}
                         </div>
                       </div>
                     </div>

@@ -1,6 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function BestSeller2() {
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
   return (
     <section className="page-header -type-5 bg-dark-1">
       <div className="page-header__bg">
@@ -107,12 +115,18 @@ function BestSeller2() {
                     <div className="lh-1 line-through">$76.00</div>
                   </div>
 
-                  <button className="button -md -purple-1 text-white w-1/1">
+                  <button
+                    onClick={() => increaseCourseQuantity("01")}
+                    className="button -md -purple-1 text-white w-1/1"
+                  >
                     Add To Cart
                   </button>
-                  <button className="button -md -outline-dark-1 text-dark-1 w-1/1 mt-10">
+                  <Link
+                    to={"/shopCheckout"}
+                    className="button -md -outline-dark-1 text-dark-1 w-1/1 mt-10"
+                  >
                     Buy Now
-                  </button>
+                  </Link>
 
                   <div className="text-14 lh-1 text-center mt-30">
                     30-Day Money-Back Guarantee
