@@ -240,7 +240,7 @@ function CourseList8() {
   // const [paginationShowCourse, setPaginationShowCourse] = useState([]);
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [coursePerPage] = useState(9);
+  const [coursePerPage] = useState(8);
 
   // Get Current Course
 
