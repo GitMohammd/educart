@@ -1,6 +1,7 @@
 import React from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
+import UseCourseContext from "../../context/cartContext/UseCourseContext";
 
 function FIlterCourseList7({ course }) {
   const {
@@ -23,6 +24,12 @@ function FIlterCourseList7({ course }) {
     ratings,
     time,
   } = course;
+  const {
+    getCourseQuantity,
+    increaseCourseQuantity,
+    decreaseCourseQuantity,
+    removeCourseQuantity,
+  } = UseCourseContext();
   return (
     <div className="col-12 border-bottom-light">
       <Link
@@ -111,7 +118,10 @@ function FIlterCourseList7({ course }) {
           </div>
           <div className="row x-gap-20 y-gap-20 items-center pt-25">
             <div className="col-auto">
-              <button className="button h-50 px-30 -purple-3 text-purple-1">
+              <button
+                onClick={() => increaseCourseQuantity(id)}
+                className="button h-50 px-30 -purple-3 text-purple-1"
+              >
                 Add to cart
               </button>
             </div>
