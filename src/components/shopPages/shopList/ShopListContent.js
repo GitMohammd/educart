@@ -1,4 +1,6 @@
 import React from "react";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 function ShopListContent() {
   return (
@@ -13,7 +15,8 @@ function ShopListContent() {
                     <form action="post">
                       <button className="submit" type="submit">
                         <i className="icon" data-feather="search"></i>
-                      </button>
+                      </button>{" "}
+                      <a href="#">Clothing</a>,
                       <input
                         className="field"
                         type="text"
@@ -230,10 +233,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -270,10 +273,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -310,10 +313,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -350,10 +353,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -390,10 +393,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -430,10 +433,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -470,10 +473,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -510,10 +513,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
@@ -550,10 +553,10 @@ function ShopListContent() {
 
                     <div className="productCard__controls">
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="eye"></i>
+                        <VisibilityIcon />
                       </a>
                       <a href="#" className="productCard__icon">
-                        <i className="icon" data-feather="heart"></i>
+                        <FavoriteBorderIcon />
                       </a>
                     </div>
                   </div>
